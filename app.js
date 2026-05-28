@@ -141,11 +141,55 @@ document.addEventListener('DOMContentLoaded', () => {
     voiceVolumeVal.textContent = Math.round(voiceVolume.value * 100);
   });
 
-  // --- 3. Text-to-Speech (Polish Lektor) ---
+  // --- 3. Text-to-Speech (Polish Lektor with Phonetic English Corrections) ---
+  function getPhoneticPolishText(text) {
+    let result = text;
+    const dictionary = {
+      'SSI': 'es es aj',
+      'Open Water Diver': 'ołpen łoter dajwer',
+      'Scuba Diver': 'skuba dajwer',
+      'Try Scuba': 'traj skuba',
+      'Scuba Skills Update': 'skuba skils apdejt',
+      'Perfect Buoyancy': 'perfekt bojansy',
+      'Diver Stress & Rescue': 'dajwer stres end reskju',
+      'Stress & Rescue': 'stres end reskju',
+      'Dive Guide': 'dajv gajd',
+      'Divemaster': 'dajv master',
+      'Science of Diving': 'sajens of dajwing',
+      'Referral Diver': 'referal dajwer',
+      'Indoor Diver': 'indor dajwer',
+      'PWA': 'pe wu a',
+      'Advanced Open Water Diver': 'adwansd ołpen łoter dajwer',
+      'Enriched Air Nitrox': 'enriczt er najtroks',
+      'Nitrox': 'najtroks',
+      'Deep Diving': 'dip dajwing',
+      'Decompression Diving': 'dekompreszyn dajwing',
+      'Altitude Diving': 'altitjud dajwing',
+      'Computer Diving': 'kompjuter dajwing',
+      'Equipment Techniques': 'ekwipment teknik',
+      'Explorer': 'eksplorer',
+      'Explorers': 'eksplorers',
+      'Specialty Instructor': 'speszalti instruktor',
+      'Instructor Training Course': 'instruktor trejning kors',
+      'Instructor Evaluation': 'instruktor ewaluojszyn',
+      'Direct Application': 'dajrekt aplikiejszyn',
+      'QMS': 'ku em es',
+      'Co-Teaching': 'ko-ticzing',
+      'experienced diver test': 'ekspiriensd dajwer test',
+      'ISO': 'i zo'
+    };
+
+    // Replace English words with Polish phonetic spellings
+    for (const [key, value] of Object.entries(dictionary)) {
+      const regex = new RegExp('\\b' + key + '\\b', 'gi');
+      result = result.replace(regex, value);
+    }
+    return result;
+  }
+
   function loadPolishVoice() {
     if (!synth) return;
     const voices = synth.getVoices();
-    // Try to find a Polish voice
     speechVoice = voices.find(v => v.lang.startsWith('pl')) || null;
   }
 
@@ -158,9 +202,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function speakText(text, callback) {
     if (!synth) return;
-    synth.cancel(); // Cancel any current speech
+    synth.cancel();
 
-    speechUtterance = new SpeechSynthesisUtterance(text);
+    // Dynamically apply phonetic corrections so the Polish voice sounds flawless!
+    const phoneticText = getPhoneticPolishText(text);
+
+    speechUtterance = new SpeechSynthesisUtterance(phoneticText);
     if (speechVoice) speechUtterance.voice = speechVoice;
     
     speechUtterance.lang = 'pl-PL';
@@ -233,6 +280,18 @@ document.addEventListener('DOMContentLoaded', () => {
     recognition.onresult = (event) => {
       const result = event.results[0][0].transcript.toLowerCase().trim();
       console.log('Recognized speech:', result);
+      
+      // If feedback panel is active, check for "dalej" navigation command
+      if (feedbackPanel.classList.contains('active')) {
+        if (result.includes('dalej') || result.includes('następ') || result.includes('ok') || result.includes('tak') || result.includes('dale')) {
+          voiceStatusText.innerHTML = `Wykryto komendę: <strong>Dalej</strong>`;
+          setTimeout(() => {
+            feedbackPanel.classList.remove('active');
+            advanceQuestion();
+          }, 800);
+          return;
+        }
+      }
       
       let detectedIndex = -1;
       

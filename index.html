@@ -261,12 +261,13 @@
                 <button class="tab-btn active" data-tab="ios"><i class="fa-brands fa-apple"></i> iOS Safari</button>
                 <button class="tab-btn" data-tab="android"><i class="fa-brands fa-android"></i> Android</button>
                 <button class="tab-btn" data-tab="desktop"><i class="fa-solid fa-laptop"></i> Komputer</button>
+                <button class="tab-btn" data-tab="github"><i class="fa-brands fa-github"></i> Link na Telefon</button>
               </div>
 
               <div class="pwa-tab-content">
                 <div class="tab-pane active" id="tab-ios">
                   <ol class="guide-steps">
-                    <li>Otwórz tę stronę w przeglądarce <strong>Safari</strong> na swoim iPhonie.</li>
+                    <li>Otwórz link z GitHub Pages w przeglądarce <strong>Safari</strong> na swoim iPhonie.</li>
                     <li>Stuknij ikonę <strong>Udostępnij</strong> (kwadrat z strzałką w górę) na dolnym pasku Safari.</li>
                     <li>Przewiń menu w dół i wybierz opcję <strong>"Dodaj do ekranu początkowego"</strong>.</li>
                     <li>Wpisz nazwę (np. "SSI Trainer") i zatwierdź klikając <strong>Dodaj</strong> w prawym górnym rogu.</li>
@@ -275,11 +276,12 @@
                 </div>
                 <div class="tab-pane" id="tab-android">
                   <ol class="guide-steps">
-                    <li>Upewnij się, że korzystasz z przeglądarki <strong>Chrome</strong>.</li>
-                    <li>Kliknij przycisk <strong>"Zainstaluj"</strong> na bannerze na ekranie głównym aplikacji (jeśli jest widoczny).</li>
+                    <li>Upewnij się, że korzystasz z przeglądarki <strong>Chrome</strong> na swoim telefonie.</li>
+                    <li>Otwórz link z GitHub Pages.</li>
+                    <li>Kliknij przycisk <strong>"Zainstaluj"</strong> na bannerze na dole ekranu.</li>
                     <li>Jeśli go nie ma, stuknij ikonę <strong>trzech pionowych kropek</strong> w prawym górnym rogu Chrome.</li>
                     <li>Wybierz opcję <strong>"Dodaj do ekranu głównego"</strong> lub <strong>"Zainstaluj aplikację"</strong>.</li>
-                    <li>Zatwierdź instalację. Aplikacja zostanie dodana do Twojego pulpitu i menu aplikacji.</li>
+                    <li>Zatwierdź instalację. Aplikacja zostanie dodana do pulpitu telefonu i działa offline!</li>
                   </ol>
                 </div>
                 <div class="tab-pane" id="tab-desktop">
@@ -288,6 +290,19 @@
                     <li>Zwróć uwagę na prawą stronę paska adresu - zobaczysz tam ikonę <strong>monitora z małą strzałką</strong> ("Zainstaluj aplikację").</li>
                     <li>Kliknij tę ikonę i zatwierdź klikając przycisk <strong>Zainstaluj</strong>.</li>
                     <li>Aplikacja otworzy się w osobnym, eleganckim oknie bez pasków przeglądarki i zostanie dodana jako skrót na pulpicie.</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-github">
+                  <p class="guide-intro">Aby odpalić aplikację na telefonie, włącz darmowe hostowanie <strong>GitHub Pages</strong> w swoim repozytorium:</p>
+                  <ol class="guide-steps">
+                    <li>Wejdź na stronę swojego repozytorium w przeglądarce: <strong style="color: var(--color-cyan);">github.com/lukaszdudzinski/ssi-standards-trainer</strong></li>
+                    <li>Kliknij zakładkę <strong>Settings</strong> (Ustawienia) w górnym menu repozytorium.</li>
+                    <li>W lewym menu kliknij opcję <strong>Pages</strong>.</li>
+                    <li>W sekcji <strong>Build and deployment -> Branch</strong> wybierz gałąź <strong>main</strong> oraz folder <strong>/ (root)</strong>, a następnie kliknij <strong>Save</strong> (Zapisz).</li>
+                    <li>Po około 1 minucie odśwież stronę. Na górze w zakładce Pages pojawi się Twój gotowy, publiczny link do telefonu:<br>
+                      <a href="https://lukaszdudzinski.github.io/ssi-standards-trainer/" target="_blank" style="color: var(--color-cyan); font-weight: bold; text-decoration: underline;">https://lukaszdudzinski.github.io/ssi-standards-trainer/</a>
+                    </li>
+                    <li>Otwórz ten link na telefonie w Safari (iPhone) lub Chrome (Android) i postępuj zgodnie z instrukcją instalacji w pozostałych zakładkach!</li>
                   </ol>
                 </div>
               </div>
