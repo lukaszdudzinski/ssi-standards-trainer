@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplikacja edukacyjna do nauki standardów SSI dla kandydatów na instruktorów nurkowania. Obsługa głosowa, tryb offline, baza pytań i referencje PDF.">
+  <meta name="theme-color" content="#070b19">
+  <title>SSI Standards Trainer | Uki</title>
+  
+  <!-- PWA Manifest & Favicon -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons (for UI icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Fluid Background Blobs for Liquid Glass Effect -->
+  <div class="fluid-background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <img src="logo.png" alt="Uki Logo" class="app-logo" id="headerLogo">
+        <div class="brand-text">
+          <h1>SSI Standards</h1>
+          <p>Instructor Trainer</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <button id="themeToggle" class="icon-btn" title="Zmień motyw" aria-label="Zmień motyw">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="settingsBtn" class="icon-btn" title="Instrukcja & Ustawienia" aria-label="Ustawienia">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <!-- Screen 1: Welcome Screen -->
+      <section id="welcomeScreen" class="glass-panel active">
+        <div class="welcome-hero">
+          <img src="logo.png" alt="Logo Uki" class="welcome-logo">
+          <h2>Witaj w trenażerze standardów SSI!</h2>
+          <p class="welcome-desc">Zwiększ swoje szanse na egzaminie instruktorskim (ITC/IE). Naucz się na pamięć głębokości, limitów wiekowych, proporcji ilościowych oraz procedur szkoleniowych.</p>
+        </div>
+
+        <div class="welcome-modes">
+          <button id="startTestBtn" class="btn btn-primary">
+            <span class="btn-icon"><i class="fa-solid fa-clipboard-question"></i></span>
+            <span class="btn-text">Egzamin 50 Pytań <small>Losowy zestaw z bazy</small></span>
+          </button>
+          
+          <button id="startPracticeBtn" class="btn btn-secondary">
+            <span class="btn-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="btn-text">Pełna Baza Pytań <small>Tryb nauki bez limitów</small></span>
+          </button>
+        </div>
+
+        <div class="pwa-install-banner" id="pwaBanner" style="display: none;">
+          <div class="pwa-text">
+            <h4>Zainstaluj na telefonie</h4>
+            <p>Korzystaj z aplikacji bez internetu (w trybie offline) na łodzi lub w bazie.</p>
+          </div>
+          <button id="installAppBtn" class="btn-install">Instaluj</button>
+        </div>
+      </section>
+
+      <!-- Screen 2: Quiz Screen -->
+      <section id="quizScreen" class="glass-panel">
+        <!-- Quiz Status Bar -->
+        <div class="quiz-status">
+          <div class="status-item timer">
+            <i class="fa-regular fa-clock"></i>
+            <span id="quizTimer">00:00</span>
+          </div>
+          <div class="status-item progress">
+            <span id="progressText">Pytanie 1 / 50</span>
+          </div>
+          <div class="status-item score">
+            <i class="fa-solid fa-check"></i>
+            <span id="scoreText">0</span>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="progressBarFill" style="width: 0%;"></div>
+        </div>
+
+        <!-- Lektor & Voice Control Switches -->
+        <div class="voice-switches">
+          <div class="switch-container">
+            <span class="switch-label"><i class="fa-solid fa-volume-high"></i> Autoplay lektora</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="autoplayToggle">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="switch-container">
+            <span class="switch-label"><i class="fa-solid fa-microphone"></i> Sterowanie głosowe</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="voiceControlToggle">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card" id="questionCard">
+          <h3 id="questionText">Treść pytania pojawi się tutaj...</h3>
+          <div class="question-actions">
+            <button id="repeatSpeechBtn" class="voice-btn pulse-glow" title="Przeczytaj pytanie">
+              <i class="fa-solid fa-volume-high"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Answers Grid -->
+        <div class="answers-grid" id="answersGrid">
+          <button class="answer-btn" data-index="0">
+            <span class="ans-number">1</span>
+            <span class="ans-text">Odpowiedź pierwsza</span>
+          </button>
+          <button class="answer-btn" data-index="1">
+            <span class="ans-number">2</span>
+            <span class="ans-text">Odpowiedź druga</span>
+          </button>
+          <button class="answer-btn" data-index="2">
+            <span class="ans-number">3</span>
+            <span class="ans-text">Odpowiedź trzecia</span>
+          </button>
+          <button class="answer-btn" data-index="3">
+            <span class="ans-number">4</span>
+            <span class="ans-text">Odpowiedź czwarta</span>
+          </button>
+        </div>
+
+        <!-- Voice Recognition Overlay / Bar -->
+        <div class="voice-recognition-bar" id="voiceStatusContainer" style="display: none;">
+          <div class="mic-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="voiceStatusText">Nasłuchiwanie: powiedz "jeden", "dwa", "trzy" lub "cztery"...</span>
+        </div>
+
+        <!-- Feedback Overlay (Correct / Incorrect details) -->
+        <div class="feedback-panel" id="feedbackPanel">
+          <div class="feedback-content">
+            <div class="feedback-header" id="feedbackHeader">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <h4>Błędna odpowiedź!</h4>
+            </div>
+            
+            <div class="ref-container">
+              <div class="ref-meta">
+                <span class="ref-tag chapter" id="refChapter"><i class="fa-solid fa-book"></i> Rozdział</span>
+                <span class="ref-tag section" id="refSection"><i class="fa-solid fa-bookmark"></i> Podrozdział</span>
+              </div>
+              <div class="ref-page-badge">
+                <span class="page-label">Strona</span>
+                <span class="page-num" id="refPage">54</span>
+              </div>
+            </div>
+
+            <div class="ref-quote">
+              <p id="refQuote">"Cytat z oficjalnego dokumentu standardów w tym miejscu..."</p>
+            </div>
+
+            <button id="nextQuestionBtn" class="btn btn-primary">Dalej <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: Results Screen -->
+      <section id="resultsScreen" class="glass-panel">
+        <div class="results-hero">
+          <img src="logo.png" alt="Logo Uki" class="results-logo">
+          <h2>Wynik Twojego Egzaminu</h2>
+          
+          <!-- Circular Progress Indicator -->
+          <div class="circular-progress">
+            <svg class="progress-ring" width="160" height="160">
+              <circle class="progress-ring-bg" stroke="rgba(255,255,255,0.05)" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+              <circle class="progress-ring-circle" id="progressRingCircle" stroke="#00f2fe" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+            </svg>
+            <div class="progress-percentage">
+              <span id="resultPercent">0%</span>
+            </div>
+          </div>
+
+          <h3 id="resultVerdict">Niestety, spróbuj jeszcze raz!</h3>
+          <p id="resultDetails">Udzieliłeś 0 poprawnych odpowiedzi na 50 pytań.</p>
+        </div>
+
+        <div class="results-actions">
+          <button id="restartTestBtn" class="btn btn-primary">
+            <i class="fa-solid fa-rotate-left"></i> Nowy Egzamin
+          </button>
+          <button id="backToHomeBtn" class="btn btn-secondary">
+            <i class="fa-solid fa-house"></i> Ekran Główny
+          </button>
+        </div>
+
+        <!-- Incorrect Answers Review -->
+        <div class="incorrect-review" id="incorrectReview" style="display: none;">
+          <h3>Przegląd błędów</h3>
+          <div class="review-list" id="reviewList">
+            <!-- Review items dynamically injected here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Panel: Settings & PWA Guide -->
+    <div class="settings-modal" id="settingsModal">
+      <div class="modal-content glass-panel">
+        <header class="modal-header">
+          <h2><i class="fa-solid fa-gears"></i> Ustawienia & Instrukcja</h2>
+          <button id="closeSettingsBtn" class="icon-btn" aria-label="Zamknij"><i class="fa-solid fa-xmark"></i></button>
+        </header>
+
+        <div class="modal-body">
+          <!-- Section A: Voice Synthesis Settings -->
+          <div class="settings-section">
+            <h3><i class="fa-solid fa-volume-high"></i> Ustawienia Lektora</h3>
+            <div class="control-group">
+              <label for="voiceRate"><i class="fa-solid fa-gauge-high"></i> Szybkość czytania: <span id="voiceRateVal">1.0</span>x</label>
+              <input type="range" id="voiceRate" min="0.5" max="2.0" step="0.1" value="1.0">
+            </div>
+            <div class="control-group">
+              <label for="voiceVolume"><i class="fa-solid fa-volume-low"></i> Głośność: <span id="voiceVolumeVal">100</span>%</label>
+              <input type="range" id="voiceVolume" min="0" max="1" step="0.1" value="1">
+            </div>
+          </div>
+
+          <!-- Section B: PWA Installation Guide -->
+          <div class="settings-section">
+            <h3><i class="fa-solid fa-mobile-screen-button"></i> Jak zainstalować jako PWA?</h3>
+            <p class="guide-intro">Dzięki technologii PWA możesz zainstalować aplikację na ekranie głównym swojego telefonu, co umożliwia jej pracę **bez dostępu do Internetu (offline)**.</p>
+            
+            <div class="pwa-tabs">
+              <div class="pwa-tab-buttons">
+                <button class="tab-btn active" data-tab="ios"><i class="fa-brands fa-apple"></i> iOS Safari</button>
+                <button class="tab-btn" data-tab="android"><i class="fa-brands fa-android"></i> Android</button>
+                <button class="tab-btn" data-tab="desktop"><i class="fa-solid fa-laptop"></i> Komputer</button>
+              </div>
+
+              <div class="pwa-tab-content">
+                <div class="tab-pane active" id="tab-ios">
+                  <ol class="guide-steps">
+                    <li>Otwórz tę stronę w przeglądarce <strong>Safari</strong> na swoim iPhonie.</li>
+                    <li>Stuknij ikonę <strong>Udostępnij</strong> (kwadrat z strzałką w górę) na dolnym pasku Safari.</li>
+                    <li>Przewiń menu w dół i wybierz opcję <strong>"Dodaj do ekranu początkowego"</strong>.</li>
+                    <li>Wpisz nazwę (np. "SSI Trainer") i zatwierdź klikając <strong>Dodaj</strong> w prawym górnym rogu.</li>
+                    <li>Ikona z logo <strong>Uki</strong> pojawi się na pulpicie Twojego telefonu!</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-android">
+                  <ol class="guide-steps">
+                    <li>Upewnij się, że korzystasz z przeglądarki <strong>Chrome</strong>.</li>
+                    <li>Kliknij przycisk <strong>"Zainstaluj"</strong> na bannerze na ekranie głównym aplikacji (jeśli jest widoczny).</li>
+                    <li>Jeśli go nie ma, stuknij ikonę <strong>trzech pionowych kropek</strong> w prawym górnym rogu Chrome.</li>
+                    <li>Wybierz opcję <strong>"Dodaj do ekranu głównego"</strong> lub <strong>"Zainstaluj aplikację"</strong>.</li>
+                    <li>Zatwierdź instalację. Aplikacja zostanie dodana do Twojego pulpitu i menu aplikacji.</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-desktop">
+                  <ol class="guide-steps">
+                    <li>Otwórz stronę w przeglądarce <strong>Google Chrome</strong> lub <strong>Microsoft Edge</strong>.</li>
+                    <li>Zwróć uwagę na prawą stronę paska adresu - zobaczysz tam ikonę <strong>monitora z małą strzałką</strong> ("Zainstaluj aplikację").</li>
+                    <li>Kliknij tę ikonę i zatwierdź klikając przycisk <strong>Zainstaluj</strong>.</li>
+                    <li>Aplikacja otworzy się w osobnym, eleganckim oknie bez pasków przeglądarki i zostanie dodana jako skrót na pulpicie.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section C: Technical details / Info -->
+          <div class="settings-section about-info">
+            <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
+            <p>Wersja 1.1.0 • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio elements for sound effects -->
+  <audio id="soundCorrect" src="https://assets.mixkit.co/active_storage/sfx/2019/2019-84.wav" preload="auto"></audio>
+  <audio id="soundIncorrect" src="https://assets.mixkit.co/active_storage/sfx/2505/2505-84.wav" preload="auto"></audio>
+
+  <!-- Import Question Database -->
+  <script src="questions.js"></script>
+  <!-- Import Core App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

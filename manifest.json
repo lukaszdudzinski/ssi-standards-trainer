@@ -1,0 +1,18 @@
+{
+  "name": "SSI Instructor Standards Trainer",
+  "short_name": "SSI Trainer",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b19",
+  "theme_color": "#070b19",
+  "orientation": "portrait",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
