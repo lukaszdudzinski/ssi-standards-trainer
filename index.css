@@ -664,6 +664,7 @@ body {
   font-size: 0.85rem;
   color: var(--text-secondary);
   transition: var(--transition-smooth);
+  flex-shrink: 0; /* Keep numbers perfectly circular! */
 }
 
 .answer-btn:hover {

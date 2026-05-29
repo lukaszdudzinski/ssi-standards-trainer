@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.29.01';
+const APP_VERSION = 'v2026.5.29.02';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -206,9 +206,30 @@ document.addEventListener('DOMContentLoaded', () => {
     loadPolishVoice();
   }
 
+  function playSilence() {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (AudioContext) {
+        const ctx = new AudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        gain.gain.setValueAtTime(0, ctx.currentTime);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        osc.stop(ctx.currentTime + 0.1);
+      }
+    } catch (e) {
+      console.log('CarPlay silence route error:', e);
+    }
+  }
+
   function speakText(text, callback) {
     if (!synth) return;
     synth.cancel();
+
+    // Activate CarPlay Bluetooth Media audio stream route dynamically!
+    playSilence();
 
     // Dynamically apply phonetic corrections so the Polish voice sounds flawless!
     const phoneticText = getPhoneticPolishText(text);
