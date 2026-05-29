@@ -2,7 +2,13 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
+const APP_VERSION = 'v2026.5.29.01';
+
 document.addEventListener('DOMContentLoaded', () => {
+  // Render version in UI
+  document.getElementById('appVersion').textContent = APP_VERSION;
+  document.getElementById('welcomeVersion').textContent = APP_VERSION;
+
   // --- UI Elements ---
   const welcomeScreen = document.getElementById('welcomeScreen');
   const quizScreen = document.getElementById('quizScreen');
@@ -242,18 +248,27 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  repeatSpeechBtn.addEventListener('click', () => {
-    if (currentQuestionIndex < activeQuestions.length) {
+  function repeatSpeech() {
+    if (currentQuestionIndex < activeQuestions.length && !isAnswered) {
       const q = activeQuestions[currentQuestionIndex];
-      // Speak even if autoplay is off when button is clicked manually
       let textToSpeak = `${q.question}. `;
       q.options.forEach((opt, idx) => {
         textToSpeak += `Opcja ${idx + 1}: ${opt}. `;
       });
-      speakText(textToSpeak);
+      
+      // Stop recognition while speaking to avoid feedback loops!
+      stopSpeechRecognition();
+      
+      speakText(textToSpeak, () => {
+        // If voice recognition is enabled, restart after lektor finishes
+        if (voiceControlToggle.checked && !isAnswered) {
+          startSpeechRecognition();
+        }
+      });
     }
-  });
+  }
+
+  repeatSpeechBtn.addEventListener('click', repeatSpeech);
 
   // --- 4. Speech Recognition (Polish Speech-to-Text) ---
   function initSpeechRecognition() {
@@ -291,6 +306,15 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 800);
           return;
         }
+      }
+
+      // Check for voice repeat command
+      if (result.includes('powtórz') || result.includes('jeszcze raz') || result.includes('czytaj') || result.includes('odczytaj') || result.includes('powtór')) {
+        voiceStatusText.innerHTML = `Wykryto komendę: <strong>Powtórz</strong>`;
+        setTimeout(() => {
+          repeatSpeech();
+        }, 500);
+        return;
       }
       
       let detectedIndex = -1;
@@ -339,8 +363,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     recognition.onend = () => {
       isListening = false;
-      // Auto-restart if toggle is still checked and question not yet answered
-      if (voiceControlToggle.checked && !isAnswered) {
+      // Auto-restart if toggle is checked AND (question is not answered OR feedback panel is active)
+      const isFeedbackActive = feedbackPanel.classList.contains('active');
+      if (voiceControlToggle.checked && (!isAnswered || isFeedbackActive)) {
         restartRecognitionSilently();
       } else {
         voiceStatusContainer.style.display = 'none';
@@ -369,11 +394,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function restartRecognitionSilently() {
-    if (!voiceControlToggle.checked || isAnswered) return;
+    const isFeedbackActive = feedbackPanel.classList.contains('active');
+    if (!voiceControlToggle.checked || (isAnswered && !isFeedbackActive)) return;
     
     clearTimeout(recognitionTimeout);
     recognitionTimeout = setTimeout(() => {
-      if (!isListening && !isAnswered) {
+      if (!isListening && (!isAnswered || isFeedbackActive)) {
         startSpeechRecognition();
       }
     }, 300);
@@ -531,7 +557,17 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Optionally read the correct citation aloud in Polish
         if (autoplayToggle.checked) {
-          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. W rozdziale ${q.reference.chapter}, strona ${q.reference.page}: ${q.reference.quote}`);
+          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. W rozdziale ${q.reference.chapter}, strona ${q.reference.page}: ${q.reference.quote}`, () => {
+            // Restart recognition to listen for "dalej" when lektor finishes
+            if (voiceControlToggle.checked) {
+              startSpeechRecognition();
+            }
+          });
+        } else {
+          // Start recognition immediately if autoplay is disabled
+          if (voiceControlToggle.checked) {
+            startSpeechRecognition();
+          }
         }
       }, 400);
     }
@@ -665,12 +701,51 @@ document.addEventListener('DOMContentLoaded', () => {
     deferredPrompt = null;
   });
 
-  // Register Service Worker for offline PWA support
+  // Register Service Worker for offline PWA support and update handling
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js')
-        .then(reg => console.log('Service Worker registered successfully:', reg.scope))
+        .then(reg => {
+          console.log('Service Worker registered successfully:', reg.scope);
+          
+          // Check for service worker updates
+          reg.addEventListener('updatefound', () => {
+            const newWorker = reg.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // New content is available, show update toast!
+                  showUpdateToast(reg);
+                }
+              });
+            }
+          });
+        })
         .catch(err => console.error('Service Worker registration failed:', err));
     });
+
+    // Handle controller change (reloads page when skipWaiting finishes)
+    let refreshing = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!refreshing) {
+        refreshing = true;
+        window.location.reload(true);
+      }
+    });
+  }
+
+  function showUpdateToast(reg) {
+    const toast = document.getElementById('updateToast');
+    const updateBtn = document.getElementById('updateToastBtn');
+    
+    if (toast && updateBtn) {
+      toast.classList.add('show');
+      updateBtn.addEventListener('click', () => {
+        toast.classList.remove('show');
+        if (reg.waiting) {
+          reg.waiting.postMessage({ action: 'skipWaiting' });
+        }
+      });
+    }
   }
 });

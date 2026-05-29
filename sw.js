@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ssi-standards-trainer-v1.1';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.5.29.01';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -6,6 +6,8 @@ const ASSETS_TO_CACHE = [
   './app.js',
   './questions.js',
   './logo.png',
+  './logo_pro_192.png',
+  './logo_pro_512.png',
   './manifest.json',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
@@ -57,4 +59,11 @@ self.addEventListener('fetch', (e) => {
       return fetch(e.request);
     })
   );
+});
+
+// Message listener for skipWaiting from active clients
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.action === 'skipWaiting') {
+    self.skipWaiting();
+  }
 });

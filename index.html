@@ -9,8 +9,8 @@
   
   <!-- PWA Manifest & Favicon -->
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" type="image/png" href="logo.png">
-  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="icon" type="image/png" href="logo_pro_192.png">
+  <link rel="apple-touch-icon" href="logo_pro_512.png">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -78,6 +78,10 @@
             <p>Korzystaj z aplikacji bez internetu (w trybie offline) na łodzi lub w bazie.</p>
           </div>
           <button id="installAppBtn" class="btn-install">Instaluj</button>
+        </div>
+
+        <div class="welcome-footer">
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.29.01</span></p>
         </div>
       </section>
 
@@ -262,6 +266,7 @@
                 <button class="tab-btn" data-tab="android"><i class="fa-brands fa-android"></i> Android</button>
                 <button class="tab-btn" data-tab="desktop"><i class="fa-solid fa-laptop"></i> Komputer</button>
                 <button class="tab-btn" data-tab="github"><i class="fa-brands fa-github"></i> Link na Telefon</button>
+                <button class="tab-btn" data-tab="bluetooth"><i class="fa-solid fa-car"></i> Bluetooth & Auto</button>
               </div>
 
               <div class="pwa-tab-content">
@@ -305,6 +310,15 @@
                     <li>Otwórz ten link na telefonie w Safari (iPhone) lub Chrome (Android) i postępuj zgodnie z instrukcją instalacji w pozostałych zakładkach!</li>
                   </ol>
                 </div>
+                <div class="tab-pane" id="tab-bluetooth">
+                  <p class="guide-intro">Instrukcje dotyczące Apple CarPlay, Bluetooth oraz ustawień głośności lektora w samochodzie:</p>
+                  <ol class="guide-steps">
+                    <li><strong>Dźwięki (Media) vs Mowa (Siri):</strong> System iOS dzieli audio na kategorie. Dźwięki systemowe (prawidłowa/błędna odpowiedź) to <em>Multimedia</em> i idą do głośników auta. Lektor czytający pytania (TTS) to kanał <em>Mowy (Siri/VoiceOver)</em>, który iOS domyślnie kieruje na głośnik telefonu, by nie przerywać muzyki w samochodzie.</li>
+                    <li><strong>Routing Audio w samochodzie:</strong> Aby skierować lektora na głośniki auta, otwórz <strong>Centrum Sterowania</strong> na iPhonie (przesunięcie palcem z prawego górnego rogu w dół), kliknij ikonę <strong>AirPlay/Audio</strong> w prawym górnym rogu karty odtwarzacza i ręcznie wybierz Bluetooth samochodu lub CarPlay jako docelowe urządzenie wyjściowe.</li>
+                    <li><strong>Głośność Lektora:</strong> Ponieważ głos lektora jest kontrolowany oddzielnie, standardowe przyciski głośności w samochodzie zmieniają tylko głośność efektów. Aby podgłośnić lektora, <strong>zwiększ głośność przyciskami telefonu dokładnie w momencie, gdy lektor odczytuje pytanie</strong>.</li>
+                    <li><strong>Ustawienia Dostępności iOS:</strong> Możesz również dostosować głośność lektora na stałe w telefonie wchodząc w: <em>Ustawienia -> Dostępność -> Czytanie zawartości -> Głosy</em> i dostosowując parametry wybranego głosu języka polskiego.</li>
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
@@ -312,12 +326,21 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja 1.1.0 • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.5.29.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Notification Toast for Updates -->
+  <div id="updateToast" class="update-toast">
+    <div class="toast-content">
+      <i class="fa-solid fa-cloud-arrow-down"></i>
+      <span id="updateToastText">Dostępna nowa wersja standardów!</span>
+    </div>
+    <button id="updateToastBtn" class="btn-update">Aktualizuj</button>
   </div>
 
   <!-- Audio elements for sound effects -->
