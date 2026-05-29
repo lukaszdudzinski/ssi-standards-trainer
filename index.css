@@ -1266,6 +1266,25 @@ input[type="range"]::-webkit-slider-thumb:hover {
   .feedback-panel {
     padding: 18px;
   }
+
+  .pwa-tab-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 6px;
+  }
+
+  .tab-btn {
+    padding: 10px 8px;
+    font-size: 0.72rem;
+    justify-content: center;
+  }
+
+  .tab-btn:last-child {
+    grid-column: span 2;
+  }
 }
 
 /* ==========================================================================
