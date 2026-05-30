@@ -776,12 +776,12 @@ const QUESTIONS_DB = [
       "12",
       "8 na jednego instruktora (lub do 10:2 z asystentami)"
     ],
-    "answer": 2,
+    "answer": 3,
     "reference": {
-      "chapter": "Prowadzenie programów SSI",
-      "section": "V. Współczynnik ilościowy w wodzie",
-      "page": 40,
-      "quote": "Maksymalny współczynnik ilościowy instruktor-kursant na basenie/wodach ograniczonych wynosi 12:1."
+      "chapter": "Open Water Diver (ISO 24801-2)",
+      "section": "VI. Współczynnik ilościowy w wodzie - Basen",
+      "page": 53,
+      "quote": "Współczynnik kursant-instruktor: 8:1. Współczynnik może wzrosnąć do 10:2 z jednym (1) certyfikowanym asystentem lub do 12:3 z dwoma (2) certyfikowanymi asystentami."
     }
   },
   {

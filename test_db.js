@@ -94,6 +94,13 @@ try {
     assert(correctAnswerText.includes('8:1') || correctAnswerText === '8:1', 'OWD ratio for standard students above 15 must be 8:1');
   }
 
+  // Rule F2: Open Water Diver standard pool/confined water ratio is 8:1
+  const owdPoolRatioQ = QUESTIONS_DB.find(q => q.question.includes('maksymalna liczba kursantów kursu Open Water Diver, których instruktor może szkolić w basenie/wodach ograniczonych'));
+  if (owdPoolRatioQ) {
+    const correctAnswerText = owdPoolRatioQ.options[owdPoolRatioQ.answer];
+    assert(correctAnswerText.includes('8 na jednego') || correctAnswerText.includes('8:1'), 'OWD pool ratio must be 8:1 (or 8 na jednego)');
+  }
+
   // Rule G: Open Water Diver water session ratio with 1 assistant (above 13yo) is 6:2
   const owdAssistantRatioQ = QUESTIONS_DB.find(q => q.question.includes('w wodzie otwartej z jednym certyfikowanym asystentem podczas programu Open Water Diver dla Kursantów, którzy ukończyli 13 lat'));
   if (owdAssistantRatioQ) {
