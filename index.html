@@ -60,6 +60,19 @@
           <p class="welcome-desc">Zwiększ swoje szanse na egzaminie instruktorskim (ITC/IE). Naucz się na pamięć głębokości, limitów wiekowych, proporcji ilościowych oraz procedur szkoleniowych.</p>
         </div>
 
+        <!-- Thematic Category Selection -->
+        <div class="category-selection-container">
+          <label for="categoryFilter"><i class="fa-solid fa-tags"></i> Dział Nauki:</label>
+          <select id="categoryFilter" class="glass-select">
+            <option value="all">Wszystko (wczytywanie...)</option>
+            <option value="metodyka">Metodyka i Psychologia (wczytywanie...)</option>
+            <option value="ogolne">Standardy Ogólne (wczytywanie...)</option>
+            <option value="wspolczynniki">Współczynniki i Wiek (wczytywanie...)</option>
+            <option value="fizyka">Fizyka i Fizjologia (wczytywanie...)</option>
+            <option value="specjalizacje">Specjalizacje (wczytywanie...)</option>
+          </select>
+        </div>
+
         <div class="welcome-modes">
           <button id="startTestBtn" class="btn btn-primary">
             <span class="btn-icon"><i class="fa-solid fa-clipboard-question"></i></span>
@@ -71,10 +84,26 @@
             <span class="btn-text">Pełna Baza Pytań <small>Tryb nauki bez limitów</small></span>
           </button>
           
+          <button id="startFlashcardsBtn" class="btn btn-secondary" style="margin-top: 10px; background: rgba(138, 43, 226, 0.05); border: 1px solid rgba(138, 43, 226, 0.2);">
+            <span class="btn-icon" style="color: #a78bfa;"><i class="fa-solid fa-clone"></i></span>
+            <span class="btn-text">Tryb Fiszki <small>Obracaj karty i powtarzaj reguły</small></span>
+          </button>
+          
           <button id="openPdfMainMenuBtn" class="btn btn-secondary" style="margin-top: 10px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2);">
             <span class="btn-icon" style="color: var(--color-cyan);"><i class="fa-solid fa-file-pdf"></i></span>
             <span class="btn-text">Standardy SSI (PDF) <small>Otwórz oficjalny podręcznik</small></span>
           </button>
+        </div>
+
+        <!-- Weakness Analytics Panel -->
+        <div class="stats-panel glass-panel-sub">
+          <h3><i class="fa-solid fa-chart-pie"></i> Twój Poziom Wiedzy</h3>
+          <div class="stats-grid" id="statsGrid">
+            <!-- Dynamically populated -->
+          </div>
+          <div class="stats-actions">
+            <button id="resetStatsBtn" class="btn-reset-stats"><i class="fa-solid fa-trash-can"></i> Resetuj statystyki</button>
+          </div>
         </div>
 
         <div class="pwa-install-banner" id="pwaBanner" style="display: none;">
@@ -87,6 +116,86 @@
 
         <div class="welcome-footer">
           <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.30.04</span></p>
+        </div>
+      </section>
+
+      <!-- Screen 1.5: Flashcards Screen -->
+      <section id="flashcardScreen" class="glass-panel">
+        <div class="quiz-top-actions">
+          <button id="quitFlashcardsBtn" class="quit-btn" title="Wróć do menu głównego">
+            <i class="fa-solid fa-arrow-left"></i> Menu Główne
+          </button>
+        </div>
+
+        <div class="quiz-status">
+          <div class="status-item timer">
+            <i class="fa-solid fa-clone"></i>
+            <span>Fiszki</span>
+          </div>
+          <div class="status-item progress">
+            <span id="flashcardProgressText">Karta 1 / 50</span>
+          </div>
+          <div class="status-item score" style="color: var(--color-cyan);">
+            <i class="fa-solid fa-check"></i>
+            <span id="flashcardLearnedText">0</span>
+          </div>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="flashcardProgressBarFill" style="width: 0%;"></div>
+        </div>
+
+        <!-- 3D Card Container -->
+        <div class="flashcard-container" id="flashcardContainer">
+          <div class="flashcard" id="flashcard">
+            <!-- Card Front -->
+            <div class="card-face card-front">
+              <span class="card-hint">PYTANIE</span>
+              <h3 id="flashcardFrontText">Treść pytania pojawi się tutaj...</h3>
+              <span class="card-action-hint"><i class="fa-solid fa-rotate"></i> Stuknij, aby obrócić</span>
+            </div>
+            <!-- Card Back -->
+            <div class="card-face card-back">
+              <span class="card-hint" style="color: var(--color-green);">PRAWIDŁOWA ODPOWIEDŹ</span>
+              <h4 id="flashcardBackText">Odpowiedź pojawi się tutaj...</h4>
+              
+              <div class="ref-container" style="margin-top: 14px; width: 100%;">
+                <div class="ref-meta">
+                  <span class="ref-tag chapter" id="flashcardRefChapter"><i class="fa-solid fa-book"></i> Rozdział</span>
+                </div>
+                <div class="ref-page-badge">
+                  <span class="page-label">Strona</span>
+                  <span class="page-num page-badge-static" id="flashcardRefPage">54</span>
+                </div>
+              </div>
+
+              <div class="ref-quote" style="margin-top: 10px; width: 100%; max-height: 80px; overflow-y: auto;">
+                <p id="flashcardRefQuote">"Cytat ze standardów..."</p>
+              </div>
+
+              <button id="flashcardPdfBtn" class="pdf-feedback-btn" style="margin-top: 14px; width: 100%;">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Pokaż tę regułę w standardach</span>
+                <span class="btn-page-indicator">str. <span id="flashcardFeedbackPdfPageNum">54</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcards Controls -->
+        <div class="flashcard-controls">
+          <button id="flashcardFlipBtn" class="btn btn-secondary" style="justify-content: center; padding: 12px;">
+            <i class="fa-solid fa-rotate"></i> Obróć kartę
+          </button>
+          
+          <div class="flashcard-answers-row">
+            <button id="flashcardIncorrectBtn" class="btn flashcard-action-btn" style="background: rgba(255, 77, 77, 0.1); border-color: rgba(255, 77, 77, 0.2); color: var(--color-red); justify-content: center; font-size: 0.9rem;">
+              ❌ Jeszcze nie umiem
+            </button>
+            <button id="flashcardCorrectBtn" class="btn flashcard-action-btn" style="background: rgba(0, 223, 137, 0.1); border-color: rgba(0, 223, 137, 0.2); color: var(--color-green); justify-content: center; font-size: 0.9rem;">
+              ✅ Znam to!
+            </button>
+          </div>
         </div>
       </section>
 

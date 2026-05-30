@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.09';
+const APP_VERSION = 'v2026.5.30.10';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -74,6 +74,30 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressRingCircle = document.getElementById('progressRingCircle');
   const incorrectReview = document.getElementById('incorrectReview');
   const reviewList = document.getElementById('reviewList');
+
+  // --- Premium UI Elements ---
+  const categoryFilter = document.getElementById('categoryFilter');
+  const startFlashcardsBtn = document.getElementById('startFlashcardsBtn');
+  const statsGrid = document.getElementById('statsGrid');
+  const resetStatsBtn = document.getElementById('resetStatsBtn');
+  
+  const flashcardScreen = document.getElementById('flashcardScreen');
+  const quitFlashcardsBtn = document.getElementById('quitFlashcardsBtn');
+  const flashcardProgressText = document.getElementById('flashcardProgressText');
+  const flashcardLearnedText = document.getElementById('flashcardLearnedText');
+  const flashcardProgressBarFill = document.getElementById('flashcardProgressBarFill');
+  const flashcardContainer = document.getElementById('flashcardContainer');
+  const flashcard = document.getElementById('flashcard');
+  const flashcardFrontText = document.getElementById('flashcardFrontText');
+  const flashcardBackText = document.getElementById('flashcardBackText');
+  const flashcardRefChapter = document.getElementById('flashcardRefChapter');
+  const flashcardRefPage = document.getElementById('flashcardRefPage');
+  const flashcardRefQuote = document.getElementById('flashcardRefQuote');
+  const flashcardPdfBtn = document.getElementById('flashcardPdfBtn');
+  const flashcardFeedbackPdfPageNum = document.getElementById('flashcardFeedbackPdfPageNum');
+  const flashcardFlipBtn = document.getElementById('flashcardFlipBtn');
+  const flashcardIncorrectBtn = document.getElementById('flashcardIncorrectBtn');
+  const flashcardCorrectBtn = document.getElementById('flashcardCorrectBtn');
   
   // Procedural Web Audio API sound synthesizers (100% offline & zero network calls!)
   function playSynthesizedCorrect() {
@@ -152,6 +176,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let secondsElapsed = 0;
   let isExamMode = false; // true = 50 random questions, false = all questions
   
+  // Premium State variables
+  let isFlashcardMode = false;
+  let flashcardLearnedCount = 0;
+  let isCardFlipped = false;
+  
   // Voice Synthesis & Recognition variables
   let synth = window.speechSynthesis;
   let speechUtterance = null;
@@ -189,6 +218,236 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   initTheme();
+
+  // --- Dynamic Category Classification & Analytics System (v2026.5.30.10) ---
+
+  // Dynamic keyword and chapter-based category classifier (Krok 2.2)
+  function getQuestionCategory(q) {
+    if (q.category) {
+      // Map potential internal keys to canonical names
+      const normalized = q.category.toLowerCase().trim();
+      if (normalized.includes('metodyka') || normalized.includes('psychologia')) return 'Metodyka i Psychologia';
+      if (normalized.includes('ogolne') || normalized.includes('standardy')) return 'Standardy Ogólne';
+      if (normalized.includes('wspolczynniki') || normalized.includes('wiek') || normalized.includes('proporcj')) return 'Współczynniki i Wiek';
+      if (normalized.includes('fizyka') || normalized.includes('fizjologia')) return 'Fizyka i Fizjologia';
+      if (normalized.includes('specjalizacje') || normalized.includes('specjaln')) return 'Specjalizacje';
+      return q.category; // fallback to whatever string is there
+    }
+    
+    const questionText = q.question.toLowerCase();
+    const chapterText = (q.reference?.chapter || "").toLowerCase();
+    const sectionText = (q.reference?.section || "").toLowerCase();
+    
+    // 1. Współczynniki i Wiek
+    if (
+      questionText.includes('współczynnik') ||
+      questionText.includes('wiek') ||
+      questionText.includes('głębokość') ||
+      questionText.includes('limit głębokości') ||
+      questionText.includes('proporcj') ||
+      questionText.includes('stosunek') ||
+      questionText.includes('maksymalna liczba') ||
+      questionText.includes('ile lat') ||
+      questionText.includes('ilu kursantów') ||
+      sectionText.includes('współczynnik') ||
+      sectionText.includes('limity') ||
+      chapterText.includes('współczynnik')
+    ) {
+      return 'Współczynniki i Wiek';
+    }
+    
+    // 2. Fizyka i Fizjologia
+    if (
+      questionText.includes('oświadczenia zdrowotnego') ||
+      questionText.includes('oświadczenie zdrowotne') ||
+      questionText.includes('oświadczenia medycznego') ||
+      questionText.includes('oświadczenie medyczne') ||
+      questionText.includes('medyczn') ||
+      questionText.includes('nitrox') ||
+      questionText.includes('nitroks') ||
+      questionText.includes('dekompres') ||
+      questionText.includes('altitude') ||
+      questionText.includes('science of diving') ||
+      chapterText.includes('science of diving') ||
+      sectionText.includes('nitrox') ||
+      sectionText.includes('nitroks') ||
+      questionText.includes('fizyk') ||
+      questionText.includes('fizjolog') ||
+      questionText.includes('ciśnienie') ||
+      questionText.includes('zużycie powietrza') ||
+      questionText.includes('przerwanie ciągłości') ||
+      questionText.includes('tkanki płucnej') ||
+      questionText.includes('grupa powtórzeniowa') ||
+      questionText.includes('przerwa powierzchniowa') ||
+      questionText.includes('ppo2') ||
+      questionText.includes('mod dla') ||
+      questionText.includes('ucisk') ||
+      questionText.includes('squeeze')
+    ) {
+      return 'Fizyka i Fizjologia';
+    }
+    
+    // 3. Specjalizacje
+    if (
+      chapterText.includes('specjalizacj') ||
+      sectionText.includes('specjalizacj') ||
+      questionText.includes('perfect buoyancy') ||
+      questionText.includes('dry suit') ||
+      questionText.includes('suchego skafandra') ||
+      questionText.includes('night & limited') ||
+      questionText.includes('deep diving') ||
+      questionText.includes('navigation') ||
+      questionText.includes('ecology') ||
+      questionText.includes('computer diving') ||
+      questionText.includes('explorers') ||
+      questionText.includes('explorer') ||
+      questionText.includes('advanced adventurer') ||
+      questionText.includes('advanced open water') ||
+      chapterText.includes('explorers') ||
+      chapterText.includes('advanced open water')
+    ) {
+      return 'Specjalizacje';
+    }
+
+    // 4. Metodyka i Psychologia
+    if (
+      chapterText.includes('ocena sprawności') ||
+      chapterText.includes('prowadzenie programów') ||
+      sectionText.includes('nadzór') ||
+      questionText.includes('nadzór') ||
+      questionText.includes('współnauczania') ||
+      questionText.includes('co-teaching') ||
+      questionText.includes('sprawności fizycznej') ||
+      questionText.includes('stres') ||
+      questionText.includes('rescue') ||
+      questionText.includes('psycholog') ||
+      questionText.includes('metod') ||
+      questionText.includes('ocena sprawności') ||
+      questionText.includes('filozofia') ||
+      questionText.includes('cykl lojalnościowy') ||
+      questionText.includes('diament nurka') ||
+      questionText.includes('komfort przez powtarzanie') ||
+      questionText.includes('uczenie się') ||
+      questionText.includes('domenie') ||
+      questionText.includes('kognitywnej') ||
+      questionText.includes('afektywnej') ||
+      questionText.includes('psychomotorycznej') ||
+      questionText.includes('dorosłych') ||
+      questionText.includes('andragogik') ||
+      questionText.includes('mentor')
+    ) {
+      return 'Metodyka i Psychologia';
+    }
+
+    // 5. Standardy Ogólne (Default)
+    return 'Standardy Ogólne';
+  }
+
+  // Update Dropdown numbers and render stats dashboard (Krok 2.2 / 2.4)
+  function updateCategoryOptionsAndStats() {
+    const counts = {
+      'all': QUESTIONS_DB.length,
+      'Metodyka i Psychologia': 0,
+      'Standardy Ogólne': 0,
+      'Współczynniki i Wiek': 0,
+      'Fizyka i Fizjologia': 0,
+      'Specjalizacje': 0
+    };
+    
+    QUESTIONS_DB.forEach(q => {
+      const cat = getQuestionCategory(q);
+      if (counts[cat] !== undefined) {
+        counts[cat]++;
+      }
+    });
+
+    // Update index.html Dropdown option labels
+    const options = categoryFilter.options;
+    for (let i = 0; i < options.length; i++) {
+      const val = options[i].value;
+      if (val === 'all') {
+        options[i].textContent = `Wszystko (${counts['all']})`;
+      } else if (val === 'metodyka') {
+        options[i].textContent = `Metodyka i Psychologia (${counts['Metodyka i Psychologia']})`;
+      } else if (val === 'ogolne') {
+        options[i].textContent = `Standardy Ogólne (${counts['Standardy Ogólne']})`;
+      } else if (val === 'wspolczynniki') {
+        options[i].textContent = `Współczynniki i Wiek (${counts['Współczynniki i Wiek']})`;
+      } else if (val === 'fizyka') {
+        options[i].textContent = `Fizyka i Fizjologia (${counts['Fizyka i Fizjologia']})`;
+      } else if (val === 'specjalizacje') {
+        options[i].textContent = `Specjalizacje (${counts['Specjalizacje']})`;
+      }
+    }
+
+    // Render Stats panel on Welcome Screen
+    const statsHistory = JSON.parse(localStorage.getItem('ssi_stats_history')) || {};
+    statsGrid.innerHTML = '';
+
+    const categories = [
+      { key: 'Metodyka i Psychologia', icon: 'fa-graduation-cap', color: '#a78bfa' },
+      { key: 'Standardy Ogólne', icon: 'fa-book', color: '#38bdf8' },
+      { key: 'Współczynniki i Wiek', icon: 'fa-arrow-down-up-across-line', color: '#fb923c' },
+      { key: 'Fizyka i Fizjologia', icon: 'fa-heart-pulse', color: '#f87171' },
+      { key: 'Specjalizacje', icon: 'fa-award', color: '#34d399' }
+    ];
+
+    categories.forEach(cat => {
+      const stat = statsHistory[cat.key] || { correct: 0, incorrect: 0 };
+      const total = stat.correct + stat.incorrect;
+      const rate = total > 0 ? Math.round((stat.correct / total) * 100) : 0;
+      
+      const barEl = document.createElement('div');
+      barEl.className = 'stats-item-bar';
+      barEl.innerHTML = `
+        <div class="stats-info">
+          <span class="stats-label"><i class="fa-solid ${cat.icon}" style="color: ${cat.color};"></i> ${cat.key}</span>
+          <span class="stats-value">${stat.correct}/${total} (${rate}%)</span>
+        </div>
+        <div class="stats-meter">
+          <div class="stats-meter-fill" style="width: ${rate}%; background: linear-gradient(90deg, ${cat.color}, #ffffff);"></div>
+        </div>
+      `;
+      statsGrid.appendChild(barEl);
+    });
+  }
+
+  // Record question attempt stats (Krok 2.4)
+  function recordQuestionAttempt(questionObj, isCorrect) {
+    // Only record stats if not a session retry and not in flashcard mode
+    if (questionObj.isRetry || isFlashcardMode) return;
+    
+    const cat = getQuestionCategory(questionObj);
+    const statsHistory = JSON.parse(localStorage.getItem('ssi_stats_history')) || {};
+    
+    if (!statsHistory[cat]) {
+      statsHistory[cat] = { correct: 0, incorrect: 0 };
+    }
+    
+    if (isCorrect) {
+      statsHistory[cat].correct++;
+    } else {
+      statsHistory[cat].incorrect++;
+    }
+    
+    localStorage.setItem('ssi_stats_history', JSON.stringify(statsHistory));
+    updateCategoryOptionsAndStats();
+  }
+
+  // Reset stats history (Krok 2.4)
+  function resetStatsHistory() {
+    if (confirm("Czy na pewno chcesz zresetować wszystkie statystyki nauki oraz kolejkę powtórek?")) {
+      localStorage.removeItem('ssi_stats_history');
+      localStorage.removeItem('ssi_spaced_repetition_errors');
+      updateCategoryOptionsAndStats();
+      alert("Statystyki i powtórki zostały zresetowane.");
+    }
+  }
+
+  resetStatsBtn.addEventListener('click', resetStatsHistory);
+  
+  // Init categories and stats view on start
+  updateCategoryOptionsAndStats();
 
   // --- 1.5 Load & Save PWA Settings ---
   function initSettings() {
@@ -591,16 +850,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function startQuiz(mode) {
     isExamMode = (mode === 'exam');
+    isFlashcardMode = false;
     
-    // Shuffle the QUESTIONS_DB from questions.js
-    const shuffledPool = shuffleArray(QUESTIONS_DB);
+    // 1. Filter by category (Krok 2.2)
+    const selectedCategoryVal = categoryFilter.value;
+    let filteredPool = QUESTIONS_DB;
+    
+    if (selectedCategoryVal !== 'all') {
+      const canonicalMap = {
+        'metodyka': 'Metodyka i Psychologia',
+        'ogolne': 'Standardy Ogólne',
+        'wspolczynniki': 'Współczynniki i Wiek',
+        'fizyka': 'Fizyka i Fizjologia',
+        'specjalizacje': 'Specjalizacje'
+      };
+      const selectedCanonical = canonicalMap[selectedCategoryVal];
+      filteredPool = QUESTIONS_DB.filter(q => getQuestionCategory(q) === selectedCanonical);
+    }
+
+    if (filteredPool.length === 0) {
+      alert("Brak pytań w wybranej kategorii!");
+      return;
+    }
+
+    // 2. Identify Spaced Repetition questions (previously failed) (Krok 2.3)
+    const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+    const failedQuestions = [];
+    const otherQuestions = [];
+    
+    filteredPool.forEach(q => {
+      // Clean flags
+      delete q.isSpacedRepetition;
+      if (spacedRepErrors.includes(q.question)) {
+        const copy = { ...q, isSpacedRepetition: true };
+        failedQuestions.push(copy);
+      } else {
+        otherQuestions.push({ ...q });
+      }
+    });
+
+    // 3. Shuffle both separately and combine
+    const shuffledFailed = shuffleArray(failedQuestions);
+    const shuffledOthers = shuffleArray(otherQuestions);
+    const finalPool = [...shuffledFailed, ...shuffledOthers];
     
     if (isExamMode) {
-      // 50 random questions for Exam Mode
-      activeQuestions = shuffledPool.slice(0, Math.min(50, shuffledPool.length));
+      // 50 questions for Exam Mode
+      activeQuestions = finalPool.slice(0, Math.min(50, finalPool.length));
     } else {
       // All questions for Study Mode
-      activeQuestions = shuffledPool;
+      activeQuestions = finalPool;
     }
 
     currentQuestionIndex = 0;
@@ -695,6 +994,14 @@ document.addEventListener('DOMContentLoaded', () => {
       badge.className = 'retry-badge';
       badge.innerHTML = '<i class="fa-solid fa-clock-rotate-left"></i> Powtórka';
       questionCard.querySelector('.question-actions').appendChild(badge);
+    } else if (q.isSpacedRepetition) {
+      const badge = document.createElement('span');
+      badge.className = 'retry-badge';
+      badge.style.background = 'rgba(0, 242, 254, 0.12)';
+      badge.style.borderColor = 'rgba(0, 242, 254, 0.25)';
+      badge.style.color = 'var(--color-cyan)';
+      badge.innerHTML = '<i class="fa-solid fa-clock"></i> Powtórka (Spaced Rep)';
+      questionCard.querySelector('.question-actions').appendChild(badge);
     }
 
     // Autoplay voice synthesis if enabled
@@ -732,6 +1039,17 @@ document.addEventListener('DOMContentLoaded', () => {
       selectedBtn.classList.add('correct');
       playSynthesizedCorrect();
 
+      // Krok 2.4: Record attempt and Krok 2.3: Remove from Spaced Repetition queue
+      recordQuestionAttempt(q, true);
+      if (!q.isRetry) {
+        const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+        const indexToRemove = spacedRepErrors.indexOf(q.question);
+        if (indexToRemove !== -1) {
+          spacedRepErrors.splice(indexToRemove, 1);
+          localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+        }
+      }
+
       // Go to next question after short delay
       setTimeout(() => {
         advanceQuestion();
@@ -742,6 +1060,16 @@ document.addEventListener('DOMContentLoaded', () => {
       selectedBtn.classList.add('incorrect');
       correctBtn.classList.add('correct');
       playSynthesizedIncorrect();
+
+      // Krok 2.4: Record attempt and Krok 2.3: Add to Spaced Repetition queue
+      recordQuestionAttempt(q, false);
+      if (!q.isRetry) {
+        const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+        if (!spacedRepErrors.includes(q.question)) {
+          spacedRepErrors.push(q.question);
+          localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+        }
+      }
       
       // Save incorrect question for end review (only if it wasn't already a retry)
       if (!q.isRetry) {
@@ -900,6 +1228,170 @@ document.addEventListener('DOMContentLoaded', () => {
       stopSpeechRecognition();
       quizScreen.classList.remove('active');
       welcomeScreen.classList.add('active');
+    }
+  });
+
+  // --- Tryb Fiszki (Flashcards Engine) (Krok 2.1) ---
+  
+  function startFlashcards() {
+    isFlashcardMode = true;
+    isExamMode = false;
+    flashcardLearnedCount = 0;
+    
+    // 1. Filter by category
+    const selectedCategoryVal = categoryFilter.value;
+    let filteredPool = QUESTIONS_DB;
+    
+    if (selectedCategoryVal !== 'all') {
+      const canonicalMap = {
+        'metodyka': 'Metodyka i Psychologia',
+        'ogolne': 'Standardy Ogólne',
+        'wspolczynniki': 'Współczynniki i Wiek',
+        'fizyka': 'Fizyka i Fizjologia',
+        'specjalizacje': 'Specjalizacje'
+      };
+      const selectedCanonical = canonicalMap[selectedCategoryVal];
+      filteredPool = QUESTIONS_DB.filter(q => getQuestionCategory(q) === selectedCanonical);
+    }
+
+    if (filteredPool.length === 0) {
+      alert("Brak pytań w wybranej kategorii!");
+      return;
+    }
+
+    // Shuffle the pool for flashcards
+    activeQuestions = shuffleArray(filteredPool);
+    currentQuestionIndex = 0;
+    
+    welcomeScreen.classList.remove('active');
+    flashcardScreen.classList.add('active');
+    
+    loadFlashcard(0);
+  }
+
+  function loadFlashcard(index) {
+    isCardFlipped = false;
+    flashcard.classList.remove('flipped');
+    
+    if (synth) synth.cancel();
+    stopSpeechRecognition();
+
+    const q = activeQuestions[index];
+    
+    // Progress UI
+    flashcardProgressText.textContent = `Karta ${index + 1} / ${activeQuestions.length}`;
+    flashcardLearnedText.textContent = flashcardLearnedCount;
+    
+    const progressPercent = (index / activeQuestions.length) * 100;
+    flashcardProgressBarFill.style.width = `${progressPercent}%`;
+
+    // Render texts
+    flashcardFrontText.textContent = q.question;
+    flashcardBackText.textContent = q.options[q.answer];
+    flashcardRefChapter.innerHTML = `<i class="fa-solid fa-book"></i> ${q.reference.chapter}`;
+    flashcardRefPage.textContent = q.reference.page;
+    flashcardFeedbackPdfPageNum.textContent = q.reference.page;
+    flashcardRefQuote.textContent = `"${q.reference.quote}"`;
+
+    // Autoplay TTS for front card if enabled
+    if (autoplayToggle.checked) {
+      setTimeout(() => {
+        speakText(q.question);
+      }, 300);
+    }
+  }
+
+  function flipFlashcard() {
+    isCardFlipped = !isCardFlipped;
+    if (isCardFlipped) {
+      flashcard.classList.add('flipped');
+      playSynthesizedCorrect(); // light audio chime on flip
+      
+      const q = activeQuestions[currentQuestionIndex];
+      // Autoplay TTS for correct answer citation if enabled
+      if (autoplayToggle.checked) {
+        speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`);
+      }
+    } else {
+      flashcard.classList.remove('flipped');
+    }
+  }
+
+  function markFlashcardLearned(isLearned) {
+    const q = activeQuestions[currentQuestionIndex];
+    
+    if (isLearned) {
+      flashcardLearnedCount++;
+      // Remove from Spaced Repetition queue if they know it!
+      const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+      const idxToRemove = spacedRepErrors.indexOf(q.question);
+      if (idxToRemove !== -1) {
+        spacedRepErrors.splice(idxToRemove, 1);
+        localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+      }
+    } else {
+      // Add to Spaced Repetition queue if they don't know it!
+      const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+      if (!spacedRepErrors.includes(q.question)) {
+        spacedRepErrors.push(q.question);
+        localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+      }
+    }
+
+    currentQuestionIndex++;
+    if (currentQuestionIndex < activeQuestions.length) {
+      loadFlashcard(currentQuestionIndex);
+    } else {
+      // Finished all cards!
+      alert(`Gratulacje! Przejrzałeś wszystkie fiszki w tym dziale. Twój wynik: ${flashcardLearnedCount} / ${activeQuestions.length} zapamiętanych.`);
+      quitFlashcards();
+    }
+  }
+
+  function quitFlashcards() {
+    if (synth) synth.cancel();
+    stopSpeechRecognition();
+    
+    flashcardScreen.classList.remove('active');
+    welcomeScreen.classList.add('active');
+    
+    // Refresh stats dashboard
+    updateCategoryOptionsAndStats();
+  }
+
+  // --- Flashcard Event Bindings ---
+  startFlashcardsBtn.addEventListener('click', startFlashcards);
+  quitFlashcardsBtn.addEventListener('click', quitFlashcards);
+  flashcardFlipBtn.addEventListener('click', flipFlashcard);
+  
+  // Tapping the card also flips it!
+  flashcardContainer.addEventListener('click', (e) => {
+    // Avoid double flipping when clicking buttons or scrollbars inside the card back
+    if (e.target.closest('button') || e.target.closest('.ref-quote')) return;
+    flipFlashcard();
+  });
+  
+  flashcardIncorrectBtn.addEventListener('click', () => markFlashcardLearned(false));
+  flashcardCorrectBtn.addEventListener('click', () => markFlashcardLearned(true));
+  
+  flashcardPdfBtn.addEventListener('click', () => {
+    const pageNumVal = parseInt(flashcardFeedbackPdfPageNum.textContent.trim()) || 1;
+    openPdfViewer(pageNumVal);
+  });
+
+  // Premium Keyboard Shortcuts for Desktop
+  document.addEventListener('keydown', (e) => {
+    if (flashcardScreen.classList.contains('active')) {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        flipFlashcard();
+      } else if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        markFlashcardLearned(false);
+      } else if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        markFlashcardLearned(true);
+      }
     }
   });
 
