@@ -4982,6 +4982,857 @@ const QUESTIONS_DB = [
     },
     "category": "Współczynniki i Wiek"
   }
+,
+  {
+    "question": "Który z poniższych zestawów wymagań jest poprawny dla uzyskania stopnia Master Diver, będącego najwyższym wyróżnieniem w nurkowaniu rekreacyjnym?",
+    "options": [
+          "Ukończenie 4 specjalizacji, kursu Diver Stress & Rescue oraz posiadanie 50 zalogowanych nurkowań.",
+          "Ukończenie 5 dowolnych specjalizacji (w tym Deep Diving) oraz posiadanie 50 zalogowanych nurkowań.",
+          "Ukończenie 4 specjalizacji, w tym Deep i Navigation, oraz 100 zalogowanych nurkowań.",
+          "Ukończenie dowolnych 4 specjalizacji oraz 50 zalogowanych nurkowań, bez konieczności Stress & Rescue."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Karty Uznania SSI",
+      "section": "Master Diver Wymagania",
+      "page": 117,
+      "quote": "Master Diver (wymagania: 4 specjalizacje + Diver Stress & Rescue + 50 nurkowań)."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Ile certyfikatów z uznanych agencji zewnętrznych (nie-SSI) można maksymalnie zaliczyć na poczet wymagań karty uznaniowej Master Diver?",
+    "options": [
+          "Wszystkie, pod warunkiem przeprowadzenia Experienced Diver Test.",
+          "Maksymalnie jeden.",
+          "Maksymalnie dwa.",
+          "Żadnego; wszystkie specjalizacje do stopnia Master Diver must być ukończone w SSI."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Tabele Równoważności",
+      "section": "Master Diver agencje zewnętrzne",
+      "page": 170,
+      "quote": "(Zgodnie z systemem SSI): Na poczet Master Diver można zaliczyć maksymalnie dwie certyfikacje agencji zewnętrznych."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaka jest zasadnicza różnica w procedurze wydawania kart „Uznania za postępy” (np. Specialty Diver) a kart „Uznania za doświadczenie” (np. Century Diver, Gold, Platinum)?",
+    "options": [
+          "Karty za doświadczenie wymagają egzaminu końcowego, karty za postępy tylko logbooka.",
+          "Karty za postępy są wydawane po ukończeniu konkretnych programów, karty za doświadczenie bazują wyłącznie na liczbie zalogowanych nurkowań (np. Century = 100, Platinum = 1000).",
+          "Karty za doświadczenie muszą być zawsze podpisane przez Instructor Trainera.",
+          "Nie ma różnicy; obie grupy wymagają ukończenia sesji akademickiej."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Karty Uznania SSI",
+      "section": "Uznanie za doświadczenie a postępy",
+      "page": 118,
+      "quote": "Uznanie za doświadczenie w nurkowaniu: Century Diver (100 nurkowań), Gold (500), Platinum (1000)..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "W przypadku programów uznaniowych, które nie posiadają egzaminu końcowego, Profesjonalista SSI wydający kartę jest zobowiązany do:",
+    "options": [
+          "Automatycznego wydania karty po wpisaniu nurkowań do MySSI.",
+          "Zweryfikowania wiedzy kursanta poprzez ukończenie sesji akademickiej lub zadawanie pytań.",
+          "Pobrania opłaty i wydania karty bez dodatkowej weryfikacji.",
+          "Uzyskania zgody od Regionalnego Managera QMS."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 16,
+      "quote": "Professional SSI wydający kartę certyfikacji lub uznania musi zweryfikować, czy Kursant posiada odpowiedni poziom wiedzy poprzez ukończenie sesji akademickiej lub poprzez zadawanie pytań."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Czy karta uznaniowa SSI (np. Platinum Diver) uprawnia do samodzielnego nurkowania bez dodatkowego przeszkolenia?",
+    "options": [
+          "Tak, jeśli nurek posiada stopień Open Water Diver.",
+          "Tak, ale tylko do głębokości 12 metrów.",
+          "Nie, jest ona dowodem doświadczenia, ale nie stanowi licencji uprawniającej do nowych form aktywności bez szkolenia.",
+          "Tak, każda karta uznaniowa SSI jest równoważna z certyfikatem Open Water Diver."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Definicje Programów",
+      "section": "Karty uznaniowe - Uprawnienia",
+      "page": 10,
+      "quote": "Karta uznaniowa jest dowodem posiadanego doświadczenia, ale nie kwalifikuje kursanta do samodzielnego nurkowania bez dodatkowego przeszkolenia."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki jest maksymalny czas na przetworzenie certyfikacji lub karty uznaniowej w systemie MySSI od momentu zakończenia programu?",
+    "options": [
+          "24 godziny.",
+          "72 godziny.",
+          "7 dni.",
+          "14 dni."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 16,
+      "quote": "Wszystkie certyfikacje i wyróżnienia muszą zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Aby otrzymać kartę uznaniową Century Diver, nurek musi posiadać:",
+    "options": [
+          "100 zalogowanych nurkowań.",
+          "100 certyfikacji wydanych innym nurkom (jako instruktor).",
+          "50 nurkowań i 4 specjalizacje.",
+          "100 godzin czasu dennego."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Karty Uznania SSI",
+      "section": "Century Diver",
+      "page": 118,
+      "quote": "Century Diver (100 nurkowań)."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Dokumentacja szkolenia (Training Record) i logbook są wymagane do wydania karty uznania:",
+    "options": [
+          "Tylko w przypadku programów zawodowych.",
+          "Tylko dla nurków poniżej 15 roku życia.",
+          "Zawsze; instruktor musi potwierdzić, że kursant spełnił wymagania na poziomie zadowalającym.",
+          "Nigdy; system MySSI generuje karty automatycznie na podstawie algorytmu."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Definicje Programów",
+      "section": "Program uznaniowy - Potwierdzenie",
+      "page": 10,
+      "quote": "SSI wydaje kartę uznaniową po otrzymaniu od Profesjonalisty SSI i Centrum Szkoleniowego SSI potwierdzenia spełnienia wszystkich wymagań... co powinno być udokumentowane w Dokumentacji Szkolenia i logbooku."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Zgodnie ze standardami sprzętowymi, \"Pełny System Snorkelingowy\" musi zawierać:",
+    "options": [
+          "Maskę, fajkę i płetwy.",
+          "Maskę, fajkę, płetwy oraz skafander odpowiadający panującym warunkom.",
+          "Maskę, fajkę i kamizelkę wypornościową.",
+          "Tylko maskę i płetwy."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Snorkelingowe",
+      "section": "Pełny System Snorkelingowy",
+      "page": 27,
+      "quote": "Pełny System Snorkelingowy, który zawiera: Maskę, Fajkę, Płetwy, Skafander odpowiadający panującym warunkom środowiskowym."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jeśli podczas programu Snorkel Diver lub Try Scuba woda w basenie/ograniczonym akwenie jest zbyt głęboka, aby kursanci mogli swobodnie stanąć (głowa nad wodą), instruktor musi:",
+    "options": [
+          "Zmniejszyć grupę o połowę.",
+          "Wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości.",
+          "Odwołać zajęcia lub przenieść je na wody otwarte.",
+          "Wyposażyć każdego uczestnika w bojkę sygnalizacyjną."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Miejsca szkoleń i limity głębokości",
+      "section": "Głęboka woda ograniczona",
+      "page": 40,
+      "quote": "Jeżeli woda jest zbyt głęboka, instruktor musi wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości..."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jaki jest minimalny wiek uczestnika, aby mógł on wziąć udział w programie Try Scuba w ograniczonym akwenie (nie w basenie) i jaki jest wtedy współczynnik instruktor:kursant dla dzieci w wieku 8-9 lat?",
+    "options": [
+          "8 lat; współczynnik 2:1 (może wzrosnąć do 4:2 z asystentem).",
+          "10 lat; współczynnik 4:1.",
+          "8 lat; współczynnik 4:1 bez możliwości zwiększenia.",
+          "12 lat; współczynnik 1:1."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Programy Doświadczania",
+      "section": "Try Scuba - Współczynniki",
+      "page": 46,
+      "quote": "Try Scuba w ograniczonym akwenie: 8 i 9 lat | Współczynnik 2:1. Liczba ta może wzrosnąć do 4:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Program Snorkel Instructor (zgodny z ISO 13970) uprawnia do:",
+    "options": [
+          "Prowadzenia programu Scuba Skills Update.",
+          "Prowadzenia i certyfikowania programów Snorkel Diver.",
+          "Asystowania przy kursach Open Water Diver na wodach otwartych.",
+          "Wydawania certyfikatów Indoor Diver."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Snorkel Instructor - Uprawnienia",
+      "page": 164,
+      "quote": "Uprawnienia obejmują prowadzenie i certyfikowanie programów Snorkel Diver."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Czy podczas snorkelingowych programów doświadczalnych (np. Try Snorkeling) instruktor może zwiększyć współczynnik uczestników poprzez użycie certyfikowanych asystentów?",
+    "options": [
+          "Tak, o 2 osoby na każdego asystenta.",
+          "Tak, ale tylko w basenie.",
+          "Nie, standardy dla programów Try Scuba/Snorkeling wyraźnie zabraniają zwiększania współczynników przez asystentów.",
+          "Zależy to od przejrzystości wody."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Doświadczania",
+      "section": "Try Scuba - Limit asystentów",
+      "page": 46,
+      "quote": "Nie można korzystać z pomocy certyfikowanych asystentów, żeby zwiększyć współczynniki."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jakie wymagania administracyjne muszą zostać spełnione przed zajęciami w wodzie dla uczestnika programu Snorkel Diver?",
+    "options": [
+          "Tylko Formularz Rejestracyjny.",
+          "Formularz Rejestracyjny oraz Oświadczenie o stanie zdrowia (Kwestionariusz Medyczny).",
+          "Zgoda lekarza jest zawsze obowiązkowa.",
+          "Brak wymagań dla programów nie-nurkowych."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Snorkelingowe",
+      "section": "Snorkel Diver - Administracja",
+      "page": 163,
+      "quote": "Wymagania administracyjne: Przed rozpoczęciem programu kursanci muszą wypełnić: Formularz rejestracyjny... oświadczenie o stanie zdrowia..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Maksymalna głębokość dla wszystkich szkoleń snorkelingowych prowadzonych w basenie lub ograniczonym akwenie wynosi:",
+    "options": [
+          "2 metry.",
+          "4 metry.",
+          "5 metrów.",
+          "Brak limitu, jeśli instruktor ma kontakt fizyczny."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Miejsca szkoleń i limity głębokości",
+      "section": "Szkolenia basenowe snorkeling",
+      "page": 40,
+      "quote": "Maksymalna głębokość dla wszystkich szkoleń na basenie/ograniczonym akwenie wynosi 5 metrów..."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jak długo ważna jest „Umowa przejęcia ryzyka” oraz „Dodatek dla młodzieży” od daty ich podpisania?",
+    "options": [
+          "2 lata.",
+          "1 rok.",
+          "Do zakończenia szkolenia, nie dłużej niż 6 miesięcy.",
+          "Bezterminowo w ramach jednego centrum."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia - Ważność",
+      "page": 13,
+      "quote": "Umowa przejęcia ryzyka... Ważny przez jeden (1) rok od daty podpisania. Dodatek dla młodzieży... Ważny przez jeden (1) rok."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Którre z poniższych stwierdzeń dotyczących podpisywania dokumentacji przez osoby nieletnie jest prawdziwe?",
+    "options": [
+          "Nieletni mogą podpisywać dokumenty cyfrowo w MySSI.",
+          "Osoby nieletnie nie mogą podpisywać dokumentacji cyfrowej; wymagane są podpisy rodzica/opiekuna na wersjach papierowych.",
+          "Podpis nieletniego jest wystarczający powyżej 12 roku życia.",
+          "Tylko instruktor podpisuje dokumenty nieletniego."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia nieletnich",
+      "page": 12,
+      "quote": "Osoby niepełnoletnie nie mogą podpisywać dokumentacji cyfrowej."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Przez jaki minimalny okres Centrum Szkoleniowe SSI musi przechowywać oryginały Dokumentacji Szkolenia (Training Record)?",
+    "options": [
+          "2 lata.",
+          "5 lat.",
+          "10 lat (chyba że prawo lokalne wymaga dłuższego okresu).",
+          "Przez cały okres aktywności nurka w MySSI."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja Szkolenia - Archiwizacja",
+      "page": 17,
+      "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Kandydat na stopień Profesjonalny SSI musi dostarczyć zgodę lekarza na nurkowanie, która jest:",
+    "options": [
+          "Ważna przez 2 lata od daty badania.",
+          "Datowana w ciągu jednego (1) roku od daty ukończenia szkolenia profesjonalnego.",
+          "Podpisana tylko przez samego kandydata, jeśli nie ma chorób.",
+          "Wymagana tylko dla instruktorów technicznych (XR)."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Zgoda lekarska profesjonalisty",
+      "page": 14,
+      "quote": "Kandydaci do Programów Profesjonalnych są zobowiązani do dostarczenia Zezwolenia Lekarskiego... datowanego w ciągu jednego (1) roku od daty ukończenia ich szkolenia."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Dowód odbycia szkolenia z RKO, Pierwszej Pomocy oraz Podawania Tlenu dla kandydatów na stopnie Professional musi być przesłany do MySSI i być ważny:",
+    "options": [
+          "W ciągu ostatnich 12 miesięcy.",
+          "W ciągu ostatnich 2 lat.",
+          "Bezterminowo.",
+          "Tylko w momencie przystępowania do Instructor Evaluation."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Szkolenie pierwszej pomocy pro",
+      "page": 14,
+      "quote": "Dowód odbycia szkolenia z RKO... w ciągu ostatnich dwóch (2) lat."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jeśli kursant ulegnie wypadkowi lub poważnie zachoruje w ciągu roku od podpisania Kwestionariusza Medycznego, musi on:",
+    "options": [
+          "Tylko poinformować instruktora o powrocie do zdrowia.",
+          "Wypełnić nowy Kwestionariusz Medyczny i uzyskać nową Zgodę Lekarza przed wejściem do wody.",
+          "Odczekać 14 dni od zakończenia leczenia.",
+          "Zrobić Scuba Skills Update."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Zmiana stanu zdrowia kursanta",
+      "page": 14,
+      "quote": "Jeśli Kursant zachoruje lub odniesie obrażenia w ciągu roku, musi on wypełnić nowy Kwestionariusz Medyczny Uczestnika i Zgodę Lekarza..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Gdzie muszą pozostać oryginały dokumentacji medycznej i szkoleniowej w przypadku procedury „Referral”?",
+    "options": [
+          "Są przekazywane kursantowi, aby zabrał je do nowego centrum.",
+          "Muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie.",
+          "Są niszczone po wydaniu karty Referral Diver.",
+          "Są wysyłane pocztą do biura SSI Service Center."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Referral",
+      "page": 17,
+      "quote": "Wszystkie oryginały dokumentacji szkoleniowej oraz formularzy medycznych muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Który dokument w systemie SSI posiada „stałą ważność” w ramach danej kategorii (np. Scuba) i jest potwierdzany przy każdym kolejnym programie?",
+    "options": [
+          "Kwestionariusz Medyczny.",
+          "Umowa przejęcia ryzyka.",
+          "Kodeks Odpowiedzialnego Nurka SSI.",
+          "Dodatek dla młodzieży."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Kodeks Odpowiedzialnego Nurka",
+      "page": 13,
+      "quote": "Kodeks Odpowiedzialnego Nurka SSI: Stała ważność w ramach kategorii... i jest potwierdzana poprzez podpisanie protokołu ukończenia dowolnego programu."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Czy Dokumentacja Szkolenia przechowywana cyfrowo na serwerach SSI zwalnia Centrum z obowiązku przechowywania kopii papierowych?",
+    "options": [
+          "Nie, papier jest zawsze wymagany.",
+          "Tak, cyfrowe elementy przesłane do MySSI spełniają wymagania dotyczące przechowywania dokumentacji.",
+          "Tylko jeśli centrum posiada certyfikat ISO.",
+          "Tylko dla programów poziomu podstawowego."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia - cyfrowa",
+      "page": 17,
+      "quote": "Cyfrowe elementy dokumentacji szkolenia, które są przesyłane do MySSI, są bezpiecznie przechowywane na serwerach SSI. Spełnia to wymagania Centrum Szkoleniowego dotyczące przechowywania dokumentacji."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Kandydat Professional przed wydaniem certyfikacji musi przesłać do MySSI:",
+    "options": [
+          "Raport z 100 nurkowań.",
+          "Rekord ukończenia programu (Program Completion Record) przesłany cyfrowo.",
+          "Potwierdzenie zakupu własnego automatu.",
+          "Pisemną rekomendację od dwóch innych instruktorów."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Zakończenie szkolenia pro",
+      "page": 12,
+      "quote": "Kandydaci Professional must wypełnić całą wymaganą dokumentację cyfrowo... Rekord ukończenia programu musi zostać przesłany do systemu MySSI przed wydaniem Certyfikacji."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Instruktor prowadzi kurs łączony: Nawigacja, Nurkowanie Nocne oraz Nurkowanie z Łodzi. Ile minimalnie nurkowań na wodach otwartych musi wykonać kursant, aby zaliczyć te trzy specjalizacje?",
+    "options": [
+          "3 nurkowania.",
+          "4 nurkowania.",
+          "5 nurkowań.",
+          "6 nurkowań."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "IV. Łączenie programów",
+      "page": 58,
+      "quote": "Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Instruktor łączy 4 specjalizacje w jednym cyklu. Ile minimalnie nurkowań szkoleniowych należy przeprowadzić?",
+    "options": [
+          "4 nurkowania.",
+          "5 nurkowań.",
+          "6 nurkowań.",
+          "Standardy zabraniają łączenia więcej niż 3 specjalizacji."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "IV. Łączenie programów",
+      "page": 59,
+      "quote": "Jeżeli cztery (4) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej pięć (5) nurkowań szkoleniowych na Wodach Otwartych."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Które z wymienionych programów są kategorycznie wyłączone z ogólnych zasad łączenia nurkowań i wymagają pełnej liczby nurkowań zgodnie ze swoimi standardami?",
+    "options": [
+          "Boat Diving, Navigation, Search & Recovery.",
+          "Deep Diving, Diver Stress & Rescue, Decompression Diving.",
+          "Night & Limited Visibility, Waves, Tides & Currents.",
+          "Perfect Buoyancy i Enriched Air Nitrox."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "IV. Łączenie programów",
+      "page": 59,
+      "quote": "W przypadku następujących programów, wszystkie obowiązkowe... nurkowania... muszą być ukończone zgodnie z standardami dla danego programu: Deep Diving, Diver Stress & Rescue, Decompression Diving."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Zgodnie z „Uwagą” w standardach Altitude Diving, nurkowania szkoleniowe dla specjalizacji:",
+    "options": [
+          "Mogą być łączone z nurkowaniami 3 i 4 kursu Open Water Diver.",
+          "Nie mogą być łączone z nurkowaniami szkoleniowymi programów poziomu podstawowego (entry-level).",
+          "Muszą być wykonywane wyłącznie po 50 nurkowaniach stażu.",
+          "Mogą być zaliczone przed ukończeniem teorii OWD."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Altitude Diving",
+      "section": "VI. Limity głębokości",
+      "page": 65,
+      "quote": "Uwaga | Nurkowania szkoleniowe na wodach otwartych dla wszystkich specjalizacji nie mogą być łączone z nurkowaniami szkoleniowymi na wodach otwartych dla programów entry-level."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Nurek posiada potwierdzone i podpisane doświadczenie (logbook) w zakresie nurkowania z łodzi (Boat Diving). Ile nurkowań na poczet tej specjalizacji może maksymalnie zaliczyć instruktor?",
+    "options": [
+          "Wszystkie wymagane nurkowania.",
+          "Maksymalnie jedno (1) nurkowanie.",
+          "Maksymalnie dwa (2) nurkowania.",
+          "Żadnego; każde nurkowanie musi być szkoleniowe."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "Zaliczenie nurkowań doświadczalnych",
+      "page": 59,
+      "quote": "...Profesjonalista SSI może podjąć decyzję o zaliczeniu jednego (1) nurkowania na poczet danego program specjalizacji SSI."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jeśli program specjalizacji jest prowadzony równolegle z kursem Open Water Diver, kiedy można wydać certyfikat specjalizacji?",
+    "options": [
+          "Natychmiast po nurkowaniu specjalizacji.",
+          "Dopiero po wydaniu certyfikatu Open Water Diver.",
+          "Po zalogowaniu 24 nurkowań.",
+          "Tylko jeśli instruktor posiada stopień Master Instructor."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "IV. Łączenie programów",
+      "page": 59,
+      "quote": "Certyfikat specjalizacji może być wydany dopiero po wydaniu certyfikatu Open Water Diver."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki dowód jest wymagany, aby zaliczyć nurkowanie z doświadczeniem na poczet specjalizacji?",
+    "options": [
+          "Zdjęcie z łodzi.",
+          "Ustne oświadczenie nurka.",
+          "Nurkowanie zarejestrowane, potwierdzone i podpisane przez profesjonalistę nurkowego w logbooku.",
+          "Faktura za wypożyczenie sprzętu."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "Zaliczenie nurkowań doświadczalnych",
+      "page": 59,
+      "quote": "Uwaga | Dowód nurkowania z doświadczeniem musi być zarejestrowany, potwierdzony i podpisany przez profesjonalistę nurkowego."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaka jest maksymalna liczba nurkowań szkoleniowych, które można przeprowadzić z kursantem w ciągu jednego dnia (bez dekompresji)?",
+    "options": [
+          "2 nurkowania.",
+          "3 nurkowania.",
+          "4 nurkowania.",
+          "Brak limitu."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "Liczba nurkowań szkoleniowych",
+      "page": 32,
+      "quote": "Maksymalna, dopuszczalna ilość nurkowań szkoleniowych w wodach otwartych w ciągu jednego dnia to 3..."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Ile nurkowań dziennie dopuszczają standardy, jeśli choć jedno z nich planuje lub faktycznie wymaga przystanków dekompresyjnych?",
+    "options": [
+          "Jedno.",
+          "Dwa.",
+          "Trzy.",
+          "Dekompresja jest zabroniona na szkoleniach rekreacyjnych."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "Liczba nurkowań szkoleniowych - Dekompresja",
+      "page": 32,
+      "quote": "Maksymalna liczba nurkowań szkoleniowych to dwa (2) dziennie, jeśli jakiekolwiek nurkowanie danego dnia planuje lub faktycznie wymaga przystanków dekompresyjnych."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Program Advanced Open Water Diver wymaga ukończenia 5 nurkowań z różnych specjalizacji. Które dwa są obowiązkowe?",
+    "options": [
+          "Deep Diving i Night Diving.",
+          "Navigation i Deep Diving.",
+          "Stress & Rescue i Navigation.",
+          "Perfect Buoyancy i Deep Diving."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Advanced Open Water Diver",
+      "section": "Wymagania",
+      "page": 63,
+      "quote": "Obowiązkowe nurkowania: Deep Diving 1... oraz Nawigacja 1."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Kto posiada uprawnienia do asystowania podczas Instructor Training Course (ITC) oraz seminarium Assistant Instructor Trainer?",
+    "options": [
+          "Każdy Master Instructor.",
+          "Assistant Instructor Trainer o aktywnym statusie.",
+          "Tylko Instructor Certifier.",
+          "Divemaster o aktywnym statusie."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Asystowanie w szkoleniach pro",
+      "page": 34,
+      "quote": "Assistant Instructor Trainer SSI z aktywnym statusem może asystować podczas Instructor Training Course i Assistant Instructor Trainer Seminar."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Profesjonalista SSI o stopniu Instructor Trainer, który nie spełnia minimalnych wymagań dla tego poziomu, ale spełnia je dla stopnia Open Water Instructor, przechodzi w status:",
+    "options": [
+          "Status Anulowany.",
+          "Status „Retired” (W spoczynku) dla stopnia IT, zachowując aktywny status OWI.",
+          "Status Wydalony.",
+          "Status Nieaktywny dla wszystkich stopni."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Status pro - emerytura",
+      "page": 22,
+      "quote": "SSI Professionals na emeryturze pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełniają minimalne wymagania aktywnego statusu."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Aby powrócić do statusu aktywnego po przerwie trwającej od 5 do 10 lat (status anulowany), instruktor musi:",
+    "options": [
+          "Tylko opłacić składkę.",
+          "Ukończyć wszystkie wymagania certyfikacyjne dla swojego najwyższego stopnia (oceny w wodzie, egzaminy, teoria).",
+          "Odbyć 50 nurkowań stażowych.",
+          "Przejść ponownie pełny kurs Dive Guide."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Przywrócenie statusu 5-10 lat",
+      "page": 23,
+      "quote": "Okres dłuższy niż pięć (5) lat... Ukończenie wszystkich wymagań certyfikacyjnych dla ich najwyższego profesjonalnego certyfikatu..."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Instruktorzy (OWI i wyżej), którzy chcą wrócić do statusu aktywnego po przerwie dłuższej niż 10 lat, muszą dodatkowo:",
+    "options": [
+          "Ukończyć kurs Divemastera.",
+          "Zdać ponownie Instructor Evaluation (IE).",
+          "Kupić nowe materiały cyfrowe.",
+          "Uzyskać zgodę od SSI International."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Przywrócenie statusu >10 lat",
+      "page": 24,
+      "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Jaka jest rola „Instruktora Certifier” (Instructor Certifier) w procesie szkolenia?",
+    "options": [
+          "Odpowiada za sprzedaż sprzętu.",
+          "Jest instruktorem rekordu, odpowiedzialnym za finalną ocenę umiejętności/wiedzy i prawidłowość dokumentacji.",
+          "Może certyfikować wyłącznie Divemasterów.",
+          "Jest jedyną osobą uprawnioną do podpisywania logbooków."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Instructor Certifier",
+      "page": 16,
+      "quote": "Instruktor Certifier jest instruktorem rekordu... Jest on odpowiedzialny za zapewnienie, że dokumentacja szkolenia jest prawidłowo wypełniona..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki status otrzymuje automatycznie Profesjonalista SSI zaangażowany w zdarzenie prowadzące do śmierci uczestnika pod jego bezpośrednim nadzorem?",
+    "options": [
+          "Status Wydalony (Expelled).",
+          "Status Wstrzymany Administracyjnie (Administrative Hold).",
+          "Status Retired.",
+          "Status Canceled."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Status pro - Wstrzymanie",
+      "page": 22,
+      "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Kto może prowadzić seminarium dla kandydatów na stopień Specialty Instructor?",
+    "options": [
+          "Divemaster Instructor.",
+          "Assistant Instructor Trainer lub wyższy stopień.",
+          "Każdy instruktor z 2-letnim stażem.",
+          "Tylko Manager QMS."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Seminaria Specialty Instructor",
+      "page": 132,
+      "quote": "Assistant Instructor Trainer lub wyższy (np. Instructor Trainer) mogą prowadzić seminaria dla Instruktorów Specjalizacji."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Czy SSI Professional ze statusem „Nieaktywnym” (Inactive) może prowadzić programy SSI?",
+    "options": [
+          "Tak, pod nadzorem innego instruktora.",
+          "Nie, nie może prowadzić żadnych programów SSI do czasu przywrócenia statusu aktywnego.",
+          "Tak, ale tylko zajęcia teoretyczne.",
+          "Tak, wyłącznie programy Try Scuba."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Status nieaktywny - ograniczenia",
+      "page": 21,
+      "quote": "Status nieaktywny... nie mogą prowadzić żadnych programów SSI dopóki nie przywrócą statusu aktywnego."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Zgodnie ze standardami, ubezpieczenie OC Profesjonalisty SSI musi:",
+    "options": [
+          "Obejmować wyłącznie nurkowania w kraju zamieszkania.",
+          "Zawierać SSI jako dodatkowo ubezpieczonego (jeśli wymaga tego prawo lokalne).",
+          "Być dobrowolne.",
+          "Obejmować tylko nurkowania techniczne."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Ubezpieczenie OC - Wymagania",
+      "page": 20,
+      "quote": "Profesjonalista SSI must: Zagwarantować, że SSI zostanie uwzględniona jako dodatkowo ubezpieczony na polisie..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki stopień uprawnia do prowadzenia i certyfikowania programu Divemaster?",
+    "options": [
+          "Open Water Instructor.",
+          "Dive Guide Instructor o aktywnym statusie.",
+          "Tylko Instructor Trainer.",
+          "Assistant Instructor."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Prowadzenie Divemastera",
+      "page": 83,
+      "quote": "Instruktor Dive Guide o aktywnym statusie może prowadzić program Divemaster."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Które z poniższych NIE jest jednym z 4 kryteriów uznania innej agencji szkoleniowej przez SSI?",
+    "options": [
+          "Działanie na rynku od co najmniej 5 lat.",
+          "Posiadanie co najmniej 250 instruktorów i 50 centrów na świecie.",
+          "Posiadanie własnego centrum medycznego dla nurków.",
+          "Aktywny certyfikat ISO lub członkostwo w RSTC."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Specjalizacji",
+      "section": "Kryteria Uznania innej agencji",
+      "page": 19,
+      "quote": "Lista zawiera: 5 lat rynkowych, 3 języki, 250 instruktorów, ISO/RSTC. Brak zapisu o centrum medycznym."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "W konfiguracji Sidemount, nurek musi posiadać automat z wężem o długości:",
+    "options": [
+          "100-120 cm.",
+          "1.8 - 2.1 metra (tzw. długi wąż).",
+          "75 cm.",
+          "3 metry."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Konfiguracje sprzętowe",
+      "section": "Sidemount - wąż",
+      "page": 30,
+      "quote": "Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jakie są wymagania dotyczące manometrów w programach Decompression Diving oraz Sidemount?",
+    "options": [
+          "Jeden manometr na butli głównej jest wystarczający.",
+          "Każda butla (główna, stage, niezależne butle sidemount) musi być wyposażona w manometr.",
+          "Manometry mogą być zastąpione transmiterami bez wersji analogowej.",
+          "Tylko butla dekompresyjna musi mieć manometr."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Konfiguracje sprzętowe",
+      "section": "Wymagania dotyczące manometrów",
+      "page": 30,
+      "quote": "Każda butla musi być wyposażona w manometr."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jaka jest maksymalna dopuszczalna wartość ppO2 podczas fazy dekompresji w programie Decompression Diving?",
+    "options": [
+          "1.4 bara.",
+          "1.6 bara.",
+          "1.2 bara.",
+          "2.0 bary."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Decompression Diving - limit ppO2",
+      "page": 27,
+      "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Definicja „przestrzeni zamkniętej ze strefą dostępu światła dziennego” (Overhead Environment) wymaga, aby kursant:",
+    "options": [
+          "Był w odległości 100 metrów od wyjścia.",
+          "Przez cały czas widział bezpieczne okno naturalnego światła dziennego.",
+          "Nurkował wyłącznie w nocy.",
+          "Posiadał dwa niezależne źródła gazu."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Miejsca szkoleń i limity głębokości",
+      "section": "Przestrzenie zamknięte - światło",
+      "page": 41,
+      "quote": "Ma wyraźnie widoczny punkt wejścia i przez cały czas kursant widzi bezpieczne okno naturalnego światła dziennego..."
+    },
+    "category": "Współczynniki i Wiek"
+  }
 ];
 
 if (typeof module !== 'undefined' && module.exports) {
