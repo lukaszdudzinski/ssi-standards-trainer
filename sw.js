@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ssi-standards-trainer-v2026.5.30.04';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.5.30.05';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

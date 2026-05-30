@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.04';
+const APP_VERSION = 'v2026.5.30.05';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -75,8 +75,64 @@ document.addEventListener('DOMContentLoaded', () => {
   const incorrectReview = document.getElementById('incorrectReview');
   const reviewList = document.getElementById('reviewList');
   
-  const soundCorrect = document.getElementById('soundCorrect');
-  const soundIncorrect = document.getElementById('soundIncorrect');
+  // Procedural Web Audio API sound synthesizers (100% offline & zero network calls!)
+  function playSynthesizedCorrect() {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      
+      const osc1 = ctx.createOscillator();
+      const gain1 = ctx.createGain();
+      osc1.type = 'sine';
+      osc1.frequency.setValueAtTime(523.25, ctx.currentTime); // C5
+      gain1.gain.setValueAtTime(0.08, ctx.currentTime);
+      gain1.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+      osc1.connect(gain1);
+      gain1.connect(ctx.destination);
+      osc1.start();
+      osc1.stop(ctx.currentTime + 0.35);
+      
+      setTimeout(() => {
+        const osc2 = ctx.createOscillator();
+        const gain2 = ctx.createGain();
+        osc2.type = 'sine';
+        osc2.frequency.setValueAtTime(659.25, ctx.currentTime); // E5
+        gain2.gain.setValueAtTime(0.08, ctx.currentTime);
+        gain2.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.45);
+        osc2.connect(gain2);
+        gain2.connect(ctx.destination);
+        osc2.start();
+        osc2.stop(ctx.currentTime + 0.45);
+      }, 80);
+    } catch (e) {
+      console.log('Correct chime failed:', e);
+    }
+  }
+
+  function playSynthesizedIncorrect() {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(220, ctx.currentTime); // A3
+      osc.frequency.linearRampToValueAtTime(147, ctx.currentTime + 0.35); // slide down to D3
+      
+      gain.gain.setValueAtTime(0.12, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+      
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.35);
+    } catch (e) {
+      console.log('Incorrect buzz failed:', e);
+    }
+  }
   
   const voiceRate = document.getElementById('voiceRate');
   const voiceRateVal = document.getElementById('voiceRateVal');
@@ -674,7 +730,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       scoreText.textContent = score;
       selectedBtn.classList.add('correct');
-      playAudio(soundCorrect);
+      playSynthesizedCorrect();
 
       // Go to next question after short delay
       setTimeout(() => {
@@ -685,7 +741,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // INCORRECT ANSWER
       selectedBtn.classList.add('incorrect');
       correctBtn.classList.add('correct');
-      playAudio(soundIncorrect);
+      playSynthesizedIncorrect();
       
       // Save incorrect question for end review (only if it wasn't already a retry)
       if (!q.isRetry) {
@@ -764,12 +820,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Sound play helper (ensures overlap safety)
-  function playAudio(audioEl) {
-    if (!audioEl) return;
-    audioEl.currentTime = 0;
-    audioEl.play().catch(e => console.log('Audio playback blocked:', e));
-  }
+  // Sound helper deprecated in favor of Web Audio API synthesis
 
   // --- 8. Screen 3: Results & Statistics ---
   function showResults() {
