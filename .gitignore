@@ -4,7 +4,6 @@ Thumbs.db
 
 # Project PDFs (exclude from git because they are large scanned files)
 CamScanner*.pdf
-STANDARDS-SCUBA_Polish_IM.pdf
 
 # Python environments and scratch scripts
 venv/
