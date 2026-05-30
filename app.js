@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.03';
+const APP_VERSION = 'v2026.5.30.04';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -27,9 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const questionCard = document.getElementById('questionCard');
   const openPdfMainMenuBtn = document.getElementById('openPdfMainMenuBtn');
   const pdfModal = document.getElementById('pdfModal');
-  const pdfIframe = document.getElementById('pdfIframe');
   const closePdfBtn = document.getElementById('closePdfBtn');
-  const openPdfExternalBtn = document.getElementById('openPdfExternalBtn');
+  
+  // Custom HTML5 PDF elements
+  const prevPageBtn = document.getElementById('prevPageBtn');
+  const nextPageBtn = document.getElementById('nextPageBtn');
+  const zoomInBtn = document.getElementById('zoomInBtn');
+  const zoomOutBtn = document.getElementById('zoomOutBtn');
+  const currentPageNumText = document.getElementById('currentPageNumText');
+  const totalPagesText = document.getElementById('totalPagesText');
+  const pdfCanvasContainer = document.getElementById('pdfCanvasContainer');
+  const pdfCanvas = document.getElementById('pdfCanvas');
+  const pdfLoadingIndicator = document.getElementById('pdfLoadingIndicator');
 
   const quizTimer = document.getElementById('quizTimer');
   const quitQuizBtn = document.getElementById('quitQuizBtn');
@@ -56,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const refPage = document.getElementById('refPage');
   const refQuote = document.getElementById('refQuote');
   const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+  const openPdfFeedbackBtn = document.getElementById('openPdfFeedbackBtn');
+  const feedbackPdfPageNum = document.getElementById('feedbackPdfPageNum');
   
   const resultPercent = document.getElementById('resultPercent');
   const resultVerdict = document.getElementById('resultVerdict');
@@ -689,6 +700,9 @@ document.addEventListener('DOMContentLoaded', () => {
       refChapter.innerHTML = `<i class="fa-solid fa-book"></i> ${q.reference.chapter}`;
       refSection.innerHTML = `<i class="fa-solid fa-bookmark"></i> ${q.reference.section}`;
       refPage.textContent = q.reference.page;
+      if (feedbackPdfPageNum) {
+        feedbackPdfPageNum.textContent = q.reference.page;
+      }
       refQuote.textContent = `"${q.reference.quote}"`;
 
       // --- Spaced Repetition Retry Injection ---
@@ -899,23 +913,114 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 8. PDF Standards Viewer Controls ---
-  function openPdfViewer(pageNum = 1) {
+  // --- 8. HTML5 Canvas PDF Standards Viewer Controls ---
+  let pdfDoc = null;
+  let pdfPageNum = 1;
+  let pageRendering = false;
+  let pageNumPending = null;
+  let pdfScale = 1.25; // Good default zoom for standard mobile layout
+
+  // Set worker path
+  if (window.pdfjsLib) {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = './pdf.worker.min.js';
+  }
+
+  function renderPdfPage(num) {
+    if (!pdfDoc) return;
+    pageRendering = true;
+    
+    if (pdfLoadingIndicator) {
+      pdfLoadingIndicator.style.display = 'flex';
+    }
+    
+    pdfDoc.getPage(num).then(page => {
+      const ctx = pdfCanvas.getContext('2d');
+      const viewport = page.getViewport({ scale: pdfScale });
+      
+      pdfCanvas.height = viewport.height;
+      pdfCanvas.width = viewport.width;
+      
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport
+      };
+      
+      const renderTask = page.render(renderContext);
+      
+      renderTask.promise.then(() => {
+        pageRendering = false;
+        if (pdfLoadingIndicator) {
+          pdfLoadingIndicator.style.display = 'none';
+        }
+        
+        if (pageNumPending !== null) {
+          renderPdfPage(pageNumPending);
+          pageNumPending = null;
+        }
+      });
+    }).catch(err => {
+      console.error('Error rendering PDF page:', err);
+      pageRendering = false;
+      if (pdfLoadingIndicator) {
+        pdfLoadingIndicator.style.display = 'none';
+      }
+    });
+    
+    if (currentPageNumText) {
+      currentPageNumText.textContent = num;
+    }
+  }
+
+  function queueRenderPage(num) {
+    if (pageRendering) {
+      pageNumPending = num;
+    } else {
+      renderPdfPage(num);
+    }
+  }
+
+  function loadPdfDocument(targetPage = 1) {
+    if (pdfLoadingIndicator) {
+      pdfLoadingIndicator.style.display = 'flex';
+    }
+    
+    if (pdfDoc) {
+      pdfPageNum = targetPage;
+      renderPdfPage(pdfPageNum);
+      return;
+    }
+    
+    const pdfUrl = 'STANDARDS-SCUBA_Polish_IM.pdf';
+    
+    pdfjsLib.getDocument(pdfUrl).promise.then(pdfDoc_ => {
+      pdfDoc = pdfDoc_;
+      if (totalPagesText) {
+        totalPagesText.textContent = pdfDoc.numPages;
+      }
+      pdfPageNum = targetPage;
+      renderPdfPage(pdfPageNum);
+    }).catch(err => {
+      console.error('Error loading PDF document:', err);
+      if (pdfLoadingIndicator) {
+        pdfLoadingIndicator.innerHTML = `<i class="fa-solid fa-circle-exclamation" style="color: var(--color-red);"></i> Błąd wczytywania standardów. Upewnij się, że plik PDF został pobrany.`;
+      }
+    });
+  }
+
+  function openPdfViewer(pageNumVal = 1) {
     // Pause speech recognition while viewing PDF
     stopSpeechRecognition();
     
-    // Set iframe source
-    const pdfUrl = `STANDARDS-SCUBA_Polish_IM.pdf#page=${pageNum}`;
-    pdfIframe.src = pdfUrl;
-    
     // Open modal
     pdfModal.classList.add('active');
-    console.log(`Opened PDF viewer on page ${pageNum}`);
+    
+    // Load and render
+    loadPdfDocument(pageNumVal);
+    console.log(`Opened HTML5 PDF viewer on page ${pageNumVal}`);
   }
 
   function closePdfViewer() {
     pdfModal.classList.remove('active');
-    pdfIframe.src = ''; // reset to stop loading / unload PDF
     
     // Resume speech recognition if enabled and quiz is not answered
     if (voiceControlToggle.checked && !isAnswered && currentQuestionIndex < activeQuestions.length) {
@@ -923,23 +1028,79 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function onPrevPage() {
+    if (pdfPageNum <= 1) return;
+    pdfPageNum--;
+    queueRenderPage(pdfPageNum);
+  }
+
+  function onNextPage() {
+    if (!pdfDoc || pdfPageNum >= pdfDoc.numPages) return;
+    pdfPageNum++;
+    queueRenderPage(pdfPageNum);
+  }
+
+  // Prev / Next click listeners
+  if (prevPageBtn) prevPageBtn.addEventListener('click', onPrevPage);
+  if (nextPageBtn) nextPageBtn.addEventListener('click', onNextPage);
+
+  // Zoom click listeners
+  if (zoomInBtn) {
+    zoomInBtn.addEventListener('click', () => {
+      pdfScale += 0.25;
+      if (pdfScale > 3.0) pdfScale = 3.0;
+      renderPdfPage(pdfPageNum);
+    });
+  }
+
+  if (zoomOutBtn) {
+    zoomOutBtn.addEventListener('click', () => {
+      pdfScale -= 0.25;
+      if (pdfScale < 0.5) pdfScale = 0.5;
+      renderPdfPage(pdfPageNum);
+    });
+  }
+
+  // Swipe Gestures for Fluid Mobile Page Flipping
+  if (pdfCanvasContainer) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    pdfCanvasContainer.addEventListener('touchstart', e => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+    
+    pdfCanvasContainer.addEventListener('touchend', e => {
+      touchEndX = e.changedTouches[0].screenX;
+      
+      const swipeThreshold = 50; // pixels
+      if (touchStartX - touchEndX > swipeThreshold) {
+        // Swiped Left -> Next page
+        onNextPage();
+      } else if (touchEndX - touchStartX > swipeThreshold) {
+        // Swiped Right -> Previous page
+        onPrevPage();
+      }
+    }, { passive: true });
+  }
+
+  // App interactions
   if (openPdfMainMenuBtn) {
     openPdfMainMenuBtn.addEventListener('click', () => openPdfViewer(1));
   }
   if (closePdfBtn) {
     closePdfBtn.addEventListener('click', closePdfViewer);
   }
-  if (openPdfExternalBtn) {
-    openPdfExternalBtn.addEventListener('click', () => {
-      if (pdfIframe.src) {
-        window.open(pdfIframe.src, '_blank');
-      }
-    });
-  }
   if (refPage) {
     refPage.addEventListener('click', () => {
-      const pageNum = parseInt(refPage.textContent.trim()) || 1;
-      openPdfViewer(pageNum);
+      const pageNumVal = parseInt(refPage.textContent.trim()) || 1;
+      openPdfViewer(pageNumVal);
+    });
+  }
+  if (openPdfFeedbackBtn) {
+    openPdfFeedbackBtn.addEventListener('click', () => {
+      const pageNumVal = parseInt(feedbackPdfPageNum.textContent.trim()) || 1;
+      openPdfViewer(pageNumVal);
     });
   }
 

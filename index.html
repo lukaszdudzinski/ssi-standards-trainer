@@ -86,7 +86,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.30.03</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.30.04</span></p>
         </div>
       </section>
 
@@ -199,6 +199,10 @@
             <div class="ref-quote">
               <p id="refQuote">"Cytat z oficjalnego dokumentu standardów w tym miejscu..."</p>
             </div>
+
+            <button id="openPdfFeedbackBtn" class="btn btn-secondary pdf-feedback-btn" style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--color-cyan); margin-bottom: 8px;">
+              <i class="fa-solid fa-file-pdf"></i> Pokaż tę regułę w standardach (strona <span id="feedbackPdfPageNum">54</span>)
+            </button>
 
             <button id="nextQuestionBtn" class="btn btn-primary">Dalej <i class="fa-solid fa-arrow-right"></i></button>
           </div>
@@ -346,7 +350,7 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.5.30.03</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.5.30.04</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>
@@ -370,19 +374,37 @@
   <!-- Modal for Standards PDF Viewer -->
   <div id="pdfModal" class="modal-overlay">
     <div class="modal-content pdf-modal-content">
-      <div class="modal-header">
-        <h3><i class="fa-solid fa-file-pdf"></i> Standardy SSI</h3>
-        <div class="header-actions">
-          <button id="openPdfExternalBtn" class="btn-icon" title="Otwórz w pełnej karcie"><i class="fa-solid fa-up-right-from-square"></i></button>
-          <button id="closePdfBtn" class="btn-icon" title="Zamknij"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-header pdf-header">
+        <div class="header-left">
+          <button id="closePdfBtn" class="btn btn-close-pdf" title="Zamknij i wróć do aplikacji">
+            <i class="fa-solid fa-arrow-left"></i> Powrót
+          </button>
+        </div>
+        <div class="header-center pdf-controls">
+          <button id="prevPageBtn" class="pdf-nav-btn" title="Poprzednia strona"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="pdf-page-indicator">
+            str. <span id="currentPageNumText">1</span> / <span id="totalPagesText">...</span>
+          </span>
+          <button id="nextPageBtn" class="pdf-nav-btn" title="Następna strona"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="header-right pdf-zoom-controls">
+          <button id="zoomOutBtn" class="pdf-zoom-btn" title="Pomniejsz"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+          <button id="zoomInBtn" class="pdf-zoom-btn" title="Powiększ"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
         </div>
       </div>
-      <div class="modal-body pdf-body">
-        <iframe id="pdfIframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+      <div class="modal-body pdf-body" id="pdfCanvasContainer">
+        <div class="pdf-loading-indicator" id="pdfLoadingIndicator">
+          <i class="fa-solid fa-circle-notch fa-spin"></i> Wczytywanie standardów...
+        </div>
+        <div class="pdf-canvas-wrapper" id="pdfCanvasWrapper">
+          <canvas id="pdfCanvas"></canvas>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Import PDFJS Library -->
+  <script src="pdf.min.js"></script>
   <!-- Import Question Database -->
   <script src="questions.js"></script>
   <!-- Import Core App Logic -->

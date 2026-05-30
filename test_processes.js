@@ -57,7 +57,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.30.03', 'APP_VERSION must be exactly v2026.5.30.03');
+  assert(appVersion === 'v2026.5.30.04', 'APP_VERSION must be exactly v2026.5.30.04');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -124,9 +124,11 @@ try {
 
   // 10. Process Validation: Spaced Repetition & Offline PDF Viewer
   assert(swContent.includes("'./STANDARDS-SCUBA_Polish_IM.pdf'"), 'sw.js must cache STANDARDS-SCUBA_Polish_IM.pdf');
+  assert(swContent.includes("'./pdf.min.js'"), 'sw.js must cache pdf.min.js');
+  assert(swContent.includes("'./pdf.worker.min.js'"), 'sw.js must cache pdf.worker.min.js');
   assert(htmlContent.includes('id="openPdfMainMenuBtn"'), 'index.html must contain an openPdfMainMenuBtn element');
   assert(htmlContent.includes('id="pdfModal"'), 'index.html must contain a pdfModal element');
-  assert(htmlContent.includes('id="pdfIframe"'), 'index.html must contain a pdfIframe element');
+  assert(htmlContent.includes('id="pdfCanvas"'), 'index.html must contain a pdfCanvas element');
   assert(htmlContent.includes('clickable-page-badge'), 'index.html must contain clickable-page-badge element');
   assert(cssContent.includes('.clickable-page-badge'), 'index.css must define styling for .clickable-page-badge');
   assert(cssContent.includes('.pdf-modal-content'), 'index.css must define styling for .pdf-modal-content');
