@@ -27,6 +27,29 @@ try {
   const swContent = fs.readFileSync(path.join(__dirname, 'sw.js'), 'utf8');
   const manifestContent = fs.readFileSync(path.join(__dirname, 'manifest.json'), 'utf8');
 
+  // 1.5. Syntax & Parsing Integrity Check
+  const { execSync } = require('child_process');
+  try {
+    execSync('node -c app.js', { cwd: __dirname });
+    assert(true, 'app.js syntax is 100% correct and parseable');
+  } catch (e) {
+    assert(false, `app.js has syntax error: ${e.message}`);
+  }
+
+  try {
+    execSync('node -c questions.js', { cwd: __dirname });
+    assert(true, 'questions.js syntax is 100% correct and parseable');
+  } catch (e) {
+    assert(false, `questions.js has syntax error: ${e.message}`);
+  }
+
+  try {
+    execSync('node -c sw.js', { cwd: __dirname });
+    assert(true, 'sw.js syntax is 100% correct and parseable');
+  } catch (e) {
+    assert(false, `sw.js has syntax error: ${e.message}`);
+  }
+
   // 2. Process Validation: Version Sync Check
   const jsVersionMatch = jsContent.match(/const APP_VERSION = '([^']+)';/);
   assert(jsVersionMatch !== null, 'app.js must declare an APP_VERSION constant');
@@ -107,6 +130,7 @@ try {
   assert(htmlContent.includes('clickable-page-badge'), 'index.html must contain clickable-page-badge element');
   assert(cssContent.includes('.clickable-page-badge'), 'index.css must define styling for .clickable-page-badge');
   assert(cssContent.includes('.pdf-modal-content'), 'index.css must define styling for .pdf-modal-content');
+  assert(cssContent.includes('.modal-overlay'), 'index.css must define styling for .modal-overlay');
   assert(jsContent.includes('isRetry'), 'app.js must track the isRetry variable for retries');
   assert(jsContent.includes('.splice('), 'app.js must inject retry questions using splice');
   assert(jsContent.includes('openPdfViewer'), 'app.js must implement openPdfViewer function');

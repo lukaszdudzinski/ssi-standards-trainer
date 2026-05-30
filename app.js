@@ -942,7 +942,6 @@ document.addEventListener('DOMContentLoaded', () => {
       openPdfViewer(pageNum);
     });
   }
-}
 
   function showUpdateToast(reg) {
     const toast = document.getElementById('updateToast');
