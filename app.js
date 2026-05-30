@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.08';
+const APP_VERSION = 'v2026.5.30.09';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI

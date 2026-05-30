@@ -1196,7 +1196,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia i Formularze prywatności",
-      "page": 12,
+      "page": 13,
       "quote": "Cyfrowy/papierowy formularz oceny medycznej lekarza zachowuje ważność przez jeden (1) rok od daty podpisania przez lekarza"
     }
   },
