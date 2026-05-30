@@ -299,9 +299,9 @@ const QUESTIONS_DB = [
     "answer": 0,
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
-      "section": "Open Water Diver - Prowadzenie programu",
-      "page": 35,
-      "quote": "Program może prowadzić i certyfikować wyłącznie aktywny status SSI Open Water Instructor (lub wyższy)."
+      "section": "Open Water Diver - Minimalny nadzór",
+      "page": 54,
+      "quote": "Open Water Instructor z aktywnym statusem musi bezpośrednio nadzorować wszystkie nurkowania szkoleniowe na Wodach Otwartych."
     }
   },
   {

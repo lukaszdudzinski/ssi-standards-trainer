@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.01';
+const APP_VERSION = 'v2026.5.30.02';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -397,14 +397,17 @@ document.addEventListener('DOMContentLoaded', () => {
       
       let detectedIndex = -1;
       
-      // Polish speech word matching
-      if (result.includes('jeden') || result === '1' || result.includes('raz') || result.includes('pierwsz')) {
+      // Clean transcript and split into words to avoid substring false positives (e.g. "oraz" triggering "raz", "patrzy" triggering "trzy")
+      const words = result.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "").split(/\s+/);
+      const hasWord = (targetList) => words.some(w => targetList.includes(w));
+
+      if (hasWord(['jeden', 'jedynka', '1', 'raz', 'pierwsza', 'pierwsze', 'pierwszy', 'pierwszą', 'a'])) {
         detectedIndex = 0;
-      } else if (result.includes('dwa') || result === '2' || result.includes('drug')) {
+      } else if (hasWord(['dwa', 'dwójka', '2', 'druga', 'drugie', 'drugi', 'drugą', 'b'])) {
         detectedIndex = 1;
-      } else if (result.includes('trzy') || result === '3' || result.includes('trzec')) {
+      } else if (hasWord(['trzy', 'trójka', '3', 'trzecia', 'trzecie', 'trzeci', 'trzecią', 'c'])) {
         detectedIndex = 2;
-      } else if (result.includes('cztery') || result === '4' || result.includes('czwart')) {
+      } else if (hasWord(['cztery', 'czwórka', '4', 'czwarta', 'czwarte', 'czwarty', 'czwartą', 'd'])) {
         detectedIndex = 3;
       }
 
