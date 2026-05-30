@@ -129,6 +129,13 @@ try {
     assert(correctAnswerText.includes('1 rok') || correctAnswerText.includes('jeden') || correctAnswerText.includes('1'), 'Medical statement must be valid for 1 year');
   }
 
+  // Rule K: Co-teaching lead instructor must have issued at least 5 certifications
+  const coTeachingQ = QUESTIONS_DB.find(q => q.question.includes('Głównym Instruktorem w metodzie współnauczania'));
+  if (coTeachingQ) {
+    const correctAnswerText = coTeachingQ.options[coTeachingQ.answer];
+    assert(correctAnswerText.includes('wydał co najmniej pięć') || correctAnswerText.includes('pięć (5)'), 'Co-teaching lead instructor must have issued at least 5 certifications');
+  }
+
   console.log('\n===================================================');
   console.log('TEST SUMMARY');
   console.log('===================================================');

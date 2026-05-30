@@ -696,12 +696,12 @@ const QUESTIONS_DB = [
       "Specialty Instructor dla odpowiedniego programu",
       "Open Water Instructor (Open Water Instructor) z odpowiednią certyfikacją na poziomie kursanta"
     ],
-    "answer": 2,
+    "answer": 1,
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Metoda współnauczania (Co-Teaching)",
       "page": 133,
-      "quote": "Głównym instruktorem odpowiedzialnym za program musi być certyfikowany Specialty Instructor dla odpowiedniego programu."
+      "quote": "Kandydat może prowadzić współnauczanie (co-teaching) konkretnego programu specjalizacji z osobą posiadającą aktywny status Instruktora Specjalizacji danej specjalizacji. Instruktor prowadzący co-teaching musi wystawić minimum pięć (5) certyfikatów danej specjalizacji, zanim będzie mógł prowadzić współnauczanie."
     }
   },
   {
