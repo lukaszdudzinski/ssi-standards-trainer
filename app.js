@@ -926,7 +926,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function renderPdfPage(num) {
-    if (!pdfDoc) return;
+    if (!pdfDoc || !pdfCanvas) return;
     pageRendering = true;
     
     if (pdfLoadingIndicator) {
@@ -934,6 +934,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     pdfDoc.getPage(num).then(page => {
+      if (!pdfCanvas) return;
       const ctx = pdfCanvas.getContext('2d');
       const viewport = page.getViewport({ scale: pdfScale });
       
@@ -1012,7 +1013,9 @@ document.addEventListener('DOMContentLoaded', () => {
     stopSpeechRecognition();
     
     // Open modal
-    pdfModal.classList.add('active');
+    if (pdfModal) {
+      pdfModal.classList.add('active');
+    }
     
     // Load and render
     loadPdfDocument(pageNumVal);
@@ -1020,7 +1023,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function closePdfViewer() {
-    pdfModal.classList.remove('active');
+    if (pdfModal) {
+      pdfModal.classList.remove('active');
+    }
     
     // Resume speech recognition if enabled and quiz is not answered
     if (voiceControlToggle.checked && !isAnswered && currentQuestionIndex < activeQuestions.length) {
@@ -1099,7 +1104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (openPdfFeedbackBtn) {
     openPdfFeedbackBtn.addEventListener('click', () => {
-      const pageNumVal = parseInt(feedbackPdfPageNum.textContent.trim()) || 1;
+      const pageNumVal = feedbackPdfPageNum ? (parseInt(feedbackPdfPageNum.textContent.trim()) || 1) : 1;
       openPdfViewer(pageNumVal);
     });
   }
