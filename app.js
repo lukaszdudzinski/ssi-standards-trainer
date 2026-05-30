@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.29.03';
+const APP_VERSION = 'v2026.5.29.04';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
   
   const quizTimer = document.getElementById('quizTimer');
+  const quitQuizBtn = document.getElementById('quitQuizBtn');
   const progressText = document.getElementById('progressText');
   const scoreText = document.getElementById('scoreText');
   const progressBarFill = document.getElementById('progressBarFill');
@@ -478,12 +479,39 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- 6. Timer Functionality ---
   function startTimer() {
     clearInterval(timerInterval);
-    quizTimer.textContent = '00:00';
+    quizTimer.classList.remove('overtime');
+    quizTimer.textContent = isExamMode ? '45:00' : '00:00';
+    
     timerInterval = setInterval(() => {
       secondsElapsed++;
-      const mins = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
-      const secs = String(secondsElapsed % 60).padStart(2, '0');
-      quizTimer.textContent = `${mins}:${secs}`;
+      
+      if (isExamMode) {
+        const totalLimit = 45 * 60; // 45 minutes = 2700 seconds
+        if (secondsElapsed <= totalLimit) {
+          const remaining = totalLimit - secondsElapsed;
+          const mins = String(Math.floor(remaining / 60)).padStart(2, '0');
+          const secs = String(remaining % 60).padStart(2, '0');
+          quizTimer.textContent = `${mins}:${secs}`;
+          
+          if (remaining === 0) {
+            // Time has run out!
+            alert("Czas się skończył! Możesz dokończyć test, od teraz naliczamy czas po limicie.");
+            quizTimer.classList.add('overtime');
+          }
+        } else {
+          // Overtime!
+          const overtime = secondsElapsed - totalLimit;
+          const mins = String(Math.floor(overtime / 60)).padStart(2, '0');
+          const secs = String(overtime % 60).padStart(2, '0');
+          quizTimer.textContent = `+${mins}:${secs}`;
+          quizTimer.classList.add('overtime');
+        }
+      } else {
+        // Study Mode (count-up)
+        const mins = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+        const secs = String(secondsElapsed % 60).padStart(2, '0');
+        quizTimer.textContent = `${mins}:${secs}`;
+      }
     }, 1000);
   }
 
@@ -692,6 +720,16 @@ document.addEventListener('DOMContentLoaded', () => {
     stopSpeechRecognition();
     resultsScreen.classList.remove('active');
     welcomeScreen.classList.add('active');
+  });
+
+  quitQuizBtn.addEventListener('click', () => {
+    if (confirm("Czy na pewno chcesz przerwać ten test i wrócić do menu głównego? Twój obecny postęp zostanie utracony.")) {
+      stopTimer();
+      if (synth) synth.cancel();
+      stopSpeechRecognition();
+      quizScreen.classList.remove('active');
+      welcomeScreen.classList.add('active');
+    }
   });
 
   // --- 10. PWA Integration & Offline Capabilities ---

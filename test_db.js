@@ -94,11 +94,11 @@ try {
     assert(correctAnswerText.includes('8:1') || correctAnswerText === '8:1', 'OWD ratio for standard students above 15 must be 8:1');
   }
 
-  // Rule G: Open Water Diver water session ratio with 1 assistant (above 13yo) is 10:2
+  // Rule G: Open Water Diver water session ratio with 1 assistant (above 13yo) is 6:2
   const owdAssistantRatioQ = QUESTIONS_DB.find(q => q.question.includes('w wodzie otwartej z jednym certyfikowanym asystentem podczas programu Open Water Diver dla Kursantów, którzy ukończyli 13 lat'));
   if (owdAssistantRatioQ) {
     const correctAnswerText = owdAssistantRatioQ.options[owdAssistantRatioQ.answer];
-    assert(correctAnswerText.includes('10:2') || correctAnswerText === '10:2', 'OWD ratio with 1 assistant must be 10:2');
+    assert(correctAnswerText.includes('6:2') || correctAnswerText === '6:2', 'OWD ratio with 1 assistant must be 6:2');
   }
 
   // Rule H: Perfect Buoyancy requires co najmniej 2 water sessions
