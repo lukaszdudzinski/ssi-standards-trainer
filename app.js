@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.05';
+const APP_VERSION = 'v2026.5.30.06';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -1147,12 +1147,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (closePdfBtn) {
     closePdfBtn.addEventListener('click', closePdfViewer);
   }
-  if (refPage) {
-    refPage.addEventListener('click', () => {
-      const pageNumVal = parseInt(refPage.textContent.trim()) || 1;
-      openPdfViewer(pageNumVal);
-    });
-  }
+  // refPage click listener deprecated since the upper badge is now static
   if (openPdfFeedbackBtn) {
     openPdfFeedbackBtn.addEventListener('click', () => {
       const pageNumVal = feedbackPdfPageNum ? (parseInt(feedbackPdfPageNum.textContent.trim()) || 1) : 1;

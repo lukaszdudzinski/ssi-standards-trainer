@@ -192,7 +192,7 @@
               </div>
               <div class="ref-page-badge">
                 <span class="page-label">Strona</span>
-                <span class="page-num clickable-page-badge" id="refPage" title="Kliknij, aby otworzyć standardy na tej stronie">54</span>
+                <span class="page-num page-badge-static" id="refPage">54</span>
               </div>
             </div>
 
@@ -200,8 +200,10 @@
               <p id="refQuote">"Cytat z oficjalnego dokumentu standardów w tym miejscu..."</p>
             </div>
 
-            <button id="openPdfFeedbackBtn" class="btn btn-secondary pdf-feedback-btn" style="background: rgba(0, 242, 254, 0.08); border: 1px solid rgba(0, 242, 254, 0.3); color: var(--color-cyan); margin-bottom: 8px;">
-              <i class="fa-solid fa-file-pdf"></i> Pokaż tę regułę w standardach (strona <span id="feedbackPdfPageNum">54</span>)
+            <button id="openPdfFeedbackBtn" class="pdf-feedback-btn">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Pokaż tę regułę w standardach</span>
+              <span class="btn-page-indicator">str. <span id="feedbackPdfPageNum">54</span></span>
             </button>
 
             <button id="nextQuestionBtn" class="btn btn-primary">Dalej <i class="fa-solid fa-arrow-right"></i></button>

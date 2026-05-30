@@ -57,7 +57,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.30.05', 'APP_VERSION must be exactly v2026.5.30.05');
+  assert(appVersion === 'v2026.5.30.06', 'APP_VERSION must be exactly v2026.5.30.06');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -129,8 +129,8 @@ try {
   assert(htmlContent.includes('id="openPdfMainMenuBtn"'), 'index.html must contain an openPdfMainMenuBtn element');
   assert(htmlContent.includes('id="pdfModal"'), 'index.html must contain a pdfModal element');
   assert(htmlContent.includes('id="pdfCanvas"'), 'index.html must contain a pdfCanvas element');
-  assert(htmlContent.includes('clickable-page-badge'), 'index.html must contain clickable-page-badge element');
-  assert(cssContent.includes('.clickable-page-badge'), 'index.css must define styling for .clickable-page-badge');
+  assert(htmlContent.includes('page-badge-static'), 'index.html must contain page-badge-static element');
+  assert(cssContent.includes('.page-badge-static'), 'index.css must define styling for .page-badge-static');
   assert(cssContent.includes('.pdf-modal-content'), 'index.css must define styling for .pdf-modal-content');
   assert(cssContent.includes('.modal-overlay'), 'index.css must define styling for .modal-overlay');
   assert(jsContent.includes('isRetry'), 'app.js must track the isRetry variable for retries');

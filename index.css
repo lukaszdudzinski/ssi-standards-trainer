@@ -1624,31 +1624,70 @@ input[type="range"]::-webkit-slider-thumb:hover {
   }
 }
 
-/* --- Clickable Page Badge for PDF --- */
-.clickable-page-badge {
-  cursor: pointer;
+/* --- Static Page Badge --- */
+.page-badge-static {
   position: relative;
-  text-decoration: underline;
-  transition: var(--transition-fast);
-  background: rgba(0, 242, 254, 0.1) !important;
-  border: 1px solid rgba(0, 242, 254, 0.3) !important;
-  color: var(--color-cyan) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  color: #e2e8f0 !important;
   padding: 2px 10px !important;
   border-radius: 6px;
-  box-shadow: 0 0 5px rgba(0, 242, 254, 0.1);
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
 }
 
-.clickable-page-badge:hover {
-  background: var(--color-cyan) !important;
-  color: #070b19 !important;
-  transform: scale(1.08);
-  box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+/* --- Premium PDF Feedback Button --- */
+.pdf-feedback-btn {
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 18px !important;
+  border-radius: 12px !important;
+  background: rgba(0, 242, 254, 0.08) !important;
+  border: 1px solid rgba(0, 242, 254, 0.25) !important;
+  color: var(--color-cyan) !important;
+  font-family: var(--font-heading);
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 12px !important;
+  cursor: pointer;
+  transition: all 0.22s ease-in-out;
+  text-align: center !important;
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.06);
+  box-sizing: border-box;
 }
 
-.clickable-page-badge:active {
-  transform: scale(0.95);
+.pdf-feedback-btn:hover {
+  background: rgba(0, 242, 254, 0.15) !important;
+  border-color: var(--color-cyan) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 242, 254, 0.2);
+}
+
+.pdf-feedback-btn:active {
+  transform: translateY(1px);
+}
+
+.pdf-feedback-btn i {
+  font-size: 1.05rem;
+}
+
+.btn-page-indicator {
+  background: rgba(0, 242, 254, 0.16);
+  border: 1px solid rgba(0, 242, 254, 0.35);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 6px;
+  color: #fff !important;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* --- Modal Overlay Layout --- */
