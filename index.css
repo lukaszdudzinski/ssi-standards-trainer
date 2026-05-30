@@ -1617,3 +1617,83 @@ input[type="range"]::-webkit-slider-thumb:hover {
     font-size: 0.75rem;
   }
 }
+
+/* --- Clickable Page Badge for PDF --- */
+.clickable-page-badge {
+  cursor: pointer;
+  position: relative;
+  text-decoration: underline;
+  transition: var(--transition-fast);
+  background: rgba(0, 242, 254, 0.1) !important;
+  border: 1px solid rgba(0, 242, 254, 0.3) !important;
+  color: var(--color-cyan) !important;
+  padding: 2px 10px !important;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 242, 254, 0.1);
+  display: inline-flex;
+  align-items: center;
+}
+
+.clickable-page-badge:hover {
+  background: var(--color-cyan) !important;
+  color: #070b19 !important;
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+}
+
+.clickable-page-badge:active {
+  transform: scale(0.95);
+}
+
+/* --- PDF Modal Layout --- */
+.pdf-modal-content {
+  width: 90% !important;
+  height: 90% !important;
+  max-width: 1000px !important;
+  background: rgba(7, 11, 25, 0.95) !important;
+  backdrop-filter: blur(25px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8) !important;
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.pdf-body {
+  flex: 1;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #1e293b;
+  overflow: hidden;
+}
+
+#pdfIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Glassmorphism Retry Badge */
+.retry-badge {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: auto;
+}

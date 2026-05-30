@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.02';
+const APP_VERSION = 'v2026.5.30.03';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -24,6 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const settingsModal = document.getElementById('settingsModal');
   const closeSettingsBtn = document.getElementById('closeSettingsBtn');
   
+  const questionCard = document.getElementById('questionCard');
+  const openPdfMainMenuBtn = document.getElementById('openPdfMainMenuBtn');
+  const pdfModal = document.getElementById('pdfModal');
+  const pdfIframe = document.getElementById('pdfIframe');
+  const closePdfBtn = document.getElementById('closePdfBtn');
+  const openPdfExternalBtn = document.getElementById('openPdfExternalBtn');
+
   const quizTimer = document.getElementById('quizTimer');
   const quitQuizBtn = document.getElementById('quitQuizBtn');
   const progressText = document.getElementById('progressText');
@@ -313,7 +320,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function speakQuestionAndOptions(questionObj) {
     if (!autoplayToggle.checked) return;
 
-    let textToSpeak = `${questionObj.question}. `;
+    let textToSpeak = "";
+    if (questionObj.isRetry) {
+      textToSpeak += "Powtórka pytania. ";
+    }
+    textToSpeak += `${questionObj.question}. `;
     textToSpeak += `Opcja pierwsza: ${questionObj.options[0]}. `;
     textToSpeak += `Opcja druga: ${questionObj.options[1]}. `;
     textToSpeak += `Opcja trzecia: ${questionObj.options[2]}. `;
@@ -329,7 +340,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function repeatSpeech() {
     if (currentQuestionIndex < activeQuestions.length && !isAnswered) {
       const q = activeQuestions[currentQuestionIndex];
-      let textToSpeak = `${q.question}. `;
+      let textToSpeak = "";
+      if (q.isRetry) {
+        textToSpeak += "Powtórka pytania. ";
+      }
+      textToSpeak += `${q.question}. `;
       q.options.forEach((opt, idx) => {
         textToSpeak += `Opcja ${idx + 1}: ${opt}. `;
       });
@@ -604,6 +619,17 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.querySelector('.ans-text').textContent = q.options[idx];
     });
 
+    // Handle retry badge in question card
+    let retryBadge = questionCard.querySelector('.retry-badge');
+    if (retryBadge) retryBadge.remove();
+    
+    if (q.isRetry) {
+      const badge = document.createElement('span');
+      badge.className = 'retry-badge';
+      badge.innerHTML = '<i class="fa-solid fa-clock-rotate-left"></i> Powtórka';
+      questionCard.querySelector('.question-actions').appendChild(badge);
+    }
+
     // Autoplay voice synthesis if enabled
     setTimeout(() => {
       speakQuestionAndOptions(q);
@@ -631,7 +657,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (selectedIndex === correctIndex) {
       // CORRECT ANSWER
-      score++;
+      // Only increment score if this is not a retry!
+      if (!q.isRetry) {
+        score++;
+      }
       scoreText.textContent = score;
       selectedBtn.classList.add('correct');
       playAudio(soundCorrect);
@@ -647,25 +676,43 @@ document.addEventListener('DOMContentLoaded', () => {
       correctBtn.classList.add('correct');
       playAudio(soundIncorrect);
       
-      // Save incorrect question for end review
-      incorrectQuestions.push({
-        question: q.question,
-        correctText: q.options[correctIndex],
-        reference: q.reference
-      });
+      // Save incorrect question for end review (only if it wasn't already a retry)
+      if (!q.isRetry) {
+        incorrectQuestions.push({
+          question: q.question,
+          correctText: q.options[correctIndex],
+          reference: q.reference
+        });
+      }
 
       // Show liquid glass feedback panel with details
       refChapter.innerHTML = `<i class="fa-solid fa-book"></i> ${q.reference.chapter}`;
       refSection.innerHTML = `<i class="fa-solid fa-bookmark"></i> ${q.reference.section}`;
       refPage.textContent = q.reference.page;
       refQuote.textContent = `"${q.reference.quote}"`;
+
+      // --- Spaced Repetition Retry Injection ---
+      if (!q.isRetry) {
+        const retryQ = {
+          ...q,
+          isRetry: true,
+          originalQuestionText: q.question
+        };
+        retryQ.question = "🔄 [POWTÓRKA] " + q.question;
+        
+        // Insert exactly 2 questions later (position currentQuestionIndex + 3)
+        const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 3);
+        activeQuestions.splice(insertIndex, 0, retryQ);
+        console.log(`Inserted incorrect question copy at index ${insertIndex} for retry later. Total questions: ${activeQuestions.length}`);
+      }
       
       setTimeout(() => {
         feedbackPanel.classList.add('active');
         
         // Optionally read the correct citation aloud in Polish
         if (autoplayToggle.checked) {
-          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. W rozdziale ${q.reference.chapter}, strona ${q.reference.page}: ${q.reference.quote}`, () => {
+          // Robust and detailed voice feedback template for hierarchy and longer quotes!
+          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. Według standardów SSI, rozdział: ${q.reference.chapter}, podrozdział: ${q.reference.section}, na stronie ${q.reference.page}. Oficjalny zapis ze standardów brzmi: ${q.reference.quote}`, () => {
             // Restart recognition to listen for "dalej" when lektor finishes
             if (voiceControlToggle.checked) {
               startSpeechRecognition();
@@ -851,6 +898,51 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // --- 8. PDF Standards Viewer Controls ---
+  function openPdfViewer(pageNum = 1) {
+    // Pause speech recognition while viewing PDF
+    stopSpeechRecognition();
+    
+    // Set iframe source
+    const pdfUrl = `STANDARDS-SCUBA_Polish_IM.pdf#page=${pageNum}`;
+    pdfIframe.src = pdfUrl;
+    
+    // Open modal
+    pdfModal.classList.add('active');
+    console.log(`Opened PDF viewer on page ${pageNum}`);
+  }
+
+  function closePdfViewer() {
+    pdfModal.classList.remove('active');
+    pdfIframe.src = ''; // reset to stop loading / unload PDF
+    
+    // Resume speech recognition if enabled and quiz is not answered
+    if (voiceControlToggle.checked && !isAnswered && currentQuestionIndex < activeQuestions.length) {
+      startSpeechRecognition();
+    }
+  }
+
+  if (openPdfMainMenuBtn) {
+    openPdfMainMenuBtn.addEventListener('click', () => openPdfViewer(1));
+  }
+  if (closePdfBtn) {
+    closePdfBtn.addEventListener('click', closePdfViewer);
+  }
+  if (openPdfExternalBtn) {
+    openPdfExternalBtn.addEventListener('click', () => {
+      if (pdfIframe.src) {
+        window.open(pdfIframe.src, '_blank');
+      }
+    });
+  }
+  if (refPage) {
+    refPage.addEventListener('click', () => {
+      const pageNum = parseInt(refPage.textContent.trim()) || 1;
+      openPdfViewer(pageNum);
+    });
+  }
+}
 
   function showUpdateToast(reg) {
     const toast = document.getElementById('updateToast');

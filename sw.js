@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ssi-standards-trainer-v2026.5.30.02';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.5.30.03';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -9,6 +9,7 @@ const ASSETS_TO_CACHE = [
   './logo_pro_192.png',
   './logo_pro_512.png',
   './manifest.json',
+  './STANDARDS-SCUBA_Polish_IM.pdf',
   'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'
 ];

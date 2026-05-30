@@ -34,7 +34,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.30.02', 'APP_VERSION must be exactly v2026.5.30.02');
+  assert(appVersion === 'v2026.5.30.03', 'APP_VERSION must be exactly v2026.5.30.03');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -98,6 +98,19 @@ try {
   assert(jsContent.includes("localStorage.setItem('autoplay'"), 'app.js must save autoplay setting to localStorage');
   assert(jsContent.includes("localStorage.setItem('voiceControl'"), 'app.js must save voiceControl setting to localStorage');
   assert(jsContent.includes("localStorage.setItem('carplayHack'"), 'app.js must save carplayHack setting to localStorage');
+
+  // 10. Process Validation: Spaced Repetition & Offline PDF Viewer
+  assert(swContent.includes("'./STANDARDS-SCUBA_Polish_IM.pdf'"), 'sw.js must cache STANDARDS-SCUBA_Polish_IM.pdf');
+  assert(htmlContent.includes('id="openPdfMainMenuBtn"'), 'index.html must contain an openPdfMainMenuBtn element');
+  assert(htmlContent.includes('id="pdfModal"'), 'index.html must contain a pdfModal element');
+  assert(htmlContent.includes('id="pdfIframe"'), 'index.html must contain a pdfIframe element');
+  assert(htmlContent.includes('clickable-page-badge'), 'index.html must contain clickable-page-badge element');
+  assert(cssContent.includes('.clickable-page-badge'), 'index.css must define styling for .clickable-page-badge');
+  assert(cssContent.includes('.pdf-modal-content'), 'index.css must define styling for .pdf-modal-content');
+  assert(jsContent.includes('isRetry'), 'app.js must track the isRetry variable for retries');
+  assert(jsContent.includes('.splice('), 'app.js must inject retry questions using splice');
+  assert(jsContent.includes('openPdfViewer'), 'app.js must implement openPdfViewer function');
+  assert(jsContent.includes('closePdfViewer'), 'app.js must implement closePdfViewer function');
 
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');

@@ -411,9 +411,9 @@ const QUESTIONS_DB = [
     "answer": 0,
     "reference": {
       "chapter": "Programy Profesjonalne",
-      "section": "Tabela wymagań dla Specialty Instructor",
-      "page": 132,
-      "quote": "W przypadku udziału w oficjalnym seminarium instruktorskim (Seminar), wymagane zalogowane nurkowania to: Brak."
+      "section": "Specialty Instruktor - Metody Certyfikacji",
+      "page": 128,
+      "quote": "a. Seminarium dla Instruktorów Specjalizacji. Minimalny Stopień Instruktora: Posiadający aktywny status Assistant Instructor Trainer, posiadający uprawnienia instruktorskie danej specjalizacji może prowadzić seminarium. Wymagania do ukończenia kursu: Ukończenie seminarium dla instruktorów specjalizacji zgodnie z podręcznikiem instruktorskim. Uwaga: W przypadku tej metody nie jest wymagany dowód zalogowanych nurkowań."
     }
   },
   {
