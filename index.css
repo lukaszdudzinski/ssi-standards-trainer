@@ -649,23 +649,33 @@ body {
   margin-top: 14px;
 }
 
-.voice-btn {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 1px solid var(--glass-border);
-  background: var(--glass-bg);
+.repeat-btn {
+  background: rgba(0, 242, 254, 0.08);
+  border: 1px solid rgba(0, 242, 254, 0.25);
   color: var(--color-cyan);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition-smooth);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.voice-btn:hover {
-  transform: scale(1.1);
-  background: rgba(0, 242, 254, 0.08);
+.repeat-btn:hover {
+  background: var(--color-cyan);
+  color: #070b19;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.3);
+}
+
+.repeat-btn:active {
+  transform: scale(0.95);
 }
 
 /* --- Answers Grid --- */

@@ -81,7 +81,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.29.04</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.30.01</span></p>
         </div>
       </section>
 
@@ -136,8 +136,8 @@
         <div class="question-card" id="questionCard">
           <h3 id="questionText">Treść pytania pojawi się tutaj...</h3>
           <div class="question-actions">
-            <button id="repeatSpeechBtn" class="voice-btn pulse-glow" title="Przeczytaj pytanie">
-              <i class="fa-solid fa-volume-high"></i>
+            <button id="repeatSpeechBtn" class="repeat-btn pulse-glow" title="Powtórz pytanie głosowo">
+              🔊 Powtórz lektora
             </button>
           </div>
         </div>
@@ -260,6 +260,13 @@
               <label for="voiceVolume"><i class="fa-solid fa-volume-low"></i> Głośność: <span id="voiceVolumeVal">100</span>%</label>
               <input type="range" id="voiceVolume" min="0" max="1" step="0.1" value="1">
             </div>
+            <div class="switch-container" style="margin-top: 14px;">
+              <span class="switch-label"><i class="fa-solid fa-car"></i> Strumieniowanie CarPlay/Bluetooth</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="carplayHackToggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
           </div>
 
           <!-- Section B: PWA Installation Guide -->
@@ -324,6 +331,7 @@
                     <li><strong>Routing Audio w samochodzie:</strong> Aby skierować lektora na głośniki auta, otwórz <strong>Centrum Sterowania</strong> na iPhonie (przesunięcie palcem z prawego górnego rogu w dół), kliknij ikonę <strong>AirPlay/Audio</strong> w prawym górnym rogu karty odtwarzacza i ręcznie wybierz Bluetooth samochodu lub CarPlay jako docelowe urządzenie wyjściowe.</li>
                     <li><strong>Głośność Lektora:</strong> Ponieważ głos lektora jest kontrolowany oddzielnie, standardowe przyciski głośności w samochodzie zmieniają tylko głośność efektów. Aby podgłośnić lektora, <strong>zwiększ głośność przyciskami telefonu dokładnie w momencie, gdy lektor odczytuje pytanie</strong>.</li>
                     <li><strong>Ustawienia Dostępności iOS:</strong> Możesz również dostosować głośność lektora na stałe w telefonie wchodząc w: <em>Ustawienia -> Dostępność -> Czytanie zawartości -> Głosy</em> i dostosowując parametry wybranego głosu języka polskiego.</li>
+                    <li><strong>Brak głosu po kablu CarPlay (USB-C):</strong> Niektóre pokładowe systemy CarPlay blokują przesyłanie lektora przez kabel USB. Jeśli po podłączeniu telefonu kablem w aucie nastała głusza, **wyłącz opcję „Strumieniowanie CarPlay/Bluetooth”** w Ustawieniach Lektora w aplikacji. Dźwięk lektora natychmiast wróci i będzie szedł z głośnika telefonu, a muzyka/radio w samochodzie będzie mogła spokojnie lecieć w tle!</li>
                   </ol>
                 </div>
               </div>
@@ -333,7 +341,7 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.5.29.04</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.5.30.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>

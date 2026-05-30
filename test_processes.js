@@ -34,7 +34,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.29.04', 'APP_VERSION must be exactly v2026.5.29.04');
+  assert(appVersion === 'v2026.5.30.01', 'APP_VERSION must be exactly v2026.5.30.01');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -88,6 +88,16 @@ try {
   assert(cssContent.includes('.quit-btn'), 'index.css must define styling for the quit-btn');
   assert(cssContent.includes('.timer.overtime'), 'index.css must define styling for the overtime timer');
   assert(jsContent.includes('isExamMode'), 'app.js must track the isExamMode variable');
+
+  // 9. Process Validation: CarPlay Audio Silence & Repeat Button
+  assert(htmlContent.includes('class="repeat-btn pulse-glow"') || htmlContent.includes('class="repeat-btn"'), 'index.html must contain a repeat-btn class element');
+  assert(htmlContent.includes('id="carplayHackToggle"'), 'index.html must contain carplayHackToggle switch element');
+  assert(cssContent.includes('.repeat-btn'), 'index.css must define styling for .repeat-btn');
+  assert(jsContent.includes('carplayHackToggle'), 'app.js must define carplayHackToggle reference');
+  assert(jsContent.includes('initSettings()'), 'app.js must implement initSettings function');
+  assert(jsContent.includes("localStorage.setItem('autoplay'"), 'app.js must save autoplay setting to localStorage');
+  assert(jsContent.includes("localStorage.setItem('voiceControl'"), 'app.js must save voiceControl setting to localStorage');
+  assert(jsContent.includes("localStorage.setItem('carplayHack'"), 'app.js must save carplayHack setting to localStorage');
 
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');

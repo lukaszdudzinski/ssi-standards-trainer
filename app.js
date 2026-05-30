@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.29.04';
+const APP_VERSION = 'v2026.5.30.01';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const autoplayToggle = document.getElementById('autoplayToggle');
   const voiceControlToggle = document.getElementById('voiceControlToggle');
+  const carplayHackToggle = document.getElementById('carplayHackToggle');
   
   const questionText = document.getElementById('questionText');
   const repeatSpeechBtn = document.getElementById('repeatSpeechBtn');
@@ -115,6 +116,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initTheme();
 
+  // --- 1.5 Load & Save PWA Settings ---
+  function initSettings() {
+    const savedAutoplay = localStorage.getItem('autoplay');
+    if (savedAutoplay !== null) {
+      autoplayToggle.checked = (savedAutoplay === 'true');
+    } else {
+      autoplayToggle.checked = true; // default true
+    }
+
+    const savedVoiceControl = localStorage.getItem('voiceControl');
+    if (savedVoiceControl !== null) {
+      voiceControlToggle.checked = (savedVoiceControl === 'true');
+    } else {
+      voiceControlToggle.checked = false; // default false
+    }
+
+    const savedCarplayHack = localStorage.getItem('carplayHack');
+    if (savedCarplayHack !== null) {
+      carplayHackToggle.checked = (savedCarplayHack === 'true');
+    } else {
+      carplayHackToggle.checked = true; // default true (enabled)
+    }
+
+    const savedRate = localStorage.getItem('voiceRate');
+    if (savedRate !== null) {
+      voiceRate.value = savedRate;
+      voiceRateVal.textContent = savedRate;
+    }
+
+    const savedVolume = localStorage.getItem('voiceVolume');
+    if (savedVolume !== null) {
+      voiceVolume.value = savedVolume;
+      voiceVolumeVal.textContent = Math.round(savedVolume * 100);
+    }
+  }
+
+  // Event Listeners to persist changes
+  autoplayToggle.addEventListener('change', () => {
+    localStorage.setItem('autoplay', autoplayToggle.checked);
+  });
+
+  voiceControlToggle.addEventListener('change', () => {
+    localStorage.setItem('voiceControl', voiceControlToggle.checked);
+  });
+
+  carplayHackToggle.addEventListener('change', () => {
+    localStorage.setItem('carplayHack', carplayHackToggle.checked);
+  });
+
+  initSettings();
+
   // --- 2. Settings & PWA Guide Navigation ---
   settingsBtn.addEventListener('click', () => settingsModal.classList.add('active'));
   closeSettingsBtn.addEventListener('click', () => settingsModal.classList.remove('active'));
@@ -143,9 +195,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Voice speed and volume slider change
   voiceRate.addEventListener('input', () => {
     voiceRateVal.textContent = voiceRate.value;
+    localStorage.setItem('voiceRate', voiceRate.value);
   });
   voiceVolume.addEventListener('input', () => {
     voiceVolumeVal.textContent = Math.round(voiceVolume.value * 100);
+    localStorage.setItem('voiceVolume', voiceVolume.value);
   });
 
   // --- 3. Text-to-Speech (Polish Lektor with Phonetic English Corrections) ---
@@ -229,8 +283,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!synth) return;
     synth.cancel();
 
-    // Activate CarPlay Bluetooth Media audio stream route dynamically!
-    playSilence();
+    // Activate CarPlay Bluetooth Media audio stream route dynamically if enabled!
+    if (carplayHackToggle && carplayHackToggle.checked) {
+      playSilence();
+    }
 
     // Dynamically apply phonetic corrections so the Polish voice sounds flawless!
     const phoneticText = getPhoneticPolishText(text);
