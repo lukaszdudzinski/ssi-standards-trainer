@@ -12,7 +12,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "VI. Współczynnik ilościowy w wodzie",
-      "page": 46,
+      "page": 54,
       "quote": "Liczba ta może wzrosnąć do 6:2, jeżeli instruktor korzysta z pomocy jednego (1) certyﬁkowanego asystenta."
     }
   },
@@ -92,7 +92,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Scuba Skills Update - Limity",
-      "page": 46,
+      "page": 60,
       "quote": "Maksymalny limit głębokości dla certyfikowanych nurków wynosi 18 metrów (lub limit głębokości z ich certyfikatu)."
     }
   },
@@ -236,7 +236,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver - Wymagania wstępne",
-      "page": 46,
+      "page": 53,
       "quote": "Minimalny wiek | 10 lat. (Uwaga: Osoby w wieku 10-14 lat otrzymują certyfikat Junior OWD)."
     }
   },
@@ -252,7 +252,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "VI. Współczynnik ilościowy w wodzie",
-      "page": 46,
+      "page": 53,
       "quote": "Współczynnik kursant-instruktor: 8:1"
     }
   },
@@ -764,7 +764,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy - Wymagania wstępne",
-      "page": 46,
+      "page": 75,
       "quote": "Wymagania wstępne dla kursanta obejmują posiadanie certyfikatu Open Water Diver lub statusu Referral Diver."
     }
   },
