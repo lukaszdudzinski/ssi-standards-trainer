@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.31.03';
+const APP_VERSION = 'v2026.5.31.04';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -967,32 +967,13 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // 2. Identify Spaced Repetition questions (previously failed) (Krok 2.3)
-    const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
-    const failedQuestions = [];
-    const otherQuestions = [];
+    // 2. Shuffle completely the selected pool
+    const finalPool = shuffleArray(filteredPool);
     
-    filteredPool.forEach(q => {
-      // Clean flags
-      delete q.isSpacedRepetition;
-      if (spacedRepErrors.includes(q.question)) {
-        const copy = { ...q, isSpacedRepetition: true };
-        failedQuestions.push(copy);
-      } else {
-        otherQuestions.push({ ...q });
-      }
-    });
-
-    // 3. Shuffle both separately and combine
-    const shuffledFailed = shuffleArray(failedQuestions);
-    const shuffledOthers = shuffleArray(otherQuestions);
-    const finalPool = [...shuffledFailed, ...shuffledOthers];
-    
+    // 3. Select 50 questions for Exam Mode, or all for Practice Mode
     if (isExamMode) {
-      // 50 questions for Exam Mode
       activeQuestions = finalPool.slice(0, Math.min(50, finalPool.length));
     } else {
-      // All questions for Study Mode
       activeQuestions = finalPool;
     }
 
@@ -1212,22 +1193,20 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       refQuote.textContent = `"${q.reference.quote}"`;
 
-      // --- Spaced Repetition Retry Injection (Twardy tryb aż do skutku) ---
-      if (!isExamMode) {
-        retryCount++;
-        const baseText = q.originalQuestionText || q.question;
-        const retryQ = {
-          ...q,
-          isRetry: true,
-          originalQuestionText: baseText,
-          question: "🔄 [POWTÓRKA] " + baseText
-        };
-        
-        // Wrzuć dokładnie za 3 pytania (lub na koniec, jeśli test krótszy). Gwarancja powrotu pytania.
-        const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 4);
-        activeQuestions.splice(insertIndex, 0, retryQ);
-        console.log(`Błąd w pytaniu. Twardy Tryb: Wstrzyknięto powtórkę "${baseText.substring(0,20)}..." na indeks ${insertIndex}. Razem w kolejce: ${activeQuestions.length}`);
-      }
+      // --- Spaced Repetition Retry Injection (Twardy tryb aż do skutku we wszystkich trybach) ---
+      retryCount++;
+      const baseText = q.originalQuestionText || q.question;
+      const retryQ = {
+        ...q,
+        isRetry: true,
+        originalQuestionText: baseText,
+        question: "🔄 [POWTÓRKA] " + baseText
+      };
+      
+      // Wrzuć dokładnie za 3 pytania (lub na koniec, jeśli test krótszy). Gwarancja powrotu pytania.
+      const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 4);
+      activeQuestions.splice(insertIndex, 0, retryQ);
+      console.log(`Błąd w pytaniu. Twardy Tryb: Wstrzyknięto powtórkę "${baseText.substring(0,20)}..." na indeks ${insertIndex}. Razem w kolejce: ${activeQuestions.length}`);
       
       setTimeout(() => {
         feedbackPanel.classList.add('active');
