@@ -6868,6 +6868,346 @@ const QUESTIONS_DB = [
       "quote": "Podczas oceny umiejętności nurkowych w wodzie, kursanci muszą pozostawać pod bezpośrednim nadzorem Profesjonalisty SSI w taki sposób, aby w każdej chwili możliwe było nawiązanie kontaktu fizycznego."
     },
     "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W programie Advanced Open Water Diver przewidziano różne limity głębokości w zależności od wieku uczestników. Jaka jest maksymalna dopuszczalna głębokość dla 12-14 letniego kursanta podczas uczestnictwa w nurkowaniu szkoleniowym Deep Diving Adventure?",
+    "options": [
+      "12 metrów.",
+      "18 metrów.",
+      "21 metrów.",
+      "30 metrów."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Advanced Adventurer",
+      "page": 535,
+      "quote": "Maksymalny limit głębokości na wodach otwartych dla kursantów w wieku 12-14 lat podczas Deep Diving Adventure wynosi 21 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie z dobrymi praktykami dokumentacyjnymi SSI, co musi zrobić instruktor wypełniający papierową dokumentację szkoleniową, jeśli popełni w niej błąd?",
+    "options": [
+      "Zamazać błąd długopisem i dopisać prawidłową odpowiedź obok.",
+      "Użyć płynu korekcyjnego, a następnie nanieść prawidłową informację.",
+      "Przekreślić błąd pojedynczą linią, wpisać poprawną wartość oraz dodać swoje inicjały i datę korekty.",
+      "Zniszczyć formularz i wypełnić nową, czystą kopię dokumentu z kursantem."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Załącznik",
+      "section": "Dobre praktyki dokumentacyjne",
+      "page": 499,
+      "quote": "Popraw błędy, rysując pojedynczą linię przez błąd, wpisując poprawną wartość i dodając swoje inicjały oraz datę korekty."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jakie są sztywne ograniczenia dla posiadającego aktywny status Instruktora Asystującego (Assistant Instructor) podczas szkolenia na poziomie podstawowym? Czego taki instruktor kategorycznie NIE MOŻE uczyć?",
+    "options": [
+      "Zdejmowania i zakładania sprzętu (SCUBA) pod wodą.",
+      "Oczyszczania i odzyskiwania automatu oddechowego.",
+      "Wszelkich umiejętności wynurzania awaryjnego (np. awaryjnego wynurzania płynąc, wynurzania z dzieleniem się gazem).",
+      "Umiejętności ściągania maski w wodzie o głębokości przekraczającej 2 metry."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Assistant Instructor (Instruktor asystujący)",
+      "page": 369,
+      "quote": "Instruktor Asystujący nie może: (...) Uczyć wszelkich umiejętności wynurzania awaryjnego."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie ze standardami SSI, ubiegając się o poziom Master Instructor, kandydat może na poczet wymaganych certyfikatów Open Water Diver zaliczyć karty z programów doświadczania. Jaki jest dokładny przelicznik kart z programu Try Scuba na certyfikat OWD?",
+    "options": [
+      "Dwie (2) karty Try Scuba to jeden certyfikat OWD.",
+      "Sześć (6) kart Try Scuba to jeden certyfikat OWD.",
+      "Dziesięć (10) kart Try Scuba to jeden certyfikat OWD.",
+      "Dwanaście (12) kart uznania Try Scuba jest równoważne z jednym (1) certyfikatem OWD."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Master Instructor",
+      "page": 404,
+      "quote": "Dwanaście (12) kart uznania Try Scuba jest równoważne z jednym (1) certyfikatem Open Water Diver."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest limit czasowy po ukończeniu Instructor Training Course, w którym kandydat musi przystąpić do Egzaminu Instruktorskiego (Instructor Evaluation), zanim niezbędna będzie ponowna ocena jego umiejętności przez Instructor Trainer'a?",
+    "options": [
+      "Trzy (3) miesiące.",
+      "Sześć (6) miesięcy.",
+      "Dwanaście (12) miesięcy.",
+      "Nie ma limitu czasowego, kandydat musi jedynie posiadać aktywny status MySSI."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Open Water Instructor (Open Water Instructor)",
+      "page": 376,
+      "quote": "Egzamin Instruktorski należy przeprowadzić w ciągu sześciu (6) miesięcy od ukończenia kursu."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaka zasada dotyczy stosowania 'Umowy o przejęciu ryzyka, zwolnieniu z odpowiedzialności i zwolnieniu z odpowiedzialności za szkody' wobec klientów z obszaru Unii Europejskiej?",
+    "options": [
+      "Umowa jest bezwzględnie wymagana i musi być odnawiana co 12 miesięcy.",
+      "Dokument musi zostać potwierdzony notarialnie w kraju członkowskim.",
+      "Umowa ta nie obowiązuje w Unii Europejskiej i kursanci nie powinni być zmuszani do jej podpisywania.",
+      "Musi ją podpisać jedynie osoba pełnoletnia; nie wymaga się jej w przypadku Junior Diver."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Załącznik",
+      "section": "Globalny rekord szkolenia SSI i przegląd formularzy",
+      "page": 513,
+      "quote": "Umowa o przejęciu ryzyka, zwolnieniu z odpowiedzialności i zwolnieniu z odpowiedzialności nie obowiązuje w Unii Europejskiej, więc Kursanci nie powinni być zmuszani do jej podpisywania."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak standardy określają maksymalny współczynnik ilościowy w programie Advanced Wreck Diving podczas nurkowania po otwartej wodzie (bez penetracji) oraz w samej przestrzeni zamkniętej?",
+    "options": [
+      "8:1 na zewnątrz i można to powiększyć asystentami, 4:1 wewnątrz.",
+      "6:1 na zewnątrz i 2:1 wewnątrz w świetle dziennym.",
+      "8:1 na otwartej wodzie oraz 3:1 w przestrzeniach zamkniętych.",
+      "Sztywny współczynnik 2:1 niezależnie od etapu szkolenia Advanced Wreck."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje w przestrzeniach zamkniętych",
+      "section": "Advanced Wreck Diving",
+      "page": 334,
+      "quote": "a. Wody otwarte - Współczynnik kursant-instruktor: 8:1 b. Przestrzenie zamknięte - Współczynnik kursant-instruktor: 3:1"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Wykwalifikowany SSI Dive Guide może podnieść uprawnienia (upgrade) do poziomu SSI Divemaster. Jakie kluczowe wymogi musi dodatkowo spełnić, oprócz warunków wiekowych i statusu?",
+    "options": [
+      "Przeprowadzić minimum 2 programy Try Scuba pod nadzorem OWI.",
+      "Zaliczyć egzamin końcowy programu Science of Diving.",
+      "Wykonać 10 głębokich nurkowań technicznych.",
+      "Ukończyć pełen program instruktorski React Right."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Divemaster | ISO 24801-3",
+      "page": 253,
+      "quote": "Zaliczyć egzamin końcowy programu Science of Diving."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Gdy 14-letni nurek z certyfikatem Junior Advanced Open Water Diver ukończy 15 lat, chce wykorzystać limity głębokości do 30 metrów dostępne dla dorosłych. Co mówi na ten temat wymóg z Ogólnych Standardów Szkoleniowych SSI?",
+    "options": [
+      "Limit podnosi się automatycznie w systemie w dniu 15. urodzin, bez dodatkowych warunków.",
+      "Musi napisać ponownie końcowy egzamin teoretyczny na platformie MySSI.",
+      "Musi wykonać nurkowanie uaktualniające na głębokości od 21 do 30 metrów z Open Water Instructor.",
+      "Wymagane jest pełne powtórzenie zajęć Deep Diving z nowym instruktorem."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Advanced Open Water Diver",
+      "page": 190,
+      "quote": "Po ukończeniu 15. roku życia kursanci mogą przejść do limitów głębokości dla dorosłych, wykonując nurkowanie uaktualniające na głębokości od 21 do 30 metrów z Open Water Instructor."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Wymogi sprzętowe SSI wskazują na dodatkowe, obowiązkowe elementy dla profesjonalisty SSI. Czego, poza standardowym zestawem kursanta, musi używać każdy Profesjonalista SSI podczas wszystkich nurkowań szkoleniowych na Wodach Otwartych?",
+    "options": [
+      "Niezależnego, zdublowanego automatu na długim wężu.",
+      "Komputera nurkowego, bojki nurkowej, urządzenia sygnalizacyjnego na powierzchni, narzędzia tnącego i kompasu.",
+      "Skafandra suchego przy każdej temperaturze poniżej 20°C.",
+      "Kołowrotka z min. 30 metrami liny przy każdym nurkowaniu podstawowym."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Definicje sprzętowe",
+      "section": "Programy nurkowania rekreacyjnego",
+      "page": 67,
+      "quote": "Podczas wszystkich nurkowań szkoleniowych na Wodach Otwartych każdy Profesjonalista SSI musi posiadać ten sam sprzęt co kursant oraz dodatkowo: Komputer nurkowy, Bojkę nurkową, Urządzenie do sygnalizacji sytuacji awaryjnych na powierzchni, Narzędzie tnące, Kompas"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby przedłużyć ważność instruktora udzielania pierwszej pomocy, organizowany jest React Right Update. Ile czasu trwać musi taka aktualizacja zgodnie z rygorem certyfikacji SSI?",
+    "options": [
+      "Wystarczy godzina, jeżeli kursant wypełnił test online.",
+      "Update musi trwać przynajmniej dwie (2) godziny i obejmować jeden cykl wszystkich umiejętności.",
+      "Czas trwania zależy wyłącznie od decyzji instruktora wydającego przedłużenie.",
+      "Dokładnie 5 godzin, jak w przypadku części First Aid podczas początkowego szkolenia."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy React Right",
+      "section": "React Right Update",
+      "page": 481,
+      "quote": "Update musi trwać przynajmniej dwie (2) godziny i musi obejmować przynajmniej jeden (1) cykl wszystkich umiejętności dla każdej mającej zastosowanie certyfikacji określonej w podręczniku instruktorskim React Right."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jakie są roczne wymagania liczbowe dla posiadającego status Elite Instructor Trainer, aby kwalifikował się on na ten poziom wydając certyfikaty instruktorskie w minionym roku kalendarzowym?",
+    "options": [
+      "Co najmniej 1 certyfikat instruktora podstawowego i 10 certyfikatów instruktora Specialty.",
+      "Wydanie co najmniej 5 certyfikatów instruktora podstawowego i co najmniej 30 certyfikatów instruktora Specialty.",
+      "Co najmniej 10 certyfikatów instruktora podstawowego i 60 Specialty.",
+      "Co najmniej 15 certyfikatów podstawowych i 5 certyfikatów AIT."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Karty uznaniowe dla Profesjonalistów",
+      "page": 420,
+      "quote": "Elite Instructor Trainer | Wydanie co najmniej 5 certyfikatów instruktora podstawowego i co najmniej 30 certyfikatów instruktora Specialty."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "O ile można maksymalnie zwiększyć współczynnik ilościowy w wodzie za pomocą certyfikowanych asystentów w programie Snorkel Explorer dla małych dzieci (wiek 6-9 lat)?",
+    "options": [
+      "Współczynnik dla wieku 6-9 wynosi bezwzględnie 6:1 i nie ma wyjątków na asystenta.",
+      "Standardowe 8:1 można zwiększyć maksymalnie do 10:2 z jednym asystentem lub do 12:3 z dwoma.",
+      "Współczynnika 4:1 nie można zwiększać przy dzieciach poniżej 10 roku życia.",
+      "Można go zwiększyć dowolnie o 2 osoby na każdego Divemastera SSI."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy specjalizacji z zakresu ekologii",
+      "section": "Programy specjalizacji z zakresu ekologii",
+      "page": 457,
+      "quote": "Kursanci w wieku 6-9 lat: Współczynnik kursant-instruktor: 8:1. Współczynnik może wzrosnąć do 10:2 z jednym (1) certyfikowanym asystentem. Współczynnik może wzrosnąć do 12:3 z dwoma (2) certyfikowanymi asystentami."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Dla programu Decompression Diving SSI precyzyjnie limituje czas postojów w toni. Jak brzmi przepis dotyczący maksymalnego czasu dekompresji narzuconego przez standard?",
+    "options": [
+      "Nie ma limitu o ile nurek dysponuje zapasem 1/3 gazu z konfiguracji twinset.",
+      "Maksymalny limit dekompresji wynosi 10 minut przy użyciu 100% tlenu.",
+      "Całkowity czas wszystkich wymaganych przystanków dekompresyjnych w oparciu o gaz plecowy nie może przekraczać 15 minut na nurkowanie.",
+      "Maksymalny czas to równe 30 minut dekompresji dla stage z EAN 40."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Decompression Diving",
+      "page": 294,
+      "quote": "Całkowity czas wszystkich wymaganych przystanków dekompresyjnych w oparciu o gaz plecowy nie może przekraczać 15 minut na nurkowanie."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W jaki sposób standaryzowany jest maksymal współczynnik w wodach otwartych w programie Classified Diving dla kursantów sklasyfikowanych do zaawansowanego Poziomu 2 lub 3?",
+    "options": [
+      "2:1:2 z dwoma kursantami CD i dwoma certyfikowanymi CD Buddies.",
+      "1:1:2 (jeden kursant Classified Diving, jeden instruktor Classified Diving oraz dwaj certyfikowani Classified Dive Buddy).",
+      "Wymagany jest stosunek 1:1, ale dozwolone jest pominięcie Classified Dive Buddy.",
+      "3:1:2 dla wszystkich poziomów powyżej poziomu pierwszego."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Classified Diving",
+      "section": "Classified Diving",
+      "page": 427,
+      "quote": "Level 2 i 3: współczynnik kursant-instruktor wynosi 1:1:2, z jednym (1) kursantem Classified Diving, jednym (1) instruktorem Classified Diving oraz dwoma (2) certyfikowanymi Classified Dive Buddy"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Według Oficjalnych Definicji Środowiskowych SSI, czym dokładnie z technicznego punktu widzenia charakteryzuje się definicja 'Płytkiej Wody'?",
+    "options": [
+      "Woda o głębokości do dwóch (2) metrów, odgrodzona w basenie.",
+      "Woda na głębokości od zera do pięciu (5) metrów w zbiornikach sztucznych.",
+      "Woda o głębokości, która pozwala na stanięcie na dnie, z głową wystającą poza jej poziom.",
+      "Każdy ograniczony akwen, w którym fala nie przekracza 0,5 metra wysokości."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Definicje związane ze środowiskiem",
+      "page": 96,
+      "quote": "Woda o głębokości, która pozwala na stanięcie na dnie, z głową wystającą poza jej poziom."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak regulowane jest łączenie programów specjalizacji w odniesieniu do wymaganej minimalnej liczby nurkowań owartych? Ile nurkowań OW należy zaliczyć, jeżeli instruktor prowadzi kursantowi trzy (3) programy specjalizacji jednocześnie?",
+    "options": [
+      "Należy zsumować wszystkie nurkowania i wykonać ich minimum 6.",
+      "Należy przeprowadzić co najmniej trzy (3) nurkowania szkoleniowe.",
+      "Należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych.",
+      "Należy przeprowadzić co najmniej pięć (5) nurkowań szkoleniowych na Wodach Otwartych."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Ogólne Standardy Specjalizacji",
+      "page": 173,
+      "quote": "Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W jaki sposób przeprowadzany jest proces certyfikacji dla Instruktora Specjalizacji (Specialty Instructor) z programów, do których SSI nie posiada własnych cyfrowych materiałów (np. niektóre Unique Specialties)?",
+    "options": [
+      "Decyzję podejmuje wyłącznie SSI International po przysłaniu dokumentów w języku angielskim.",
+      "Certyfikacja jest dokonywana przez odpowiedzialne Centrum Szkoleniowe, Manager QMS autoryzuje certyfikację, a cała dokumentacja jest przechowywana przez Centrum Szkoleniowe.",
+      "Aplikacja wędruje bezpośrednio do Europejskiej Federacji Podwodnej (EUF).",
+      "Weryfikacji dokonuje Instructor Certifier na corocznym seminarium IE."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 37,
+      "quote": "W przypadku programów Instruktora Specjalizacji, do których nie ma materiałów cyfrowych, certyfikacja jest dokonywana przez odpowiedzialne Centrum Szkoleniowe, Manager QMS autoryzuje certyfikację, a cała wymagana dokumentacja jest przechowywana przez Centrum Szkoleniowe."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Od jakiej dokładnej głębokości (jako minimalny próg wejścia w strefę uwarunkowaną prawnie) Standardy SSI klasyfikują oficjalnie nurkowanie w kategorii środowiskowej jako 'Deep Diving' (nurkowanie głębokie)?",
+    "options": [
+      "Jest to każde nurkowanie przekraczające linię 12 metrów na Wodach Otwartych.",
+      "Jest to każde zaplanowane nurkowanie poniżej 24 metrów na Wodach Otwartych.",
+      "Jest to każde nurkowanie na głębokości większej niż 18 metrów.",
+      "Jest to każde nurkowanie w okolicy 30-40 metrów na wodach otwartych z dekompresją."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Definicje związane ze środowiskiem",
+      "page": 96,
+      "quote": "Jest to każde nurkowanie na głębokości większej niż 18 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaka jest bezwzględna zasada dotycząca sekwencji zajęć w środowisku SSI Explorers wprowadzających dzieci do rekreacji wodnej?",
+    "options": [
+      "Program Freediving Explorer musi zostać zaliczony przed Mermaidingiem.",
+      "Ecology Explorer należy przeprowadzić zawsze jako pierwsze zajęcia w basenie.",
+      "Scuba Explorer można przeprowadzić po minięciu 6 roku życia niezależnie od innych modułów.",
+      "Snorkel Explorer musi być ukończony przed jakimikolwiek innymi zajęciami w wodzie programów Explorer."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Programy Explorers",
+      "section": "SSI Explorers",
+      "page": 471,
+      "quote": "Snorkel Explorer musi być ukończony przed jakimikolwiek innymi zajęciami w wodzie programów Explorer."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
   }
 ];
 
