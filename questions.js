@@ -7208,6 +7208,533 @@ const QUESTIONS_DB = [
       "quote": "Snorkel Explorer musi być ukończony przed jakimikolwiek innymi zajęciami w wodzie programów Explorer."
     },
     "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest maksymalny dopuszczalny limit głębokości na wodach otwartych w programie Altitude Diving dla dzieci w wieku 10-11 lat?",
+    "options": [
+      "5 metrów.",
+      "12 metrów.",
+      "18 metrów.",
+      "21 metrów."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje wiedzy o nurkowaniu",
+      "section": "Altitude Diving",
+      "page": 195,
+      "quote": "Maksymalny limit głębokości wody otwartej dla 10- i 11-latków | 12 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest zalecany czas trwania (w godzinach) dla programu specjalizacji Computer Diving?",
+    "options": [
+      "1-3 godziny.",
+      "3-6 godzin.",
+      "5-10 godzin.",
+      "8-12 godzin."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje wiedzy o nurkowaniu",
+      "section": "Computer Diving",
+      "page": 200,
+      "quote": "Zalecane godziny ukończenia | 3-6."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaką maksymalną wartość ciśnienia parcjalnego tlenu (ppO2) dopuszczają standardy szkoleniowe SSI podczas fazy dekompresji w programie Decompression Diving?",
+    "options": [
+      "1.2 bara.",
+      "1.4 bara.",
+      "1.6 bara.",
+      "1.8 bara."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Definicje sprzętowe",
+      "section": "Programy nurkowania rekreacyjnego",
+      "page": 64,
+      "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Certyfikowany nurek programu Enriched Air Nitrox 32 ma dodatkowy obowiązek bezpieczeństwa przed wykonaniem nurkowania. Co to za obowiązek?",
+    "options": [
+      "Musi osobiście skalibrować komórkę tlenową w analizatorze.",
+      "Musi zweryfikować procentową zawartość tlenu w gazie oddechowym przez profesjonalistę przed każdym nurkowaniem.",
+      "Musi podpisać odrębną, jednorazową umowę przejęcia ryzyka w centrum nurkowym przed wydaniem butli.",
+      "Musi zaliczyć przynajmniej jedno zajęcie przypominające w basenie, jeśli nie nurkował przez 6 miesięcy."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje wiedzy o nurkowaniu",
+      "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
+      "page": 210,
+      "quote": "Certyfikowani nurkowie Enriched Air Nitrox 32 muszą przed każdym nurkowaniem zweryfikować przez profesjonalistę procentową zawartość tlenu w gazie oddechowym."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Ile wynosi zalecany czas ukończenia programu specjalizacji Equipment Techniques?",
+    "options": [
+      "1-3 godziny.",
+      "3-6 godzin.",
+      "5-10 godzin.",
+      "10-15 godzin."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje wiedzy o nurkowaniu",
+      "section": "Equipment Techniques",
+      "page": 214,
+      "quote": "Zalecane godziny ukończenia | 3-6."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest minimalny wiek uczestnika wymagany do rozpoczęcia programu Science of Diving?",
+    "options": [
+      "8 lat.",
+      "10 lat.",
+      "12 lat.",
+      "15 lat."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje wiedzy o nurkowaniu",
+      "section": "Science of Diving",
+      "page": 218,
+      "quote": "Minimalny wiek | 10 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Ile minimalnie zajęć w wodzie (basen / akwen ograniczony) musi ukończyć kursant w programie Perfect Buoyancy, aby spełnić wymagania do certyfikacji?",
+    "options": [
+      "Tylko jedne (1) zajęcia w wodzie.",
+      "Co najmniej dwoje (2) zajęć w wodzie.",
+      "Co najmniej troje (3) zajęć w wodzie.",
+      "Program Perfect Buoyancy składa się z minimum 4 nurkowań otwartych, basen nie jest wymagany."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
+      "section": "Perfect Buoyancy",
+      "page": 228,
+      "quote": "Kursant musi ukończyć co najmniej dwa (2) zajęcia w wodzie zgodnie z podręcznikiem instruktorskim do programu Perfect Buoyancy."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W programie Scuba Skills Update dla kursantów w wieku 12-14 lat określono precyzyjny maksymalny współczynnik ilościowy na jednego instruktora. Wynosi on:",
+    "options": [
+      "4:1",
+      "6:1",
+      "8:1",
+      "10:2"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Scuba Skills Update",
+      "page": 180,
+      "quote": "Kursanci w wieku 12-14 lat: Współczynnik kursant-instruktor: 6:1."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby wziąć udział w programie Boat Diving, kursant musi posiadać minimalny wiek wynoszący:",
+    "options": [
+      "8 lat.",
+      "10 lat.",
+      "12 lat.",
+      "15 lat."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Boat Diving",
+      "page": 237,
+      "quote": "Minimalny wiek | 10 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest formalny minimalny wiek pozwalający kandydatowi przystąpić do szkolenia w programie Deep Diving (do 40 metrów)?",
+    "options": [
+      "10 lat.",
+      "12 lat.",
+      "15 lat.",
+      "18 lat."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Deep Diving",
+      "page": 243,
+      "quote": "Minimalny wiek | 15 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W ramach szkolenia Deep Diving SSI, jakie są sztywne limity głębokości dla Nurkowania 2 w Wodach Otwartych?",
+    "options": [
+      "Od 18 do 30 metrów.",
+      "Od 24 do 30 metrów.",
+      "Od 30 do 40 metrów.",
+      "Od 18 do 40 metrów, zależnie od preferencji instruktora."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Deep Diving",
+      "page": 246,
+      "quote": "Nurkowanie 2 | 24 do 30 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Podczas programu Deep Diving, gdy nurkowania wykonywane są na głębokość poniżej 30 metrów, jaki jest maksymalny współczynnik kursant-instruktor i czy można go zwiększyć?",
+    "options": [
+      "2:1, bez możliwości korzystania z asystentów.",
+      "3:1, z możliwością dodania 2 kursantów na każdego Divemastera.",
+      "4:1 i nie można korzystać z pomocy certyfikowanych asystentów w celu jego zwiększenia.",
+      "8:1, ale wymaga asysty co najmniej 2 Divemasterów."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Deep Diving",
+      "page": 246,
+      "quote": "Nurkowania na głębokość poniżej 30 metrów - Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów, żeby zwiększyć współczynniki."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby w ogóle móc rozpocząć szkolenie w programie SSI Dive Guide (wymagania wstępne przed kursem), kandydat musi już posiadać udokumentowane w logbooku:",
+    "options": [
+      "Co najmniej 40 zalogowanych nurkowań, trwających co najmniej 25 godzin.",
+      "Co najmniej 50 zalogowanych nurkowań, trwających co najmniej 32 godziny.",
+      "Co najmniej 60 zalogowanych nurkowań, trwających co najmniej 40 godzin.",
+      "Co najmniej 100 zalogowanych nurkowań, trwających co najmniej 65 godzin."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
+      "page": 249,
+      "quote": "Co najmniej 40 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 25 godzin."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby zakończyć kurs i otrzymać certyfikację Dive Guide, kandydat w momencie ubiegania się o ten stopień musi posiadać w logbooku minimum:",
+    "options": [
+      "40 zalogowanych nurkowań / 25 godzin.",
+      "50 zalogowanych nurkowań / 32 godziny.",
+      "60 zalogowanych nurkowań / 40 godzin.",
+      "75 zalogowanych nurkowań / 50 godzin."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
+      "page": 252,
+      "quote": "Wymagania do ukończenia kursu: Co najmniej 50 zalogowanych nurkowań na Wodach Otwartych, trwających łącznie co najmniej 32 godziny."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeśli certyfikowany SSI Dive Guide chce podwyższyć swoje uprawnienia (upgrade) do poziomu Divemaster SSI, co musi - oprócz spełnienia wymogów wiekowych, statusowych oraz 60 nurkowań - dodatkowo ukończyć?",
+    "options": [
+      "Musi zaliczyć egzamin końcowy programu Diver Stress & Rescue.",
+      "Musi zaliczyć egzamin końcowy programu Science of Diving.",
+      "Musi zalogować co najmniej 100 nurkowań.",
+      "Musi ukończyć program Scuba Skills Update pod okiem Instructor Trainera."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
+      "page": 253,
+      "quote": "Zaliczyć egzamin końcowy programu Science of Diving."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Wymagania wstępne dla kursanta do programu Diver Stress & Rescue stanowią, że musi on posiadać dowód aktualnego przeszkolenia z First Aid i CPR wydany w okresie:",
+    "options": [
+      "Jednego (1) roku przed wydaniem karty.",
+      "Dwóch (2) lat przed wydaniem karty certyfikacyjnej.",
+      "Trzech (3) lat przed wydaniem karty.",
+      "Pięciu (5) lat przed wydaniem certyfikatu."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Diver Stress & Rescue",
+      "page": 255,
+      "quote": "Posiadać dowód aktualnego przeszkolenia O2 Provider, First Aid i CPR w ciągu dwóch (2) lat przed wydaniem karty certyfikacyjnej."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W ramach umiejętności z programu Diver Stress & Rescue na wodach otwartych, z jakiej maksymalnej głębokości można przeprowadzać ćwiczenie ratowania nieprzytomnego nurka?",
+    "options": [
+      "Z maksymalnie 5 metrów.",
+      "Z maksymalnie 9 metrów.",
+      "Z maksymalnie 12 metrów.",
+      "Z maksymalnie 18 metrów."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Diver Stress & Rescue",
+      "page": 258,
+      "quote": "Umiejętności: Maksymalny limit głębokości nurkowania na Wodach Otwartych | Ratowanie nieprzytomnego nurka na głębokości 9 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest rekomendowany czas trwania w godzinach dla ukończenia programu specjalizacji Navigation?",
+    "options": [
+      "3-6 godzin.",
+      "5-10 godzin.",
+      "10-15 godzin.",
+      "16-32 godzin."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Navigation",
+      "page": 263,
+      "quote": "Zalecane godziny ukończenia | 5-10."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie z definicją środowiskową nurkowania nocnego, czego bezwzględnie musi dostarczyć/udostępnić Profesjonalista SSI wszystkim kursantom podczas szkolenia Night Diving?",
+    "options": [
+      "Zapasowego komputera nurkowego na wypadek awarii.",
+      "Podwodnego oświetlenia nurkowego (latarek).",
+      "Światła stroboskopowego przyczepionego do liny opustowej.",
+      "Świateł chemicznych (tzw. lightsticków) dopiętych do zaworów butli."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Definicje związane ze środowiskiem",
+      "page": 100,
+      "quote": "Profesjonaliści SSI muszą udostępnić podwodne oświetlenie nurkowe wszystkim kursantom podczas prowadzenia szkolenia w nocy."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Ile wynosi minimalny wiek uczestnika wymagany do rozpoczęcia programu specjalizacji Waves, Tides & Currents?",
+    "options": [
+      "10 lat.",
+      "12 lat.",
+      "15 lat.",
+      "18 lat."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Waves, Tides & Currents",
+      "page": 274,
+      "quote": "Minimalny wiek | 10 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie z celami standardowej rekreacyjnej specjalizacji Wreck Diving SSI, czy program ten pozwala na wchodzenie w głąb struktury (penetracji) wraku?",
+    "options": [
+      "Tak, pozwala na limitowaną penetrację do maksymalnie 10 metrów od wejścia.",
+      "Tak, pozwala na penetrację tak długo, jak uczestnicy pozostają w Strefie Światła Dziennego.",
+      "Nie, program nie daje uprawnień do wpływania do środka wraków.",
+      "Tak, pozwala, ale pod warunkiem obniżenia współczynnika ilościowego do 4:1."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Wreck Diving",
+      "page": 280,
+      "quote": "Podczas programu SSI Wreck Diving kursanci zyskają wiedzę i umiejętności, które pozwolą im bezpiecznie nurkować w okolicy wraków i sztucznych raf. Program nie daje uprawnień do wpływania do środka wraków."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Posiadacz certyfikatu Wreck Diving SSI chce uzyskać licencję 'Advanced Wreck Diving'. Oprócz 15 lat wieku oraz wymagań szkoleniowych, ile minimum zalogowanych nurkowań na wodach otwartych musi posiadać przed podwyższeniem uprawnień?",
+    "options": [
+      "10 nurkowań.",
+      "12 nurkowań.",
+      "24 nurkowania.",
+      "50 nurkowań."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje na Wodach Otwartych",
+      "section": "Wreck Diving",
+      "page": 286,
+      "quote": "Żeby podwyższyć uprawnienia SSI do Advanced Wreck Diving, kursant musi spełnić następujące wymagania: Minimalny wiek: 15 lat, Zalogował co najmniej 12 nurkowań na wodach otwartych."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaką maksymalną zawartość tlenu w dekompresyjnym gazie oddechowym (nitrox) dopuszcza program Decompression Diving SSI?",
+    "options": [
+      "32%",
+      "40%",
+      "50%",
+      "100%"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Decompression Diving",
+      "page": 287,
+      "quote": "z zastosowaniem nitrox'owych gazów oddechowych o maksymalnej zawartości tlenu 40%,"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Ile może wynosić maksymalny, całkowity czas dekompresji dla pojedynczego nurkowania w programie SSI Decompression Diving w oparciu o gaz plecowy?",
+    "options": [
+      "5 minut.",
+      "10 minut.",
+      "15 minut.",
+      "20 minut."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Decompression Diving",
+      "page": 288,
+      "quote": "Dla maksymalnego łącznego czasu dekompresji wynoszącego 15 minut w oparciu o profil gazu wstecznego,"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak standardy sprzętowe SSI definiują i oddzielają 'Techniczny skuter nurkowy' od wersji rekreacyjnej?",
+    "options": [
+      "Wymaga obsługi dwiema rękami i ma baterię mniejszą niż 500 wh.",
+      "Ma lonżę, baterię o pojemności większej niż 500 wh i można go obsługiwać jedną ręką.",
+      "Ma baterię poniżej 500 wh, można go obsługiwać jedną ręką, ale nie ma lonży.",
+      "W ogóle nie ma lonży, musi mieć śrubę o dwóch łopatach."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "DPV Diving",
+      "page": 298,
+      "quote": "Techniczne skutery nurkowe | Skuter nurkowy, który ma lonżę, pojemność baterii większą niż 500 wh i można go obsługiwać jedną ręką."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaka jest prawidłowa sekwencja szkolenia w wodzie podczas kursu Dry Suit Diving?",
+    "options": [
+      "Nurkowanie na otwartej wodzie nr 1 można wykonać przed zajęciami na basenie w suchym skafandrze.",
+      "Zajęcia szkoleniowe w basenie/wodach ograniczonych są wymagane przed jakimkolwiek nurkowaniem szkoleniowym w Wodach Otwartych.",
+      "Zajęcia na basenie nie są wymagane w ogóle, jeśli kursant ma minimum 15 lat.",
+      "Zajęcia w basenie można przeprowadzić po pierwszych dwóch nurkowaniach w wodach otwartych, by doszlifować pływalność."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Dry Suit Diving",
+      "page": 306,
+      "quote": "Zajęcia szkoleniowe w basenie/wodach ograniczonych są wymagane przed jakimkolwiek nurkowaniem szkoleniowym w Wodach Otwartych."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby wziąć udział w programie z użyciem maski pełnotwarzowej (Full Face Mask Diving), jaki jest rygorystyczny wymóg minimalnego wieku uczestnika?",
+    "options": [
+      "10 lat.",
+      "12 lat.",
+      "15 lat.",
+      "18 lat."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Maska do nurkowania Full Face Mask",
+      "page": 310,
+      "quote": "Minimalny wiek | 12 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby móc uczestniczyć w specjalizacji Independent Diving, kandydat musi posiadać bogate doświadczenie. Oprócz wieku 18 lat i certyfikacji z nawigacji, nocy i głębokiego nurkowania, ile wymaganego doświadczenia podwodnego potrzebuje?",
+    "options": [
+      "Co najmniej 50 zalogowanych nurkowań, trwających co najmniej 32 godziny.",
+      "Co najmniej 60 zalogowanych nurkowań, trwających co najmniej 40 godzin.",
+      "Co najmniej 75 zalogowanych nurkowań, trwających co najmniej 50 godzin.",
+      "Co najmniej 100 zalogowanych nurkowań, trwających co najmniej 65 godzin."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Independent Diving",
+      "page": 315,
+      "quote": "Co najmniej 75 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 50 godzin."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Ile precyzyjnie wynosi minimalna wymagana liczba nurkowań szkoleniowych w wodzie, która składa się na program Search & Recovery?",
+    "options": [
+      "1 sesja w basenie oraz 1 w wodach otwartych.",
+      "1 sesja w basenie oraz 2 w wodach otwartych.",
+      "2 sesje w basenie oraz 2 w wodach otwartych.",
+      "0 w basenie, od razu 3 szkoleniowe w wodach otwartych."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Search & Recovery",
+      "page": 324,
+      "quote": "Ukończyć co najmniej jedną (1) sesję szkoleniową na basenie/ograniczonym akwenie (...) Ukończenie co najmniej dwóch (2) Nurkowań szkoleniowych na wodach otwartych zgodnie z podręcznikiem instruktora."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest podstawowy maksymalny stosunek liczby kursantów do instruktora (współczynnik w wodzie) podczas programu szkoleniowego z użyciem Sidemount Diving?",
+    "options": [
+      "2:1",
+      "3:1",
+      "4:1",
+      "8:1"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Specjalizacje sprzętowe",
+      "section": "Nurkowanie Sidemount",
+      "page": 329,
+      "quote": "Współczynnik kursant-instruktor: 4:1."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W ramach programu Advanced Wreck Diving z ograniczoną penetracją w świetle dziennym, jaka jest maksymalna dozwolona odległość liniowa (suma odległości pionowej i poziomej do bezpiecznego wyjścia)?",
+    "options": [
+      "30 metrów.",
+      "40 metrów.",
+      "60 metrów.",
+      "130 metrów."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje w przestrzeniach zamkniętych",
+      "section": "Advanced Wreck Diving",
+      "page": 333,
+      "quote": "Maksymalna odległość liniowa wynosi 40 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
   }
 ];
 
