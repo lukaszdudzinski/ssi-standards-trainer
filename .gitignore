@@ -1,18 +1,4 @@
-# OS files
-.DS_Store
-Thumbs.db
-
-# Project PDFs (exclude from git because they are large scanned files)
-CamScanner*.pdf
-
-# Python environments and scratch scripts
-venv/
-*.pyc
-__pycache__/
-
-# Local editor settings
-.vscode/
-.idea/
-
-# Node.js
 node_modules/
+.DS_Store
+*.txt
+temp_*.js

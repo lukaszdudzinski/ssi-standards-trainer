@@ -57,7 +57,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.31.04', 'APP_VERSION must be exactly v2026.5.31.04');
+  assert(appVersion === 'v2026.5.31.05', 'APP_VERSION must be exactly v2026.5.31.05');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
