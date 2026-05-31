@@ -6358,6 +6358,516 @@ const QUESTIONS_DB = [
       "quote": "Nurkowania szkoleniowe... muszą być przeprowadzone w ciągu dnia (pomiędzy wschodem a zachodem słońca)"
     },
     "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Według procedury 'Odstępstwa od Standardów', kiedy wygasa zatwierdzone przez SSI International odstępstwo dla danego Centrum Szkoleniowego lub Instruktora?",
+    "options": [
+      "Wygasa po równo 12 miesiącach od daty jego wystawienia.",
+      "Wygasa z końcem roku kalendarzowego, w którym zostało zatwierdzone.",
+      "Wygasa wraz z kolejnym rokiem, w którym opracowano nową wersję standardów.",
+      "Odstępstwo ma charakter bezterminowy, o ile Centrum utrzymuje aktywny status."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe - Scuba",
+      "section": "Obowiązujące Standardy i Odstępstwa od Standardów",
+      "page": 10,
+      "quote": "Każde nowe, zatwierdzone odstępstwo wygasa wraz z kolejnym rokiem, w którym opracowano nową wersję standardów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zasada elastyczności SSI pozwala na dostosowanie harmonogramu kursu, ale kategorycznie zabrania wprowadzania pewnych ćwiczeń. Czego NIE MOŻNA nauczać podczas programów szkoleniowych SSI?",
+    "options": [
+      "Zdjęcia maski i przepłynięcia pod wodą 15 metrów.",
+      "Oddychania bezpośrednio z zaworu butli oraz wynurzania bez regulatora w ustach.",
+      "Zdejmowania i zakładania sprzętu nurkowego (SCUBA) na powierzchni wody.",
+      "Wyłączania gazu oddechowego przy zamkniętym zaworze butli partnera."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Zasada elastyczności SSI",
+      "section": "V. Zasada elastyczności SSI",
+      "page": 15,
+      "quote": "Ćwiczenia takie jak opuszczanie i odzyskiwanie jednostki nurkowej, oddychanie bezpośrednio z zaworu butli i wszelkie wynurzanie bez regulatora w ustach i / lub wyłączonego gazu oddechowego nie są zatwierdzone przez SSI i NIE mogą być nauczane podczas programów szkoleniowych SSI."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W jaki sposób należy prawidłowo udokumentować w systemie dokumentację cyfrową szkolenia, jeśli kursantem jest osoba niepełnoletnia (np. ma 14 lat)?",
+    "options": [
+      "Rodzic musi zaakceptować e-mail wysłany z systemu MySSI.",
+      "Osoby niepełnoletnie muszą samodzielnie zalogować się i potwierdzić zgodę cyfrowym profilem.",
+      "W przypadku osób niepełnoletnich dopuszczalna jest zgoda SMS przesłana do Instruktora.",
+      "Osoby niepełnoletnie nie mogą podpisywać dokumentacji cyfrowej, dokumenty muszą zostać sprawdzone i podpisane przez rodzica/opiekuna."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia i Formularze prywatności",
+      "page": 22,
+      "quote": "Osoby niepełnoletnie nie mogą podpisywać dokumentacji cyfrowej. (...) Formularze osób niepełnoletnich - online lub papierowe - muszą zostać sprawdzone i podpisane przez rodzica lub opiekuna."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeśli kursant uczestniczy w programie 'Ecology' i program ten jest realizowany z użyciem opcjonalnych zajęć praktycznych, jakie są wymagania medyczne dla tego kursanta?",
+    "options": [
+      "Wymagane jest zawsze zaświadczenie od lekarza medycyny hiperbarycznej.",
+      "Dla programów z zakresu ekologii przepisy medyczne są całkowicie zwolnione.",
+      "Wypełnienie Kwestionariusza Medycznego Uczestnika jest wymagane tylko wtedy, gdy w program włączone są zajęcia w wodzie.",
+      "Uczestnik musi wypełnić wyłącznie cyfrową umowę przejęcia ryzyka, bez formularza medycznego."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia i Formularze prywatności",
+      "page": 27,
+      "quote": "Kwestionariusz medyczny uczestnika jest wymagany dla tych programów tylko wtedy, gdy szkolenie w wodzie jest prowadzone jako część programu."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jakie są sztywne ramy czasowe na przetworzenie certyfikacji lub wyróżnienia (np. karty uznaniowej) w systemie MySSI przez profesjonalistę od momentu zakończenia programu?",
+    "options": [
+      "W ciągu 24 godzin od zakończenia zajęć w wodach otwartych.",
+      "W ciągu 7 dni od zakończenia programu.",
+      "W ciągu 14 dni od zdania Egzaminu Końcowego przez Kursanta.",
+      "Do końca miesiąca kalendarzowego, w którym nastąpiło zakończenie kursu."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 34,
+      "quote": "Wszystkie certyfikacje i wyróżnienia muszą zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Co dzieje się z cyfrowym certyfikatem Junior Diver w systemie MySSI w momencie osiągnięcia przez nurka odpowiedniego wieku?",
+    "options": [
+      "Nurek musi zapisać się na kurs Scuba Skills Update w celu aktywowania dorosłej licencji.",
+      "Opiekun prawny musi podpisać oświadczenie o przejściu na pełny certyfikat.",
+      "Cyfrowe certyfikaty Junior Diver są automatycznie aktualizowane do pełnego programu certyfikacji, gdy kursant ukończy piętnaście lat.",
+      "Instruktor musi manualnie zrobić 'upgrade' licencji w aplikacji."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 37,
+      "quote": "Cyfrowe certyfikaty Junior Diver są automatycznie aktualizowane do pełnego programu certyfikacji, gdy kursant ukończy piętnaście lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeżeli kursant przerywa kurs i decyduje się dokończyć go w innym centrum szkoleniowym (Referral), co dzieje się z ORYGINAŁAMI jego dokumentacji medycznej i szkoleniowej?",
+    "options": [
+      "Oryginały wydawane są w zaklejonej kopercie kursantowi, by dostarczył je nowemu Instruktorowi.",
+      "Oryginały są niszczone, a kursant wypełnia całą dokumentację od nowa w drugim centrum.",
+      "Oryginały zostają przesłane listem poleconym do właściwego SSI Service Center w celu zarchiwizowania.",
+      "Wszystkie oryginały dokumentacji szkoleniowej oraz formularzy medycznych muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 38,
+      "quote": "Wszystkie oryginały dokumentacji szkoleniowej oraz formularzy medycznych muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak długo Centrum Szkoleniowe jest zobligowane do przechowywania dokumentacji szkoleniowej, jeśli nie wymaga tego inaczej lokalne prawo?",
+    "options": [
+      "Przez co najmniej 5 lat.",
+      "Przez co najmniej 7 lat.",
+      "Przez co najmniej 10 lat.",
+      "Dokumentację papierową można zniszczyć niezwłocznie po wgraniu skanów do systemu."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Procedury certyfikacji",
+      "page": 40,
+      "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby SSI uznało inną agencję nurkową (aby jej certyfikaty mogły stanowić ekwiwalent wymogów przed rozpoczęciem wyższego szkolenia), agencja ta musi spełniać szereg wymogów, w tym:",
+    "options": [
+      "Posiadać certyfikat ISO lub RSTC, min. 5 lat na rynku, 250 instruktorów i 50 centrów na świecie.",
+      "Posiadać materiały w 10 językach oraz autoryzację Departamentu Obrony.",
+      "Działać co najmniej 15 lat, posiadając ponad 1000 aktywnych instruktorów.",
+      "Mieć siedzibę w Europie i zrzeszać się w ramach European Underwater Federation (EUF)."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Certyfikaty równoważne",
+      "page": 46,
+      "quote": "Musi działać na rynku co najmniej przez pięć (5) lat (...) Posiadać co najmniej 250 instruktorów i 50 autoryzowanych centrów szkoleniowych na całym świecie (...) Posiadać aktywny globalny certyfikat ISO lub być aktywnym członkiem co najmniej jednego RSTC."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Kandydat do stopnia profesjonalnego chcący wykonać crossover do SSI ujawnia, że ma nierozwiązaną sprawę dotyczącą zgodności ze standardami jakości z inną agencją. Jakie stanowisko zajmuje w takiej sytuacji SSI?",
+    "options": [
+      "Kandydat musi najpierw zapłacić dodatkową grzywnę SSI, po czym może kontynuować szkolenie.",
+      "Kandydat może zostać profesjonalistą SSI, lecz otrzymuje natychmiast status 'Administrative Hold'.",
+      "Kandydat nie może być zaangażowany w nierozwiązaną sprawę; grozi mu cofnięcie lub odmowa certyfikacji, jeśli to ukryje.",
+      "SSI pozwala na prowadzenie nurkowań rekreacyjnych, ale nie na udział w procesie crossover."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Zgodność z normami jakości",
+      "page": 47,
+      "quote": "Kandydat nie może być zaangażowany w nierozwiązaną sprawę dotyczącą zgodności jakości z inną agencją szkoleniową."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Co się dzieje ze statusem Instruktora SSI, który bezpośrednio nadzorował kursanta podczas zdarzenia, które doprowadziło do śmierci tego kursanta?",
+    "options": [
+      "Otrzymuje status Expelled (Wydalony) bez prawa powrotu.",
+      "Jego certyfikat obniżony jest do poziomu Divemastera aż do wyjaśnienia sprawy.",
+      "Automatycznie otrzymuje status 'Wstrzymany administracyjnie' (Administrative Hold) w chwili zdarzenia.",
+      "Zostaje skierowany na obowiązkowy Scuba Skills Update w najbliższym Service Center."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Obowiązki Profesjonalisty SSI",
+      "section": "Status SSI Professional",
+      "page": 53,
+      "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika/kursanta/kandydata, nad którym pełnił bezpośredni nadzór, automatycznie otrzymuje status „Wstrzymany administracyjnie” w chwili takiego zdarzenia."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Status Profesjonalisty 'Wydalony' (Expelled) oznacza zawieszenie uprawnień instruktorskich z powodu poważnego naruszenia standardów. Kiedy wydalony instruktor może ponownie otrzymać status aktywny w SSI?",
+    "options": [
+      "Po upływie minimum 10 lat od nałożenia kary i po opłaceniu grzywny QMS.",
+      "Nigdy. Osoba ze statusem 'Wydalony' nie może ponownie otrzymać statusu aktywnego SSI na całym świecie.",
+      "Po ponownym przejściu całego cyklu Instructor Training Course pod okiem International Training Directora.",
+      "Kiedy inna agencja zrzeszona w RSTC nada mu pozytywną opinię jakości (Quality Clearance)."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Obowiązki Profesjonalisty SSI",
+      "section": "Status SSI Professional",
+      "page": 54,
+      "quote": "Osoba posiadając status \"Wydalony\" nie może ponownie otrzymać statusu aktywnego SSI na całym świecie, a jej certyfikaty nie mogą być już zweryfikowane w systemie SSI Diver Verification."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby przywrócić status aktywny Instruktora OWI (Open Water Instructor), który pozostawał w statusie 'nieaktywnym' przez ponad dziesięć (10) lat, nurek ten musi (oprócz opłacenia składek i weryfikacji formy):",
+    "options": [
+      "Zdać jedynie egzamin online z najnowszych uaktualnień standardów (Update).",
+      "Odbyć minimum 25 nowych nurkowań rejestrowanych w MySSI.",
+      "Przeprowadzić co najmniej jedno seminarium współnauczania (Co-Teaching) z instruktorem posiadającym aktywny status.",
+      "Ukończyć wszystkie wymagania dla swojego stopnia oraz zdać (Instructor Evaluation)."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Obowiązki Profesjonalisty SSI",
+      "section": "Przywrócenie Aktywnego Statusu",
+      "page": 60,
+      "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest wymagany minimalny wynik (w procentach) podczas Egzaminu Końcowego dla wszystkich kandydatów na Poziomy Profesjonalne (Professional)?",
+    "options": [
+      "75%",
+      "80%",
+      "90%",
+      "100% z poprawą błędów po teście"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Ocena wiedzy i umiejętności",
+      "page": 76,
+      "quote": "Minimalny wynik dla programów na poziomie Professional | 90%."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeśli kandydat poniżej 15. roku życia nie rozumie treści pytania na pisemnym Egzaminie Końcowym z Teorii Nurkowania (z powodu bariery językowej lub rozwojowej), Instruktor SSI:",
+    "options": [
+      "Musi przełożyć egzamin do momentu ukończenia przez kandydata 15 lat.",
+      "Może podpowiedzieć poprawną odpowiedź, jeśli dotyczy ona mniej ważnego zagadnienia.",
+      "Może przeformułować lub objaśnić pytanie, aby pomóc w jego zrozumieniu, ale nie może pomóc w wyborze lub udzieleniu odpowiedzi.",
+      "Musie zmienić formę egzaminu na ustny, używając wyłącznie materiałów wideo."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Ocena wiedzy i umiejętności",
+      "page": 78,
+      "quote": "Jeżeli kursant ma mniej niż 15 lat, Profesjonalista SSI może przeformułować lub objaśnić pytanie podczas egzaminu końcowego, żeby pomóc wyjaśnić jego sedno, ale nie może udzielić odpowiedzi lub mu w tym pomóc."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest maksymalny dopuszczalny odstęp czasowy od zakończenia ostatnich zajęć teoretycznych lub w wodach ograniczonych do momentu przeprowadzenia szkolenia na wodach otwartych, po upływie którego Instruktor musi ZAWSZE ponownie ocenić kursanta?",
+    "options": [
+      "3 miesiące",
+      "6 miesięcy",
+      "12 miesięcy",
+      "24 miesiące"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Czas trwania programu i ograniczenia czasowe",
+      "page": 79,
+      "quote": "Szkolenie w wodach otwartych wymagane dla wszystkich programów szkoleniowych SSI muszą odbyć się w ciągu 6 miesięcy od ostatnich zajęć teoretycznych lub basenowych/w ograniczonym akwenie. Po upływie sześciu (6) miesięcy SSI Professional musi ponownie dokonać oceny kursanta"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jakie są sztywne reguły dotyczące dobowego limitu nurkowań szkoleniowych, jeśli którekolwiek z nurkowań z danego dnia będzie wymagało dekompresji (prawdziwej lub planowanej)?",
+    "options": [
+      "Można wykonać maksymalnie 1 (jedno) nurkowanie dziennie.",
+      "Można wykonać maksymalnie 2 (dwa) nurkowania szkoleniowe dziennie.",
+      "Limit to wciąż 3 nurkowania, jeśli przerwy powierzchniowe będą wynosić >3h.",
+      "Nie ma formalnych ograniczeń jeśli kursant używa Nitroxu."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Liczba nurkowań w ciągu dnia",
+      "page": 81,
+      "quote": "Maksymalna liczba nurkowań szkoleniowych to dwa (2) dziennie, jeśli jakiekolwiek nurkowanie danego dnia planuje lub faktycznie wymaga przystanków dekompresyjnych."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby pojedyncze, udane wyjście do Wód Otwartych w ramach szkolenia liczyło się jako 'Nurkowanie Szkoleniowe', całkowity czas pod wodą musi wynosić przynajmniej:",
+    "options": [
+      "10 minut",
+      "15 minut",
+      "20 minut",
+      "30 minut"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Czas trwania nurkowania",
+      "page": 82,
+      "quote": "Całkowity czas trwania pojedynczego nurkowania szkoleniowego w wodach otwartych musi wynosić przynajmniej 15 minut."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak standardy opisują dopuszczalny współczynnik 'kursant-instruktor' na wodach otwartych, gdy na kursie podstawowym wykorzystywany jest skafander suchy i brak jest certyfikowanych asystentów?",
+    "options": [
+      "Współczynnik redukowany jest do 2:1",
+      "Współczynnik wynosi sztywne 4:1 i nie zależy od wieku.",
+      "Współczynnik wynosi 6:1",
+      "Można szkolić do 8 kursantów, jeśli woda jest cieplejsza niż 10°C"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Suche skafandry",
+      "page": 84,
+      "quote": "Stosunek liczby kursantów do liczby instruktorów na każdym podstawowym szkoleniu w wodzie, na którym kursant będzie nurkował w suchym skafandrze, wynosi 4:1."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeżeli podczas prowadzonych przez Open Water Instructora zajęć z poziomu podstawowego na BASENIE pomaga mu Instruktor Asystujący o aktywnym statusie (pełniący rolę asystenta certyfikowanego), jak to wpływa na współczynniki ilościowe?",
+    "options": [
+      "Każdy asystent zawsze podnosi limit wyłącznie o 2 kursantów, max do proporcji 12:3.",
+      "Instruktor Asystujący nie może zmieniać współczynników bez nadzoru Instructor Trainera.",
+      "Instruktor Asystujący w basenie traktowany jest jak drugi instruktor – podwaja dopuszczalną ilość kursantów na basenie/w akwenie ograniczonym.",
+      "Asystent zwiększa proporcję o równo 4 osoby zarówno w basenie, jak i w wodach otwartych."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Korzystanie z pomocy certyfikowanych asystentów",
+      "page": 86,
+      "quote": "Jeżeli Instruktor Asystujący SSI pełni rolę certyfikowanego asystenta podczas programów poziomu podstawowego, może być uznany za dodatkowego instruktora i tym samym podwoić ilość kursantów podczas nurkowań basenowych/w ograniczonym akwenie."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Czy według procedur SSI, Instruktor SSI podczas szkolenia podstawowego musi powstrzymać się od wszelkich zadań niezwiązanych z nadzorem?",
+    "options": [
+      "Tak. Fotografowanie lub obsługa własnego komputera rekreacyjnego są zabronione.",
+      "Nie. Profesjonaliści mogą wykonywać czynności, o ile nie wpłynie to na ich zdolność nadzorowania i asystowania (np. użycie małego aparatu).",
+      "Tylko wtedy, gdy mają asystenta, mogą zająć się czymś innym niż nadzór.",
+      "Zabronione jest to absolutnie na otwartej wodzie, ale dozwolone w basenie bez ograniczeń."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Nadzór",
+      "page": 88,
+      "quote": "Można jednak wykonywać czynności, które nie będą miały wpływu na zdolność Profesjonalisty SSI do nadzorowania kursantów i udzielania im pomocy (np. robienie zdjęć za pomocą małego aparatu fotograficznego)."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Z jakiej głębokości musi zostać zainicjowane podczas Nurkowania w Wodach Otwartych KAŻDE szkolenie obejmujące umiejętności awaryjnego wynurzania z symulacją zagrożenia (np. CESA)?",
+    "options": [
+      "Głębokości od 10 do 12 metrów, aby symulacja była realna.",
+      "Głębokości maksymalnie dziewięciu (9) metrów lub mniejszej.",
+      "Głębokości od 5 do 6 metrów, w zależności od fali.",
+      "Nie ma limitu głębokości, zależy to od oceny sytuacji przez OWI."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Umiejętności wynurzenia awaryjnego",
+      "page": 93,
+      "quote": "Każde szkolenie z zakresu wynurzania się podczas nurkowania w wodach otwartych, które symuluje stan zagrożenia, musi być przeprowadzone z głębokości dziewięciu (9) metrów lub mniejszej."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie z definicjami SSI, gdzie leży formalna granica 'Deep Diving' (nurkowania głębokiego)?",
+    "options": [
+      "Jest to każde nurkowanie wykonywane głębiej niż 12 metrów.",
+      "Jest to każde nurkowanie wykonywane na głębokości większej niż 18 metrów.",
+      "Jest to każde nurkowanie przekraczające głębokość 24 metrów.",
+      "Jest to nurkowanie planowane głębiej niż 30 metrów."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Definicje związane ze środowiskiem",
+      "page": 97,
+      "quote": "Jest to każde nurkowanie na głębokości większej niż 18 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Na obiekcie spełniającym definicję przestrzeni 'indoor diving' (kryty basen / akwarium) prowadzone mogą być m.in. programy z poziomu entry-level. Jaka jest jedna z kluczowych cech takiego sztucznego obiektu wymagana w Standardach?",
+    "options": [
+      "Musi mieć podwodny habitat z dostępem do powietrza bez dekompresji.",
+      "Wymagana jest minimalna powierzchnia wody wynosząca co najmniej 100 metrów kwadratowych, z głębokością przekraczającą 5 metrów.",
+      "Należy utrzymać wodę w stałej temperaturze powyżej 24°C.",
+      "Woda w obiekcie nie może być słona i musi posiadać filtrację ozonową."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Nurkowanie Indoor",
+      "page": 99,
+      "quote": "Akwaria i specjalnie zbudowane sztuczne obiekty do nurkowania o minimalnej głębokości większej niż pięć (5) metrów i minimalnej powierzchni wody wynoszącej 100 metrów kwadratowych mogą być wykorzystywane do przeprowadzania nurkowań szkoleniowych..."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Procedury szkoleniowe SSI odnoszące się do Przestrzeni Zamkniętych definiują tzw. przepływ (swim-through). Jaka jest maksymalna długość takiej struktury ograniczającej dostęp do powierzchni (aby nie była definiowana jako Overhead)?",
+    "options": [
+      "Przepływ musi mieć strukturę krótszą niż 10 metrów.",
+      "Dopuszczalna długość przepływu to maksymalnie 18 metrów (tzw. limit światła dziennego).",
+      "Może mieć do 30 metrów długości pod warunkiem stałego widzenia wyjścia.",
+      "Przepływ może liczyć do 40 metrów odległości liniowej bez montowania poręczówki."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Przestrzenie zamknięte",
+      "page": 107,
+      "quote": "Struktura ta posiada następujące cechy: Mieć mniej niż 10 metrów długości. Maksymalna głębokość nie może przekraczać 30 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Co powinien zrobić Instruktor, gdy materiały producenta automatu oddechowego wyraźnie podają, że ich automat (regulator) jest certyfikowany wyłącznie dla jednej osoby (brak certyfikacji do awaryjnego podania gazu innej osobie)?",
+    "options": [
+      "Należy wymienić automat przed rozpoczęciem szkolenia wodnego z kursantami na produkt innej marki.",
+      "Zabronione jest w ogóle przeprowadzanie ćwiczeń awaryjnego podania gazu na takich sprzętach i trzeba je pominąć.",
+      "Instruktor musi pełnić podczas tego ćwiczenia rolę dawcy i musi być wyposażony w niezależny, nadmiarowy system oddechowy.",
+      "Wystarczy obniżyć współczynnik szkoleniowy do 1:1, by używać takich zestawów."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Filozofia SSI szkolenia w wodzie",
+      "page": 113,
+      "quote": "Jeśli Podręcznik wyraźnie mówi, że regulator jest przeznaczony do użytku tylko przez jedną osobę, instruktor musi być przynajmniej wyposażony w niezależny nadmiarowy system oddechowy, aby wykonać to ćwiczenie. Jeśli regulator jest przeznaczony tylko dla jednej osoby, Instruktor musi być dawcą..."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak długo jest ważna oficjalna 'Ocena sprawności Kandydata w wodzie' (Water Fitness Evaluation) wykorzystywana w programach profesjonalnych przed przystąpieniem do szkolenia SSI?",
+    "options": [
+      "Jest ważna bezterminowo dla danej kategorii.",
+      "Przez dokładnie jeden miesiąc (30 dni) od potwierdzenia przez IT.",
+      "Jest ważna przez sześć (6) miesięcy.",
+      "Jej ważność wynosi dokładnie 12 miesięcy kalendarzowych."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ocena Sprawności w Wodzie",
+      "section": "Ocena sprawności Kandydata w wodzie",
+      "page": 121,
+      "quote": "Ocena sprawności kandydata w wodzie jest ważna przez 6 (sześć) miesięcy."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Podczas wszystkich zajęć w wodzie z kursantami Scuba Diver / Open Water Diver do 12 roku życia obowiązuje zasada ograniczająca pojemność grupy. Jak brzmi ta kluczowa zasada limitów?",
+    "options": [
+      "Na instruktora nie powinno przypadać więcej niż 1 dziecko poniżej 15 lat na raz.",
+      "Nie wolno przeprowadzać z nimi symulacji wypadków i współczynnik maksymalny to zawsze 2:1.",
+      "Na instruktora lub certyfikowanego asystenta nie powinno przypadać więcej niż dwóch kursantów w wieku poniżej 12 lat, a pozostali (jeśli są) muszą mieć co najmniej 15 lat.",
+      "Na jednego instruktora mogą przypadać troje 11-latków tylko w basenie o głębokości do 2 metrów."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Poziomu Podstawowego",
+      "section": "Scuba Diver",
+      "page": 136,
+      "quote": "Na instruktora lub certyfikowanego asystenta nie powinno przypadać więcej niż dwóch (2) kursantów w wieku poniżej 12 lat, a żaden z pozostałych nie może mieć mniej niż 15 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Zgodnie z wymaganiami administracyjnymi, 'Dodatek dla młodzieży' do podpisywanych zwolnień (w przypadku kursantów poniżej 18 roku życia) – jaki ma oficjalny okres ważności na gruncie procedur SSI?",
+    "options": [
+      "Ważny jest dla pojedynczego i konkretnego programu szkoleniowego (na każdy program wypełniamy osobny).",
+      "Ważny jest do momentu uzyskania przez kandydata wieku pełnoletności.",
+      "Ważny jest przez jeden (1) rok od daty podpisania.",
+      "Nie traci ważności, chyba że opiekun prawny pisemnie cofnie swoją zgodę."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Wymagania Administracyjne",
+      "section": "Dokumentacja szkolenia i Formularze prywatności",
+      "page": 26,
+      "quote": "Dodatek dla młodzieży (wymagany w przypadku kursantów poniżej 18 roku życia) - Ważny przez jeden (1) rok od daty podpisania."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaką funkcję pełni określenie 'bezpośredni nadzór' w kontekście odległości w standardach programów Scuba, kiedy odbywa się precyzyjna weryfikacja / ocena umiejętności przez Instruktora?",
+    "options": [
+      "Instruktor musi znajdować się w zasięgu wzroku kursanta przy odpowiedniej widoczności i z liną.",
+      "Instruktor znajduje się na maksymalnej odległości 3 metrów linearnej z wyciągniętym ramieniem asystenta.",
+      "Kursanci muszą pozostawać w taki sposób, aby w każdej chwili możliwe było nawiązanie kontaktu fizycznego z instruktorem.",
+      "Nadzór z łodzi asekuracyjnej, podczas gdy na dnie nadzoruje grupę wykwalifikowany Dive Guide."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Prowadzenie programów SSI",
+      "section": "Odległość",
+      "page": 138,
+      "quote": "Podczas oceny umiejętności nurkowych w wodzie, kursanci muszą pozostawać pod bezpośrednim nadzorem Profesjonalisty SSI w taki sposób, aby w każdej chwili możliwe było nawiązanie kontaktu fizycznego."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
   }
 ];
 
