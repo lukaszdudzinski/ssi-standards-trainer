@@ -7735,6 +7735,329 @@ const QUESTIONS_DB = [
       "quote": "Maksymalna odległość liniowa wynosi 40 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Wewnątrz środowiska jaskiniowego podczas szkolenia Cavern & Cenote Diving z ograniczonym dostępem do powierzchni (przestrzeń zamknięta), jaki jest maksymalny współczynnik kursant-instruktor?",
+    "options": [
+      "2:1",
+      "3:1",
+      "4:1",
+      "8:1"
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Specjalizacje w przestrzeniach zamkniętych",
+      "section": "Cavern & Cenote Diving",
+      "page": 340,
+      "quote": "Przestrzenie zamknięte - Współczynnik kursant-instruktor: 2:1."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaka jest graniczna maksymalna odległość liniowa zdefiniowana w standardach specjalizacji dla środowisk typu Ice Diving (pod warstwą lodu)?",
+    "options": [
+      "30 metrów.",
+      "40 metrów.",
+      "60 metrów.",
+      "Odległość jest zdeterminowana jedynie przez limit luźnej liny asekuracyjnej."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Specjalizacje w przestrzeniach zamkniętych",
+      "section": "Ice Diving",
+      "page": 345,
+      "quote": "Maksymalna odległość liniowa wynosi 40 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jaki jest minimalny wiek uczestnika programu Unikalnej Specjalizacji (Unique Specialty), jeśli przewiduje on nurkowania szkoleniowe na głębokości PONIŻEJ 18 metrów?",
+    "options": [
+      "10 lat.",
+      "12 lat.",
+      "15 lat.",
+      "18 lat."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Unikalne programy Specjalizacji",
+      "page": 349,
+      "quote": "15 lat, jeżeli nurkowania szkoleniowe są prowadzone na głębokości poniżej 18 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jeżeli autorski program Unique Specialty obejmuje zajęcia prowadzone w przestrzeniach zamkniętych (Overhead Environment), to jak jest on odgórnie limitowany przez SSI w stosunku do współczynnika ilościowego?",
+    "options": [
+      "2:1",
+      "3:1",
+      "4:1",
+      "6:1"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Unikalne programy Specjalizacji",
+      "page": 351,
+      "quote": "Specjalizacje w przestrzeniach zamkniętych - Współczynnik kursant-instruktor: 3:1"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Osiągnięcie certyfikacji SSI Master Diver wymaga m.in. ukończenia specjalizacji Deep Diving, Diver Stress & Rescue oraz dodatkowych 3 innych specjalizacji. Ile minimalnie zalogowanych nurkowań trzeba posiadać dla tego odznaczenia?",
+    "options": [
+      "24 zalogowane nurkowania.",
+      "50 zalogowanych nurkowań.",
+      "100 zalogowanych nurkowań.",
+      "Tylko wymagane nurkowania kursowe; ogólna liczba zalogowanych nie ma znaczenia."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Karty uznania SSI",
+      "section": "Uznanie za postępy w szkoleniu",
+      "page": 355,
+      "quote": "Wymagania do ukończenia kursu: Ukończenie specjalizacji SSI Deep Diving i Diver Stress & Rescue oraz 3 dodatkowych specjalizacji (...) 50 Zaliczone nurkowania."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby nurek otrzymał certyfikat uznaniowy SSI Platinum Diver, ile bezwzględnie musi mieć udokumentowanych w logbooku nurkowań na wodach otwartych?",
+    "options": [
+      "250 zalogowanych nurkowań.",
+      "500 zalogowanych nurkowań.",
+      "750 zalogowanych nurkowań.",
+      "1000 zalogowanych nurkowań."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Karty uznania SSI",
+      "section": "Uznanie za doświadczenie w nurkowaniu",
+      "page": 357,
+      "quote": "SSI Platinum Diver | 750 zalogowanych nurkowań na wodach otwartych"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jakie specyficzne certyfikaty Instruktora Specjalizacji musi posiadać kandydat aplikujący na kartę SSI Divemaster Instructor (własne szkolenia SSI, bez uznań z innych organizacji)?",
+    "options": [
+      "Perfect Buoyancy, Deep, Dry Suit oraz React Right.",
+      "Deep Diving, Dive Guide, Diver Stress & Rescue, Navigation oraz Night & Limited Visibility.",
+      "Sidemount, XR Nitrox, Freediving oraz Marine Ecology.",
+      "Scuba Rangers, React Right i przynajmniej 3 różne specjalizacje ekologiczne."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Divemaster Instructor",
+      "page": 395,
+      "quote": "Kandydat musi posiadać następujące certyfikaty SSI i aktywny status: Open Water Instructor, Instruktor Deep Diving, Dive Guide Instruktor, Instruktor Diver Stress & Rescue, Instruktor nawigacji, Instruktor Night & Limited Visibility."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby zostać Assistant Instructor Trainer, instruktor musi wykazać się odpowiednią liczbą wydanych certyfikatów. Co to za wymagania ilościowe w systemie SSI?",
+    "options": [
+      "Łącznie 25 certyfikacji, nie ma znaczenia z jakich poziomów.",
+      "Wydali co najmniej 50 Certyfikacji, w tym minimum 30 na poziomie Open Water Diver.",
+      "Wydali 100 certyfikacji, w tym minimum 50 Open Water Diver i 10 Divemaster.",
+      "Łącznie 150 certyfikacji w dowolnych kategoriach nurkowych SSI."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Assistant Instructor Trainer",
+      "page": 398,
+      "quote": "Wydali co najmniej 50 Certyfikacji, w tym: 30 Open Water Diver, 3 Diver Stress & Rescue, 2 Dive Guide/Divemaster, 15 Advanced Open Water Diver i/lub programy specjalizacji."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aplikując o stopień SSI Master Instructor, kandydat na ten poziom doświadczenia musi udowodnić m.in., że łącznie wydał:",
+    "options": [
+      "Co najmniej 50 certyfikatów nurkowania rekreacyjnego.",
+      "Co najmniej 100 certyfikatów nurkowania rekreacyjnego.",
+      "Co najmniej 150 certyfikatów nurkowania rekreacyjnego.",
+      "Co najmniej 250 certyfikatów nurkowania rekreacyjnego i ukończył IT Seminar."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Master Instructor",
+      "page": 404,
+      "quote": "Wydanie co najmniej 150 certyfikatów nurkowania rekreacyjnego."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Kto w świetle standardów SSI posiada uprawnienia (Minimalny Stopień) do organizowania i przeprowadzenia elitarnego Seminarium dla Trenerów Instruktorów (Instructor Trainer Seminar)?",
+    "options": [
+      "Dowolny Instruktor Certifier zrzeszony w SSI z aktywnym statusem.",
+      "Doświadczony, aktywny Instructor Trainer nadzorujący dany region.",
+      "Posiadający aktywny status pracownik biurowy z uprawnieniami SSI Service Center Manager.",
+      "Posiadający aktywny status SSI International Training Director."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Instructor Trainer",
+      "page": 406,
+      "quote": "Instructor Trainer Seminar może prowadzić aktywny SSI International Training Director."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Po zdobyciu wyjątkowego stopnia SSI Instructor Certifier (IC), w jaki sposób taki profesjonalista spełnia coroczne wymogi statusu aktywnego przypisane specjalnie dla swojej rangi?",
+    "options": [
+      "Musi nauczyć i wypromować minimum 1 nowy kurs instruktorski (ITC) każdego roku.",
+      "Musi uczestniczyć we wszystkich obowiązkowych aktualizacjach Instructor Certifier SSI zaplanowanych przez SSI International.",
+      "Musi wydać minimum 50 certyfikatów instruktorskich rocznie oraz zapłacić podwyższoną składkę.",
+      "Wystarczy, że utrzyma ubezpieczenie oraz ważny certyfikat jakości ISO 9001 dla swojej szkoły."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Instructor Certifier",
+      "page": 416,
+      "quote": "Status Aktywny - Wymagania: Spełnienie wszystkich aktywnych wymagań statusu Instructor Trainer. Uczestniczyć we wszystkich obowiązkowych aktualizacjach Instructor Certifier SSI zaplanowanych przez SSI International."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "W ramach specjalnych odznaczeń i kart uznaniowych dla profesjonalistów, za osiągnięcie jakiego progu w systemie (ile 'punktów doświadczenia w MySSI') przysługuje stopień Platinum Instructor?",
+    "options": [
+      "Za zdobycie 250 punktów doświadczenia w MySSI.",
+      "Za zdobycie 500 punktów doświadczenia w MySSI.",
+      "Za zdobycie 1000 punktów doświadczenia w MySSI.",
+      "Za zdobycie 2500 punktów doświadczenia w MySSI."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Karty uznaniowe dla Profesjonalistów",
+      "page": 418,
+      "quote": "Platinum Instructor | Za zdobycie 1000 punktów doświadczenia w MySSI."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Status 'Platinum Instructor Trainer' to najwyższe roczne wyróżnienie dla Trenerów w systemie SSI. Ile rygorystycznie certyfikatów instruktorskich musi wydać rocznie IT, aby go utrzymać w kolejnym roku kalendarzowym?",
+    "options": [
+      "5 podstawowych certyfikatów instruktorskich i 30 certyfikatów Specialty Instructor.",
+      "10 podstawowych certyfikatów, 60 certyfikatów Specialty Instructor i 3 Assistant Instructor Trainer.",
+      "15 podstawowych certyfikatów, 90 certyfikatów Specialty Instructor i 5 certyfikatów Assistant Instructor Trainer.",
+      "25 podstawowych certyfikatów instruktorskich i równe 100 z programów Specialty."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Karty uznaniowe dla Profesjonalistów",
+      "page": 421,
+      "quote": "Platinum Instructor Trainer | Wydać co najmniej 15 podstawowych certyfikatów instruktorskich, co najmniej 90 certyfikatów Specialty Instructor i co najmniej 5 certyfikatów Assistant Instructor Trainer."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak dokładnie określane są standardy szkoleniowe dla współczynnika ilościowego na wodach otwartych w programie nurkowania adaptacyjnego Classified Diving, dla kursanta zakwalifikowanego do najcięższego Poziomu 3?",
+    "options": [
+      "1:1, z instruktorem wykonującym wszystkie czynności za buddy'ego.",
+      "2:1:2 (dwóch kursantów CD, jeden instruktor CD oraz dwóch Dive Buddies).",
+      "1:1:2 (jeden kursant Classified Diving, jeden instruktor Classified Diving oraz dwóch certyfikowanych Classified Dive Buddy).",
+      "3:1:2 (trzech kursantów CD, jeden instruktor i dwóch Dive Buddies)."
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Classified Diving",
+      "section": "Classified Diving",
+      "page": 427,
+      "quote": "Level 2 i 3: współczynnik kursant-instruktor wynosi 1:1:2, z jednym (1) kursantem Classified Diving, jednym (1) instruktorem Classified Diving oraz dwoma (2) certyfikowanymi Classified Dive Buddy"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Aby profesjonalnie przeszkolić się na stopień partnerski Classified Dive Buddy dla nurka adaptacyjnego, wymagane są zaledwie wiek 18 lat, certyfikat z pierwszej pomocy i uprawnienia dla nurka m.in. z zakresu:",
+    "options": [
+      "React Right lub odpowiednik dla tlenu.",
+      "Diver Stress & Rescue SSI lub odpowiednik z innej uznanej agencji.",
+      "Divemaster (musi być stopniem profesjonalnym).",
+      "Perfect Buoyancy i Navigation (żeby asekurować partnera i orientować się pod wodą)."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Classified Diving",
+      "section": "Classified Dive Buddy",
+      "page": 440,
+      "quote": "Kandydat musi posiadać następujące certyfikaty SSI lub równoważne z uznanych organizacji nurkowych: Diver Stress & Rescue"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Jak SSI chroni w programach z zakresu Ekologii tzw. kursantów Snorkelingu (osoby nie-scuba)? Jaki jest limit głębokości, kiedy Ekologia obejmuje zajęcia na wstrzymanym oddechu w otwartej wodzie?",
+    "options": [
+      "Maksymalny limit to 2 metry głębokości w strefie wolnej od fal.",
+      "Maksymalny limit głębokości nurkowania na Wodach Otwartych to 5 metrów.",
+      "Maksymalny limit głębokości to 10 metrów dla osób powyżej 15 roku życia.",
+      "Maksymalny limit głębokości wynosi 12 metrów, identycznie jak w Scuba Diver."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy specjalizacji z zakresu ekologii",
+      "section": "Programy specjalizacji z zakresu ekologii",
+      "page": 455,
+      "quote": "Kursanci Snorkelingu - Maksymalny limit głębokości nurkowania na Wodach Otwartych | 5 metrów."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Uprawnienia do prowadzenia prestiżowych specjalizacji morskich m.in. (Marine Ecology, Shark Ecology, Manta & Ray) ma SSI Ecology Instructor. Jakie jest minimalne wymaganie statusowe (certyfikacja), by nim zostać w SSI bez posiadania statusu OWI?",
+    "options": [
+      "React Right Instructor.",
+      "Aktywny status Divemaster lub Snorkel Instructor.",
+      "Status Master Diver z odbytymi zajęciami O2 Provider.",
+      "Stopień minimum Advanced Open Water Instructor (AOWI)."
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy specjalizacji z zakresu ekologii",
+      "section": "Instruktor Specjalizacje ekologiczne",
+      "page": 460,
+      "quote": "Posiadać jedną (1) z następujących certyfikacji SSI o statusie aktywnym: Divemaster, Snorkel Instructor"
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Według procedur operacyjnych i progów wejściowych SSI Explorers (np. pływanie z syrenim ogonem), aby w ogóle zakwalifikować się i uczestniczyć w programie Mermaid Explorer dzieci muszą mieć ukończone:",
+    "options": [
+      "6 lat.",
+      "8 lat.",
+      "10 lat.",
+      "12 lat."
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Programy Explorers",
+      "section": "SSI Explorers",
+      "page": 467,
+      "quote": "Mermaid Explorer | Freediving Explorer - Minimalny wiek | 6 lat."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
+  },
+  {
+    "question": "Z iloma kursantami maksymalnie na jednego instruktora można prowadzić program React Right (ratownictwo i obsługa AED) na lądzie podczas warsztatów medycznych?",
+    "options": [
+      "Stosunek nie może przekroczyć 4:1 dla scenariuszy z fantomem CPR.",
+      "Sztywny limit instruktorski w sali to 8:1.",
+      "Może wynosić 10:2, o ile asystuje drugi Instruktor React Right.",
+      "Nie określono w standardzie maksymalnej liczby kursantów, opiera się to na kontroli i dostępności sprzętu."
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Programy React Right",
+      "section": "React Right",
+      "page": 477,
+      "quote": "Liczba kandydatów przypadająca na jednego instruktora: Nie określono maksymalnej liczby kursantów przypadających na instruktora podczas programu React Right. Instruktor powinien dysponować wystarczającymi materiałami pomocniczymi oraz być w stanie kontrolować i nadzorować wszystkich uczestników."
+    },
+    "category": "Administracja (Nowe Baza 2026)"
   }
 ];
 
