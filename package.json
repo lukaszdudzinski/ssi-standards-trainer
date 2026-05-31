@@ -1,0 +1,27 @@
+{
+  "name": "uki_s-owi-ssi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test_processes.js && node test_db.js",
+    "dev": "browser-sync start --server --files '*.css, *.js, *.html'",
+    "deploy": "git add . && git commit -m 'deploy' && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukaszdudzinski/ssi-standards-trainer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lukaszdudzinski/ssi-standards-trainer/issues"
+  },
+  "homepage": "https://github.com/lukaszdudzinski/ssi-standards-trainer#readme",
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "prettier": "^3.8.3"
+  }
+}

@@ -1,0 +1,109 @@
+====================================================
+AUDYT BAZY PYTAŃ - CZĘŚĆ 4 z 5 (15 pytań)
+====================================================
+
+--- PYTANIE 1 (Indeks w bazie: 375) ---
+PYTANIE: Kto w strukturach SSI może ubiegać się o status "Retired" (W spoczynku), jeśli nie spełnia minimalnych wymagań aktywnego statusu dla swoich najwyższych uprawnień?
+POPRAWNA ODPOWIEDŹ: Assistant Instructor Trainers, Instructor Trainers oraz Instructor Certifiers
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Status SSI Professional > VII. Status „w spoczynku” (Retired)
+STRONA: 22
+CYTAT: Certyfikaty, których to dotyczy: Assistant Instructor Trainer, Instructor Trainer, Instructor Certifier
+
+--- PYTANIE 2 (Indeks w bazie: 376) ---
+PYTANIE: Jaki status otrzymuje Profesjonalista SSI w wyniku incydentu prowadzącego do śmierci uczestnika szkolenia, nad którym sprawował on bezpośredni nadzór?
+POPRAWNA ODPOWIEDŹ: Administrative Hold (Wstrzymany administracyjnie)
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Status SSI Professional > IV. Status „Wstrzymany administracyjnie”
+STRONA: 22
+CYTAT: Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”
+
+--- PYTANIE 3 (Indeks w bazie: 377) ---
+PYTANIE: Jaca procedura obowiązuje instruktora Open Water Instructor, który chce przywrócić aktywny status po przerwie trwającej ponad dziesięć (10) lat?
+POPRAWNA ODPOWIEDŹ: Ukończenie wszystkich wymagań certyfikacyjnych dla najwyższego stopnia oraz zdanie Instructor Evaluation (IE)
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Przywrócenie Aktywnego Statusu > II. d. Ponad dziesięć (10) lat
+STRONA: 24
+CYTAT: Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation.
+
+--- PYTANIE 4 (Indeks w bazie: 378) ---
+PYTANIE: Kto ponosi ostateczną odpowiedzialność za przeprowadzenie sprawdzenia przeszłości kryminalnej (Criminal Background Check) Profesjonalisty SSI pracującego z małoletnimi?
+POPRAWNA ODPOWIEDŹ: Każdy SSI Professional i Centrum Szkoleniowe (zgodnie z przepisami lokalnymi)
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Jak korzystać ze Standardów > IV. a. Sprawdzenie przeszłości kryminalnej
+STRONA: 12
+CYTAT: Każdy SSI Professional i Centrum Szkoleniowe są odpowiedzialne za zrozumienie i przestrzeganie wszelkich odpowiednich przepisów lokalnych...
+
+--- PYTANIE 5 (Indeks w bazie: 379) ---
+PYTANIE: Przez jaki minimalny okres Centrum Szkoleniowe SSI musi przechowywać dokumentację szkoleniową (Training Records) kursantów?
+POPRAWNA ODPOWIEDŹ: 10 lat
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Wymagania Administracyjne > Procedury certyfikacji > VIII. b. Dokumentacja szkolenia
+STRONA: 17
+CYTAT: Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat.
+
+--- PYTANIE 6 (Indeks w bazie: 380) ---
+PYTANIE: Co dzieje się z Profesjonalistą SSI, który został wydalony (Expelled) z innej agencji nurkowej (np. PADI, CMAS)?
+POPRAWNA ODPOWIEDŹ: Może kwalifikować się do statusu aktywnego SSI, ale decyzja leży w gestii SSI International i jest rozpatrywana indywidualnie
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Status SSI Professional > VI. a. Osoby wydalone z innych agencji
+STRONA: 22
+CYTAT: If Professional zostanie wydalony z innej agencji... Decyzja ta leży w gestii SSI International i będzie rozpatrywana indywidualnie.
+
+--- PYTANIE 7 (Indeks w bazie: 381) ---
+PYTANIE: Jakie uprawnienia zachowuje SSI Professional o statusie "Retired"?
+POPRAWNA ODPOWIEDŹ: Pozostaje w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełnia minimalne wymagania i może prowadzić programy na poziomie kursanta
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Status SSI Professional > VII. Status „w spoczynku” (Retired)
+STRONA: 22
+CYTAT: pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej... Mogą oni również nadal prowadzić wszystkie programy na poziomie Kursanta
+
+--- PYTANIE 8 (Indeks w bazie: 382) ---
+PYTANIE: W jakim terminie od zakończenia programu wszystkie certyfikacje muszą zostać przetworzone w systemie MySSI?
+POPRAWNA ODPOWIEDŹ: W ciągu 7 dni
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Wymagania Administracyjne > Procedury certyfikacji > III. Wydawanie certyfikatów
+STRONA: 16
+CYTAT: Wszystkie certyfikacje i wyróżnienia must zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu.
+
+--- PYTANIE 9 (Indeks w bazie: 383) ---
+PYTANIE: Jak długo ważna jest Umowa przejęcia ryzyka i zwolnienia od odpowiedzialności (Liability Release) od daty jej podpisania?
+POPRAWNA ODPOWIEDŹ: Przez jeden (1) rok
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Dokumentacja szkolenia > II. a. Przed rozpoczęciem szkolenia
+STRONA: 13
+CYTAT: Umowa przejęcia ryzyka... Ważny przez jeden (1) rok od daty podpisania.
+
+--- PYTANIE 10 (Indeks w bazie: 384) ---
+PYTANIE: Jaki status posiada Profesjonalista SSI, który nie opłacił rocznej składki członkowskiej (Professional Renewal)?
+POPRAWNA ODPOWIEDŹ: Canceled
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Status SSI Professional > III. Status "Anulowany" (Canceled)
+STRONA: 21
+CYTAT: Osoba która posiada certyfikat Profesjonalisty SSI, ale nie wniosła opłaty rocznej do SSI.
+
+--- PYTANIE 11 (Indeks w bazie: 385) ---
+PYTANIE: Jaki jest maksymalny współczynnik kursantów do instruktora (Ratio) w programie Open Water Diver dla młodzieży w wieku 10-14 lat przy wykorzystaniu dwóch (2) certyfikowanych asystentów na wodach otwartych?
+POPRAWNA ODPOWIEDŹ: 8:3
+LOKALIZACJA: Programy Poziomu Podstawowego -> Scuba Diver > VI. b. Wody ograniczone i Wody otwarte
+STRONA: 53
+CYTAT: Liczba ta może wzrosnąć do 8:3, jeżeli instruktor korzysta z pomocy dwóch (2) certyfikowanych asystentów.
+
+--- PYTANIE 12 (Indeks w bazie: 386) ---
+PYTANIE: Jaki jest dopuszczalny stosunek liczby kursantów do instruktora (Ratio) w wodzie, jeżeli podczas podstawowego szkolenia kursanci używają suchych skafandrów?
+POPRAWNA ODPOWIEDŹ: 4:1
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Specjalistyczny sprzęt nurkowy > II. Suche skafandry
+STRONA: 30
+CYTAT: Stosunek liczby kursantów do liczby instruktorów na każdym podstawowym szkoleniu w wodzie, na którym kursant będzie nurkował w suchym skafandrze, wynosi 4:1.
+
+--- PYTANIE 13 (Indeks w bazie: 387) ---
+PYTANIE: Zgodnie z zaleceniami SSI, jaki jest sugerowany czas przerw powierzchniowych między nurkowaniami dla nurków w wieku 10-14 lat, jeżeli wykonują oni trzy (3) nurkowania dziennie?
+POPRAWNA ODPOWIEDŹ: Minimum 2 godziny
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Czas trwania programu > III. Zalecenie
+STRONA: 13
+CYTAT: wydłuż przerwy powierzchniowe do dwóch (2 ) godzin między nurkowaniami
+
+--- PYTANIE 14 (Indeks w bazie: 388) ---
+PYTANIE: Jaka jest maksymalna liczba kursantów na jednego instruktora w programie Deep Diving podczas nurkowań na głębokość większą niż 30 metrów?
+POPRAWNA ODPOWIEDŹ: 4:1 (bez możliwości zwiększenia przez asystentów)
+LOKALIZACJA: Programy Kontynuacji Edukacji -> Deep Diving > VII. Współczynnik ilościowy w wodzie
+STRONA: 75
+CYTAT: Nurkowania na głębokość poniżej 30 metrów: Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów...
+
+--- PYTANIE 15 (Indeks w bazie: 389) ---
+PYTANIE: Kiedy certyfikowany Divemaster SSI może asystować przy programach specjalistycznych?
+POPRAWNA ODPOWIEDŹ: Tylko jeśli posiada certyfikat na poziomie nurka (User Level) dla danej specjalizacji
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Korzystanie z pomocy certyfikowanych asystentów > I.
+STRONA: 122
+CYTAT: W przypadku programów specjalizacji certyfikowany asystent musi posiadać certyfikat na poziomie nurka dla danego programu.
+

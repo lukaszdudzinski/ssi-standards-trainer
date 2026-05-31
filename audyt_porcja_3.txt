@@ -1,0 +1,109 @@
+====================================================
+AUDYT BAZY PYTAŃ - CZĘŚĆ 3 z 5 (15 pytań)
+====================================================
+
+--- PYTANIE 1 (Indeks w bazie: 360) ---
+PYTANIE: Jaka jest wymagana długość węża dla drugiego stopnia automatu, który jest zawieszony na szyi kursanta (na pętli) w konfiguracji Sidemount?
+POPRAWNA ODPOWIEDŹ: 50-75 cm
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > III. Nurkowanie Sidemount > a.
+STRONA: 30
+CYTAT: Jeden automat z drugim stopniem z wężem 50-75 cm, z pętlą do zawieszenia automatu na szyi
+
+--- PYTANIE 2 (Indeks w bazie: 361) ---
+PYTANIE: W programie Decompression Diving, jaki typ boi sygnalizacyjnej do wypuszczania z głębokości jest konkretnie zalecany przez standardy?
+POPRAWNA ODPOWIEDŹ: Boja czerwona
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > IV. Program Decompression Diving > a.
+STRONA: 36
+CYTAT: Jedno urządzenie sygnalizacyjne do wypuszczania z głębokości (zalecana jest czerwona boja sygnalizacyjna...)
+
+--- PYTANIE 3 (Indeks w bazie: 362) ---
+PYTANIE: Kiedy używanie fajki podczas szkolenia w wodzie jest uznawane za opcjonalne według uznania instruktora?
+POPRAWNA ODPOWIEDŹ: We wszystkich programach z wyjątkiem: Snorkel Diver, Scuba Diver, Referral Diver, Indoor Diver i Open Water Diver
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > II. Nurkowanie rekreacyjne > a. Uwaga
+STRONA: 29
+CYTAT: używanie fajki... jest opcjonalne dla wszystkich programów oprócz: Snorkel Diver, Scuba Diver, Referral Diver, Indoor Diver i Open Water Diver.
+
+--- PYTANIE 4 (Indeks w bazie: 363) ---
+PYTANIE: Który element wyposażenia ratunkowego musi być dostępny w pobliżu miejsca szkolenia zgodnie z wymogiem "Obowiązku opieki" (Duty of Care)?
+POPRAWNA ODPOWIEDŹ: Sprzęt łączności
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Obowiązek opieki > VI. Sprzęt ratunkowy
+STRONA: 15
+CYTAT: W pobliżu miejsca szkolenia musi być dostępny sprzęt ratunkowy, w tym apteczka pierwszej pomocy, aparat tlenowy i sprzęt łączności.
+
+--- PYTANIE 5 (Indeks w bazie: 364) ---
+PYTANIE: Jaki jest wymóg doświadczenia dla Profesjonalisty SSI, który zamierza używać maski pełnotwarzowej (Full Face Mask) podczas prowadzenia programów SSI?
+POPRAWNA ODPOWIEDŹ: Minimum 10 zalogowanych nurkowań in tym typie sprzętu
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > II. Nurkowanie rekreacyjne > b. Zalecenie
+STRONA: 29
+CYTAT: Profesjonaliści SSI, którzy używają... masek pełnotwarzowych... muszą mieć praktyczne doświadczenie... (co najmniej 10 zalogowanych nurkowań)
+
+--- PYTANIE 6 (Indeks w bazie: 365) ---
+PYTANIE: Jak standardy SSI definiują "odległość linearną" (Linear Distance) w kontekście środowisk zamkniętych (Overhead Environment)?
+POPRAWNA ODPOWIEDŹ: Suma odległości pionowej i poziomej, którą nurek musi pokonać, aby osiągnąć powierzchnię
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Przestrzenie zamknięte > I. Odległość linearna
+STRONA: 41
+CYTAT: Dystans pływania definiowany jest jako suma odległości pionowej i poziomej, którą nurek musi pokonać, żeby osiągnąć powierzchnię wody.
+
+--- PYTANIE 7 (Indeks w bazie: 366) ---
+PYTANIE: Nurek posiadający certyfikat Advanced Open Water Diver eksploruje jaskinię (Cavern) na głębokości 25 metrów. Jaki jest jego maksymalny dopuszczalny dystans penetracji w poziomie, przy całkowitym limicie odległości linearnej 60m?
+POPRAWNA ODPOWIEDŹ: 35 metrów
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Przestrzenie zamknięte > I. Odległość linearna
+STRONA: 41
+CYTAT: Advanced Open Water Diver... eksplorujący jaskinię na głębokości 25 metrów miałby zatem dozwolony maksymalny dystans penetracji wynoszący 35 metrów.
+
+--- PYTANIE 8 (Indeks w bazie: 367) ---
+PYTANIE: Jakie precyzyjne parametry musi spełniać obiekt sztuczny, aby został sklasyfikowany jako miejsce do "Nurkowania Indoor"?
+POPRAWNA ODPOWIEDŹ: Głębokość powyżej 5m i powierzchnia min. 100 m²
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Definicje związane ze środowiskiem > VII. Nurkowanie Indoor
+STRONA: 13
+CYTAT: Akwaria i specjalnie zbudowane sztuczne obiekty... o minimalnej głębokości większej niż pięć (5) metrów i minimalnej powierzchni wody wynoszącej 100 metrów kwadratowych
+
+--- PYTANIE 9 (Indeks w bazie: 368) ---
+PYTANIE: Która z cech NIE jest wymagana, aby struktura mogła zostać uznana za "przestrzeń zamkniętą, przez którą można przepłynąć" (swim-through) w nurkowaniu rekreacyjnym?
+POPRAWNA ODPOWIEDŹ: Szerokość pozwalająca na przepłynięcie dwóch nurków obok siebie
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Przestrzenie zamknięte > II. Przestrzeń zamknięta, przez którą można przepłynąć
+STRONA: 41
+CYTAT: Struktura ta posiada następujące cechy: Mieć mniej niż 10 metrów długości. Maksymalna głębokość nie może przekraczać 30 metrów. Posiada wyodrębnione i widoczne punkty wejścia i wyjścia
+
+--- PYTANIE 10 (Indeks w bazie: 369) ---
+PYTANIE: Co musi zrobić Profesjonalista SSI, jeśli klient prosi o wydanie ekwiwalentnego certyfikatu SSI na podstawie licencji z agencji NIE-uznawanej przez SSI?
+POPRAWNA ODPOWIEDŹ: Przeprowadzić SSI Experienced Diver Test (egzamin, sesja basenowa i min. 2 nurkowania na wodach otwartych)
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Certyfikaty równoważne > II. Certyfikaty Nie-Uznanych Przez SSI Agencji
+STRONA: 19
+CYTAT: Kursanci ci muszą pomyślnie zdać test SSI Experienced Diver, zgodnie ze standardami szkolenia SSI.
+
+--- PYTANIE 11 (Indeks w bazie: 370) ---
+PYTANIE: Na jakiej maksymalnej głębokości musi zostać umieszczona platforma szkoleniowa w ograniczonym akwenie, jeśli dno znajduje się zbyt głęboko, by kursanci mogli swobodnie stanąć?
+POPRAWNA ODPOWIEDŹ: 2 metry
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Miejsca szkoleń i limity głębokości > II. Ograniczony akwen
+STRONA: 40
+CYTAT: instruktor musi wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości
+
+--- PYTANIE 12 (Indeks w bazie: 371) ---
+PYTANIE: Jaki jest maksymalny limit głębokości dla nurka w wieku 10-11 lat posiadającego certyfikat Open Water Diver?
+POPRAWNA ODPOWIEDŹ: 12 metrów (z profesjonalistą lub certyfikowaną osobą dorosłą)
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Miejsca szkoleń i limity głębokości > IV. Zalecane limity głębokości
+STRONA: 40
+CYTAT: 10- i 11-latki | 12 metrów z profesjonalnym nurkiem o aktywnym statusie lub certyfikowaną osobą dorosłą
+
+--- PYTANIE 13 (Indeks w bazie: 372) ---
+PYTANIE: Od jakiej wysokości nad poziomem morza nurkowanie musi być planowane jako "Nurkowanie w górach" (Altitude Diving)?
+POPRAWNA ODPOWIEDŹ: Powyżej 300 metrów
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Prowadzenie programów SSI > Definicje związane ze środowiskiem > IV. Nurkowanie w górach
+STRONA: 13
+CYTAT: Profesjonalista SSI musi planować wszystkie nurkowania na wysokości powyżej 300 metrów przy użyciu specjalnych... tabel
+
+--- PYTANIE 14 (Indeks w bazie: 373) ---
+PYTANIE: Jaki jest wymagany poziom rezerwy gazu w momencie wynurzenia podczas nurkowania w przestrzeni zamkniętej poza strefą światła dziennego?
+POPRAWNA ODPOWIEDŹ: 1/3 całkowitego zapasu gazu
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Przestrzenie zamknięte > IV. Nurkowania poza strefą światła dziennego
+STRONA: 41
+CYTAT: zaplanowano odpowiednią ilość gazu, aby w momencie wynurzenia zachowana została rezerwa w ilości 1/3 całkowitej ilości zapasu gazu
+
+--- PYTANIE 15 (Indeks w bazie: 374) ---
+PYTANIE: Jakie jest dopuszczalne ppO2 dla kursanta w programie Enriched Air Nitrox (EAN)?
+POPRAWNA ODPOWIEDŹ: Maksymalnie 1.4 bar w dowolnym momencie nurkowania
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > I. Gaz oddechowy
+STRONA: 27
+CYTAT: Jeżeli gazem oddechowym jest nitroks, ppO2 w dowolnym momencie nurkowania nie może przekraczać 1.4 bara.
+

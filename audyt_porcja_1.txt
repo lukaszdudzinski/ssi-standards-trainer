@@ -1,0 +1,109 @@
+====================================================
+AUDYT BAZY PYTAŃ - CZĘŚĆ 1 z 5 (15 pytań)
+====================================================
+
+--- PYTANIE 1 (Indeks w bazie: 330) ---
+PYTANIE: Instruktor prowadzi kurs łączony: Nawigacja, Nurkowanie Nocne oraz Nurkowanie z Łodzi. Ile minimalnie nurkowań na wodach otwartych musi wykonać kursant, aby zaliczyć te trzy specjalizacje?
+POPRAWNA ODPOWIEDŹ: 4 nurkowania.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> IV. Łączenie programów
+STRONA: 58
+CYTAT: Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych.
+
+--- PYTANIE 2 (Indeks w bazie: 331) ---
+PYTANIE: Instruktor łączy 4 specjalizacje w jednym cyklu. Ile minimalnie nurkowań szkoleniowych należy przeprowadzić?
+POPRAWNA ODPOWIEDŹ: 5 nurkowań.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> IV. Łączenie programów
+STRONA: 59
+CYTAT: Jeżeli cztery (4) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej pięć (5) nurkowań szkoleniowych na Wodach Otwartych.
+
+--- PYTANIE 3 (Indeks w bazie: 332) ---
+PYTANIE: Które z wymienionych programów są kategorycznie wyłączone z ogólnych zasad łączenia nurkowań i wymagają pełnej liczby nurkowań zgodnie ze swoimi standardami?
+POPRAWNA ODPOWIEDŹ: Deep Diving, Diver Stress & Rescue, Decompression Diving.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> IV. Łączenie programów
+STRONA: 59
+CYTAT: W przypadku następujących programów, wszystkie obowiązkowe... nurkowania... muszą być ukończone zgodnie z standardami dla danego programu: Deep Diving, Diver Stress & Rescue, Decompression Diving.
+
+--- PYTANIE 4 (Indeks w bazie: 333) ---
+PYTANIE: Zgodnie z „Uwagą” w standardach Altitude Diving, nurkowania szkoleniowe dla specjalizacji:
+POPRAWNA ODPOWIEDŹ: Nie mogą być łączone z nurkowaniami szkoleniowymi programów poziomu podstawowego (entry-level).
+LOKALIZACJA: Altitude Diving -> VI. Limity głębokości
+STRONA: 65
+CYTAT: Uwaga | Nurkowania szkoleniowe na wodach otwartych dla wszystkich specjalizacji nie mogą być łączone z nurkowaniami szkoleniowymi na wodach otwartych dla programów entry-level.
+
+--- PYTANIE 5 (Indeks w bazie: 334) ---
+PYTANIE: Nurek posiada potwierdzone i podpisane doświadczenie (logbook) w zakresie nurkowania z łodzi (Boat Diving). Ile nurkowań na poczet tej specjalizacji może maksymalnie zaliczyć instruktor?
+POPRAWNA ODPOWIEDŹ: Maksymalnie jedno (1) nurkowanie.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> Zaliczenie nurkowań doświadczalnych
+STRONA: 59
+CYTAT: ...Profesjonalista SSI może podjąć decyzję o zaliczeniu jednego (1) nurkowania na poczet danego program specjalizacji SSI.
+
+--- PYTANIE 6 (Indeks w bazie: 335) ---
+PYTANIE: Jeśli program specjalizacji jest prowadzony równolegle z kursem Open Water Diver, kiedy można wydać certyfikat specjalizacji?
+POPRAWNA ODPOWIEDŹ: Dopiero po wydaniu certyfikatu Open Water Diver.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> IV. Łączenie programów
+STRONA: 59
+CYTAT: Certyfikat specjalizacji może być wydany dopiero po wydaniu certyfikatu Open Water Diver.
+
+--- PYTANIE 7 (Indeks w bazie: 336) ---
+PYTANIE: Jaki dowód jest wymagany, aby zaliczyć nurkowanie z doświadczeniem na poczet specjalizacji?
+POPRAWNA ODPOWIEDŹ: Nurkowanie zarejestrowane, potwierdzone i podpisane przez profesjonalistę nurkowego w logbooku.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> Zaliczenie nurkowań doświadczalnych
+STRONA: 59
+CYTAT: Uwaga | Dowód nurkowania z doświadczeniem musi być zarejestrowany, potwierdzony i podpisany przez profesjonalistę nurkowego.
+
+--- PYTANIE 8 (Indeks w bazie: 337) ---
+PYTANIE: Jaka jest maksymalna liczba nurkowań szkoleniowych, które można przeprowadzić z kursantem w ciągu jednego dnia (bez dekompresji)?
+POPRAWNA ODPOWIEDŹ: 3 nurkowania.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> Liczba nurkowań szkoleniowych
+STRONA: 32
+CYTAT: Maksymalna, dopuszczalna ilość nurkowań szkoleniowych w wodach otwartych w ciągu jednego dnia to 3...
+
+--- PYTANIE 9 (Indeks w bazie: 338) ---
+PYTANIE: Ile nurkowań dziennie dopuszczają standardy, jeśli choć jedno z nich planuje lub faktycznie wymaga przystanków dekompresyjnych?
+POPRAWNA ODPOWIEDŹ: Dwa.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> Liczba nurkowań szkoleniowych - Dekompresja
+STRONA: 32
+CYTAT: Maksymalna liczba nurkowań szkoleniowych to dwa (2) dziennie, jeśli jakiekolwiek nurkowanie danego dnia planuje lub faktycznie wymaga przystanków dekompresyjnych.
+
+--- PYTANIE 10 (Indeks w bazie: 339) ---
+PYTANIE: Program Advanced Open Water Diver wymaga ukończenia 5 nurkowań z różnych specjalizacji. Które dwa są obowiązkowe?
+POPRAWNA ODPOWIEDŹ: Navigation i Deep Diving.
+LOKALIZACJA: Advanced Open Water Diver -> Wymagania
+STRONA: 63
+CYTAT: Obowiązkowe nurkowania: Deep Diving 1... oraz Nawigacja 1.
+
+--- PYTANIE 11 (Indeks w bazie: 340) ---
+PYTANIE: Kto posiada uprawnienia do asystowania podczas Instructor Training Course (ITC) oraz seminarium Assistant Instructor Trainer?
+POPRAWNA ODPOWIEDŹ: Assistant Instructor Trainer o aktywnym statusie.
+LOKALIZACJA: Programy Profesjonalne -> Asystowanie w szkoleniach pro
+STRONA: 34
+CYTAT: Assistant Instructor Trainer SSI z aktywnym statusem może asystować podczas Instructor Training Course i Assistant Instructor Trainer Seminar.
+
+--- PYTANIE 12 (Indeks w bazie: 341) ---
+PYTANIE: Profesjonalista SSI o stopniu Instructor Trainer, który nie spełnia minimalnych wymagań dla tego poziomu, ale spełnia je dla stopnia Open Water Instructor, przechodzi w status:
+POPRAWNA ODPOWIEDŹ: Status „Retired” (W spoczynku) dla stopnia IT, zachowując aktywny status OWI.
+LOKALIZACJA: Programy Profesjonalne -> Status pro - emerytura
+STRONA: 22
+CYTAT: SSI Professionals na emeryturze pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełniają minimalne wymagania aktywnego statusu.
+
+--- PYTANIE 13 (Indeks w bazie: 342) ---
+PYTANIE: Aby powrócić do statusu aktywnego po przerwie trwającej od 5 do 10 lat (status anulowany), instruktor musi:
+POPRAWNA ODPOWIEDŹ: Ukończyć wszystkie wymagania certyfikacyjne dla swojego najwyższego stopnia (oceny w wodzie, egzaminy, teoria).
+LOKALIZACJA: Programy Profesjonalne -> Przywrócenie statusu 5-10 lat
+STRONA: 23
+CYTAT: Okres dłuższy niż pięć (5) lat... Ukończenie wszystkich wymagań certyfikacyjnych dla ich najwyższego profesjonalnego certyfikatu...
+
+--- PYTANIE 14 (Indeks w bazie: 343) ---
+PYTANIE: Instruktorzy (OWI i wyżej), którzy chcą wrócić do statusu aktywnego po przerwie dłuższej niż 10 lat, muszą dodatkowo:
+POPRAWNA ODPOWIEDŹ: Zdać ponownie Instructor Evaluation (IE).
+LOKALIZACJA: Programy Profesjonalne -> Przywrócenie statusu >10 lat
+STRONA: 24
+CYTAT: Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation.
+
+--- PYTANIE 15 (Indeks w bazie: 344) ---
+PYTANIE: Jaka jest rola „Instruktora Certifier” (Instructor Certifier) w procesie szkolenia?
+POPRAWNA ODPOWIEDŹ: Jest instruktorem rekordu, odpowiedzialnym za finalną ocenę umiejętności/wiedzy i prawidłowość dokumentacji.
+LOKALIZACJA: Programy Profesjonalne -> Instructor Certifier
+STRONA: 16
+CYTAT: Instruktor Certifier jest instruktorem rekordu... Jest on odpowiedzialny za zapewnienie, że dokumentacja szkolenia jest prawidłowo wypełniona...
+

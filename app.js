@@ -1212,7 +1212,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       refQuote.textContent = `"${q.reference.quote}"`;
 
-      // --- Spaced Repetition Retry Injection (Practice Mode only) ---
+      // --- Spaced Repetition Retry Injection (Twardy tryb aż do skutku) ---
       if (!isExamMode) {
         retryCount++;
         const baseText = q.originalQuestionText || q.question;
@@ -1223,10 +1223,10 @@ document.addEventListener('DOMContentLoaded', () => {
           question: "🔄 [POWTÓRKA] " + baseText
         };
         
-        // Insert exactly 2 questions later (position currentQuestionIndex + 3)
-        const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 3);
+        // Wrzuć dokładnie za 3 pytania (lub na koniec, jeśli test krótszy). Gwarancja powrotu pytania.
+        const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 4);
         activeQuestions.splice(insertIndex, 0, retryQ);
-        console.log(`Inserted incorrect question copy at index ${insertIndex} for retry. Total questions: ${activeQuestions.length}`);
+        console.log(`Błąd w pytaniu. Twardy Tryb: Wstrzyknięto powtórkę "${baseText.substring(0,20)}..." na indeks ${insertIndex}. Razem w kolejce: ${activeQuestions.length}`);
       }
       
       setTimeout(() => {

@@ -1,0 +1,109 @@
+====================================================
+AUDYT BAZY PYTAŃ - CZĘŚĆ 2 z 5 (15 pytań)
+====================================================
+
+--- PYTANIE 1 (Indeks w bazie: 345) ---
+PYTANIE: Jaki status otrzymuje automatycznie Profesjonalista SSI zaangażowany w zdarzenie prowadzące do śmierci uczestnika pod jego bezpośrednim nadzorem?
+POPRAWNA ODPOWIEDŹ: Status Wstrzymany Administracyjnie (Administrative Hold).
+LOKALIZACJA: Programy Profesjonalne -> Status pro - Wstrzymanie
+STRONA: 22
+CYTAT: Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”.
+
+--- PYTANIE 2 (Indeks w bazie: 346) ---
+PYTANIE: Kto może prowadzić seminarium dla kandydatów na stopień Specialty Instructor?
+POPRAWNA ODPOWIEDŹ: Assistant Instructor Trainer lub wyższy stopień.
+LOKALIZACJA: Programy Profesjonalne -> Seminaria Specialty Instructor
+STRONA: 132
+CYTAT: Assistant Instructor Trainer lub wyższy (np. Instructor Trainer) mogą prowadzić seminaria dla Instruktorów Specjalizacji.
+
+--- PYTANIE 3 (Indeks w bazie: 347) ---
+PYTANIE: Czy SSI Professional ze statusem „Nieaktywnym” (Inactive) może prowadzić programy SSI?
+POPRAWNA ODPOWIEDŹ: Nie, nie może prowadzić żadnych programów SSI do czasu przywrócenia statusu aktywnego.
+LOKALIZACJA: Programy Profesjonalne -> Status nieaktywny - ograniczenia
+STRONA: 21
+CYTAT: Status nieaktywny... nie mogą prowadzić żadnych programów SSI dopóki nie przywrócą statusu aktywnego.
+
+--- PYTANIE 4 (Indeks w bazie: 348) ---
+PYTANIE: Zgodnie ze standardami, ubezpieczenie OC Profesjonalisty SSI musi:
+POPRAWNA ODPOWIEDŹ: Zawierać SSI jako dodatkowo ubezpieczonego (jeśli wymaga tego prawo lokalne).
+LOKALIZACJA: Programy Profesjonalne -> Ubezpieczenie OC - Wymagania
+STRONA: 20
+CYTAT: Profesjonalista SSI must: Zagwarantować, że SSI zostanie uwzględniona jako dodatkowo ubezpieczony na polisie...
+
+--- PYTANIE 5 (Indeks w bazie: 349) ---
+PYTANIE: Jaki stopień uprawnia do prowadzenia i certyfikowania programu Divemaster?
+POPRAWNA ODPOWIEDŹ: Dive Guide Instructor o aktywnym statusie.
+LOKALIZACJA: Programy Profesjonalne -> Prowadzenie Divemastera
+STRONA: 83
+CYTAT: Instruktor Dive Guide o aktywnym statusie może prowadzić program Divemaster.
+
+--- PYTANIE 6 (Indeks w bazie: 350) ---
+PYTANIE: Które z poniższych NIE jest jednym z 4 kryteriów uznania innej agencji szkoleniowej przez SSI?
+POPRAWNA ODPOWIEDŹ: Posiadanie własnego centrum medycznego dla nurków.
+LOKALIZACJA: Ogólne Standardy Specjalizacji -> Kryteria Uznania innej agencji
+STRONA: 19
+CYTAT: Lista zawiera: 5 lat rynkowych, 3 języki, 250 instruktorów, ISO/RSTC. Brak zapisu o centrum medycznym.
+
+--- PYTANIE 7 (Indeks w bazie: 351) ---
+PYTANIE: W konfiguracji Sidemount, nurek musi posiadać automat z wężem o długości:
+POPRAWNA ODPOWIEDŹ: 1.8 - 2.1 metra (tzw. długi wąż).
+LOKALIZACJA: Konfiguracje sprzętowe -> Sidemount - wąż
+STRONA: 30
+CYTAT: Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra.
+
+--- PYTANIE 8 (Indeks w bazie: 352) ---
+PYTANIE: Jakie są wymagania dotyczące manometrów w programach Decompression Diving oraz Sidemount?
+POPRAWNA ODPOWIEDŹ: Każda butla (główna, stage, niezależne butle sidemount) musi być wyposażona w manometr.
+LOKALIZACJA: Konfiguracje sprzętowe -> Wymagania dotyczące manometrów
+STRONA: 30
+CYTAT: Każda butla musi być wyposażona w manometr.
+
+--- PYTANIE 9 (Indeks w bazie: 353) ---
+PYTANIE: Jaka jest maksymalna dopuszczalna wartość ppO2 podczas fazy dekompresji w programie Decompression Diving?
+POPRAWNA ODPOWIEDŹ: 1.6 bara.
+LOKALIZACJA: Programy Kontynuacji Edukacji -> Decompression Diving - limit ppO2
+STRONA: 27
+CYTAT: Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar.
+
+--- PYTANIE 10 (Indeks w bazie: 354) ---
+PYTANIE: Definicja „przestrzeni zamkniętej ze strefą dostępu światła dziennego” (Overhead Environment) wymaga, aby kursant:
+POPRAWNA ODPOWIEDŹ: Przez cały czas widział bezpieczne okno naturalnego światła dziennego.
+LOKALIZACJA: Miejsca szkoleń i limity głębokości -> Przestrzenie zamknięte - światło
+STRONA: 41
+CYTAT: Ma wyraźnie widoczny punkt wejścia i przez cały czas kursant widzi bezpieczne okno naturalnego światła dziennego...
+
+--- PYTANIE 11 (Indeks w bazie: 355) ---
+PYTANIE: W Pełnym Systemie Nurkowym Sidemount, każdy manometr musi być wyposażony w wąż wysokiego ciśnienia o ściśle określonej długości. Jaki to zakres?
+POPRAWNA ODPOWIEDŹ: 15-25 cm
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > III. Nurkowanie Sidemount > a.
+STRONA: 30
+CYTAT: Manometr z wężem wysokiego ciśnienia o długości 15-25 cm
+
+--- PYTANIE 12 (Indeks w bazie: 356) ---
+PYTANIE: Jaka jest wymagana długość węża drugiego stopnia automatu, który w konfiguracji Sidemount służy jako tzw. "wąż długi"?
+POPRAWNA ODPOWIEDŹ: 1.8 - 2.1 metra
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > III. Nurkowanie Sidemount > a.
+STRONA: 30
+CYTAT: Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra
+
+--- PYTANIE 13 (Indeks w bazie: 357) ---
+PYTANIE: Podczas realizacji programu Decompression Diving, jakie jest maksymalne dopuszczalne ciśnienie parcjalne tlenu (ppO2) wyłącznie dla fazy dekompresji?
+POPRAWNA ODPOWIEDŹ: 1.6 bar
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Definicje sprzętowe > I. Gaz oddechowy
+STRONA: 27
+CYTAT: Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar.
+
+--- PYTANIE 14 (Indeks w bazie: 358) ---
+PYTANIE: Jeżeli instrukcja obsługi regulatora wyraźnie stwierdza, że jest on przeznaczony do użytku wyłącznie przez jedną osobę, w co musi być wyposażony instruktor SSI podczas ćwiczeń air-sharing jako dawca?
+POPRAWNA ODPOWIEDŹ: W niezależny, nadmiarowy system oddechowy
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Filozofia SSI szkolenia w wodzie > I. c. Uwaga
+STRONA: 10
+CYTAT: Jeśli Podręcznik wyraźnie mówi, że regulator jest przeznaczony do użytku tylko przez jedną osobę, instruktor musi być przynajmniej wyposażony w niezależny nadmiarowy system oddechowy
+
+--- PYTANIE 15 (Indeks w bazie: 359) ---
+PYTANIE: Który z poniższych parametrów jest jednym z czterech kryteriów niezbędnych, aby agencja szkoleniowa mogła zostać uznana przez SSI za "Uznaną Agencję Szkoleniową"?
+POPRAWNA ODPOWIEDŹ: Zapewnienie materiałów szkoleniowych w co najmniej trzech (3) językach
+LOKALIZACJA: Ogólne Standardy Szkoleniowe -> Certyfikaty równoważne > III. Kryteria Uznania SSI
+STRONA: 19
+CYTAT: Musi zapewniać pełny zestaw materiałów szkoleniowych w co najmniej trzech (3) językach.
+

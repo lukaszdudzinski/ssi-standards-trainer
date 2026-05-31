@@ -2309,16 +2309,16 @@ const QUESTIONS_DB = [
     "question": "Maksymalny współczynnik kursant-instruktor na wodach otwartych w trakcie programu Basic Diver wynosi:",
     "options": [
           "8:1.",
-          "4:1.",
+          "4:1 (6:2 z certyfikowanym asystentem).",
           "2:1.",
-          "6:2 z certyfikowanym asystentem."
+          "6:1."
     ],
-    "answer": 2,
+    "answer": 1,
     "reference": {
-      "chapter": "Programy Poziomu Podstawowego",
-      "section": "Basic Diver - Współczynniki",
-      "page": 47,
-      "quote": "Maksymalny współczynnik kursant - instruktor na wodach otwartych in trakcie programu Basic Diver wynosi: 2:1."
+      "chapter": "Programy Doświadczania",
+      "section": "Basic Diver (ISO 11121) - Współczynnik ilościowy w wodzie",
+      "page": 48,
+      "quote": "Prawidłowa odpowiedź to: 4:1 (czterech kursantów na jednego instruktora). Współczynnik ten może jednak zostać zwiększony do 6:2, jeżeli instruktor korzysta z pomocy jednego certyfikowanego asystenta."
     }
   },
   {
@@ -2566,15 +2566,15 @@ const QUESTIONS_DB = [
     "options": [
           "1:1",
           "2:1",
-          "4:1",
+          "4:1 (może być 6:2 z asystentem)",
           "6:1"
     ],
-    "answer": 1,
+    "answer": 2,
     "reference": {
-      "chapter": "Programy Poziomu Podstawowego",
-      "section": "Basic Diver - Ratios",
-      "page": 47,
-      "quote": "Maksymalny współczynnik kursant - instruktor na wodach otwartych in trakcie programu Basic Diver wynosi: 2:1"
+      "chapter": "Programy Doświadczania",
+      "section": "Basic Diver (ISO 11121) - Współczynnik ilościowy w wodzie",
+      "page": 48,
+      "quote": "Prawidłowa odpowiedź to: 4:1. Współczynnik ten może jednak zostać zwiększony do 6:2, jeżeli instruktor korzysta z pomocy asystenta."
     }
   },
   {
