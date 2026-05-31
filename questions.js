@@ -5833,6 +5833,857 @@ const QUESTIONS_DB = [
     },
     "category": "Współczynniki i Wiek"
   }
+,
+  {
+    "question": "W Pełnym Systemie Nurkowym Sidemount, każdy manometr musi być wyposażony w wąż wysokiego ciśnienia o ściśle określonej długości. Jaki to zakres?",
+    "options": [
+          "10-15 cm",
+          "15-25 cm",
+          "50-75 cm",
+          "Standardy nie określają długości węża HP w tej konfiguracji"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
+      "page": 30,
+      "quote": "Manometr z wężem wysokiego ciśnienia o długości 15-25 cm"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jaka jest wymagana długość węża drugiego stopnia automatu, który w konfiguracji Sidemount służy jako tzw. \"wąż długi\"?",
+    "options": [
+          "1.5 - 2.0 metra",
+          "1.8 - 2.1 metra",
+          "Dokładnie 2.1 metra",
+          "Minimum 2.1 metra"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
+      "page": 30,
+      "quote": "Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Podczas realizacji programu Decompression Diving, jakie jest maksymalne dopuszczalne ciśnienie parcjalne tlenu (ppO2) wyłącznie dla fazy dekompresji?",
+    "options": [
+          "1.4 bar",
+          "1.5 bar",
+          "1.6 bar",
+          "1.6 bar, ale tylko przy użyciu czystego tlenu"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > I. Gaz oddechowy",
+      "page": 27,
+      "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jeżeli instrukcja obsługi regulatora wyraźnie stwierdza, że jest on przeznaczony do użytku wyłącznie przez jedną osobę, w co musi być wyposażony instruktor SSI podczas ćwiczeń air-sharing jako dawca?",
+    "options": [
+          "W zintegrowany system alternatywnego źródła powietrza (np. Air2)",
+          "W niezależny, nadmiarowy system oddechowy",
+          "W automat o zwiększonym wydatku (High-flow)",
+          "W takim przypadku instruktor nie może być dawcą gazu"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Filozofia SSI szkolenia w wodzie > I. c. Uwaga",
+      "page": 10,
+      "quote": "Jeśli Podręcznik wyraźnie mówi, że regulator jest przeznaczony do użytku tylko przez jedną osobę, instruktor musi być przynajmniej wyposażony w niezależny nadmiarowy system oddechowy"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Który z poniższych parametrów jest jednym z czterech kryteriów niezbędnych, aby agencja szkoleniowa mogła zostać uznana przez SSI za \"Uznaną Agencję Szkoleniową\"?",
+    "options": [
+          "Posiadanie minimum 100 autoryzowanych centrów szkoleniowych",
+          "Zapewnienie materiałów szkoleniowych w co najmniej trzech (3) językach",
+          "Działanie na rynku od co najmniej dziesięciu (10) lat",
+          "Posiadanie co najmniej 500 aktywnych instruktorów na świecie"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Certyfikaty równoważne > III. Kryteria Uznania SSI",
+      "page": 19,
+      "quote": "Musi zapewniać pełny zestaw materiałów szkoleniowych w co najmniej trzech (3) językach."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaka jest wymagana długość węża dla drugiego stopnia automatu, który jest zawieszony na szyi kursanta (na pętli) w konfiguracji Sidemount?",
+    "options": [
+          "15-25 cm",
+          "50-75 cm",
+          "1.8-2.1 metra",
+          "Długość dowolna, pod warunkiem zachowania opływowości"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
+      "page": 30,
+      "quote": "Jeden automat z drugim stopniem z wężem 50-75 cm, z pętlą do zawieszenia automatu na szyi"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "W programie Decompression Diving, jaki typ boi sygnalizacyjnej do wypuszczania z głębokości jest konkretnie zalecany przez standardy?",
+    "options": [
+          "Boja żółta (Emergency)",
+          "Boja czerwona",
+          "Boja o wyporności minimum 25 kg",
+          "Dowolna boja z flagą nurkową"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > IV. Program Decompression Diving > a.",
+      "page": 36,
+      "quote": "Jedno urządzenie sygnalizacyjne do wypuszczania z głębokości (zalecana jest czerwona boja sygnalizacyjna...)"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Kiedy używanie fajki podczas szkolenia w wodzie jest uznawane za opcjonalne według uznania instruktora?",
+    "options": [
+          "Wyłącznie w programach Deep Diving i Wreck Diving",
+          "We wszystkich programach z wyjątkiem: Snorkel Diver, Scuba Diver, Referral Diver, Indoor Diver i Open Water Diver",
+          "Tylko podczas sesji w basenie (Pool)",
+          "Nigdy – fajka jest elementem obowiązkowym każdego Pełnego Systemu Nurkowego"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > II. Nurkowanie rekreacyjne > a. Uwaga",
+      "page": 29,
+      "quote": "używanie fajki... jest opcjonalne dla wszystkich programów oprócz: Snorkel Diver, Scuba Diver, Referral Diver, Indoor Diver i Open Water Diver."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Który element wyposażenia ratunkowego musi być dostępny w pobliżu miejsca szkolenia zgodnie z wymogiem \"Obowiązku opieki\" (Duty of Care)?",
+    "options": [
+          "Defibraylator AED",
+          "Sprzęt łączności",
+          "Zestaw do intubacji",
+          "Analizator helowy"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Obowiązek opieki > VI. Sprzęt ratunkowy",
+      "page": 15,
+      "quote": "W pobliżu miejsca szkolenia musi być dostępny sprzęt ratunkowy, w tym apteczka pierwszej pomocy, aparat tlenowy i sprzęt łączności."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki jest wymóg doświadczenia dla Profesjonalisty SSI, który zamierza używać maski pełnotwarzowej (Full Face Mask) podczas prowadzenia programów SSI?",
+    "options": [
+          "Posiadanie certyfikatu Specialty Instructor FFM",
+          "Minimum 10 zalogowanych nurkowań in tym typie sprzętu",
+          "Minimum 25 zalogowanych nurkowań w tym typie sprzętu",
+          "Brak specyficznych wymagań dotyczących liczby nurkowań"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > II. Nurkowanie rekreacyjne > b. Zalecenie",
+      "page": 29,
+      "quote": "Profesjonaliści SSI, którzy używają... masek pełnotwarzowych... muszą mieć praktyczne doświadczenie... (co najmniej 10 zalogowanych nurkowań)"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jak standardy SSI definiują \"odległość linearną\" (Linear Distance) w kontekście środowisk zamkniętych (Overhead Environment)?",
+    "options": [
+          "Pozioma odległość od wyjścia do strefy światła",
+          "Najkrótsza droga do najbliższego punktu pionowego dostępu",
+          "Suma odległości pionowej i poziomej, którą nurek musi pokonać, aby osiągnąć powierzchnię",
+          "Odległość mierzona wzdłuż liny poręczowej (main line)"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Przestrzenie zamknięte > I. Odległość linearna",
+      "page": 41,
+      "quote": "Dystans pływania definiowany jest jako suma odległości pionowej i poziomej, którą nurek musi pokonać, żeby osiągnąć powierzchnię wody."
+    },
+    "category": "Fizyka i Fizjologia"
+  },
+  {
+    "question": "Nurek posiadający certyfikat Advanced Open Water Diver eksploruje jaskinię (Cavern) na głębokości 25 metrów. Jaki jest jego maksymalny dopuszczalny dystans penetracji w poziomie, przy całkowitym limicie odległości linearnej 60m?",
+    "options": [
+          "35 metrów",
+          "40 metrów",
+          "30 metrów",
+          "25 metrów"
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Przestrzenie zamknięte > I. Odległość linearna",
+      "page": 41,
+      "quote": "Advanced Open Water Diver... eksplorujący jaskinię na głębokości 25 metrów miałby zatem dozwolony maksymalny dystans penetracji wynoszący 35 metrów."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jakie precyzyjne parametry musi spełniać obiekt sztuczny, aby został sklasyfikowany jako miejsce do \"Nurkowania Indoor\"?",
+    "options": [
+          "Głębokość min. 4m i powierzchnia min. 100 m²",
+          "Głębokość powyżej 5m i powierzchnia min. 100 m²",
+          "Głębokość min. 5m i powierzchnia min. 50 m²",
+          "Dowolna struktura sztuczna głębsza niż 5 metrów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Definicje związane ze środowiskiem > VII. Nurkowanie Indoor",
+      "page": 13,
+      "quote": "Akwaria i specjalnie zbudowane sztuczne obiekty... o minimalnej głębokości większej niż pięć (5) metrów i minimalnej powierzchni wody wynoszącej 100 metrów kwadratowych"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Która z cech NIE jest wymagana, aby struktura mogła zostać uznana za \"przestrzeń zamkniętą, przez którą można przepłynąć\" (swim-through) w nurkowaniu rekreacyjnym?",
+    "options": [
+          "Długość mniejsza niż 10 metrów",
+          "Maksymalna głębokość nieprzekraczająca 30 metrów",
+          "Widoczne i wyodrębnione punkty wejścia i wyjścia",
+          "Szerokość pozwalająca na przepłynięcie dwóch nurków obok siebie"
+    ],
+    "answer": 3,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Przestrzenie zamknięte > II. Przestrzeń zamknięta, przez którą można przepłynąć",
+      "page": 41,
+      "quote": "Struktura ta posiada następujące cechy: Mieć mniej niż 10 metrów długości. Maksymalna głębokość nie może przekraczać 30 metrów. Posiada wyodrębnione i widoczne punkty wejścia i wyjścia"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Co musi zrobić Profesjonalista SSI, jeśli klient prosi o wydanie ekwiwalentnego certyfikatu SSI na podstawie licencji z agencji NIE-uznawanej przez SSI?",
+    "options": [
+          "Wydać certyfikat automatycznie po opłaceniu składki",
+          "Przeprowadzić SSI Experienced Diver Test (egzamin, sesja basenowa i min. 2 nurkowania na wodach otwartych)",
+          "Wymagana jest wyłącznie weryfikacja logbooka (min. 50 nurkowań)",
+          "Nie ma możliwości wydania ekwiwalentu z agencji nieuznawanej"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Certyfikaty równoważne > II. Certyfikaty Nie-Uznanych Przez SSI Agencji",
+      "page": 19,
+      "quote": "Kursanci ci muszą pomyślnie zdać test SSI Experienced Diver, zgodnie ze standardami szkolenia SSI."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Na jakiej maksymalnej głębokości musi zostać umieszczona platforma szkoleniowa w ograniczonym akwenie, jeśli dno znajduje się zbyt głęboko, by kursanci mogli swobodnie stanąć?",
+    "options": [
+          "1 metr",
+          "2 metry",
+          "3 metry",
+          "5 metrów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Miejsca szkoleń i limity głębokości > II. Ograniczony akwen",
+      "page": 40,
+      "quote": "instruktor musi wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości"
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jaki jest maksymalny limit głębokości dla nurka w wieku 10-11 lat posiadającego certyfikat Open Water Diver?",
+    "options": [
+          "12 metrów (z profesjonalistą lub certyfikowaną osobą dorosłą)",
+          "12 metrów (wyłącznie pod bezpośrednim nadzorem instruktora)",
+          "18 metrów (jak dorośli)",
+          "5 metrów"
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Miejsca szkoleń i limity głębokości > IV. Zalecane limity głębokości",
+      "page": 40,
+      "quote": "10- i 11-latki | 12 metrów z profesjonalnym nurkiem o aktywnym statusie lub certyfikowaną osobą dorosłą"
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Od jakiej wysokości nad poziomem morza nurkowanie musi być planowane jako \"Nurkowanie w górach\" (Altitude Diving)?",
+    "options": [
+          "Powyżej 100 metrów",
+          "Powyżej 300 metrów",
+          "Powyżej 500 metrów",
+          "Powyżej 1000 metrów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Definicje związane ze środowiskiem > IV. Nurkowanie w górach",
+      "page": 13,
+      "quote": "Profesjonalista SSI musi planować wszystkie nurkowania na wysokości powyżej 300 metrów przy użyciu specjalnych... tabel"
+    },
+    "category": "Specjalizacje"
+  },
+  {
+    "question": "Jaki jest wymagany poziom rezerwy gazu w momencie wynurzenia podczas nurkowania w przestrzeni zamkniętej poza strefą światła dziennego?",
+    "options": [
+          "50 bar",
+          "1/4 całkowitego zapasu gazu",
+          "1/3 całkowitego zapasu gazu",
+          "Rezerwa obliczona na 5 minut pobytu na dnie przy SCR=20l/min"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Przestrzenie zamknięte > IV. Nurkowania poza strefą światła dziennego",
+      "page": 41,
+      "quote": "zaplanowano odpowiednią ilość gazu, aby w momencie wynurzenia zachowana została rezerwa w ilości 1/3 całkowitej ilości zapasu gazu"
+    },
+    "category": "Fizyka i Fizjologia"
+  },
+  {
+    "question": "Jakie jest dopuszczalne ppO2 dla kursanta w programie Enriched Air Nitrox (EAN)?",
+    "options": [
+          "Maksymalnie 1.4 bar w dowolnym momencie nurkowania",
+          "Maksymalnie 1.6 bar w dowolnym momencie nurkowania",
+          "1.4 bar podczas fazy dennej i 1.6 bar podczas przystanku bezpieczeństwa",
+          "Zależne od MOD wyliczonej dla EAN32"
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Definicje sprzętowe > I. Gaz oddechowy",
+      "page": 27,
+      "quote": "Jeżeli gazem oddechowym jest nitroks, ppO2 w dowolnym momencie nurkowania nie może przekraczać 1.4 bara."
+    },
+    "category": "Fizyka i Fizjologia"
+  },
+  {
+    "question": "Kto w strukturach SSI może ubiegać się o status \"Retired\" (W spoczynku), jeśli nie spełnia minimalnych wymagań aktywnego statusu dla swoich najwyższych uprawnień?",
+    "options": [
+          "Każdy Profesjonalista SSI po 60. roku życia",
+          "Wyłącznie Instruktorzy Open Water (OWI)",
+          "Assistant Instructor Trainers, Instructor Trainers oraz Instructor Certifiers",
+          "Każdy Profesjonalista SSI, który zaprzestał działalności komercyjnej"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Status SSI Professional > VII. Status „w spoczynku” (Retired)",
+      "page": 22,
+      "quote": "Certyfikaty, których to dotyczy: Assistant Instructor Trainer, Instructor Trainer, Instructor Certifier"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki status otrzymuje Profesjonalista SSI w wyniku incydentu prowadzącego do śmierci uczestnika szkolenia, nad którym sprawował on bezpośredni nadzór?",
+    "options": [
+          "Expelled (Wydalony)",
+          "Suspended (Zawieszony)",
+          "Administrative Hold (Wstrzymany administracyjnie)",
+          "Canceled (Anulowany)"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Status SSI Professional > IV. Status „Wstrzymany administracyjnie”",
+      "page": 22,
+      "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaca procedura obowiązuje instruktora Open Water Instructor, który chce przywrócić aktywny status po przerwie trwającej ponad dziesięć (10) lat?",
+    "options": [
+          "Ukończenie Scuba Skills Update i opłacenie składki",
+          "Ponowne ukończenie pełnego kursu ITC",
+          "Ukończenie wszystkich wymagań certyfikacyjnych dla najwyższego stopnia oraz zdanie Instructor Evaluation (IE)",
+          "Procedura taka sama jak po 3 latach przerwy"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Przywrócenie Aktywnego Statusu > II. d. Ponad dziesięć (10) lat",
+      "page": 24,
+      "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Kto ponosi ostateczną odpowiedzialność za przeprowadzenie sprawdzenia przeszłości kryminalnej (Criminal Background Check) Profesjonalisty SSI pracującego z małoletnimi?",
+    "options": [
+          "Wyłącznie Service Center SSI",
+          "Każdy SSI Professional i Centrum Szkoleniowe (zgodnie z przepisami lokalnymi)",
+          "Rodzice kursanta przed podpisaniem Addendum",
+          "SSI International poprzez system MySSI"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Jak korzystać ze Standardów > IV. a. Sprawdzenie przeszłości kryminalnej",
+      "page": 12,
+      "quote": "Każdy SSI Professional i Centrum Szkoleniowe są odpowiedzialne za zrozumienie i przestrzeganie wszelkich odpowiednich przepisów lokalnych..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Przez jaki minimalny okres Centrum Szkoleniowe SSI musi przechowywać dokumentację szkoleniową (Training Records) kursantów?",
+    "options": [
+          "2 lata",
+          "5 lat",
+          "10 lat",
+          "Przez cały okres aktywności zawodowej instruktora"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Wymagania Administracyjne > Procedury certyfikacji > VIII. b. Dokumentacja szkolenia",
+      "page": 17,
+      "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Co dzieje się z Profesjonalistą SSI, który został wydalony (Expelled) z innej agencji nurkowej (np. PADI, CMAS)?",
+    "options": [
+          "Automatycznie traci status w SSI bez możliwości odwołania",
+          "Może kwalifikować się do statusu aktywnego SSI, ale decyzja leży w gestii SSI International i jest rozpatrywana indywidualnie",
+          "SSI nie weryfikuje statusu w innych agencjach",
+          "Musi ponownie ukończyć kurs Science of Diving, aby dowieść kompetencji"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Status SSI Professional > VI. a. Osoby wydalone z innych agencji",
+      "page": 22,
+      "quote": "If Professional zostanie wydalony z innej agencji... Decyzja ta leży w gestii SSI International i będzie rozpatrywana indywidualnie."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jakie uprawnienia zachowuje SSI Professional o statusie \"Retired\"?",
+    "options": [
+          "Nie może prowadzić żadnych programów w wodzie",
+          "Pozostaje w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełnia minimalne wymagania i może prowadzić programy na poziomie kursanta",
+          "Może prowadzić wyłącznie zajęcia teoretyczne (Academic)",
+          "Może wydawać certyfikaty, ale nie może ich podpisywać"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Status SSI Professional > VII. Status „w spoczynku” (Retired)",
+      "page": 22,
+      "quote": "pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej... Mogą oni również nadal prowadzić wszystkie programy na poziomie Kursanta"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "W jakim terminie od zakończenia programu wszystkie certyfikacje muszą zostać przetworzone w systemie MySSI?",
+    "options": [
+          "W ciągu 24 godzin",
+          "W ciągu 7 dni",
+          "W ciągu 14 dni",
+          "Do końca miesiąca rozliczeniowego"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Wymagania Administracyjne > Procedury certyfikacji > III. Wydawanie certyfikatów",
+      "page": 16,
+      "quote": "Wszystkie certyfikacje i wyróżnienia must zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jak długo ważna jest Umowa przejęcia ryzyka i zwolnienia od odpowiedzialności (Liability Release) od daty jej podpisania?",
+    "options": [
+          "Bezterminowo dla danego Centrum",
+          "Przez sześć (6) miesięcy",
+          "Przez jeden (1) rok",
+          "Tylko przez czas trwania konkretnego kursu"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Dokumentacja szkolenia > II. a. Przed rozpoczęciem szkolenia",
+      "page": 13,
+      "quote": "Umowa przejęcia ryzyka... Ważny przez jeden (1) rok od daty podpisania."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki status posiada Profesjonalista SSI, który nie opłacił rocznej składki członkowskiej (Professional Renewal)?",
+    "options": [
+          "Inactive",
+          "Suspended",
+          "Canceled",
+          "Retired"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Status SSI Professional > III. Status \"Anulowany\" (Canceled)",
+      "page": 21,
+      "quote": "Osoba która posiada certyfikat Profesjonalisty SSI, ale nie wniosła opłaty rocznej do SSI."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki jest maksymalny współczynnik kursantów do instruktora (Ratio) w programie Open Water Diver dla młodzieży w wieku 10-14 lat przy wykorzystaniu dwóch (2) certyfikowanych asystentów na wodach otwartych?",
+    "options": [
+          "6:2",
+          "8:3",
+          "10:3",
+          "12:3"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Poziomu Podstawowego",
+      "section": "Scuba Diver > VI. b. Wody ograniczone i Wody otwarte",
+      "page": 53,
+      "quote": "Liczba ta może wzrosnąć do 8:3, jeżeli instruktor korzysta z pomocy dwóch (2) certyfikowanych asystentów."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jaki jest dopuszczalny stosunek liczby kursantów do instruktora (Ratio) w wodzie, jeżeli podczas podstawowego szkolenia kursanci używają suchych skafandrów?",
+    "options": [
+          "8:1",
+          "6:1",
+          "4:1",
+          "2:1"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Specjalistyczny sprzęt nurkowy > II. Suche skafandry",
+      "page": 30,
+      "quote": "Stosunek liczby kursantów do liczby instruktorów na każdym podstawowym szkoleniu w wodzie, na którym kursant będzie nurkował w suchym skafandrze, wynosi 4:1."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Zgodnie z zaleceniami SSI, jaki jest sugerowany czas przerw powierzchniowych między nurkowaniami dla nurków w wieku 10-14 lat, jeżeli wykonują oni trzy (3) nurkowania dziennie?",
+    "options": [
+          "Minimum 1 godzina",
+          "Minimum 2 godziny",
+          "Minimum 30 minut",
+          "Standardy nie określają przerw dla tej grupy wiekowej"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Czas trwania programu > III. Zalecenie",
+      "page": 13,
+      "quote": "wydłuż przerwy powierzchniowe do dwóch (2 ) godzin między nurkowaniami"
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jaka jest maksymalna liczba kursantów na jednego instruktora w programie Deep Diving podczas nurkowań na głębokość większą niż 30 metrów?",
+    "options": [
+          "8:1 (z asystentem)",
+          "6:1",
+          "4:1 (bez możliwości zwiększenia przez asystentów)",
+          "2:1"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Programy Kontynuacji Edukacji",
+      "section": "Deep Diving > VII. Współczynnik ilościowy w wodzie",
+      "page": 75,
+      "quote": "Nurkowania na głębokość poniżej 30 metrów: Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów..."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Kiedy certyfikowany Divemaster SSI może asystować przy programach specjalistycznych?",
+    "options": [
+          "Zawsze, bez dodatkowych wymogów",
+          "Tylko jeśli posiada certyfikat na poziomie nurka (User Level) dla danej specjalizacji",
+          "Tylko jeśli ukończył Specialty Instructor Seminar",
+          "Divemasterzy nie mogą asystować w specjalizacjach, tylko w OWD"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Korzystanie z pomocy certyfikowanych asystentów > I.",
+      "page": 122,
+      "quote": "W przypadku programów specjalizacji certyfikowany asystent musi posiadać certyfikat na poziomie nurka dla danego programu."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Jaki jest maksymalny współczynnik w wodzie dla programu Try Scuba w ograniczonym akwenie dla dzieci w wieku 8-9 lat przy asyście jednego (1) pomocnika?",
+    "options": [
+          "2:1",
+          "4:2",
+          "6:2",
+          "8:1"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Doświadczania",
+      "section": "Try Scuba > VII. b. Ograniczony akwen",
+      "page": 46,
+      "quote": "kursanci w wieku 8 i 9 lat: Współczynnik... 2:1. Liczba ta może wzrosnąć do 4:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Kto musi bezpośrednio prowadzić wszystkie symulowane umiejętności awaryjnego wynurzania (np. ESA) podczas każdego szkolenia w wodzie?",
+    "options": [
+          "Dowolny aktywny Divemaster",
+          "Assistant Instructor pod nadzorem pośrednim",
+          "Open Water Instructor lub Profesjonalista SSI o wyższych uprawnieniach",
+          "Wyłącznie Instructor Trainer"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Nadzór > VI. Umiejętności wynurzenia awaryjnego",
+      "page": 15,
+      "quote": "SSI Open Water Instructor lub wyższy musi bezpośrednio prowadzić wszystkie symulowane umiejętności awaryjnego wynurzania"
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Zgodnie z zaleceniami SSI, jakie ograniczenie czasowe należy rozważyć dla nurkowań głębszych niż 12 metrów przeprowadzanych z nurkami w wieku 10-14 lat (przy 3 nurkowaniach dziennie)?",
+    "options": [
+          "Skrócenie czasu dennego do 15 minut",
+          "Skrócenie maksymalnego czasu nurkowania do 30 minut",
+          "Brak ograniczeń czasowych, liczy się tylko głębokość",
+          "Nurkowie ci nie mogą przekraczać 12 metrów głębokości"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Czas trwania programu > III. Zalecenie",
+      "page": 13,
+      "quote": "zmniejsz maksymalny czas nurkowania do 30 minut dla nurkowań głębszych niż 12 metrów"
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Na jaką maksymalną głębokość można zabrać kursanta podczas symulowanego wynurzenia awaryjnego (ESA) na wodach otwartych?",
+    "options": [
+          "5 metrów",
+          "9 metrów",
+          "12 metrów",
+          "18 metrów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Nadzór > VI. Umiejętności wynurzenia awaryjnego",
+      "page": 15,
+      "quote": "Każde szkolenie z zakresu wynurzania się... musi być przeprowadzone z głębokości dziewięciu (9) metrów lub mniejszej."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jaki jest minimalny wiek kandydata na program SSI Divemaster?",
+    "options": [
+          "15 lat",
+          "17 lat",
+          "18 lat",
+          "21 lat"
+    ],
+    "answer": 0,
+    "reference": {
+      "chapter": "Programy Profesjonalne",
+      "section": "Divemaster > III. Wymagania wstępne dla kandydata",
+      "page": 123,
+      "quote": "Minimalny wiek | 15 lat."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Które z poniższych ćwiczeń jest kategorycznie zabronione przez \"Zasadę elastyczności SSI\" i nie może być nauczane?",
+    "options": [
+          "Zdejmowanie maski w toni",
+          "Oddychanie bezpośrednio z zaworu butli (free-flow)",
+          "Nurkowanie bez komputera",
+          "Holowanie partnera na dystansie 100 metrów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Jak korzystać ze Standardów > V. Zasada elastyczności SSI",
+      "page": 12,
+      "quote": "Ćwiczenia takie jak... oddychanie bezpośrednio z zaworu butli... nie są zatwierdzone przez SSI"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "W jakim terminie Profesjonalista SSI musi niezwłocznie powiadomić Service Center o incydencie nurkowym, którego był świadkiem lub uczestnikiem?",
+    "options": [
+          "W ciągu 24 godzin",
+          "Niezwłocznie (Immediately)",
+          "W ciągu 7 dni",
+          "Tylko jeśli poszkodowany zgłosił sprawę do sądu"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Obowiązek opieki > VII. Procedury składania sprawozdań",
+      "page": 15,
+      "quote": "musi niezwłocznie powiadomić odpowiedzialne Service Center SSI"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Co instruktor SSI musi posiadać na piśmie dla każdego miejsca nurkowego, w którym prowadzi szkolenia w wodzie?",
+    "options": [
+          "Pozwolenie od władz lokalnych",
+          "Plan ratunkowy (Emergency Action Plan)",
+          "Analizę składu chemicznego wody",
+          "Listę obecności kursantów"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Obowiązek opieki > V. Plan działania w nagłych wypadkach",
+      "page": 15,
+      "quote": "musi posiadać na piśmie plan ratunkowy na wypadek wystąpienia sytuacji awaryjnej"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jeśli od ostatniej sesji w wodzie kursanta na poziomie podstawowym minęło więcej niż 12 miesięcy, co jest wymaganą procedurą przed kontynuacją szkolenia?",
+    "options": [
+          "Powtórzenie egzaminu końcowego",
+          "Ukończenie pełnego programu SSI Scuba Skills Update",
+          "Jedynie krótki wywiad z instruktorem",
+          "Rozpoczęcie kursu od początku (re-enrollment)"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Czas trwania programu > II. Czas na ukończenie kursu",
+      "page": 13,
+      "quote": "jeśli minęło więcej niż 12 miesięcy od ostatniej sesji kursanta w wodzie, musi on ukończyć SSI Scuba Skills Update."
+    },
+    "category": "Metodyka i Psychologia"
+  },
+  {
+    "question": "Jaki jest minimalny wynik zaliczenia egzaminu końcowego dla programów poziomu Professional (np. Divemaster, ITC)?",
+    "options": [
+          "80%",
+          "85%",
+          "90%",
+          "100% (wszystkie błędy muszą być omówione do 100%)"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Ocena wiedzy i umiejętności > II. Egzamin Końcowy",
+      "page": 16,
+      "quote": "Minimalny wynik dla programów na poziomie Professional | 90%."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Co SSI zaleca nurkowi, który nie nurkował przez pięć (5) lat lub dłużej przed wymianą zagubionej karty certyfikacyjnej?",
+    "options": [
+          "Przedłożenie dowodu 10 nurkowań z ostatniego roku",
+          "Ukończenie programu Scuba Skills Update",
+          "Zakup nowego zestawu Digital Kit",
+          "Zaliczenie Experienced Diver Test"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Wymagania Administracyjne > Procedury certyfikacji > VII. Zalecenie",
+      "page": 16,
+      "quote": "Osoby, które nie nurkowały przez pięć (5) lat lub dłużej... powinny zapisać się do programu Scuba Skills Update"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Czy Profesjonalista SSI może wykonywać inne czynności (np. profesjonalna fotografia/filmowanie) podczas nadzorowania kursantów na poziomie podstawowym (Entry-level)?",
+    "options": [
+          "Tak, jeśli ma dwóch certyfikowanych asystentów",
+          "Nie, nie może zajmować się innymi czynnościami niż nadzór (z wyjątkiem np. małego aparatu do dokumentacji)",
+          "Tak, o ile warunki są idealne (Visibility > 20m)",
+          "Tak, ale tylko w basenie"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Prowadzenie programów SSI > Nadzór",
+      "page": 15,
+      "quote": "Profesjonaliści SSI nie mogą zajmować się innymi czynnościami niż nadzór... Można jednak wykonywać czynności... np. robienie zdjęć za pomocą małego aparatu"
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Kto ponosi odpowiedzialność za weryfikację ubezpieczenia OC Profesjonalisty SSI (jeśli jest wymagane)?",
+    "options": [
+          "SSI International",
+          "Service Center SSI",
+          "Sam Profesjonalista SSI (Service Center nie weryfikuje polisy, choć certyfikacje mogą być wstrzymane)",
+          "Manager QMS podczas audytu"
+    ],
+    "answer": 2,
+    "reference": {
+      "chapter": "Ogólne Standardy Obowiązków",
+      "section": "Obowiązki Profesjonalisty SSI > Wymagania dotyczące odpowiedzialności zawodowej > I.",
+      "page": 20,
+      "quote": "SSI i SSI Service Centers nie są odpowiedzialne za weryfikację, czy SSI Professional spełnia wymagania dotyczące ubezpieczenia..."
+    },
+    "category": "Standardy Ogólne"
+  },
+  {
+    "question": "Jaki jest minimalny łączny czas denny wymagany dla Nurkowań szkoleniowych na wodach otwartych w programie Open Water Diver?",
+    "options": [
+          "60 minut",
+          "80 minut",
+          "100 minut",
+          "Brak limitu czasu, liczy się zaliczenie umiejętności"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Programy Poziomu Podstawowego",
+      "section": "Open Water Diver > IV. Czas trwania",
+      "page": 53,
+      "quote": "Minimalny łączny czas denny dla Nurkowań szkoleniowych na wodach otwartych | 80 minut."
+    },
+    "category": "Współczynniki i Wiek"
+  },
+  {
+    "question": "Jakie jest kategoryczne ograniczenie dotyczące pory dnia dla nurkowań szkoleniowych w ramach wszystkich programów wstępnych (Entry-level)?",
+    "options": [
+          "Muszą być prowadzone między godziną 8:00 a 18:00",
+          "Muszą być przeprowadzone w ciągu dnia (pomiędzy wschodem a zachodem słońca)",
+          "Muszą odbywać się przy świetle o natężeniu min. 500 luksów",
+          "Nie ma ograniczeń pory dnia, jeśli instruktor ma mocną latarkę"
+    ],
+    "answer": 1,
+    "reference": {
+      "chapter": "Ogólne Standardy Szkoleniowe",
+      "section": "Jak korzystać ze Standardów > Definicje Programów > I. Program poziomu podstawowego",
+      "page": 10,
+      "quote": "Nurkowania szkoleniowe... muszą być przeprowadzone w ciągu dnia (pomiędzy wschodem a zachodem słońca)"
+    },
+    "category": "Współczynniki i Wiek"
+  }
 ];
 
 if (typeof module !== 'undefined' && module.exports) {

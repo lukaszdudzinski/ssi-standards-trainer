@@ -188,14 +188,18 @@
             <i class="fa-solid fa-rotate"></i> Obróć kartę
           </button>
           
-          <div class="flashcard-answers-row">
+          <div class="flashcard-answers-row" id="flashcardAnswersRow">
             <button id="flashcardIncorrectBtn" class="btn flashcard-action-btn" style="background: rgba(255, 77, 77, 0.1); border-color: rgba(255, 77, 77, 0.2); color: var(--color-red); justify-content: center; font-size: 0.9rem;">
-              ❌ Jeszcze nie umiem
+              ❌ Nie znam
             </button>
             <button id="flashcardCorrectBtn" class="btn flashcard-action-btn" style="background: rgba(0, 223, 137, 0.1); border-color: rgba(0, 223, 137, 0.2); color: var(--color-green); justify-content: center; font-size: 0.9rem;">
-              ✅ Znam to!
+              ✅ Znam
             </button>
           </div>
+          
+          <button id="flashcardNextBtn" class="btn btn-primary pulse-glow" style="display: none; justify-content: center; padding: 12px; width: 100%; font-size: 0.9rem;">
+            Dalej <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </section>
 
@@ -216,6 +220,10 @@
           </div>
           <div class="status-item progress">
             <span id="progressText">Pytanie 1 / 50</span>
+          </div>
+          <div class="status-item retries" id="statusRetries" style="display: none;">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span id="retriesText">Powtórki: 0</span>
           </div>
           <div class="status-item score">
             <i class="fa-solid fa-check"></i>
@@ -350,9 +358,24 @@
           </button>
         </div>
 
+        <!-- Reinforcement Session Voice/Manual Prompt -->
+        <div class="reinforcement-prompt" id="reinforcementPrompt" style="display: none; margin-bottom: 20px;">
+          <p class="prompt-text"><i class="fa-solid fa-circle-question"></i> Czy chcesz rozpocząć sesję utrwalającą?</p>
+          <div class="prompt-buttons" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+            <button id="reinforcementYesBtn" class="btn btn-warning pulse-glow"><i class="fa-solid fa-check"></i> TAK</button>
+            <button id="reinforcementNoBtn" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i> NIE</button>
+          </div>
+        </div>
+
         <!-- Incorrect Answers Review -->
         <div class="incorrect-review" id="incorrectReview" style="display: none;">
-          <h3>Przegląd błędów</h3>
+          <div class="review-header-flex">
+            <h3>Przegląd błędów</h3>
+            <button id="startReinforcementBtn" class="btn btn-warning btn-sm pulse-glow">
+              <i class="fa-solid fa-fire"></i> Sesja Utrwalająca
+            </button>
+          </div>
+          <p class="review-subtitle">Przećwicz wyłącznie pytania, w których popełniłeś błędy, aby skutecznie utrwalić wiedzę.</p>
           <div class="review-list" id="reviewList">
             <!-- Review items dynamically injected here -->
           </div>

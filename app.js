@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.30.11';
+const APP_VERSION = 'v2026.5.31.02';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const startPracticeBtn = document.getElementById('startPracticeBtn');
   const restartTestBtn = document.getElementById('restartTestBtn');
   const backToHomeBtn = document.getElementById('backToHomeBtn');
+  const startReinforcementBtn = document.getElementById('startReinforcementBtn');
+  const reinforcementYesBtn = document.getElementById('reinforcementYesBtn');
+  const reinforcementNoBtn = document.getElementById('reinforcementNoBtn');
   
   const themeToggle = document.getElementById('themeToggle');
   const settingsBtn = document.getElementById('settingsBtn');
@@ -98,6 +101,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const flashcardFlipBtn = document.getElementById('flashcardFlipBtn');
   const flashcardIncorrectBtn = document.getElementById('flashcardIncorrectBtn');
   const flashcardCorrectBtn = document.getElementById('flashcardCorrectBtn');
+  const flashcardNextBtn = document.getElementById('flashcardNextBtn');
+  const flashcardAnswersRow = document.getElementById('flashcardAnswersRow');
   
   // Procedural Web Audio API sound synthesizers (100% offline & zero network calls!)
   function playSynthesizedCorrect() {
@@ -168,6 +173,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- App State ---
   let activeQuestions = [];
+  let baseQuestionsCount = 0;
+  let retryCount = 0;
   let currentQuestionIndex = 0;
   let score = 0;
   let incorrectQuestions = [];
@@ -180,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let isFlashcardMode = false;
   let flashcardLearnedCount = 0;
   let isCardFlipped = false;
+  let awaitingReinforcementChoice = false;
   
   // Voice Synthesis & Recognition variables
   let synth = window.speechSynthesis;
@@ -612,6 +620,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function cleanTextForSpeech(text) {
+    if (!text) return '';
+    return text
+      .replace(/🔄\s*\[POWTÓRKA\]\s*/g, '')
+      .replace(/🔄/g, '')
+      .replace(/🔥/g, '')
+      .replace(/🔁/g, '')
+      .replace(/\[POWTÓRKA\]/gi, '')
+      .trim();
+  }
+
   function speakText(text, callback) {
     if (!synth) return;
     synth.cancel();
@@ -621,8 +640,11 @@ document.addEventListener('DOMContentLoaded', () => {
       playSilence();
     }
 
+    // Clean text of emojis and special prefixes
+    const cleanText = cleanTextForSpeech(text);
+
     // Dynamically apply phonetic corrections so the Polish voice sounds flawless!
-    const phoneticText = getPhoneticPolishText(text);
+    const phoneticText = getPhoneticPolishText(cleanText);
 
     speechUtterance = new SpeechSynthesisUtterance(phoneticText);
     if (speechVoice) speechUtterance.voice = speechVoice;
@@ -715,6 +737,78 @@ document.addEventListener('DOMContentLoaded', () => {
       const result = event.results[0][0].transcript.toLowerCase().trim();
       console.log('Recognized speech:', result);
       
+      // If in flashcard mode, check for flashcard specific voice commands
+      if (isFlashcardMode) {
+        if (!isCardFlipped) {
+          // Card is Front (Question side)
+          if (result.includes('znam') || result.includes('tak') || result.includes('wiem') || result.includes('znam to') || result.includes('kojarzę') || result.includes('yes') || result.includes('znamy')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Znam</strong>`;
+            setTimeout(() => {
+              markFlashcardLearned(true);
+            }, 800);
+            return;
+          } else if (result.includes('nie znam') || result.includes('nie') || result.includes('nie wiem') || result.includes('nie znam tego') || result.includes('niee') || result.includes('reguła') || result.includes('no') || result.includes('nieznane')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Nie znam</strong>`;
+            setTimeout(() => {
+              markFlashcardLearned(false);
+            }, 800);
+            return;
+          } else if (result.includes('obróć') || result.includes('odwróć') || result.includes('pokaż') || result.includes('karta')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Obróć</strong>`;
+            setTimeout(() => {
+              flipFlashcard();
+            }, 800);
+            return;
+          }
+        } else {
+          // Card is Back (Answer side)
+          if (result.includes('dalej') || result.includes('następna') || result.includes('ok') || result.includes('rozumiem') || result.includes('następ') || result.includes('dale') || result.includes('next')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Dalej</strong>`;
+            setTimeout(() => {
+              if (flashcardNextBtn && flashcardNextBtn.style.display === 'flex') {
+                nextFlashcard();
+              } else {
+                markFlashcardLearned(true);
+              }
+            }, 800);
+            return;
+          } else if (result.includes('znam') || result.includes('tak') || result.includes('wiem')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Znam</strong>`;
+            setTimeout(() => {
+              markFlashcardLearned(true);
+            }, 800);
+            return;
+          } else if (result.includes('nie znam') || result.includes('nie') || result.includes('nie wiem')) {
+            voiceStatusText.innerHTML = `Wykryto komendę: <strong>Nie znam</strong>`;
+            setTimeout(() => {
+              handleFlashcardIncorrect();
+            }, 800);
+            return;
+          }
+        }
+      }
+
+      // If awaiting reinforcement choice, check for "tak" / "nie" command
+      if (awaitingReinforcementChoice) {
+        if (result.includes('tak') || result.includes('chcę') || result.includes('rozpocznij') || result.includes('utrwal') || result.includes('yes') || result.includes('taki')) {
+          voiceStatusText.innerHTML = `Wykryto komendę: <strong>TAK (Rozpocznij)</strong>`;
+          awaitingReinforcementChoice = false;
+          setTimeout(() => {
+            startReinforcementQuiz();
+          }, 800);
+          return;
+        } else if (result.includes('nie') || result.includes('nie chcę') || result.includes('wróć') || result.includes('zamknij') || result.includes('no') || result.includes('niee')) {
+          voiceStatusText.innerHTML = `Wykryto komendę: <strong>NIE (Ekran Główny)</strong>`;
+          awaitingReinforcementChoice = false;
+          setTimeout(() => {
+            if (synth) synth.cancel();
+            resultsScreen.classList.remove('active');
+            welcomeScreen.classList.add('active');
+          }, 800);
+          return;
+        }
+      }
+
       // If feedback panel is active, check for "dalej" navigation command
       if (feedbackPanel.classList.contains('active')) {
         if (result.includes('dalej') || result.includes('następ') || result.includes('ok') || result.includes('tak') || result.includes('dale')) {
@@ -785,9 +879,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     recognition.onend = () => {
       isListening = false;
-      // Auto-restart if toggle is checked AND (question is not answered OR feedback panel is active)
+      // Auto-restart if toggle is checked AND (question is not answered OR feedback panel is active OR isFlashcardMode is active)
       const isFeedbackActive = feedbackPanel.classList.contains('active');
-      if (voiceControlToggle.checked && (!isAnswered || isFeedbackActive)) {
+      if (voiceControlToggle.checked && (!isAnswered || isFeedbackActive || isFlashcardMode)) {
         restartRecognitionSilently();
       } else {
         voiceStatusContainer.style.display = 'none';
@@ -902,6 +996,15 @@ document.addEventListener('DOMContentLoaded', () => {
       activeQuestions = finalPool;
     }
 
+    baseQuestionsCount = activeQuestions.length;
+    retryCount = 0;
+    const statusRetries = document.getElementById('statusRetries');
+    if (statusRetries) {
+      statusRetries.style.display = isExamMode ? 'none' : 'flex';
+      const retriesText = document.getElementById('retriesText');
+      if (retriesText) retriesText.textContent = 'Powtórki: 0';
+    }
+
     currentQuestionIndex = 0;
     score = 0;
     incorrectQuestions = [];
@@ -971,10 +1074,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const q = activeQuestions[index];
     
     // UI Progress update
-    progressText.textContent = `Pytanie ${index + 1} / ${activeQuestions.length}`;
+    const baseIndex = activeQuestions.slice(0, index + 1).filter(item => !item.isRetry).length;
+    
+    if (q.isRetry) {
+      progressText.textContent = `Powtórka pytania ${baseIndex} / ${baseQuestionsCount}`;
+    } else {
+      progressText.textContent = `Pytanie ${baseIndex} / ${baseQuestionsCount}`;
+    }
+    
     scoreText.textContent = score;
     
-    const progressPercent = (index / activeQuestions.length) * 100;
+    const retriesText = document.getElementById('retriesText');
+    if (retriesText) {
+      retriesText.textContent = `Powtórki: ${retryCount}`;
+    }
+    
+    const progressPercent = baseQuestionsCount > 0 ? ((baseIndex - 1) / baseQuestionsCount) * 100 : 0;
     progressBarFill.style.width = `${progressPercent}%`;
 
     // Render Question & Options
@@ -1071,13 +1186,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
       
-      // Save incorrect question for end review (only if it wasn't already a retry)
+      // Save incorrect question for end review and increment attempt count
       if (!q.isRetry) {
         incorrectQuestions.push({
           question: q.question,
           correctText: q.options[correctIndex],
-          reference: q.reference
+          reference: q.reference,
+          originalQuestion: q,
+          retriesCount: 1
         });
+      } else {
+        const baseText = q.originalQuestionText || q.question;
+        const existingErr = incorrectQuestions.find(err => err.question === baseText);
+        if (existingErr) {
+          existingErr.retriesCount++;
+        }
       }
 
       // Show liquid glass feedback panel with details
@@ -1089,19 +1212,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       refQuote.textContent = `"${q.reference.quote}"`;
 
-      // --- Spaced Repetition Retry Injection ---
-      if (!q.isRetry) {
+      // --- Spaced Repetition Retry Injection (Practice Mode only) ---
+      if (!isExamMode) {
+        retryCount++;
+        const baseText = q.originalQuestionText || q.question;
         const retryQ = {
           ...q,
           isRetry: true,
-          originalQuestionText: q.question
+          originalQuestionText: baseText,
+          question: "🔄 [POWTÓRKA] " + baseText
         };
-        retryQ.question = "🔄 [POWTÓRKA] " + q.question;
         
         // Insert exactly 2 questions later (position currentQuestionIndex + 3)
         const insertIndex = Math.min(activeQuestions.length, currentQuestionIndex + 3);
         activeQuestions.splice(insertIndex, 0, retryQ);
-        console.log(`Inserted incorrect question copy at index ${insertIndex} for retry later. Total questions: ${activeQuestions.length}`);
+        console.log(`Inserted incorrect question copy at index ${insertIndex} for retry. Total questions: ${activeQuestions.length}`);
       }
       
       setTimeout(() => {
@@ -1159,7 +1284,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quizScreen.classList.remove('active');
     resultsScreen.classList.add('active');
 
-    const total = activeQuestions.length;
+    const total = baseQuestionsCount;
     const percent = total > 0 ? Math.round((score / total) * 100) : 0;
     
     // Set circle progress ring SVG
@@ -1172,7 +1297,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Visual result text
     resultPercent.textContent = `${percent}%`;
-    resultDetails.textContent = `Udzieliłeś ${score} poprawnych odpowiedzi na ${total} pytań w czasie ${quizTimer.textContent}.`;
+    if (!isExamMode && retryCount > 0) {
+      resultDetails.textContent = `Udzieliłeś ${score} poprawnych odpowiedzi na ${total} pytań w czasie ${quizTimer.textContent}. W trakcie sesji wygenerowano i zaliczono ${retryCount} powtórek błędnych odpowiedzi.`;
+    } else {
+      resultDetails.textContent = `Udzieliłeś ${score} poprawnych odpowiedzi na ${total} pytań w czasie ${quizTimer.textContent}.`;
+    }
 
     // Passing score criteria is 90% (Instructor standards)
     if (percent >= 90) {
@@ -1186,6 +1315,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Show incorrect questions review list if there are mistakes
+    const reinforcementPrompt = document.getElementById('reinforcementPrompt');
     if (incorrectQuestions.length > 0) {
       reviewList.innerHTML = '';
       incorrectQuestions.forEach(item => {
@@ -1197,12 +1327,33 @@ document.addEventListener('DOMContentLoaded', () => {
             <strong>Poprawna odp:</strong> ${item.correctText}<br>
             <small>PDF Str. ${item.reference.page} • ${item.reference.chapter} • ${item.reference.section}</small>
           </div>
+          <span class="badge-retry"><i class="fa-solid fa-clock-rotate-left"></i> Nieudane próby: ${item.retriesCount}</span>
         `;
         reviewList.appendChild(reviewEl);
       });
       incorrectReview.style.display = 'block';
+      
+      if (reinforcementPrompt) {
+        reinforcementPrompt.style.display = 'block';
+      }
+
+      // Voice prompt trigger: Lektor asks if user wants to start Reinforcement Session
+      setTimeout(() => {
+        const statusText = `Czy chcesz rozpocząć sesję utrwalającą?`;
+        awaitingReinforcementChoice = true;
+        
+        speakText(statusText, () => {
+          if (voiceControlToggle.checked) {
+            startSpeechRecognition();
+          }
+        });
+      }, 1000);
+
     } else {
       incorrectReview.style.display = 'none';
+      if (reinforcementPrompt) {
+        reinforcementPrompt.style.display = 'none';
+      }
     }
   }
 
@@ -1230,6 +1381,66 @@ document.addEventListener('DOMContentLoaded', () => {
       welcomeScreen.classList.add('active');
     }
   });
+
+  function startReinforcementQuiz() {
+    if (synth) synth.cancel();
+    stopSpeechRecognition();
+    awaitingReinforcementChoice = false;
+
+    if (incorrectQuestions.length === 0) return;
+
+    // Extract original questions and reset retry flags so they act as fresh base questions
+    const uniqueFailed = incorrectQuestions.map(item => {
+      const cleanQ = { ...item.originalQuestion };
+      delete cleanQ.isRetry;
+      delete cleanQ.originalQuestionText;
+      return cleanQ;
+    });
+
+    isExamMode = false;
+    isFlashcardMode = false;
+
+    // Shuffle the unique failed questions
+    activeQuestions = shuffleArray(uniqueFailed);
+    baseQuestionsCount = activeQuestions.length;
+    retryCount = 0;
+
+    // Setup Status Bar Retries counter
+    const statusRetries = document.getElementById('statusRetries');
+    if (statusRetries) {
+      statusRetries.style.display = 'flex';
+      const retriesText = document.getElementById('retriesText');
+      if (retriesText) retriesText.textContent = 'Powtórki: 0';
+    }
+
+    currentQuestionIndex = 0;
+    score = 0;
+    incorrectQuestions = [];
+    isAnswered = false;
+    secondsElapsed = 0;
+
+    resultsScreen.classList.remove('active');
+    quizScreen.classList.add('active');
+
+    startTimer();
+    loadQuestion(0);
+  }
+
+  if (startReinforcementBtn) {
+    startReinforcementBtn.addEventListener('click', startReinforcementQuiz);
+  }
+  if (reinforcementYesBtn) {
+    reinforcementYesBtn.addEventListener('click', startReinforcementQuiz);
+  }
+  if (reinforcementNoBtn) {
+    reinforcementNoBtn.addEventListener('click', () => {
+      if (synth) synth.cancel();
+      stopSpeechRecognition();
+      awaitingReinforcementChoice = false;
+      resultsScreen.classList.remove('active');
+      welcomeScreen.classList.add('active');
+    });
+  }
 
   // --- Tryb Fiszki (Flashcards Engine) (Krok 2.1) ---
   
@@ -1273,6 +1484,10 @@ document.addEventListener('DOMContentLoaded', () => {
     isCardFlipped = false;
     flashcard.classList.remove('flipped');
     
+    // Reset controls UI state
+    if (flashcardAnswersRow) flashcardAnswersRow.style.display = 'flex';
+    if (flashcardNextBtn) flashcardNextBtn.style.display = 'none';
+    
     if (synth) synth.cancel();
     stopSpeechRecognition();
 
@@ -1296,7 +1511,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Autoplay TTS for front card if enabled
     if (autoplayToggle.checked) {
       setTimeout(() => {
-        speakText(q.question);
+        speakText(q.question + ". Czy znasz to zagadnienie?", () => {
+          if (voiceControlToggle.checked) {
+            startSpeechRecognition();
+          }
+        });
+      }, 300);
+    } else if (voiceControlToggle.checked) {
+      setTimeout(() => {
+        startSpeechRecognition();
       }, 300);
     }
   }
@@ -1310,11 +1533,42 @@ document.addEventListener('DOMContentLoaded', () => {
       const q = activeQuestions[currentQuestionIndex];
       // Autoplay TTS for correct answer citation if enabled
       if (autoplayToggle.checked) {
-        speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`);
+        speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`, () => {
+          if (voiceControlToggle.checked) {
+            startSpeechRecognition();
+          }
+        });
       }
     } else {
       flashcard.classList.remove('flipped');
     }
+  }
+
+  function handleFlashcardIncorrect() {
+    const q = activeQuestions[currentQuestionIndex];
+    
+    // Add to Spaced Repetition queue if they don't know it!
+    const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
+    if (!spacedRepErrors.includes(q.question)) {
+      spacedRepErrors.push(q.question);
+      localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+    }
+    
+    isCardFlipped = true;
+    flashcard.classList.add('flipped');
+    
+    // Switch answers button row to the Next action button
+    if (flashcardAnswersRow) flashcardAnswersRow.style.display = 'none';
+    if (flashcardNextBtn) flashcardNextBtn.style.display = 'flex';
+    
+    playSynthesizedCorrect();
+    
+    // Voice explanation of the rule
+    speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`, () => {
+      if (voiceControlToggle.checked) {
+        startSpeechRecognition();
+      }
+    });
   }
 
   function markFlashcardLearned(isLearned) {
@@ -1329,15 +1583,21 @@ document.addEventListener('DOMContentLoaded', () => {
         spacedRepErrors.splice(idxToRemove, 1);
         localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
       }
-    } else {
-      // Add to Spaced Repetition queue if they don't know it!
-      const spacedRepErrors = JSON.parse(localStorage.getItem('ssi_spaced_repetition_errors')) || [];
-      if (!spacedRepErrors.includes(q.question)) {
-        spacedRepErrors.push(q.question);
-        localStorage.setItem('ssi_spaced_repetition_errors', JSON.stringify(spacedRepErrors));
+      
+      currentQuestionIndex++;
+      if (currentQuestionIndex < activeQuestions.length) {
+        loadFlashcard(currentQuestionIndex);
+      } else {
+        // Finished all cards!
+        alert(`Gratulacje! Przejrzałeś wszystkie fiszki w tym dziale. Twój wynik: ${flashcardLearnedCount} / ${activeQuestions.length} zapamiętanych.`);
+        quitFlashcards();
       }
+    } else {
+      handleFlashcardIncorrect();
     }
+  }
 
+  function nextFlashcard() {
     currentQuestionIndex++;
     if (currentQuestionIndex < activeQuestions.length) {
       loadFlashcard(currentQuestionIndex);
@@ -1373,6 +1633,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   flashcardIncorrectBtn.addEventListener('click', () => markFlashcardLearned(false));
   flashcardCorrectBtn.addEventListener('click', () => markFlashcardLearned(true));
+  if (flashcardNextBtn) {
+    flashcardNextBtn.addEventListener('click', nextFlashcard);
+  }
   
   flashcardPdfBtn.addEventListener('click', () => {
     const pageNumVal = parseInt(flashcardFeedbackPdfPageNum.textContent.trim()) || 1;
@@ -1387,10 +1650,18 @@ document.addEventListener('DOMContentLoaded', () => {
         flipFlashcard();
       } else if (e.code === 'ArrowLeft') {
         e.preventDefault();
-        markFlashcardLearned(false);
+        if (isCardFlipped && flashcardNextBtn && flashcardNextBtn.style.display === 'flex') {
+          nextFlashcard();
+        } else {
+          markFlashcardLearned(false);
+        }
       } else if (e.code === 'ArrowRight') {
         e.preventDefault();
-        markFlashcardLearned(true);
+        if (isCardFlipped && flashcardNextBtn && flashcardNextBtn.style.display === 'flex') {
+          nextFlashcard();
+        } else {
+          markFlashcardLearned(true);
+        }
       }
     }
   });

@@ -57,7 +57,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.5.30.11', 'APP_VERSION must be exactly v2026.5.30.11');
+  assert(appVersion === 'v2026.5.31.02', 'APP_VERSION must be exactly v2026.5.31.02');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -137,6 +137,26 @@ try {
   assert(jsContent.includes('.splice('), 'app.js must inject retry questions using splice');
   assert(jsContent.includes('openPdfViewer'), 'app.js must implement openPdfViewer function');
   assert(jsContent.includes('closePdfViewer'), 'app.js must implement closePdfViewer function');
+
+  // 11. Process Validation: Reinforcement Session, Clean TTS Filter & Repeat Statistics
+  assert(jsContent.includes('function cleanTextForSpeech('), 'app.js must implement the cleanTextForSpeech function');
+  assert(jsContent.includes('cleanTextForSpeech(text)'), 'app.js must call cleanTextForSpeech inside speakText');
+  assert(jsContent.includes('baseQuestionsCount'), 'app.js must track the baseQuestionsCount variable');
+  assert(jsContent.includes('retryCount'), 'app.js must track the retryCount variable');
+  assert(htmlContent.includes('id="statusRetries"'), 'index.html must contain a statusRetries element');
+  assert(htmlContent.includes('id="retriesText"'), 'index.html must contain a retriesText element');
+  assert(htmlContent.includes('id="reinforcementPrompt"'), 'index.html must contain reinforcementPrompt container');
+  assert(htmlContent.includes('id="reinforcementYesBtn"'), 'index.html must contain reinforcementYesBtn element');
+  assert(htmlContent.includes('id="reinforcementNoBtn"'), 'index.html must contain reinforcementNoBtn element');
+  assert(htmlContent.includes('id="startReinforcementBtn"'), 'index.html must contain startReinforcementBtn element');
+  assert(jsContent.includes('startReinforcementQuiz'), 'app.js must implement the startReinforcementQuiz function');
+  assert(jsContent.includes('awaitingReinforcementChoice'), 'app.js must track the awaitingReinforcementChoice variable');
+
+  // 12. Process Validation: Premium voice-controlled flashcards & next button
+  assert(htmlContent.includes('id="flashcardNextBtn"'), 'index.html must contain a flashcardNextBtn element');
+  assert(jsContent.includes('flashcardNextBtn'), 'app.js must define the flashcardNextBtn variable');
+  assert(jsContent.includes('nextFlashcard'), 'app.js must implement the nextFlashcard function');
+  assert(jsContent.includes('handleFlashcardIncorrect'), 'app.js must implement the handleFlashcardIncorrect function');
 
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');
