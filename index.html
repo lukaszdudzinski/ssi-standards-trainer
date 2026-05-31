@@ -424,6 +424,7 @@
                 <button class="tab-btn" data-tab="desktop"><i class="fa-solid fa-laptop"></i> Komputer</button>
                 <button class="tab-btn" data-tab="github"><i class="fa-brands fa-github"></i> Link na Telefon</button>
                 <button class="tab-btn" data-tab="bluetooth"><i class="fa-solid fa-car"></i> Bluetooth & Auto</button>
+                <button class="tab-btn" data-tab="commands"><i class="fa-solid fa-microphone"></i> Komendy Głosowe</button>
               </div>
 
               <div class="pwa-tab-content">
@@ -476,6 +477,49 @@
                     <li><strong>Ustawienia Dostępności iOS:</strong> Możesz również dostosować głośność lektora na stałe w telefonie wchodząc w: <em>Ustawienia -> Dostępność -> Czytanie zawartości -> Głosy</em> i dostosowując parametry wybranego głosu języka polskiego.</li>
                     <li><strong>Brak głosu po kablu CarPlay (USB-C):</strong> Niektóre pokładowe systemy CarPlay blokują przesyłanie lektora przez kabel USB. Jeśli po podłączeniu telefonu kablem w aucie nastała głusza, **wyłącz opcję „Strumieniowanie CarPlay/Bluetooth”** w Ustawieniach Lektora w aplikacji. Dźwięk lektora natychmiast wróci i będzie szedł z głośnika telefonu, a muzyka/radio w samochodzie będzie mogła spokojnie lecieć w tle!</li>
                   </ol>
+                </div>
+                <div class="tab-pane" id="tab-commands">
+                  <p class="guide-intro">Aplikacja oferuje **kompletne, bezdotykowe sterowanie głosowe (Polish Speech-to-Text)**. Poniżej znajduje się lista komend podzielona na sekcje aplikacji:</p>
+                  
+                  <div class="command-group">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-microphone-lines" style="color: var(--color-cyan);"></i> 1. Ogólne Komendy Sterujące</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Dostępne podczas aktywnego czytania pytań w każdym trybie:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Powtórzenie pytania:</strong> Powiedz <code>„powtórz”</code>, <code>„jeszcze raz”</code> lub <code>„czytaj”</code>, aby lektor odczytał pytanie ponownie.</li>
+                      <li><strong>Przejście dalej:</strong> Powiedz <code>„dalej”</code>, <code>„następne”</code> lub <code>„ok”</code> na panelu podsumowania, aby przejść do kolejnego pytania.</li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-list-check" style="color: var(--color-yellow);"></i> 2. Wybór Odpowiedzi (Egzamin / Ćwiczenia)</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Aby wybrać jedną z czterech opcji odpowiedzi, powiedz:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Opcja A (1):</strong> <code>„jeden”</code> / <code>„jedynka”</code> / <code>„raz”</code> / <code>„pierwsza”</code> / <code>„a”</code></li>
+                      <li><strong>Opcja B (2):</strong> <code>„dwa”</code> / <code>„dwójka”</code> / <code>„druga”</code> / <code>„b”</code></li>
+                      <li><strong>Opcja C (3):</strong> <code>„trzy”</code> / <code>„trójka”</code> / <code>„trzecia”</code> / <code>„c”</code></li>
+                      <li><strong>Opcja D (4):</strong> <code>„cztery”</code> / <code>„czwórka”</code> / <code>„czwarta”</code> / <code>„d”</code></li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-clone" style="color: var(--color-purple);"></i> 3. Tryb Fiszki (Flashcards)</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Steruj kartami w trybie bezdotykowej nauki:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Znasz odpowiedź (Awers):</strong> Powiedz <code>„znam”</code>, <code>„tak”</code>, <code>„wiem”</code> lub <code>„znam to”</code> (zalicza i przechodzi dalej).</li>
+                      <li><strong>Nie znasz odpowiedzi (Awers):</strong> Powiedz <code>„nie znam”</code>, <code>„nie”</code>, <code>„nie wiem”</code> lub <code>„nie znam tego”</code> (oznacza jako błąd, obraca kartę i odtwarza regułę).</li>
+                      <li><strong>Tylko obróć kartę:</strong> Powiedz <code>„obróć”</code>, <code>„odwróć”</code> lub <code>„pokaż”</code> (obraca kartę bez zmiany statusu).</li>
+                      <li><strong>Kolejna karta (Rewers):</strong> Powiedz <code>„dalej”</code>, <code>„następna”</code>, <code>„ok”</code> lub <code>„rozumiem”</code>, aby wczytać następną fiszkę.</li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-circle-question" style="color: var(--color-green);"></i> 4. Propozycja Sesji Utrwalającej</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Gdy lektor pyta <em>„Czy chcesz rozpocząć sesję utrwalającą?”</em>, odpowiedz:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Rozpoczęcie sesji:</strong> Powiedz <code>„tak”</code>, <code>„chcę”</code> lub <code>„rozpocznij”</code>, aby przećwiczyć wyłącznie błędne pytania.</li>
+                      <li><strong>Powrót do menu:</strong> Powiedz <code>„nie”</code>, <code>„nie chcę”</code> lub <code>„wróć”</code>, aby powrócić do ekranu głównego.</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

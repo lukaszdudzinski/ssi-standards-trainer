@@ -158,6 +158,10 @@ try {
   assert(jsContent.includes('nextFlashcard'), 'app.js must implement the nextFlashcard function');
   assert(jsContent.includes('handleFlashcardIncorrect'), 'app.js must implement the handleFlashcardIncorrect function');
 
+  // 13. Process Validation: Voice commands guide tab
+  assert(htmlContent.includes('data-tab="commands"'), 'index.html must contain data-tab="commands" settings tab button');
+  assert(htmlContent.includes('id="tab-commands"'), 'index.html must contain tab-commands tab content pane');
+
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');
   console.log('===================================================');
