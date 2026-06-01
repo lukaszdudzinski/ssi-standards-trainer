@@ -115,7 +115,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.6.01.08</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.6.01.09</span></p>
         </div>
       </section>
 
@@ -214,10 +214,10 @@
 
         <!-- Quiz Status Bar -->
         <div class="quiz-status">
-          <div class="status-item timer">
-            <i class="fa-regular fa-clock"></i>
-            <span id="quizTimer">00:00</span>
-            <button id="pauseTimerBtn" class="icon-btn" style="margin-left: 4px; font-size: 0.85rem; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--color-cyan);" title="Wstrzymaj/Wznów czas"><i class="fa-solid fa-pause"></i></button>
+          <div class="status-item timer" style="display: flex; align-items: center; justify-content: center;">
+            <i class="fa-regular fa-clock" style="margin-right: 5px;"></i>
+            <span id="quizTimer" style="display: inline-block; width: 45px; font-variant-numeric: tabular-nums; text-align: center;">00:00</span>
+            <button id="pauseTimerBtn" class="icon-btn" style="margin-left: 2px; font-size: 0.85rem; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--color-cyan); display: flex; align-items: center; justify-content: center; width: 28px; height: 28px;" title="Wstrzymaj/Wznów czas"><i class="fa-solid fa-pause"></i></button>
           </div>
           <div class="status-item progress">
             <span id="progressText">Pytanie 1 / 50</span>
@@ -258,12 +258,12 @@
         <!-- Question Card -->
         <div class="question-card" id="questionCard">
           <h3 id="questionText">Treść pytania pojawi się tutaj...</h3>
-          <div class="question-actions" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
-            <button id="repeatSpeechBtn" class="repeat-btn pulse-glow" title="Powtórz pytanie głosowo">
-              🔊 Powtórz lektora
+          <div class="question-actions" style="display: flex; gap: 10px; justify-content: center; align-items: stretch; margin-top: 15px;">
+            <button id="repeatSpeechBtn" class="repeat-btn pulse-glow" style="flex: 1; max-width: 200px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; font-size: 0.85rem;" title="Powtórz lektora">
+              <i class="fa-solid fa-volume-high"></i> Powtórz lektora
             </button>
-            <button id="peekPdfBtn" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; background: rgba(0,242,254,0.05); border-color: rgba(0,242,254,0.2); color: var(--color-cyan);" title="Podejrzyj standardy w poszukiwaniu odpowiedzi">
-              <i class="fa-solid fa-book-open"></i> Podpowiedź z PDF
+            <button id="peekPdfBtn" class="btn btn-secondary" style="flex: 1; max-width: 200px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; font-size: 0.85rem; background: rgba(0,242,254,0.05); border-color: rgba(0,242,254,0.2); color: var(--color-cyan);" title="Podgląd dokumentacji">
+              <i class="fa-solid fa-book-open"></i> Standardy PDF
             </button>
           </div>
         </div>
@@ -538,7 +538,7 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.6.01.08</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.6.01.09</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>
