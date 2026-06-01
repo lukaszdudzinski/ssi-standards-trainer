@@ -115,7 +115,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.5.31.07</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.6.01.08</span></p>
         </div>
       </section>
 
@@ -217,6 +217,7 @@
           <div class="status-item timer">
             <i class="fa-regular fa-clock"></i>
             <span id="quizTimer">00:00</span>
+            <button id="pauseTimerBtn" class="icon-btn" style="margin-left: 4px; font-size: 0.85rem; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--color-cyan);" title="Wstrzymaj/Wznów czas"><i class="fa-solid fa-pause"></i></button>
           </div>
           <div class="status-item progress">
             <span id="progressText">Pytanie 1 / 50</span>
@@ -257,9 +258,12 @@
         <!-- Question Card -->
         <div class="question-card" id="questionCard">
           <h3 id="questionText">Treść pytania pojawi się tutaj...</h3>
-          <div class="question-actions">
+          <div class="question-actions" style="display: flex; gap: 10px; justify-content: center; align-items: center;">
             <button id="repeatSpeechBtn" class="repeat-btn pulse-glow" title="Powtórz pytanie głosowo">
               🔊 Powtórz lektora
+            </button>
+            <button id="peekPdfBtn" class="btn btn-secondary" style="padding: 6px 12px; font-size: 0.8rem; background: rgba(0,242,254,0.05); border-color: rgba(0,242,254,0.2); color: var(--color-cyan);" title="Podejrzyj standardy w poszukiwaniu odpowiedzi">
+              <i class="fa-solid fa-book-open"></i> Podpowiedź z PDF
             </button>
           </div>
         </div>
@@ -302,10 +306,16 @@
               <h4>Błędna odpowiedź!</h4>
             </div>
             
+            <div class="feedback-question-replay" style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; padding: 10px; background: rgba(0,0,0,0.25); border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: left;">
+              <strong style="color: var(--color-cyan); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 4px; display: block;">Treść pytania:</strong>
+              <em id="feedbackQuestionText">"Tutaj pojawi się treść pytania"</em>
+            </div>
+            
             <div class="ref-container">
               <div class="ref-meta">
                 <span class="ref-tag chapter" id="refChapter"><i class="fa-solid fa-book"></i> Rozdział</span>
                 <span class="ref-tag section" id="refSection"><i class="fa-solid fa-bookmark"></i> Podrozdział</span>
+                <span class="ref-tag subsection" id="refSubsection" style="display: none; background: rgba(255, 165, 0, 0.15); border-color: rgba(255, 165, 0, 0.3); color: orange;"><i class="fa-solid fa-layer-group"></i> Sekcja</span>
               </div>
               <div class="ref-page-badge">
                 <span class="page-label">Strona</span>
@@ -528,7 +538,7 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.5.31.07</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.6.01.08</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>

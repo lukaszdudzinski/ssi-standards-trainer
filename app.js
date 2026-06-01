@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.5.31.07';
+const APP_VERSION = 'v2026.6.01.08';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -63,8 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const feedbackPanel = document.getElementById('feedbackPanel');
   const feedbackHeader = document.getElementById('feedbackHeader');
+  const feedbackQuestionText = document.getElementById('feedbackQuestionText');
   const refChapter = document.getElementById('refChapter');
   const refSection = document.getElementById('refSection');
+  const refSubsection = document.getElementById('refSubsection');
   const refPage = document.getElementById('refPage');
   const refQuote = document.getElementById('refQuote');
   const nextQuestionBtn = document.getElementById('nextQuestionBtn');
@@ -1001,12 +1003,29 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- 6. Timer Functionality ---
+  let isTimerPaused = false;
+  const pauseTimerBtn = document.getElementById('pauseTimerBtn');
+  
+  if (pauseTimerBtn) {
+    pauseTimerBtn.addEventListener('click', () => {
+      isTimerPaused = !isTimerPaused;
+      pauseTimerBtn.innerHTML = isTimerPaused ? '<i class="fa-solid fa-play"></i>' : '<i class="fa-solid fa-pause"></i>';
+      pauseTimerBtn.style.color = isTimerPaused ? 'orange' : 'var(--color-cyan)';
+    });
+  }
+
   function startTimer() {
     clearInterval(timerInterval);
+    isTimerPaused = false;
+    if (pauseTimerBtn) {
+      pauseTimerBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+      pauseTimerBtn.style.color = 'var(--color-cyan)';
+    }
     quizTimer.classList.remove('overtime');
     quizTimer.textContent = isExamMode ? '45:00' : '00:00';
     
     timerInterval = setInterval(() => {
+      if (isTimerPaused) return; // Przerwanie naliczania w przypadku pauzy
       secondsElapsed++;
       
       if (isExamMode) {
@@ -1185,8 +1204,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Show liquid glass feedback panel with details
+      if (feedbackQuestionText) feedbackQuestionText.textContent = q.originalQuestionText || q.question;
+
       refChapter.innerHTML = `<i class="fa-solid fa-book"></i> ${q.reference.chapter}`;
       refSection.innerHTML = `<i class="fa-solid fa-bookmark"></i> ${q.reference.section}`;
+      if (q.reference.subsection && refSubsection) {
+        refSubsection.style.display = 'inline-block';
+        refSubsection.innerHTML = `<i class="fa-solid fa-layer-group"></i> ${q.reference.subsection}`;
+      } else if (refSubsection) {
+        refSubsection.style.display = 'none';
+      }
       refPage.textContent = q.reference.page;
       if (feedbackPdfPageNum) {
         feedbackPdfPageNum.textContent = q.reference.page;
@@ -1883,6 +1910,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // App interactions
+  const peekPdfBtn = document.getElementById('peekPdfBtn');
+  if (peekPdfBtn) {
+    peekPdfBtn.addEventListener('click', () => {
+      const currentQ = activeQuestions[currentQuestionIndex];
+      if (currentQ && currentQ.reference) {
+        openPdfViewer(currentQ.reference.page);
+      }
+    });
+  }
+
   if (openPdfMainMenuBtn) {
     openPdfMainMenuBtn.addEventListener('click', () => openPdfViewer(1));
   }

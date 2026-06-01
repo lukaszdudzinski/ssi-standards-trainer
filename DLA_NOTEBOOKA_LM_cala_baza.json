@@ -1,4 +1,4 @@
-const QUESTIONS_DB = [
+[
   {
     "question": "Jaki jest współczynnik szkolenia w wodzie otwartej z jednym certyfikowanym asystentem podczas programu Open Water Diver dla Kursantów, którzy ukończyli 13 lat?",
     "options": [
@@ -1111,7 +1111,7 @@ const QUESTIONS_DB = [
       "15 lat",
       "12 lat"
     ],
-    "answer": 3,
+    "answer": 0,
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Advanced Open Water Diver - Wymagania",
@@ -8059,8 +8059,4 @@ const QUESTIONS_DB = [
     },
     "category": "Administracja (Nowe Baza 2026)"
   }
-];
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = QUESTIONS_DB;
-}
+]
