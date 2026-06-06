@@ -1711,7 +1711,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster Instructor",
-      "page": 396,
+      "page": 83,
       "quote": "Wydano: ● Co najmniej 25 certyﬁkacji z dowolnego programu Nurkowania Rekreacyjnego (Recreational Scuba)."
     }
   },
@@ -1727,7 +1727,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "Advanced Open Water Diver",
-      "page": 189,
+      "page": 4,
       "quote": "● Night & Limited Visibility"
     }
   },
@@ -1743,7 +1743,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Załącznik",
       "section": "Lista zmian Scuba",
-      "page": 183,
+      "page": 177,
       "quote": "Program Advanced Adventurer może prowadzić aktywny instruktor Open Water . Instruktor musi posiadać bezpośrednią wiedzę na temat wymaganego sprzętu i ćwiczeń dla każdego nurkowania przygodowego, które prowadzi. ... Manager QMS ośrodka szkoleniowego jest odpowiedzialny za sprawdzenie, czy instruktor posiada stosowne uprawnienia na poziomie kursanta lub co najmniej pięć nurkowań w stosownej specjalizacji przed przeprowadzeniem szkolenia."
     }
   },
@@ -1759,7 +1759,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "Advanced Open Water Diver",
-      "page": 184,
+      "page": 62,
       "quote": "Program ten został zaprojektowany tak, aby w pełni koncentrować się na praktycznych ćwiczeniach nurkowych."
     }
   },
@@ -1775,7 +1775,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Ogólne Standardy Specjalizacji",
-      "page": 175,
+      "page": 8,
       "quote": "● Nurkowania szkoleniowe na Wodach Otwartych dla jakiegokolwiek programu Specjalizacji nie mogą być łączone z nurkowaniami szkoleniowymi na Wodach Otwartych dla programów poziomu podstawowego. ● Certyﬁkat specjalizacji może być wydany dopiero po wydaniu certyﬁkatu Open Water Diver ."
     }
   },
@@ -1791,7 +1791,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Oświadczenie medyczne i prywatności",
-      "page": 26,
+      "page": 28,
       "quote": "Aktualne Oświadczenie medyczne... jest wymagane: Przed jakimikolwiek zajęciami w wodzie."
     }
   },
@@ -1807,7 +1807,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Świadomość Ryzyka",
-      "page": 24,
+      "page": 13,
       "quote": "Każdy kursant... musi obejrzeć video 'SSI Świadomość Ryzyka, Część 1'... Przed jakimikolwiek zajęciami w wodzie."
     }
   },
@@ -1823,7 +1823,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Ukończenie szkolenia",
-      "page": 79,
+      "page": 32,
       "quote": "...ukończone: W ciągu sześciu (6) miesięcy od ostatnich zajęć teoretycznych lub sesji szkoleniowej w wodzie."
     }
   },
@@ -1839,7 +1839,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Przerwy w szkoleniu",
-      "page": 80,
+      "page": 32,
       "quote": "Jeśli upłynęło więcej niż 12 miesięcy od ostatnich zajęć w wodzie... musi rozpocząć od początku program poziomu podstawowego."
     }
   },
@@ -1855,7 +1855,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Wymagany sprzęt profesjonalisty",
-      "page": 68,
+      "page": 28,
       "quote": "...każdy Profesjonalista SSI musi używać: Komputera nurkowego, Bojki dekompresyjnej (SMB) oraz urządzenia do sygnalizacji..."
     }
   },
@@ -1903,7 +1903,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Organizacja SSI",
       "section": "System Zarządzania Jakością (QMS)",
-      "page": 26,
+      "page": 22,
       "quote": "...Manager QMS... który nadzoruje program zarządzania jakością przy użyciu Systemu Zarządzania Jakością SSI (QMS)."
     }
   },
@@ -1919,7 +1919,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Egzaminy końcowe",
-      "page": 76,
+      "page": 31,
       "quote": "Kursanci muszą zdobyć wynik minimalny 80%, a profesjonaliści 90%."
     }
   },
@@ -1935,7 +1935,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Poziomy i stopnie",
-      "page": 34,
+      "page": 16,
       "quote": "...cyfrowe kopie wszystkich otrzymanych certyfikatów (D-Card) i kart uznaniowych, do których dostęp możliwy jest natychmiast po wydaniu."
     }
   },
@@ -1951,7 +1951,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Strefa pobrań MySSI",
-      "page": 31,
+      "page": 37,
       "quote": "Dokumentację Kursanta (Training Records) do wydrukowania można znaleźć: W strefie pobrań in profilu MySSI Profesjonalisty."
     }
   },
@@ -1983,7 +1983,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Zespół Szkoleniowy - AI",
-      "page": 369,
+      "page": 48,
       "quote": "...ćwiczenia praktyczne in basenie... programu Open Water Diver pod pośrednim nadzorem... z wyjątkiem ćwiczeń wynurzenia awaryjnego."
     }
   },
@@ -1999,7 +1999,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Zespół Szkoleniowy - AI",
-      "page": 369,
+      "page": 50,
       "quote": "Instruktorzy Asystujący mogą oceniać umiejętności na powierzchni pod pośrednim nadzorem Open Water Instructor."
     }
   },
@@ -2015,7 +2015,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagania dla stopnia AI",
-      "page": 367,
+      "page": 32,
       "quote": "Zalogowanie przynajmniej 75 nurkowań in wodach otwartych o łącznym czasie 50 godzin lub więcej."
     }
   },
@@ -2031,7 +2031,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI - Uprawnienia",
-      "page": 369,
+      "page": 122,
       "quote": "Assistant Instructors prowadzą Programy Specjalizacji SSI, Try Scuba, Scuba Skills Update i Perfect Buoyancy."
     }
   },
@@ -2047,7 +2047,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Korzystanie z certyfikowanych asystentów",
-      "page": 86,
+      "page": 17,
       "quote": "Mogą pomóc... oraz mogą podwyższyć współczynnik ilościowy... in ramach niektórych programów szkoleniowych SSI."
     }
   },
@@ -2063,7 +2063,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Uprawnienia do nauczania Dive Guide",
-      "page": 249,
+      "page": 56,
       "quote": "Program SSI Dive Guide może być nauczany przez: Aktywny status Specialty Instructor Dive Guide lub wyższy."
     }
   },
@@ -2079,7 +2079,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Kto może prowadzić program",
-      "page": 466,
+      "page": 33,
       "quote": "...może być prowadzony przez Assistant Instructor SSI z certyfikatem Scuba Rangers Instructor."
     }
   },
@@ -2095,7 +2095,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Kandydat na stopień OWI",
-      "page": 376,
+      "page": 122,
       "quote": "Przed przystąpieniem do egzaminu Instructor Evaluation, kandydat na stopień Open Water Instructor must: Ukończyć Instructor Training Course."
     }
   },
@@ -2111,7 +2111,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagania dla AIT",
-      "page": 399,
+      "page": 122,
       "quote": "...kandydat na poziom Assistant Instructor Trainer must wydać przynajmniej: 30 certyfikatów Scuba Diver i / lub Open Water."
     }
   },
@@ -2127,7 +2127,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Karty uznaniowe",
-      "page": 355,
+      "page": 59,
       "quote": "Specialty Diver: ukończone dwa programy Specjalizacji i zalogowanych 12 nurkowań."
     }
   },
@@ -2143,7 +2143,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Karty uznaniowe - Master Diver",
-      "page": 356,
+      "page": 59,
       "quote": "Master Diver: ukończone cztery programy Specjalizacji, program Diver Stress and Rescue i zalogowanych 50 nurkowań."
     }
   },
@@ -2159,7 +2159,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Odnowienie statusu profesjonalnego",
-      "page": 59,
+      "page": 60,
       "quote": "...jedną z opcji powrotu... Współnauczać przynajmniej jeden (1) program Open Water Diver."
     }
   },
@@ -2175,7 +2175,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Uprawnienia Snorkeling",
-      "page": 494,
+      "page": 48,
       "quote": "Professional Dive Guide, posiadający aktywny status... może... prowadzić program Snorkeling."
     }
   },
@@ -2191,7 +2191,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Współczynniki ilościowe w wodzie - Scuba Diver",
-      "page": 135,
+      "page": 60,
       "quote": "Jeśli jeden lub więcej kursantów in programie Scuba Diver ma / mają mniej niż 15 lat, maksymalny współczynnik... wynosi: 4:1."
     }
   },
@@ -2207,7 +2207,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Basic Diver (ISO 11121) - Współczynnik ilościowy w wodzie",
-      "page": 129,
+      "page": 54,
       "quote": "Prawidłowa odpowiedź to: 4:1 (czterech kursantów na jednego instruktora). Współczynnik ten może jednak zostać zwiększony do 6:2, jeżeli instruktor korzysta z pomocy jednego certyfikowanego asystenta."
     }
   },
@@ -2223,7 +2223,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Współczynniki dla dzieci w OWD",
-      "page": 146,
+      "page": 178,
       "quote": "Jeśli jakikolwiek kursant... ma mniej niż 12 lat, maksymalny współczynnik... na wodach otwartych... wynosi: 4:1."
     }
   },
@@ -2239,7 +2239,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Ćwiczenia wynurzeń awaryjnych",
-      "page": 93,
+      "page": 32,
       "quote": "Maksymalna głębokość nauczania umiejętności awaryjnego wynurzania... wynosi: Piętnaście (15) metrów lub mniej."
     }
   },
@@ -2255,7 +2255,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Indoor Diving",
-      "page": 99,
+      "page": 38,
       "quote": "Program Indoor Diving wymaga: ... Obiektu o minimalnej głębokości pięciu (5) metrów."
     }
   },
@@ -2271,7 +2271,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Przepłynięcia przez przestrzenie zamknięte",
-      "page": 107,
+      "page": 41,
       "quote": " SSI 'przepłynięcia przez przestrzenie zamknięte'... Maksymalna długość wynosi dziesięć (10) metrów."
     }
   },
@@ -2287,7 +2287,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Poziomy uznaniowe",
-      "page": 358,
+      "page": 118,
       "quote": "Poziom 9 - Platinum 1000 Diver: 1000 zalogowanych nurkowań."
     }
   },
@@ -2303,7 +2303,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Przeznaczenie wiekowe",
-      "page": 468,
+      "page": 46,
       "quote": "...jest przeznaczony dla kursantów in wieku od 8 do 10 lat."
     }
   },
@@ -2319,7 +2319,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Junior Open Water Diver - Limity",
-      "page": 155,
+      "page": 56,
       "quote": "...Junior Open Water Diver, wymagają, aby nurek był bezpośrednio nadzorowany in wodzie przez profesjonalistę."
     }
   },
@@ -2335,7 +2335,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Referral Diver - Wymagania",
-      "page": 153,
+      "page": 16,
       "quote": "Przed otrzymaniem certyfikatu Referral Diver... Ukończyć wszystkie zajęcia in basenie... oraz oceny umiejętności..."
     }
   },
@@ -2351,7 +2351,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI - Testy sprawnościowe",
-      "page": 121,
+      "page": 45,
       "quote": "Ocena sprawności fizycznej kandydata... obejmuje: Pełne ćwiczenie ratowania nurka z holowaniem... in czasie poniżej osiem (8) minut."
     }
   },
@@ -2367,7 +2367,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Advanced Adventurer - Wymagania",
-      "page": 535,
+      "page": 62,
       "quote": "Minimalny wiek do zakwalifikowania do programu Advanced Adventurer: ... Wynosi 10 lat."
     }
   },
@@ -2383,7 +2383,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Snorkeling Instructor",
-      "page": 493,
+      "page": 120,
       "quote": "Kandydaci do programu Snorkeling Instructor muszą: Mieć skończone 18 lat"
     }
   },
@@ -2399,7 +2399,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Przerwy in zajęciach w wodzie",
-      "page": 80,
+      "page": 32,
       "quote": "Jeśli upłynęło więcej niż 12 miesięcy od ostatnich zajęć in wodzie, kursant poziomu podstawowego: Musi ukończyć Scuba Skills Update"
     }
   },
@@ -2415,7 +2415,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Profesjonalne Egzaminy",
-      "page": 76,
+      "page": 31,
       "quote": "Kursanci muszą zdobyć wynik minimalny 80%, a profesjonaliści 90%"
     }
   },
@@ -2431,7 +2431,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagania stopnia Divemaster",
-      "page": 360,
+      "page": 28,
       "quote": "Mieć zalogowanych przynajmniej 60 nurkowań in wodach otwartych"
     }
   },
@@ -2447,7 +2447,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "System Edukacji",
-      "page": 468,
+      "page": 5,
       "quote": "Explorers... jest przeznaczony dla kursantów in wieku od 8 do 10 lat"
     }
   },
@@ -2463,7 +2463,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Basic Diver (ISO 11121) - Współczynnik ilościowy w wodzie",
-      "page": 129,
+      "page": 34,
       "quote": "Prawidłowa odpowiedź to: 4:1. Współczynnik ten może jednak zostać zwiększony do 6:2, jeżeli instruktor korzysta z pomocy asystenta."
     }
   },
@@ -2479,7 +2479,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Ramy czasowe szkolenia",
-      "page": 79,
+      "page": 32,
       "quote": "Wymagane nurkowania szkoleniowe in wodach otwartych must zostać ukończone: W ciągu sześciu (6) miesięcy"
     }
   },
@@ -2495,7 +2495,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymogi AIT",
-      "page": 399,
+      "page": 122,
       "quote": "kandydat na poziom Assistant Instructor Trainer must wydać przynajmniej: 40 certyfikatów Scuba Diver i / lub Open Water"
     }
   },
@@ -2511,7 +2511,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Junior Scuba Diver współczynniki",
-      "page": 135,
+      "page": 60,
       "quote": "Jeśli jeden lub więcej kursantów in programie Scuba Diver ma / mają mniej niż 15 lat, maksymalny współczynnik kursant -instruktor wynosi: 4:1"
     }
   },
@@ -2527,7 +2527,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI Specialty Uprawnienia",
-      "page": 369,
+      "page": 127,
       "quote": "Assistant Instructor może zdobyć kwalifikacje do prowadzenia... Equipment Techniques, Navigation i Wreck Diving"
     }
   },
@@ -2543,7 +2543,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI Rola na wodach otwartych",
-      "page": 369,
+      "page": 50,
       "quote": "osoby posiadające stopień Instruktora Asystującego mogą oceniać umiejętności na powierzchni pod pośrednim nadzorem Open Water Instructor"
     }
   },
@@ -2559,7 +2559,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Master Diver - Wiek",
-      "page": 356,
+      "page": 59,
       "quote": "Master Diver: ukończone cztery programy Specjalizacji, program Diver Stress and Rescue i zalogowanych 50 nurkowań"
     }
   },
@@ -2575,7 +2575,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI - Wymagania wstępne",
-      "page": 367,
+      "page": 32,
       "quote": "Zalogowanie przynajmniej 75 nurkowań in wodach otwartych o łącznym czasie 50 godzin lub więcej"
     }
   },
@@ -2591,7 +2591,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Stopnie uznaniowe",
-      "page": 358,
+      "page": 118,
       "quote": "Poziom 5 - Century Diver: 100 zalogowanych nurkowań"
     }
   },
@@ -2607,7 +2607,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "AI Uprawnienia Confined Water",
-      "page": 369,
+      "page": 48,
       "quote": "Mogą także prowadzić zajęcia teoretyczne i ćwiczenia praktyczne in basenie... programu Open Water Diver pod pośrednim nadzorem"
     }
   },
@@ -2623,7 +2623,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Nieaktywny status 2-5 lat",
-      "page": 59,
+      "page": 49,
       "quote": "If Profesjonalista SSI pozostawał nieaktywny przez 2 do 5 lat... Współnauczać przynajmniej jeden (1) program Open Water Diver"
     }
   },
@@ -2639,7 +2639,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Współczynnik dla dzieci poniżej 12 lat",
-      "page": 146,
+      "page": 178,
       "quote": "Jeśli jakikolwiek kursant... ma mniej niż 12 lat, maksymalny współczynnik... na wodach otwartych... wynosi: 4:1"
     }
   },
@@ -2655,7 +2655,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Referral Diver Wymagania",
-      "page": 153,
+      "page": 16,
       "quote": "Przed otrzymaniem certyfikatu Referral Diver, kursant must: Ukończyć wszystkie zajęcia in basenie/ograniczonym akwenie oraz oceny umiejętności"
     }
   },
@@ -2671,7 +2671,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Indoor upgrade do OWD",
-      "page": 157,
+      "page": 38,
       "quote": "Poziom Indoor Diver może zostać podwyższony... po... przeprowadzeniu: 4 nurkowań szkoleniowych in wodach otwartych"
     }
   },
@@ -2687,7 +2687,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Advanced Adventurer",
-      "page": 183,
+      "page": 62,
       "quote": "Minimalny wiek do zakwalifikowania do programu Advanced Adventurer... Wynosi 12 lat"
     }
   },
@@ -2703,7 +2703,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Kto może uczyć Dive Guide",
-      "page": 249,
+      "page": 56,
       "quote": "Program SSI Dive Guide może być nauczany przez: Aktywny status Specialty Instructor Dive Guide lub wyższy."
     }
   },
@@ -2719,7 +2719,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagania Master Instructor",
-      "page": 405,
+      "page": 18,
       "quote": "Wydać przynajmniej 200 certyfikatów"
     }
   },
@@ -2735,7 +2735,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Głębokość Indoor Diving",
-      "page": 100,
+      "page": 38,
       "quote": "Program Indoor Diving wymaga: Obiektu o minimalnej głębokości pięciu (5) metrów"
     }
   },
@@ -2751,7 +2751,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Wynurzenia awaryjne wody otwarte",
-      "page": 93,
+      "page": 32,
       "quote": "Maksymalna głębokość nauczania umiejętności awaryjnego wynurzania... wynosi: Dziesięć (10) metrów lub mniej"
     }
   },
@@ -2767,7 +2767,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Przestrzenie zamknięte",
-      "page": 107,
+      "page": 41,
       "quote": "przepłynięcia przez przestrzenie zamknięte... Maksymalna długość wynosi dziesięć (10) metrów"
     }
   },
@@ -2783,7 +2783,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Ocena sprawności w wodzie",
-      "page": 117,
+      "page": 44,
       "quote": "Ocena sprawności in wodzie must być przeprowadzona, zanim... Wezmą udział in jakimkolwiek szkoleniu in wodach otwartych"
     }
   },
@@ -2799,7 +2799,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba - Kto prowadzi",
-      "page": 122,
+      "page": 119,
       "quote": "Program Try Scuba może być przeprowadzony przez aktywnego: Divemastera"
     }
   },
@@ -2815,7 +2815,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagania OWI",
-      "page": 375,
+      "page": 56,
       "quote": "kandydat na stopień Open Water Instructor must: Zalogować przynajmniej 125 nurkowań in wodach otwartych"
     }
   },
@@ -2831,7 +2831,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Wiedza nurkowa - Wymogi",
-      "page": 218,
+      "page": 177,
       "quote": "Specjalności z zakresu Wiedzy Nurkowej... muszą posiadać przynajmniej: co najmniej 12 lat"
     }
   },
@@ -2847,7 +2847,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Specjalizacje - Nadzór",
-      "page": 170,
+      "page": 58,
       "quote": "Pierwsze obowiązkowe nurkowanie szkoleniowe... must być: Bezpośrednio nadzorowane"
     }
   },
@@ -2863,7 +2863,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "React Right Instructor",
-      "page": 483,
+      "page": 162,
       "quote": "jaki jest minimalny wymagany stopień... aby zostać React Right Instructor? Aktywny Divemaster"
     }
   },
@@ -2879,7 +2879,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Karty uznaniowe - Specialty Diver",
-      "page": 355,
+      "page": 59,
       "quote": "Specialty Diver: ukończone dwa programy Specjalizacji i zalogowanych 12 nurkowań"
     }
   },
@@ -2895,7 +2895,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedura certyfikacji",
-      "page": 34,
+      "page": 16,
       "quote": "Trzeba go certyfikować in ciągu siedmiu (7) dni"
     }
   },
@@ -2911,7 +2911,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Oświadczenie medyczne",
-      "page": 26,
+      "page": 28,
       "quote": "Aktualne Oświadczenie medyczne... jest wymagane: Przed jakimikolwiek zajęciami in wodzie"
     }
   },
@@ -2927,7 +2927,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Testy sprawnościowe w wodzie",
-      "page": 120,
+      "page": 44,
       "quote": "Ocena sprawności fizycznej kandydata... Przepłynięcie pod wodą odcinka o długości 50 metrów"
     }
   },
@@ -2943,7 +2943,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Master Instructor - Wymagania",
-      "page": 404,
+      "page": 28,
       "quote": "Mieć zalogowanych przynajmniej 250 nurkowań in wodach otwartych"
     }
   },
@@ -2959,7 +2959,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Zwiększanie współczynnika",
-      "page": 145,
+      "page": 34,
       "quote": "Certyfikowani asystenci... mogą podwyższyć współczynnik ilościowy in wodzie"
     }
   },
@@ -2975,7 +2975,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Karty uznaniowe - AOWD",
-      "page": 356,
+      "page": 63,
       "quote": "Advanced Open Water Diver: ukończone cztery programy Specjalizacji i zalogowane 24 nurkowania"
     }
   },
@@ -2991,7 +2991,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "SSU - Dla niecertyfikowanych",
-      "page": 179,
+      "page": 55,
       "quote": "kursant Open Water Diver może uczestniczyć in Scuba Skills Update. Prawda, jeśli zaliczył wszystkie nurkowania szkoleniowe in basenie"
     }
   },
@@ -3007,7 +3007,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Sprawność fizyczna - Holowanie",
-      "page": 121,
+      "page": 45,
       "quote": "ratowania nurka z holowaniem... in czasie poniżej osiem (8) minut"
     }
   },
@@ -3023,7 +3023,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "System QMS i Dokumenty",
-      "page": 40,
+      "page": 65,
       "quote": "Ten system zostanie omówiony... zapewnia kursantom wysokiej jakości szkolenie"
     }
   },
@@ -3039,7 +3039,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Kategorie specjalizacji",
-      "page": 75,
+      "page": 128,
       "quote": "Która z poniższych specjalności NIE zalicza się do... Open Water Specialty... Wreck Diving"
     }
   },
@@ -3055,7 +3055,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "ITC - Testy wstępne",
-      "page": 76,
+      "page": 159,
       "quote": "Każdą część testu wstępnego do programu musisz zaliczyć z wynikiem 100%"
     }
   },
@@ -3071,7 +3071,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Deep Diving",
-      "page": 246,
+      "page": 46,
       "quote": "Nurkowania na głębokość poniżej 30 metrów - Współczynnik kursant-instruktor: 4:1"
     },
     "category": "Specjalizacje"
@@ -3088,7 +3088,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Suche skafandry",
-      "page": 84,
+      "page": 33,
       "quote": "instruktor bezpośrednio nadzorujący program musi posiadać aktywny status SSI Dry Suit Diving Specialty Instructor"
     },
     "category": "Specjalizacje"
@@ -3105,7 +3105,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "VI. Limity głębokości",
-      "page": 185,
+      "page": 62,
       "quote": "Maksymalny limit głębokości na wodach otwartych dla kursantów w wieku od 12 do 14 lat podczas Nurkowania Szkoleniowego na Wodach Otwartych Deep Diving wynosi 21 metrów"
     },
     "category": "Specjalizacje"
@@ -3122,7 +3122,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 173,
+      "page": 58,
       "quote": "Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe"
     },
     "category": "Specjalizacje"
@@ -3139,7 +3139,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Suche skafandry",
-      "page": 84,
+      "page": 11,
       "quote": "Sesja szkoleniowa na basenie/ograniczonym akwenie dla specjalizacji Dry Suit Diving musi zostać ukończona przed jakimkolwiek szkoleniem na wodach otwartych"
     },
     "category": "Specjalizacje"
@@ -3156,7 +3156,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Enriched Air Nitrox",
       "section": "IX. Wymagania (b)",
-      "page": 209,
+      "page": 66,
       "quote": "Enriched Air Nitrox 40 (...) Ukończyć zajęć aplikacji praktycznej określone w podręczniku instruktorskim"
     },
     "category": "Specjalizacje"
@@ -3173,7 +3173,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "IX. Wymagania (a)",
-      "page": 188,
+      "page": 63,
       "quote": "Obowiązkowe nurkowania: Ukończyć Nurkowanie (...) Deep Diving 1 (...) Ukończyć Nurkowanie (...) Nawigacja 1"
     },
     "category": "Specjalizacje"
@@ -3190,7 +3190,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "X. Certyfikacja",
-      "page": 190,
+      "page": 16,
       "quote": "Kursanci w wieku poniżej 15 lat otrzymują certyfikat Junior Advanced Open Water Diver (...) w ramach zalecanego limitu głębokości 21 metrów"
     },
     "category": "Specjalizacje"
@@ -3207,7 +3207,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "X. Certyfikacja",
-      "page": 190,
+      "page": 64,
       "quote": "kursanci mogą przejść do limitów głębokości dla dorosłych, wykonując nurkowanie uaktualniające na głębokości od 21 do 30 metrów z Open Water Instructor"
     },
     "category": "Specjalizacje"
@@ -3224,7 +3224,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Navigation",
       "section": "III. Wymagania wstępne",
-      "page": 262,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat"
     },
     "category": "Współczynniki i Wiek"
@@ -3241,7 +3241,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Photo & Video",
       "section": "IV. Czas trwania",
-      "page": 232,
+      "page": 75,
       "quote": "Zalecane godziny ukończenia | 5-10"
     },
     "category": "Specjalizacje"
@@ -3258,7 +3258,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Altitude Diving",
       "section": "VI. Limity głębokości",
-      "page": 195,
+      "page": 65,
       "quote": "Maksymalny limit głębokości wody otwartej dla 10- i 11-latków | 12 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -3275,7 +3275,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Science of Diving",
       "section": "I. Cel",
-      "page": 218,
+      "page": 73,
       "quote": "fizyki nurkowania, fizjologii nurkowania, teorii dekompresji, środowiska wodnego i sprzętu nurkowego"
     },
     "category": "Fizyka i Fizjologia"
@@ -3292,7 +3292,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Deep Diving",
       "section": "IX. Wymagania do ukończenia kursu",
-      "page": 247,
+      "page": 10,
       "quote": "Kursant musi wykonać co najmniej trzy (3) nurkowania szkoleniowe w Wodach Otwartych"
     },
     "category": "Specjalizacje"
@@ -3309,7 +3309,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Deep Diving",
       "section": "VI. Limity głębokości",
-      "page": 246,
+      "page": 81,
       "quote": "Nurkowanie 3 | 30 do 40 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -3326,7 +3326,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Diver Stress & Rescue",
       "section": "III. Wymagania wstępne",
-      "page": 255,
+      "page": 53,
       "quote": "Minimalny wiek | 12 lat (...) Referral Diver"
     },
     "category": "Metodyka i Psychologia"
@@ -3343,7 +3343,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Diver Stress & Rescue",
       "section": "VI. Limity głębokości",
-      "page": 258,
+      "page": 48,
       "quote": "Maksymalny limit głębokości nurkowania na Wodach Otwartych | Ratowanie nieprzytomnego nurka na głębokości 9 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -3360,7 +3360,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "I. Specjalizacje nieobejmujące nurkowania",
-      "page": 168,
+      "page": 58,
       "quote": "Programy specjalizacji Ecology i Diving Knowledge nie mają obowiązkowego szkolenia w wodzie"
     },
     "category": "Specjalizacje"
@@ -3377,7 +3377,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 175,
+      "page": 59,
       "quote": "Certyfikat specjalizacji może być wydany dopiero po wydaniu certyfikatu Open Water Diver"
     },
     "category": "Standardy Ogólne"
@@ -3394,7 +3394,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "XII. Wydawanie karty uznaniowej",
-      "page": 191,
+      "page": 64,
       "quote": "Centra Szkoleniowe mogą wydać 'Advanced Open Water Dive Recognition Card' dokumentującą do trzech (3) nurkowań"
     },
     "category": "Standardy Ogólne"
@@ -3411,7 +3411,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Certyfikacja Dive Guide'a | Divemaster",
-      "page": 249,
+      "page": 83,
       "quote": "Co najmniej 40 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 25 godzin"
     },
     "category": "Specjalizacje"
@@ -3428,7 +3428,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Dive Guide do Divemaster",
-      "page": 360,
+      "page": 84,
       "quote": "Zalogować co najmniej 60 nurkowań na wodach otwartych o łącznej długości 40 godzin lub więcej"
     },
     "category": "Specjalizacje"
@@ -3445,7 +3445,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Dive Guide do Divemaster - Upgrade",
-      "page": 362,
+      "page": 51,
       "quote": "Zaliczyć egzamin końcowy programu Science of Diving"
     },
     "category": "Specjalizacje"
@@ -3462,7 +3462,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Certyfikacja Dive Guide'a | Divemaster",
-      "page": 249,
+      "page": 56,
       "quote": "Minimalny wiek | 15 lat"
     },
     "category": "Współczynniki i Wiek"
@@ -3479,7 +3479,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Dive Guide do Divemaster - ISO",
-      "page": 360,
+      "page": 84,
       "quote": "Minimalny wiek | 18 lat"
     },
     "category": "Współczynniki i Wiek"
@@ -3496,7 +3496,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Certyfikacja Dive Guide'a | Divemaster",
-      "page": 361,
+      "page": 65,
       "quote": "posiadać następujące certyfikaty SSI lub równoważne (...) lub udowodnić doświadczenie, tj. co najmniej pięć (5) zalogowanych nurkowań"
     },
     "category": "Specjalizacje"
@@ -3513,7 +3513,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba - Prowadzący",
-      "page": 122,
+      "page": 46,
       "quote": "Program Try Scuba może prowadzić aktywny Instruktor Asystujący (Assistant Instructor)"
     },
     "category": "Metodyka i Psychologia"
@@ -3530,7 +3530,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Korzystanie z pomocy certyfikowanych asystentów",
-      "page": 86,
+      "page": 33,
       "quote": "W przypadku programów specjalizacji certyfikowany asystent musi posiadać certyfikat na poziomie nurka dla danego programu"
     },
     "category": "Metodyka i Psychologia"
@@ -3547,7 +3547,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Ocena wiedzy i umiejętności",
-      "page": 76,
+      "page": 31,
       "quote": "Minimalny wynik dla programów na poziomie Professional | 90%"
     },
     "category": "Standardy Ogólne"
@@ -3564,7 +3564,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Dokumentacja szkolenia - Kandydaci",
-      "page": 29,
+      "page": 13,
       "quote": "Dowód odbycia szkolenia z RKO / pierwszej pomocy / tlenowej w ciągu ostatnich dwóch (2) lat"
     },
     "category": "Fizyka i Fizjologia"
@@ -3581,7 +3581,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 40,
+      "page": 17,
       "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat"
     },
     "category": "Standardy Ogólne"
@@ -3598,7 +3598,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status SSI Professional",
-      "page": 51,
+      "page": 21,
       "quote": "nie jest afiliowany do posiadającego aktywnego statusu Centrum Szkoleniowego SSI"
     },
     "category": "Standardy Ogólne"
@@ -3615,7 +3615,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Przywrócenie Aktywnego Statusu",
-      "page": 57,
+      "page": 23,
       "quote": "Instruktor Trainer o aktywnym statusie może ukończyć proces dla wszystkich certyfikacji zawodowych płetwonurków rekreacyjnych"
     },
     "category": "Metodyka i Psychologia"
@@ -3632,7 +3632,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status SSI Professional - Zawieszenia",
-      "page": 53,
+      "page": 21,
       "quote": "zaangażowany w wydarzenie prowadzące do śmierci uczestnika (...) automatycznie otrzymuje status 'Wstrzymany administracyjnie'"
     },
     "category": "Standardy Ogólne"
@@ -3649,7 +3649,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Korzystanie z pomocy certyfikowanych asystentów",
-      "page": 87,
+      "page": 34,
       "quote": "SSI Assistant Instructor z aktywnym statusem może działać jako certyfikowany asystent programu Divemaster"
     },
     "category": "Metodyka i Psychologia"
@@ -3666,7 +3666,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wstęp i struktura standardów",
       "section": "Spis treści",
-      "page": 142,
+      "page": 5,
       "quote": "Programy Classified Diving 142"
     },
     "category": "Standardy Ogólne"
@@ -3683,7 +3683,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Konfiguracje sprzętowe",
       "section": "Nurkowanie Sidemount",
-      "page": 69,
+      "page": 29,
       "quote": "Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra"
     },
     "category": "Specjalizacje"
@@ -3700,7 +3700,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Konfiguracje sprzętowe",
       "section": "Nurkowanie Sidemount - Elementy",
-      "page": 69,
+      "page": 29,
       "quote": "wężem 50-75 cm, z pętlą do zawieszenia automatu na szyi"
     },
     "category": "Specjalizacje"
@@ -3717,7 +3717,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Konfiguracje sprzętowe",
       "section": "Nurkowanie Sidemount - Manometry",
-      "page": 69,
+      "page": 29,
       "quote": "każda butla musi być wyposażona w manometr"
     },
     "category": "Specjalizacje"
@@ -3734,7 +3734,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Decompression Diving - Limity",
-      "page": 65,
+      "page": 28,
       "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar"
     },
     "category": "Współczynniki i Wiek"
@@ -3751,7 +3751,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Decompression Diving - Sprzęt",
-      "page": 71,
+      "page": 29,
       "quote": "Jedno urządzenie sygnalizacyjne do wypuszczania z głębokości (zalecana jest czerwona boja sygnalizacyjna (...) Szpulka lub kołowrotek"
     },
     "category": "Specjalizacje"
@@ -3768,7 +3768,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Miejsca szkoleń i limity głębokości",
       "section": "Przestrzenie zamknięte - definicje",
-      "page": 106,
+      "page": 41,
       "quote": "Dystans pływania definiowany jest jako suma odległości pionowej i poziomej, którą nurek musi pokonać"
     },
     "category": "Współczynniki i Wiek"
@@ -3785,7 +3785,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Miejsca szkoleń i limity głębokości",
       "section": "Cavern & Cenote Diving",
-      "page": 106,
+      "page": 41,
       "quote": "w Cavern & Cenote Diving maksymalna odległość liniowa wynosi 60 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -3802,7 +3802,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Decompression Diving - Limity czasu",
-      "page": 288,
+      "page": 40,
       "quote": "Decompression Diving | 40 metrów i 15 minut dekompresji"
     },
     "category": "Współczynniki i Wiek"
@@ -3819,7 +3819,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Decompression Diving - Limity głębokości",
-      "page": 288,
+      "page": 40,
       "quote": "Decompression Diving | 40 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -3836,7 +3836,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Załącznik",
       "section": "Lista zmian Scuba",
-      "page": 519,
+      "page": 6,
       "quote": "Zmiany obowiązujące od 15 października 2025 r. 172"
     },
     "category": "Standardy Ogólne"
@@ -3853,7 +3853,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Przywrócenie statusu nieaktywnego",
-      "page": 60,
+      "page": 24,
       "quote": "Ponad dziesięć (10) lat (...) Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation"
     },
     "category": "Metodyka i Psychologia"
@@ -3870,7 +3870,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Suche skafandry - Doświadczenie pro",
-      "page": 67,
+      "page": 28,
       "quote": "używający suchych skafandrów (...) muszą mieć praktyczne doświadczenie w korzystaniu z tego typu sprzętu (co najmniej 10 zalogowanych nurkowań)"
     },
     "category": "Specjalizacje"
@@ -3887,7 +3887,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Standardy Etyczne",
-      "page": 62,
+      "page": 25,
       "quote": "Jeśli zostałeś skazany za przestępstwo lub jakiekolwiek wykroczenie na tle seksualnym, jesteś zobowiązany do powiadomienia SSI – natychmiast"
     },
     "category": "Standardy Ogólne"
@@ -3904,7 +3904,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Zarządzanie jakością",
-      "page": 63,
+      "page": 26,
       "quote": "Nowy System Zarządzania Jakością (QMS) zastępuje ze skutkiem natychmiastowym poprzednie wersje Programu Oceny Monitora (MAP)"
     },
     "category": "Standardy Ogólne"
@@ -3921,7 +3921,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Dive Buddy",
-      "page": 436,
+      "page": 142,
       "quote": "Musi nurkować z co najmniej dwoma (2) partnerami, z których co najmniej jeden musi być Profesjonalistą SSI o aktywnym statusie lub posiadać certyfikat Classified Dive Buddy."
     },
     "category": "Metodyka i Psychologia"
@@ -3938,7 +3938,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Współczynniki Classified",
-      "page": 428,
+      "page": 143,
       "quote": "Classified Diver Level 2 (Direct Supervision) [...] Współczynnik kursant-instruktor: 2:1 (Classified Diver do dwóch partnerów lub jednego profesjonalisty)."
     },
     "category": "Współczynniki i Wiek"
@@ -3955,7 +3955,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Diving Instructor",
-      "page": 444,
+      "page": 146,
       "quote": "Musi posiadać certyfikat Open Water Instructor o aktywnym statusie lub wyższy [...] Posiadać certyfikat instruktora specjalizacji SSI Diver Stress & Rescue."
     },
     "category": "Specjalizacje"
@@ -3972,7 +3972,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Diving Instructor - Wymagania",
-      "page": 445,
+      "page": 18,
       "quote": "Zalogować co najmniej 150 nurkowań na wodach otwartych."
     },
     "category": "Specjalizacje"
@@ -3989,7 +3989,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Snorkelingowe",
       "section": "Wymagany Sprzęt",
-      "page": 64,
+      "page": 27,
       "quote": "Pełny System Snorkelingowy, który zawiera: Maskę, Fajkę, Płetwy, Skafander odpowiadający panującym warunkom środowiskowym"
     },
     "category": "Specjalizacje"
@@ -4006,7 +4006,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Snorkelingowe",
       "section": "Snorkel Instructor",
-      "page": 492,
+      "page": 8,
       "quote": "Profesjonalista SSI o aktywnym statusie (stopień Dive Guide lub wyższy) może prowadzić program Snorkel Diver."
     },
     "category": "Specjalizacje"
@@ -4023,7 +4023,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Dive Buddy - Wymagania",
-      "page": 440,
+      "page": 84,
       "quote": "Minimalny wiek: 18 lat."
     },
     "category": "Współczynniki i Wiek"
@@ -4040,7 +4040,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje sprzętowe - maski pełnotwarzowe",
-      "page": 67,
+      "page": 28,
       "quote": "Profesjonaliści SSI, którzy używają suchych skafandrów lub masek pełnotwarzowych podczas programów SSI, muszą mieć praktyczne doświadczenie w korzystaniu z tego typu sprzętu (co najmniej 10 zalogowanych nurkowań)"
     },
     "category": "Specjalizacje"
@@ -4057,7 +4057,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Snorkelingowe",
       "section": "Snorkel Instructor - Klienci",
-      "page": 493,
+      "page": 133,
       "quote": "Kandydaci niebędący specjalistami SSI [...] Ocena umiejętności w wodzie kandydata Professional [...] Egzamin teoretyczny Snorkel Instructor."
     },
     "category": "Metodyka i Psychologia"
@@ -4074,7 +4074,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Asystenci Classified",
-      "page": 427,
+      "page": 147,
       "quote": "Certyfikowany asystent musi posiadać certyfikat na poziomie Classified Dive Buddy."
     },
     "category": "Metodyka i Psychologia"
@@ -4091,7 +4091,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Explorers - Minimalny wiek",
-      "page": 468,
+      "page": 150,
       "quote": "Minimalny wiek: 6 lat."
     },
     "category": "Współczynniki i Wiek"
@@ -4108,7 +4108,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Scuba Explorer - Limity",
-      "page": 469,
+      "page": 46,
       "quote": "Maksymalny limit głębokości (basen): 4 metry."
     },
     "category": "Współczynniki i Wiek"
@@ -4125,7 +4125,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Explorer Instructor",
-      "page": 466,
+      "page": 5,
       "quote": "Programy Profesjonalne: Instruktor SSI Explorer."
     },
     "category": "Specjalizacje"
@@ -4142,7 +4142,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagane zaświadczenia medyczne",
-      "page": 29,
+      "page": 13,
       "quote": "Dowód odbycia szkolenia z RKO w ciągu ostatnich dwóch (2) lat / Dowód odbycia szkolenia z udzielania pierwszej pomocy w ciągu ostatnich dwóch (2) lat."
     },
     "category": "Standardy Ogólne"
@@ -4159,7 +4159,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "React Right Update",
-      "page": 481,
+      "page": 13,
       "quote": "Okresy ważności szkoleń RKO/Pierwszej Pomocy [...] w ciągu ostatnich dwóch (2) lat."
     },
     "category": "Fizyka i Fizjologia"
@@ -4176,7 +4176,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "React Right - Sekcje",
-      "page": 477,
+      "page": 159,
       "quote": "Program React Right składa się z następujących komponentów podstawowych: Pierwsza pomoc i RKO, Podawanie tlenu, AED."
     },
     "category": "Specjalizacje"
@@ -4193,7 +4193,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wymagane dokumenty w profilu",
-      "page": 29,
+      "page": 13,
       "quote": "Kandydaci na poniższe programy nie muszą przesyłać powyższych dokumentów: Specialty Instruktor z wyłączeniem kandydatów na instruktorów React Right."
     },
     "category": "Standardy Ogólne"
@@ -4210,7 +4210,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "Explorers - Stopnie",
-      "page": 470,
+      "page": 5,
       "quote": "Stopnie uznaniowe programów SSI Explorers: Snorkel Explorer, Scuba Explorer, Mermaid Explorer, Free Diving Explorer."
     },
     "category": "Standardy Ogólne"
@@ -4227,7 +4227,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Powiadomienia medyczne pro",
-      "page": 27,
+      "page": 13,
       "quote": "Professionals o aktywnym statusie SSI są zobowiązani do powiadomienia SSI o wystąpieniu stanu chorobowego [...] Muszą oni przesłać nowy Kwestionariusz Medyczny Uczestnika."
     },
     "category": "Metodyka i Psychologia"
@@ -4244,7 +4244,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba - Współczynniki dla dzieci",
-      "page": 123,
+      "page": 46,
       "quote": "kursanci w wieku 8 i 9 lat: Współczynnik kursant-instruktor: 4:1. Liczba ta może wzrosnąć do 6:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
     },
     "category": "Współczynniki i Wiek"
@@ -4261,7 +4261,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Kryteria Uznania SSI",
-      "page": 46,
+      "page": 18,
       "quote": "Posiadać aktywny globalny certyfikat ISO lub być aktywnym członkiem co najmniej jednego RSTC."
     },
     "category": "Standardy Ogólne"
@@ -4278,7 +4278,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Kryteria Uznania SSI - Języki",
-      "page": 46,
+      "page": 18,
       "quote": "Musi zapewniać pełny zestaw materiałów szkoleniowych w co najmniej trzech (3) językach."
     },
     "category": "Standardy Ogólne"
@@ -4295,7 +4295,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test - Wiek",
-      "page": 159,
+      "page": 56,
       "quote": "Minimalny wiek: 15 lat."
     },
     "category": "Współczynniki i Wiek"
@@ -4312,7 +4312,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test - Wody Otwarte",
-      "page": 163,
+      "page": 51,
       "quote": "Wykonać co najmniej dwa (2) nurkowania szkoleniowe na Wodach Otwartych zgodnie z podręcznikiem instruktorskim do programu Open Water Diver."
     },
     "category": "Metodyka i Psychologia"
@@ -4329,7 +4329,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test - Nadzór",
-      "page": 162,
+      "page": 56,
       "quote": "Specialty Instructor z aktywnym statusem i właściwym certyfikatem instruktorskim musi bezpośrednio nadzorować wszystkie zajęcia teoretyczne i zajęcia w wodzie."
     },
     "category": "Metodyka i Psychologia"
@@ -4346,7 +4346,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test - Warunki",
-      "page": 159,
+      "page": 56,
       "quote": "Kursant musi przedstawić podpisane oświadczenie dotyczące wcześniejszego szkolenia i doświadczenia nurkowego. Kursant musi dostarczyć dowód swojego doświadczenia."
     },
     "category": "Metodyka i Psychologia"
@@ -4363,7 +4363,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Procedury Crossover - Jakość",
-      "page": 47,
+      "page": 18,
       "quote": "Kandydat nie może być zaangażowany w nierozwiązaną sprawę dotyczącą zgodności jakości z inną agencją szkoleniową."
     },
     "category": "Standardy Ogólne"
@@ -4380,7 +4380,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Zaliczenie nurkowań doświadczalnych",
-      "page": 176,
+      "page": 59,
       "quote": "Profesjonalista SSI może podjąć decyzję o zaliczeniu jednego (1) nurkowania na poczet danego program specjalizacji SSI."
     },
     "category": "Metodyka i Psychologia"
@@ -4397,7 +4397,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Kryteria Uznania SSI - Rozmiar",
-      "page": 46,
+      "page": 18,
       "quote": "Posiadać co najmniej 250 instruktorów i 50 autoryzowanych centrów szkoleniowych na całym świecie."
     },
     "category": "Standardy Ogólne"
@@ -4414,7 +4414,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Enriched Air Nitrox",
       "section": "Enriched Air Nitrox 32",
-      "page": 204,
+      "page": 69,
       "quote": "Certyfikacja Enriched Air Nitrox 32 kwalifikuje nurka do używania mieszanin gazowych do EAN32 włącznie."
     },
     "category": "Specjalizacje"
@@ -4431,7 +4431,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Przetwarzanie certyfikacji",
-      "page": 34,
+      "page": 16,
       "quote": "Wszystkie certyfikacje i wyróżnienia muszą zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
     },
     "category": "Standardy Ogólne"
@@ -4448,7 +4448,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Przechowywanie dokumentów",
-      "page": 40,
+      "page": 17,
       "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
     },
     "category": "Standardy Ogólne"
@@ -4465,7 +4465,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wydarzenia krytyczne - zawieszenie",
-      "page": 53,
+      "page": 21,
       "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika [...] automatycznie otrzymuje status „Wstrzymany administracyjnie”"
     },
     "category": "Standardy Ogólne"
@@ -4482,7 +4482,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Ubezpieczenie OC",
-      "page": 49,
+      "page": 20,
       "quote": "SSI i SSI Service Centers nie są odpowiedzialne za weryfikację, czy SSI Professional spełnia wymagania dotyczące ubezpieczenia od odpowiedzialności zawodowej."
     },
     "category": "Standardy Ogólne"
@@ -4499,7 +4499,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status emerytowany",
-      "page": 55,
+      "page": 22,
       "quote": "SSI Professionals na emeryturze pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełniają minimalne wymagania aktywnego statusu."
     },
     "category": "Standardy Ogólne"
@@ -4516,7 +4516,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Standardy Etyczne pro",
-      "page": 62,
+      "page": 25,
       "quote": "Jeśli zostałeś skazany za przestępstwo lub jakiekolwiek wykroczenie na tle seksualnym, jesteś zobowiązany do powiadomienia SSI – natychmiast lub przed jakimkolwiek szkoleniem na poziomie profesjonalnym."
     },
     "category": "Standardy Ogólne"
@@ -4533,7 +4533,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Wydalenie ze struktur",
-      "page": 54,
+      "page": 21,
       "quote": "Osoba posiadając status \"Wydalony\" nie może ponownie otrzymać statusu aktywnego SSI na całym świecie."
     },
     "category": "Standardy Ogólne"
@@ -4550,7 +4550,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Afiliacja centrów",
-      "page": 51,
+      "page": 21,
       "quote": "Status nieaktywny posiada Profesjonalista nurkowy SSI [...] nie jest afiliowany do posiadającego aktywnego statusu Centrum Szkoleniowego SSI."
     },
     "category": "Standardy Ogólne"
@@ -4567,7 +4567,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "QMS procedury",
-      "page": 63,
+      "page": 26,
       "quote": "Nowy System Zarządzania Jakością (QMS) zastępuje ze skutkiem natychmiastowym poprzednie wersje Programu Oceny Monitora (MAP)."
     },
     "category": "Standardy Ogólne"
@@ -4584,7 +4584,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "ITC Egzaminy",
-      "page": 76,
+      "page": 31,
       "quote": "Minimalny wynik dla programów na poziomie Professional: 90%."
     },
     "category": "Standardy Ogólne"
@@ -4601,7 +4601,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Upgrade Dive Guide do Divemaster",
-      "page": 253,
+      "page": 84,
       "quote": "Zalogować co najmniej 60 nurkowań na wodach otwartych o łącznej długości 40 godzin lub więcej. Zaliczyć egzamin końcowy programu Science of Diving."
     },
     "category": "Specjalizacje"
@@ -4618,7 +4618,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Asystowanie w ITC",
-      "page": 87,
+      "page": 34,
       "quote": "Assistant Instructor Trainer SSI z aktywnym statusem może asystować podczas Instructor Training Course."
     },
     "category": "Specjalizacje"
@@ -4635,7 +4635,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Deep Diving",
       "section": "Współczynniki ilościowe",
-      "page": 246,
+      "page": 46,
       "quote": "Nurkowania na głębokość poniżej 30 metrów: Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów, żeby zwiększyć współczynniki."
     },
     "category": "Współczynniki i Wiek"
@@ -4652,7 +4652,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Uprawnienia specjalizacji ekologicznych",
-      "page": 152,
+      "page": 5,
       "quote": "Instruktor Specjalizacje ekologiczne [...] (Dostępne dla stopnia Divemaster)."
     },
     "category": "Specjalizacje"
@@ -4669,7 +4669,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Odnowienie statusu pro >5 lat",
-      "page": 59,
+      "page": 23,
       "quote": "Okres dłuższy niż pięć (5) lat [...] Ukończenie wszystkich wymagań certyfikacyjnych dla ich najwyższego profesjonalnego certyfikatu."
     },
     "category": "Metodyka i Psychologia"
@@ -4686,7 +4686,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Open Water Instructor - Wiek",
-      "page": 374,
+      "page": 84,
       "quote": "Minimalny wiek: 18 lat."
     },
     "category": "Współczynniki i Wiek"
@@ -4703,7 +4703,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Instructor Certifier - Uprawnienia",
-      "page": 374,
+      "page": 4,
       "quote": "Instructor Certifier (ISO 24802-2)"
     },
     "category": "Metodyka i Psychologia"
@@ -4720,7 +4720,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver - Czas szkolenia",
-      "page": 144,
+      "page": 53,
       "quote": "Minimalny łączny czas denny dla Nurkowań szkoleniowych na wodach otwartych: 80 minut."
     },
     "category": "Współczynniki i Wiek"
@@ -4737,7 +4737,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Confined Water OWD współczynniki",
-      "page": 145,
+      "page": 46,
       "quote": "Współczynnik kursant-instruktor: 8:1."
     },
     "category": "Współczynniki i Wiek"
@@ -4754,7 +4754,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Deep Diving",
       "section": "Deep Diving - Współczynniki",
-      "page": 246,
+      "page": 62,
       "quote": "Stosunek kursantów do instruktorów wynosi 4:1, gdy w szkoleniu uczestniczą osoby niepełnoletnie. [...] nie mogą oni być wykorzystywani do zwiększania stosunku."
     },
     "category": "Współczynniki i Wiek"
@@ -4771,7 +4771,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Karty Uznania SSI",
       "section": "Master Diver Wymagania",
-      "page": 356,
+      "page": 83,
       "quote": "Master Diver (wymagania: 4 specjalizacje + Diver Stress & Rescue + 50 nurkowań)."
     },
     "category": "Standardy Ogólne"
@@ -4788,7 +4788,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Tabele Równoważności",
       "section": "Master Diver agencje zewnętrzne",
-      "page": 356,
+      "page": 57,
       "quote": "(Zgodnie z systemem SSI): Na poczet Master Diver można zaliczyć maksymalnie dwie certyfikacje agencji zewnętrznych."
     },
     "category": "Standardy Ogólne"
@@ -4805,7 +4805,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Karty Uznania SSI",
       "section": "Uznanie za doświadczenie a postępy",
-      "page": 18,
+      "page": 4,
       "quote": "Uznanie za doświadczenie w nurkowaniu: Century Diver (100 nurkowań), Gold (500), Platinum (1000)..."
     },
     "category": "Standardy Ogólne"
@@ -4822,7 +4822,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 35,
+      "page": 16,
       "quote": "Professional SSI wydający kartę certyfikacji lub uznania musi zweryfikować, czy Kursant posiada odpowiedni poziom wiedzy poprzez ukończenie sesji akademickiej lub poprzez zadawanie pytań."
     },
     "category": "Metodyka i Psychologia"
@@ -4839,7 +4839,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Definicje Programów",
       "section": "Karty uznaniowe - Uprawnienia",
-      "page": 19,
+      "page": 10,
       "quote": "Karta uznaniowa jest dowodem posiadanego doświadczenia, ale nie kwalifikuje kursanta do samodzielnego nurkowania bez dodatkowego przeszkolenia."
     },
     "category": "Standardy Ogólne"
@@ -4856,7 +4856,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 34,
+      "page": 16,
       "quote": "Wszystkie certyfikacje i wyróżnienia muszą zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
     },
     "category": "Standardy Ogólne"
@@ -4873,7 +4873,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Karty Uznania SSI",
       "section": "Century Diver",
-      "page": 358,
+      "page": 118,
       "quote": "Century Diver (100 nurkowań)."
     },
     "category": "Standardy Ogólne"
@@ -4890,7 +4890,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Definicje Programów",
       "section": "Program uznaniowy - Potwierdzenie",
-      "page": 19,
+      "page": 10,
       "quote": "SSI wydaje kartę uznaniową po otrzymaniu od Profesjonalisty SSI i Centrum Szkoleniowego SSI potwierdzenia spełnienia wszystkich wymagań... co powinno być udokumentowane w Dokumentacji Szkolenia i logbooku."
     },
     "category": "Standardy Ogólne"
@@ -4907,7 +4907,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Snorkelingowe",
       "section": "Pełny System Snorkelingowy",
-      "page": 64,
+      "page": 27,
       "quote": "Pełny System Snorkelingowy, który zawiera: Maskę, Fajkę, Płetwy, Skafander odpowiadający panującym warunkom środowiskowym."
     },
     "category": "Specjalizacje"
@@ -4924,7 +4924,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Miejsca szkoleń i limity głębokości",
       "section": "Głęboka woda ograniczona",
-      "page": 103,
+      "page": 40,
       "quote": "Jeżeli woda jest zbyt głęboka, instruktor musi wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości..."
     },
     "category": "Współczynniki i Wiek"
@@ -4941,7 +4941,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba - Współczynniki",
-      "page": 124,
+      "page": 48,
       "quote": "Try Scuba w ograniczonym akwenie: 8 i 9 lat | Współczynnik 2:1. Liczba ta może wzrosnąć do 4:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
     },
     "category": "Współczynniki i Wiek"
@@ -4958,7 +4958,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Snorkel Instructor - Uprawnienia",
-      "page": 492,
+      "page": 164,
       "quote": "Uprawnienia obejmują prowadzenie i certyfikowanie programów Snorkel Diver."
     },
     "category": "Specjalizacje"
@@ -4975,7 +4975,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba - Limit asystentów",
-      "page": 490,
+      "page": 46,
       "quote": "Nie można korzystać z pomocy certyfikowanych asystentów, żeby zwiększyć współczynniki."
     },
     "category": "Współczynniki i Wiek"
@@ -4992,7 +4992,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Snorkelingowe",
       "section": "Snorkel Diver - Administracja",
-      "page": 488,
+      "page": 46,
       "quote": "Wymagania administracyjne: Przed rozpoczęciem programu kursanci muszą wypełnić: Formularz rejestracyjny... oświadczenie o stanie zdrowia..."
     },
     "category": "Standardy Ogólne"
@@ -5009,7 +5009,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Miejsca szkoleń i limity głębokości",
       "section": "Szkolenia basenowe snorkeling",
-      "page": 489,
+      "page": 40,
       "quote": "Maksymalna głębokość dla wszystkich szkoleń na basenie/ograniczonym akwenie wynosi 5 metrów..."
     },
     "category": "Współczynniki i Wiek"
@@ -5026,7 +5026,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia - Ważność",
-      "page": 26,
+      "page": 13,
       "quote": "Umowa przejęcia ryzyka... Ważny przez jeden (1) rok od daty podpisania. Dodatek dla młodzieży... Ważny przez jeden (1) rok."
     },
     "category": "Standardy Ogólne"
@@ -5043,7 +5043,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia nieletnich",
-      "page": 22,
+      "page": 12,
       "quote": "Osoby niepełnoletnie nie mogą podpisywać dokumentacji cyfrowej."
     },
     "category": "Standardy Ogólne"
@@ -5060,7 +5060,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja Szkolenia - Archiwizacja",
-      "page": 40,
+      "page": 17,
       "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
     },
     "category": "Standardy Ogólne"
@@ -5077,7 +5077,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Zgoda lekarska profesjonalisty",
-      "page": 27,
+      "page": 13,
       "quote": "Kandydaci do Programów Profesjonalnych są zobowiązani do dostarczenia Zezwolenia Lekarskiego... datowanego w ciągu jednego (1) roku od daty ukończenia ich szkolenia."
     },
     "category": "Standardy Ogólne"
@@ -5094,7 +5094,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Szkolenie pierwszej pomocy pro",
-      "page": 29,
+      "page": 13,
       "quote": "Dowód odbycia szkolenia z RKO... w ciągu ostatnich dwóch (2) lat."
     },
     "category": "Standardy Ogólne"
@@ -5111,7 +5111,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Zmiana stanu zdrowia kursanta",
-      "page": 26,
+      "page": 13,
       "quote": "Jeśli Kursant zachoruje lub odniesie obrażenia w ciągu roku, musi on wypełnić nowy Kwestionariusz Medyczny Uczestnika i Zgodę Lekarza..."
     },
     "category": "Standardy Ogólne"
@@ -5128,7 +5128,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Referral",
-      "page": 38,
+      "page": 17,
       "quote": "Wszystkie oryginały dokumentacji szkoleniowej oraz formularzy medycznych muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie."
     },
     "category": "Standardy Ogólne"
@@ -5145,7 +5145,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Kodeks Odpowiedzialnego Nurka",
-      "page": 24,
+      "page": 12,
       "quote": "Kodeks Odpowiedzialnego Nurka SSI: Stała ważność w ramach kategorii... i jest potwierdzana poprzez podpisanie protokołu ukończenia dowolnego programu."
     },
     "category": "Standardy Ogólne"
@@ -5162,7 +5162,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia - cyfrowa",
-      "page": 41,
+      "page": 17,
       "quote": "Cyfrowe elementy dokumentacji szkolenia, które są przesyłane do MySSI, są bezpiecznie przechowywane na serwerach SSI. Spełnia to wymagania Centrum Szkoleniowego dotyczące przechowywania dokumentacji."
     },
     "category": "Standardy Ogólne"
@@ -5179,7 +5179,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Zakończenie szkolenia pro",
-      "page": 23,
+      "page": 12,
       "quote": "Kandydaci Professional must wypełnić całą wymaganą dokumentację cyfrowo... Rekord ukończenia programu musi zostać przesłany do systemu MySSI przed wydaniem Certyfikacji."
     },
     "category": "Standardy Ogólne"
@@ -5196,7 +5196,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 173,
+      "page": 8,
       "quote": "Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych."
     },
     "category": "Specjalizacje"
@@ -5213,7 +5213,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 173,
+      "page": 18,
       "quote": "Jeżeli cztery (4) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej pięć (5) nurkowań szkoleniowych na Wodach Otwartych."
     },
     "category": "Specjalizacje"
@@ -5230,7 +5230,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 174,
+      "page": 58,
       "quote": "W przypadku następujących programów, wszystkie obowiązkowe... nurkowania... muszą być ukończone zgodnie z standardami dla danego programu: Deep Diving, Diver Stress & Rescue, Decompression Diving."
     },
     "category": "Specjalizacje"
@@ -5247,7 +5247,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Altitude Diving",
       "section": "VI. Limity głębokości",
-      "page": 193,
+      "page": 65,
       "quote": "Uwaga | Nurkowania szkoleniowe na wodach otwartych dla wszystkich specjalizacji nie mogą być łączone z nurkowaniami szkoleniowymi na wodach otwartych dla programów entry-level."
     },
     "category": "Specjalizacje"
@@ -5264,7 +5264,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Zaliczenie nurkowań doświadczalnych",
-      "page": 176,
+      "page": 59,
       "quote": "...Profesjonalista SSI może podjąć decyzję o zaliczeniu jednego (1) nurkowania na poczet danego program specjalizacji SSI."
     },
     "category": "Specjalizacje"
@@ -5281,7 +5281,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "IV. Łączenie programów",
-      "page": 172,
+      "page": 59,
       "quote": "Certyfikat specjalizacji może być wydany dopiero po wydaniu certyfikatu Open Water Diver."
     },
     "category": "Standardy Ogólne"
@@ -5298,7 +5298,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Zaliczenie nurkowań doświadczalnych",
-      "page": 176,
+      "page": 28,
       "quote": "Uwaga | Dowód nurkowania z doświadczeniem musi być zarejestrowany, potwierdzony i podpisany przez profesjonalistę nurkowego."
     },
     "category": "Standardy Ogólne"
@@ -5315,7 +5315,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Liczba nurkowań szkoleniowych",
-      "page": 81,
+      "page": 32,
       "quote": "Maksymalna, dopuszczalna ilość nurkowań szkoleniowych w wodach otwartych w ciągu jednego dnia to 3..."
     },
     "category": "Współczynniki i Wiek"
@@ -5332,7 +5332,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Specjalizacji",
       "section": "Liczba nurkowań szkoleniowych - Dekompresja",
-      "page": 81,
+      "page": 32,
       "quote": "Maksymalna liczba nurkowań szkoleniowych to dwa (2) dziennie, jeśli jakiekolwiek nurkowanie danego dnia planuje lub faktycznie wymaga przystanków dekompresyjnych."
     },
     "category": "Współczynniki i Wiek"
@@ -5349,7 +5349,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Advanced Open Water Diver",
       "section": "Wymagania",
-      "page": 188,
+      "page": 63,
       "quote": "Obowiązkowe nurkowania: Deep Diving 1... oraz Nawigacja 1."
     },
     "category": "Specjalizacje"
@@ -5366,7 +5366,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Asystowanie w szkoleniach pro",
-      "page": 87,
+      "page": 34,
       "quote": "Assistant Instructor Trainer SSI z aktywnym statusem może asystować podczas Instructor Training Course i Assistant Instructor Trainer Seminar."
     },
     "category": "Metodyka i Psychologia"
@@ -5383,7 +5383,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status pro - emerytura",
-      "page": 55,
+      "page": 22,
       "quote": "SSI Professionals na emeryturze pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej, dla której spełniają minimalne wymagania aktywnego statusu."
     },
     "category": "Standardy Ogólne"
@@ -5400,7 +5400,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Przywrócenie statusu 5-10 lat",
-      "page": 59,
+      "page": 23,
       "quote": "Okres dłuższy niż pięć (5) lat... Ukończenie wszystkich wymagań certyfikacyjnych dla ich najwyższego profesjonalnego certyfikatu..."
     },
     "category": "Metodyka i Psychologia"
@@ -5417,7 +5417,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Przywrócenie statusu >10 lat",
-      "page": 60,
+      "page": 24,
       "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
     },
     "category": "Metodyka i Psychologia"
@@ -5434,7 +5434,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Instructor Certifier",
-      "page": 32,
+      "page": 16,
       "quote": "Instruktor Certifier jest instruktorem rekordu... Jest on odpowiedzialny za zapewnienie, że dokumentacja szkolenia jest prawidłowo wypełniona..."
     },
     "category": "Standardy Ogólne"
@@ -5451,7 +5451,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status pro - Wstrzymanie",
-      "page": 53,
+      "page": 21,
       "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”."
     },
     "category": "Standardy Ogólne"
@@ -5468,7 +5468,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Seminaria Specialty Instructor",
-      "page": 386,
+      "page": 127,
       "quote": "Assistant Instructor Trainer lub wyższy (np. Instructor Trainer) mogą prowadzić seminaria dla Instruktorów Specjalizacji."
     },
     "category": "Metodyka i Psychologia"
@@ -5485,7 +5485,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Status nieaktywny - ograniczenia",
-      "page": 52,
+      "page": 21,
       "quote": "Status nieaktywny... nie mogą prowadzić żadnych programów SSI dopóki nie przywrócą statusu aktywnego."
     },
     "category": "Standardy Ogólne"
@@ -5502,7 +5502,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Ubezpieczenie OC - Wymagania",
-      "page": 49,
+      "page": 20,
       "quote": "Profesjonalista SSI must: Zagwarantować, że SSI zostanie uwzględniona jako dodatkowo ubezpieczony na polisie..."
     },
     "category": "Standardy Ogólne"
@@ -5519,7 +5519,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Prowadzenie Divemastera",
-      "page": 360,
+      "page": 83,
       "quote": "Instruktor Dive Guide o aktywnym statusie może prowadzić program Divemaster."
     },
     "category": "Specjalizacje"
@@ -5553,7 +5553,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Konfiguracje sprzętowe",
       "section": "Sidemount - wąż",
-      "page": 69,
+      "page": 29,
       "quote": "Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra."
     },
     "category": "Specjalizacje"
@@ -5570,7 +5570,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Konfiguracje sprzętowe",
       "section": "Wymagania dotyczące manometrów",
-      "page": 69,
+      "page": 29,
       "quote": "Każda butla musi być wyposażona w manometr."
     },
     "category": "Specjalizacje"
@@ -5587,7 +5587,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Decompression Diving - limit ppO2",
-      "page": 65,
+      "page": 28,
       "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
     },
     "category": "Współczynniki i Wiek"
@@ -5604,7 +5604,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Miejsca szkoleń i limity głębokości",
       "section": "Przestrzenie zamknięte - światło",
-      "page": 108,
+      "page": 41,
       "quote": "Ma wyraźnie widoczny punkt wejścia i przez cały czas kursant widzi bezpieczne okno naturalnego światła dziennego..."
     },
     "category": "Współczynniki i Wiek"
@@ -5621,7 +5621,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
-      "page": 69,
+      "page": 29,
       "quote": "Manometr z wężem wysokiego ciśnienia o długości 15-25 cm"
     },
     "category": "Specjalizacje"
@@ -5638,7 +5638,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
-      "page": 69,
+      "page": 29,
       "quote": "Jeden automat z drugim stopniem z wężem długości 1.8-2.1 metra"
     },
     "category": "Specjalizacje"
@@ -5655,7 +5655,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > I. Gaz oddechowy",
-      "page": 65,
+      "page": 28,
       "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
     },
     "category": "Specjalizacje"
@@ -5672,7 +5672,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Filozofia SSI szkolenia w wodzie > I. c. Uwaga",
-      "page": 113,
+      "page": 42,
       "quote": "Jeśli Podręcznik wyraźnie mówi, że regulator jest przeznaczony do użytku tylko przez jedną osobę, instruktor musi być przynajmniej wyposażony w niezależny nadmiarowy system oddechowy"
     },
     "category": "Standardy Ogólne"
@@ -5689,7 +5689,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Certyfikaty równoważne > III. Kryteria Uznania SSI",
-      "page": 46,
+      "page": 18,
       "quote": "Musi zapewniać pełny zestaw materiałów szkoleniowych w co najmniej trzech (3) językach."
     },
     "category": "Standardy Ogólne"
@@ -5706,7 +5706,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > III. Nurkowanie Sidemount > a.",
-      "page": 69,
+      "page": 29,
       "quote": "Jeden automat z drugim stopniem z wężem 50-75 cm, z pętlą do zawieszenia automatu na szyi"
     },
     "category": "Specjalizacje"
@@ -5723,7 +5723,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > IV. Program Decompression Diving > a.",
-      "page": 71,
+      "page": 29,
       "quote": "Jedno urządzenie sygnalizacyjne do wypuszczania z głębokości (zalecana jest czerwona boja sygnalizacyjna...)"
     },
     "category": "Specjalizacje"
@@ -5740,7 +5740,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > II. Nurkowanie rekreacyjne > a. Uwaga",
-      "page": 66,
+      "page": 28,
       "quote": "używanie fajki... jest opcjonalne dla wszystkich programów oprócz: Snorkel Diver, Scuba Diver, Referral Diver, Indoor Diver i Open Water Diver."
     },
     "category": "Standardy Ogólne"
@@ -5757,7 +5757,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Obowiązek opieki > VI. Sprzęt ratunkowy",
-      "page": 96,
+      "page": 37,
       "quote": "W pobliżu miejsca szkolenia musi być dostępny sprzęt ratunkowy, w tym apteczka pierwszej pomocy, aparat tlenowy i sprzęt łączności."
     },
     "category": "Standardy Ogólne"
@@ -5774,7 +5774,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > II. Nurkowanie rekreacyjne > b. Zalecenie",
-      "page": 67,
+      "page": 28,
       "quote": "Profesjonaliści SSI, którzy używają... masek pełnotwarzowych... muszą mieć praktyczne doświadczenie... (co najmniej 10 zalogowanych nurkowań)"
     },
     "category": "Standardy Ogólne"
@@ -5791,7 +5791,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Przestrzenie zamknięte > I. Odległość linearna",
-      "page": 106,
+      "page": 41,
       "quote": "Dystans pływania definiowany jest jako suma odległości pionowej i poziomej, którą nurek musi pokonać, żeby osiągnąć powierzchnię wody."
     },
     "category": "Fizyka i Fizjologia"
@@ -5808,7 +5808,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Przestrzenie zamknięte > I. Odległość linearna",
-      "page": 106,
+      "page": 41,
       "quote": "Advanced Open Water Diver... eksplorujący jaskinię na głębokości 25 metrów miałby zatem dozwolony maksymalny dystans penetracji wynoszący 35 metrów."
     },
     "category": "Współczynniki i Wiek"
@@ -5825,7 +5825,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Definicje związane ze środowiskiem > VII. Nurkowanie Indoor",
-      "page": 99,
+      "page": 38,
       "quote": "Akwaria i specjalnie zbudowane sztuczne obiekty... o minimalnej głębokości większej niż pięć (5) metrów i minimalnej powierzchni wody wynoszącej 100 metrów kwadratowych"
     },
     "category": "Standardy Ogólne"
@@ -5842,7 +5842,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Przestrzenie zamknięte > II. Przestrzeń zamknięta, przez którą można przepłynąć",
-      "page": 107,
+      "page": 41,
       "quote": "Struktura ta posiada następujące cechy: Mieć mniej niż 10 metrów długości. Maksymalna głębokość nie może przekraczać 30 metrów. Posiada wyodrębnione i widoczne punkty wejścia i wyjścia"
     },
     "category": "Specjalizacje"
@@ -5859,7 +5859,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Certyfikaty równoważne > II. Certyfikaty Nie-Uznanych Przez SSI Agencji",
-      "page": 43,
+      "page": 18,
       "quote": "Kursanci ci muszą pomyślnie zdać test SSI Experienced Diver, zgodnie ze standardami szkolenia SSI."
     },
     "category": "Metodyka i Psychologia"
@@ -5876,7 +5876,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Miejsca szkoleń i limity głębokości > II. Ograniczony akwen",
-      "page": 103,
+      "page": 40,
       "quote": "instruktor musi wykorzystać platformę znajdującą się maksymalnie na 2 metrach głębokości"
     },
     "category": "Współczynniki i Wiek"
@@ -5893,7 +5893,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Miejsca szkoleń i limity głębokości > IV. Zalecane limity głębokości",
-      "page": 105,
+      "page": 40,
       "quote": "10- i 11-latki | 12 metrów z profesjonalnym nurkiem o aktywnym statusie lub certyfikowaną osobą dorosłą"
     },
     "category": "Współczynniki i Wiek"
@@ -5910,7 +5910,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Definicje związane ze środowiskiem > IV. Nurkowanie w górach",
-      "page": 97,
+      "page": 38,
       "quote": "Profesjonalista SSI musi planować wszystkie nurkowania na wysokości powyżej 300 metrów przy użyciu specjalnych... tabel"
     },
     "category": "Specjalizacje"
@@ -5927,7 +5927,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Przestrzenie zamknięte > IV. Nurkowania poza strefą światła dziennego",
-      "page": 109,
+      "page": 41,
       "quote": "zaplanowano odpowiednią ilość gazu, aby w momencie wynurzenia zachowana została rezerwa w ilości 1/3 całkowitej ilości zapasu gazu"
     },
     "category": "Fizyka i Fizjologia"
@@ -5944,7 +5944,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Definicje sprzętowe > I. Gaz oddechowy",
-      "page": 65,
+      "page": 28,
       "quote": "Jeżeli gazem oddechowym jest nitroks, ppO2 w dowolnym momencie nurkowania nie może przekraczać 1.4 bara."
     },
     "category": "Fizyka i Fizjologia"
@@ -5961,7 +5961,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Status SSI Professional > VII. Status „w spoczynku” (Retired)",
-      "page": 55,
+      "page": 22,
       "quote": "Certyfikaty, których to dotyczy: Assistant Instructor Trainer, Instructor Trainer, Instructor Certifier"
     },
     "category": "Standardy Ogólne"
@@ -5978,7 +5978,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Status SSI Professional > IV. Status „Wstrzymany administracyjnie”",
-      "page": 53,
+      "page": 21,
       "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika... automatycznie otrzymuje status „Wstrzymany administracyjnie”"
     },
     "category": "Standardy Ogólne"
@@ -5995,7 +5995,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Przywrócenie Aktywnego Statusu > II. d. Ponad dziesięć (10) lat",
-      "page": 60,
+      "page": 24,
       "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
     },
     "category": "Metodyka i Psychologia"
@@ -6012,7 +6012,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Jak korzystać ze Standardów > IV. a. Sprawdzenie przeszłości kryminalnej",
-      "page": 13,
+      "page": 8,
       "quote": "Każdy SSI Professional i Centrum Szkoleniowe są odpowiedzialne za zrozumienie i przestrzeganie wszelkich odpowiednich przepisów lokalnych..."
     },
     "category": "Standardy Ogólne"
@@ -6029,7 +6029,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Wymagania Administracyjne > Procedury certyfikacji > VIII. b. Dokumentacja szkolenia",
-      "page": 40,
+      "page": 17,
       "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
     },
     "category": "Standardy Ogólne"
@@ -6046,7 +6046,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Status SSI Professional > VI. a. Osoby wydalone z innych agencji",
-      "page": 54,
+      "page": 21,
       "quote": "If Professional zostanie wydalony z innej agencji... Decyzja ta leży w gestii SSI International i będzie rozpatrywana indywidualnie."
     },
     "category": "Standardy Ogólne"
@@ -6063,7 +6063,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Status SSI Professional > VII. Status „w spoczynku” (Retired)",
-      "page": 55,
+      "page": 22,
       "quote": "pozostają w aktywnym statusie dla najwyższej certyfikacji zawodowej... Mogą oni również nadal prowadzić wszystkie programy na poziomie Kursanta"
     },
     "category": "Standardy Ogólne"
@@ -6080,7 +6080,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Wymagania Administracyjne > Procedury certyfikacji > III. Wydawanie certyfikatów",
-      "page": 34,
+      "page": 16,
       "quote": "Wszystkie certyfikacje i wyróżnienia must zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
     },
     "category": "Standardy Ogólne"
@@ -6097,7 +6097,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Dokumentacja szkolenia > II. a. Przed rozpoczęciem szkolenia",
-      "page": 25,
+      "page": 12,
       "quote": "Umowa przejęcia ryzyka... Ważny przez jeden (1) rok od daty podpisania."
     },
     "category": "Standardy Ogólne"
@@ -6114,7 +6114,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Status SSI Professional > III. Status \"Anulowany\" (Canceled)",
-      "page": 52,
+      "page": 21,
       "quote": "Osoba która posiada certyfikat Profesjonalisty SSI, ale nie wniosła opłaty rocznej do SSI."
     },
     "category": "Standardy Ogólne"
@@ -6131,7 +6131,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver > VI. b. Wody ograniczone i Wody otwarte",
-      "page": 135,
+      "page": 50,
       "quote": "Liczba ta może wzrosnąć do 8:3, jeżeli instruktor korzysta z pomocy dwóch (2) certyfikowanych asystentów."
     },
     "category": "Współczynniki i Wiek"
@@ -6148,7 +6148,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Specjalistyczny sprzęt nurkowy > II. Suche skafandry",
-      "page": 84,
+      "page": 33,
       "quote": "Stosunek liczby kursantów do liczby instruktorów na każdym podstawowym szkoleniu w wodzie, na którym kursant będzie nurkował w suchym skafandrze, wynosi 4:1."
     },
     "category": "Współczynniki i Wiek"
@@ -6165,7 +6165,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Czas trwania programu > III. Zalecenie",
-      "page": 81,
+      "page": 32,
       "quote": "wydłuż przerwy powierzchniowe do dwóch (2 ) godzin między nurkowaniami"
     },
     "category": "Współczynniki i Wiek"
@@ -6182,7 +6182,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Deep Diving > VII. Współczynnik ilościowy w wodzie",
-      "page": 246,
+      "page": 2,
       "quote": "Nurkowania na głębokość poniżej 30 metrów: Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów..."
     },
     "category": "Współczynniki i Wiek"
@@ -6199,7 +6199,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Korzystanie z pomocy certyfikowanych asystentów > I.",
-      "page": 86,
+      "page": 33,
       "quote": "W przypadku programów specjalizacji certyfikowany asystent musi posiadać certyfikat na poziomie nurka dla danego programu."
     },
     "category": "Metodyka i Psychologia"
@@ -6216,7 +6216,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba > VII. b. Ograniczony akwen",
-      "page": 124,
+      "page": 46,
       "quote": "kursanci w wieku 8 i 9 lat: Współczynnik... 2:1. Liczba ta może wzrosnąć do 4:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
     },
     "category": "Współczynniki i Wiek"
@@ -6233,7 +6233,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Nadzór > VI. Umiejętności wynurzenia awaryjnego",
-      "page": 92,
+      "page": 35,
       "quote": "SSI Open Water Instructor lub wyższy musi bezpośrednio prowadzić wszystkie symulowane umiejętności awaryjnego wynurzania"
     },
     "category": "Metodyka i Psychologia"
@@ -6250,7 +6250,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Czas trwania programu > III. Zalecenie",
-      "page": 81,
+      "page": 32,
       "quote": "zmniejsz maksymalny czas nurkowania do 30 minut dla nurkowań głębszych niż 12 metrów"
     },
     "category": "Współczynniki i Wiek"
@@ -6267,7 +6267,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Nadzór > VI. Umiejętności wynurzenia awaryjnego",
-      "page": 93,
+      "page": 36,
       "quote": "Każde szkolenie z zakresu wynurzania się... musi być przeprowadzone z głębokości dziewięciu (9) metrów lub mniejszej."
     },
     "category": "Współczynniki i Wiek"
@@ -6284,7 +6284,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster > III. Wymagania wstępne dla kandydata",
-      "page": 360,
+      "page": 56,
       "quote": "Minimalny wiek | 15 lat."
     },
     "category": "Współczynniki i Wiek"
@@ -6301,7 +6301,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Jak korzystać ze Standardów > V. Zasada elastyczności SSI",
-      "page": 15,
+      "page": 9,
       "quote": "Ćwiczenia takie jak... oddychanie bezpośrednio z zaworu butli... nie są zatwierdzone przez SSI"
     },
     "category": "Standardy Ogólne"
@@ -6318,7 +6318,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Obowiązek opieki > VII. Procedury składania sprawozdań",
-      "page": 96,
+      "page": 37,
       "quote": "musi niezwłocznie powiadomić odpowiedzialne Service Center SSI"
     },
     "category": "Standardy Ogólne"
@@ -6335,7 +6335,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Obowiązek opieki > V. Plan działania w nagłych wypadkach",
-      "page": 95,
+      "page": 37,
       "quote": "musi posiadać na piśmie plan ratunkowy na wypadek wystąpienia sytuacji awaryjnej"
     },
     "category": "Standardy Ogólne"
@@ -6352,7 +6352,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Czas trwania programu > II. Czas na ukończenie kursu",
-      "page": 80,
+      "page": 32,
       "quote": "jeśli minęło więcej niż 12 miesięcy od ostatniej sesji kursanta w wodzie, musi on ukończyć SSI Scuba Skills Update."
     },
     "category": "Metodyka i Psychologia"
@@ -6369,7 +6369,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Ocena wiedzy i umiejętności > II. Egzamin Końcowy",
-      "page": 76,
+      "page": 31,
       "quote": "Minimalny wynik dla programów na poziomie Professional | 90%."
     },
     "category": "Standardy Ogólne"
@@ -6386,7 +6386,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Wymagania Administracyjne > Procedury certyfikacji > VII. Zalecenie",
-      "page": 39,
+      "page": 17,
       "quote": "Osoby, które nie nurkowały przez pięć (5) lat lub dłużej... powinny zapisać się do programu Scuba Skills Update"
     },
     "category": "Standardy Ogólne"
@@ -6403,7 +6403,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Prowadzenie programów SSI > Nadzór",
-      "page": 88,
+      "page": 35,
       "quote": "Profesjonaliści SSI nie mogą zajmować się innymi czynnościami niż nadzór... Można jednak wykonywać czynności... np. robienie zdjęć za pomocą małego aparatu"
     },
     "category": "Standardy Ogólne"
@@ -6420,7 +6420,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Obowiązków",
       "section": "Obowiązki Profesjonalisty SSI > Wymagania dotyczące odpowiedzialności zawodowej > I.",
-      "page": 50,
+      "page": 20,
       "quote": "SSI i SSI Service Centers nie są odpowiedzialne za weryfikację, czy SSI Professional spełnia wymagania dotyczące ubezpieczenia..."
     },
     "category": "Standardy Ogólne"
@@ -6437,7 +6437,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver > IV. Czas trwania",
-      "page": 144,
+      "page": 53,
       "quote": "Minimalny łączny czas denny dla Nurkowań szkoleniowych na wodach otwartych | 80 minut."
     },
     "category": "Współczynniki i Wiek"
@@ -6454,7 +6454,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe",
       "section": "Jak korzystać ze Standardów > Definicje Programów > I. Program poziomu podstawowego",
-      "page": 17,
+      "page": 10,
       "quote": "Nurkowania szkoleniowe... muszą być przeprowadzone w ciągu dnia (pomiędzy wschodem a zachodem słońca)"
     },
     "category": "Współczynniki i Wiek"
@@ -6471,7 +6471,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ogólne Standardy Szkoleniowe - Scuba",
       "section": "Obowiązujące Standardy i Odstępstwa od Standardów",
-      "page": 10,
+      "page": 7,
       "quote": "Każde nowe, zatwierdzone odstępstwo wygasa wraz z kolejnym rokiem, w którym opracowano nową wersję standardów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6488,7 +6488,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Zasada elastyczności SSI",
       "section": "V. Zasada elastyczności SSI",
-      "page": 15,
+      "page": 9,
       "quote": "Ćwiczenia takie jak opuszczanie i odzyskiwanie jednostki nurkowej, oddychanie bezpośrednio z zaworu butli i wszelkie wynurzanie bez regulatora w ustach i / lub wyłączonego gazu oddechowego nie są zatwierdzone przez SSI i NIE mogą być nauczane podczas programów szkoleniowych SSI."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6505,7 +6505,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia i Formularze prywatności",
-      "page": 22,
+      "page": 12,
       "quote": "Osoby niepełnoletnie nie mogą podpisywać dokumentacji cyfrowej. (...) Formularze osób niepełnoletnich - online lub papierowe - muszą zostać sprawdzone i podpisane przez rodzica lub opiekuna."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6522,7 +6522,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia i Formularze prywatności",
-      "page": 27,
+      "page": 13,
       "quote": "Kwestionariusz medyczny uczestnika jest wymagany dla tych programów tylko wtedy, gdy szkolenie w wodzie jest prowadzone jako część programu."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6539,7 +6539,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 34,
+      "page": 16,
       "quote": "Wszystkie certyfikacje i wyróżnienia muszą zostać przetworzone w ciągu siedmiu (7) dni od zakończenia programu."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6556,7 +6556,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 37,
+      "page": 16,
       "quote": "Cyfrowe certyfikaty Junior Diver są automatycznie aktualizowane do pełnego programu certyfikacji, gdy kursant ukończy piętnaście lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6573,7 +6573,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 38,
+      "page": 17,
       "quote": "Wszystkie oryginały dokumentacji szkoleniowej oraz formularzy medycznych muszą pozostać w Centrum Szkoleniowym, w którym kursant rozpoczął szkolenie."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6590,7 +6590,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 40,
+      "page": 17,
       "quote": "Dokumentacja szkolenia musi być przechowywana przez Centrum Szkoleniowe przez co najmniej dziesięć (10) lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6607,7 +6607,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Certyfikaty równoważne",
-      "page": 46,
+      "page": 18,
       "quote": "Musi działać na rynku co najmniej przez pięć (5) lat (...) Posiadać co najmniej 250 instruktorów i 50 autoryzowanych centrów szkoleniowych na całym świecie (...) Posiadać aktywny globalny certyfikat ISO lub być aktywnym członkiem co najmniej jednego RSTC."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6624,7 +6624,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Zgodność z normami jakości",
-      "page": 47,
+      "page": 18,
       "quote": "Kandydat nie może być zaangażowany w nierozwiązaną sprawę dotyczącą zgodności jakości z inną agencją szkoleniową."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6641,7 +6641,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Obowiązki Profesjonalisty SSI",
       "section": "Status SSI Professional",
-      "page": 53,
+      "page": 21,
       "quote": "Profesjonalista SSI, który był zaangażowany w wydarzenie prowadzące do śmierci uczestnika/kursanta/kandydata, nad którym pełnił bezpośredni nadzór, automatycznie otrzymuje status „Wstrzymany administracyjnie” w chwili takiego zdarzenia."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6658,7 +6658,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Obowiązki Profesjonalisty SSI",
       "section": "Status SSI Professional",
-      "page": 54,
+      "page": 21,
       "quote": "Osoba posiadając status \"Wydalony\" nie może ponownie otrzymać statusu aktywnego SSI na całym świecie, a jej certyfikaty nie mogą być już zweryfikowane w systemie SSI Diver Verification."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6675,7 +6675,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Obowiązki Profesjonalisty SSI",
       "section": "Przywrócenie Aktywnego Statusu",
-      "page": 60,
+      "page": 24,
       "quote": "Instruktorzy Open Water Instructor (Open Water Instructor) i wyżsi muszą również zdać Instructor Evaluation."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6692,7 +6692,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Ocena wiedzy i umiejętności",
-      "page": 76,
+      "page": 31,
       "quote": "Minimalny wynik dla programów na poziomie Professional | 90%."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6709,7 +6709,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Ocena wiedzy i umiejętności",
-      "page": 78,
+      "page": 31,
       "quote": "Jeżeli kursant ma mniej niż 15 lat, Profesjonalista SSI może przeformułować lub objaśnić pytanie podczas egzaminu końcowego, żeby pomóc wyjaśnić jego sedno, ale nie może udzielić odpowiedzi lub mu w tym pomóc."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6726,7 +6726,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Czas trwania programu i ograniczenia czasowe",
-      "page": 79,
+      "page": 32,
       "quote": "Szkolenie w wodach otwartych wymagane dla wszystkich programów szkoleniowych SSI muszą odbyć się w ciągu 6 miesięcy od ostatnich zajęć teoretycznych lub basenowych/w ograniczonym akwenie. Po upływie sześciu (6) miesięcy SSI Professional musi ponownie dokonać oceny kursanta"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6743,7 +6743,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Liczba nurkowań w ciągu dnia",
-      "page": 81,
+      "page": 32,
       "quote": "Maksymalna liczba nurkowań szkoleniowych to dwa (2) dziennie, jeśli jakiekolwiek nurkowanie danego dnia planuje lub faktycznie wymaga przystanków dekompresyjnych."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6760,7 +6760,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Czas trwania nurkowania",
-      "page": 82,
+      "page": 32,
       "quote": "Całkowity czas trwania pojedynczego nurkowania szkoleniowego w wodach otwartych musi wynosić przynajmniej 15 minut."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6777,7 +6777,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Suche skafandry",
-      "page": 84,
+      "page": 33,
       "quote": "Stosunek liczby kursantów do liczby instruktorów na każdym podstawowym szkoleniu w wodzie, na którym kursant będzie nurkował w suchym skafandrze, wynosi 4:1."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6794,7 +6794,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Korzystanie z pomocy certyfikowanych asystentów",
-      "page": 86,
+      "page": 32,
       "quote": "Jeżeli Instruktor Asystujący SSI pełni rolę certyfikowanego asystenta podczas programów poziomu podstawowego, może być uznany za dodatkowego instruktora i tym samym podwoić ilość kursantów podczas nurkowań basenowych/w ograniczonym akwenie."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6811,7 +6811,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Nadzór",
-      "page": 88,
+      "page": 35,
       "quote": "Można jednak wykonywać czynności, które nie będą miały wpływu na zdolność Profesjonalisty SSI do nadzorowania kursantów i udzielania im pomocy (np. robienie zdjęć za pomocą małego aparatu fotograficznego)."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6828,7 +6828,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Umiejętności wynurzenia awaryjnego",
-      "page": 93,
+      "page": 36,
       "quote": "Każde szkolenie z zakresu wynurzania się podczas nurkowania w wodach otwartych, które symuluje stan zagrożenia, musi być przeprowadzone z głębokości dziewięciu (9) metrów lub mniejszej."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6845,7 +6845,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje związane ze środowiskiem",
-      "page": 97,
+      "page": 38,
       "quote": "Jest to każde nurkowanie na głębokości większej niż 18 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6862,7 +6862,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Nurkowanie Indoor",
-      "page": 99,
+      "page": 38,
       "quote": "Akwaria i specjalnie zbudowane sztuczne obiekty do nurkowania o minimalnej głębokości większej niż pięć (5) metrów i minimalnej powierzchni wody wynoszącej 100 metrów kwadratowych mogą być wykorzystywane do przeprowadzania nurkowań szkoleniowych..."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6879,7 +6879,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Przestrzenie zamknięte",
-      "page": 107,
+      "page": 41,
       "quote": "Struktura ta posiada następujące cechy: Mieć mniej niż 10 metrów długości. Maksymalna głębokość nie może przekraczać 30 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6896,7 +6896,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Filozofia SSI szkolenia w wodzie",
-      "page": 113,
+      "page": 42,
       "quote": "Jeśli Podręcznik wyraźnie mówi, że regulator jest przeznaczony do użytku tylko przez jedną osobę, instruktor musi być przynajmniej wyposażony w niezależny nadmiarowy system oddechowy, aby wykonać to ćwiczenie. Jeśli regulator jest przeznaczony tylko dla jednej osoby, Instruktor musi być dawcą..."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6913,7 +6913,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Ocena Sprawności w Wodzie",
       "section": "Ocena sprawności Kandydata w wodzie",
-      "page": 121,
+      "page": 3,
       "quote": "Ocena sprawności kandydata w wodzie jest ważna przez 6 (sześć) miesięcy."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6930,7 +6930,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver",
-      "page": 136,
+      "page": 48,
       "quote": "Na instruktora lub certyfikowanego asystenta nie powinno przypadać więcej niż dwóch (2) kursantów w wieku poniżej 12 lat, a żaden z pozostałych nie może mieć mniej niż 15 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6947,7 +6947,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia i Formularze prywatności",
-      "page": 26,
+      "page": 12,
       "quote": "Dodatek dla młodzieży (wymagany w przypadku kursantów poniżej 18 roku życia) - Ważny przez jeden (1) rok od daty podpisania."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6964,7 +6964,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Odległość",
-      "page": 138,
+      "page": 47,
       "quote": "Podczas oceny umiejętności nurkowych w wodzie, kursanci muszą pozostawać pod bezpośrednim nadzorem Profesjonalisty SSI w taki sposób, aby w każdej chwili możliwe było nawiązanie kontaktu fizycznego."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6981,7 +6981,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Advanced Adventurer",
-      "page": 535,
+      "page": 62,
       "quote": "Maksymalny limit głębokości na wodach otwartych dla kursantów w wieku 12-14 lat podczas Deep Diving Adventure wynosi 21 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -6998,7 +6998,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Załącznik",
       "section": "Dobre praktyki dokumentacyjne",
-      "page": 499,
+      "page": 166,
       "quote": "Popraw błędy, rysując pojedynczą linię przez błąd, wpisując poprawną wartość i dodając swoje inicjały oraz datę korekty."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7015,7 +7015,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Assistant Instructor (Instruktor asystujący)",
-      "page": 369,
+      "page": 122,
       "quote": "Instruktor Asystujący nie może: (...) Uczyć wszelkich umiejętności wynurzania awaryjnego."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7032,7 +7032,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Master Instructor",
-      "page": 404,
+      "page": 70,
       "quote": "Dwanaście (12) kart uznania Try Scuba jest równoważne z jednym (1) certyfikatem Open Water Diver."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7049,7 +7049,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Open Water Instructor (Open Water Instructor)",
-      "page": 376,
+      "page": 125,
       "quote": "Egzamin Instruktorski należy przeprowadzić w ciągu sześciu (6) miesięcy od ukończenia kursu."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7066,7 +7066,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Załącznik",
       "section": "Globalny rekord szkolenia SSI i przegląd formularzy",
-      "page": 513,
+      "page": 167,
       "quote": "Umowa o przejęciu ryzyka, zwolnieniu z odpowiedzialności i zwolnieniu z odpowiedzialności nie obowiązuje w Unii Europejskiej, więc Kursanci nie powinni być zmuszani do jej podpisywania."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7083,7 +7083,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje w przestrzeniach zamkniętych",
       "section": "Advanced Wreck Diving",
-      "page": 334,
+      "page": 109,
       "quote": "a. Wody otwarte - Współczynnik kursant-instruktor: 8:1 b. Przestrzenie zamknięte - Współczynnik kursant-instruktor: 3:1"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7100,7 +7100,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster | ISO 24801-3",
-      "page": 253,
+      "page": 51,
       "quote": "Zaliczyć egzamin końcowy programu Science of Diving."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7117,7 +7117,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Advanced Open Water Diver",
-      "page": 190,
+      "page": 64,
       "quote": "Po ukończeniu 15. roku życia kursanci mogą przejść do limitów głębokości dla dorosłych, wykonując nurkowanie uaktualniające na głębokości od 21 do 30 metrów z Open Water Instructor."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7134,7 +7134,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Definicje sprzętowe",
       "section": "Programy nurkowania rekreacyjnego",
-      "page": 67,
+      "page": 28,
       "quote": "Podczas wszystkich nurkowań szkoleniowych na Wodach Otwartych każdy Profesjonalista SSI musi posiadać ten sam sprzęt co kursant oraz dodatkowo: Komputer nurkowy, Bojkę nurkową, Urządzenie do sygnalizacji sytuacji awaryjnych na powierzchni, Narzędzie tnące, Kompas"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7151,7 +7151,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy React Right",
       "section": "React Right Update",
-      "page": 481,
+      "page": 161,
       "quote": "Update musi trwać przynajmniej dwie (2) godziny i musi obejmować przynajmniej jeden (1) cykl wszystkich umiejętności dla każdej mającej zastosowanie certyfikacji określonej w podręczniku instruktorskim React Right."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7168,7 +7168,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Karty uznaniowe dla Profesjonalistów",
-      "page": 420,
+      "page": 140,
       "quote": "Elite Instructor Trainer | Wydanie co najmniej 5 certyfikatów instruktora podstawowego i co najmniej 30 certyfikatów instruktora Specialty."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7185,7 +7185,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy specjalizacji z zakresu ekologii",
       "section": "Programy specjalizacji z zakresu ekologii",
-      "page": 457,
+      "page": 62,
       "quote": "Kursanci w wieku 6-9 lat: Współczynnik kursant-instruktor: 8:1. Współczynnik może wzrosnąć do 10:2 z jednym (1) certyfikowanym asystentem. Współczynnik może wzrosnąć do 12:3 z dwoma (2) certyfikowanymi asystentami."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7202,7 +7202,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Decompression Diving",
-      "page": 294,
+      "page": 96,
       "quote": "Całkowity czas wszystkich wymaganych przystanków dekompresyjnych w oparciu o gaz plecowy nie może przekraczać 15 minut na nurkowanie."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7219,7 +7219,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Diving",
-      "page": 427,
+      "page": 143,
       "quote": "Level 2 i 3: współczynnik kursant-instruktor wynosi 1:1:2, z jednym (1) kursantem Classified Diving, jednym (1) instruktorem Classified Diving oraz dwoma (2) certyfikowanymi Classified Dive Buddy"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7236,7 +7236,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje związane ze środowiskiem",
-      "page": 96,
+      "page": 38,
       "quote": "Woda o głębokości, która pozwala na stanięcie na dnie, z głową wystającą poza jej poziom."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7253,7 +7253,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Ogólne Standardy Specjalizacji",
-      "page": 173,
+      "page": 8,
       "quote": "Jeżeli trzy (3) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej cztery (4) nurkowania szkoleniowe na Wodach Otwartych."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7270,7 +7270,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Wymagania Administracyjne",
       "section": "Procedury certyfikacji",
-      "page": 37,
+      "page": 16,
       "quote": "W przypadku programów Instruktora Specjalizacji, do których nie ma materiałów cyfrowych, certyfikacja jest dokonywana przez odpowiedzialne Centrum Szkoleniowe, Manager QMS autoryzuje certyfikację, a cała wymagana dokumentacja jest przechowywana przez Centrum Szkoleniowe."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7287,7 +7287,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje związane ze środowiskiem",
-      "page": 96,
+      "page": 38,
       "quote": "Jest to każde nurkowanie na głębokości większej niż 18 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7304,7 +7304,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
-      "page": 471,
+      "page": 156,
       "quote": "Snorkel Explorer musi być ukończony przed jakimikolwiek innymi zajęciami w wodzie programów Explorer."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7321,7 +7321,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Altitude Diving",
-      "page": 195,
+      "page": 65,
       "quote": "Maksymalny limit głębokości wody otwartej dla 10- i 11-latków | 12 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7338,7 +7338,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Computer Diving",
-      "page": 200,
+      "page": 65,
       "quote": "Zalecane godziny ukończenia | 3-6."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7355,7 +7355,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Definicje sprzętowe",
       "section": "Programy nurkowania rekreacyjnego",
-      "page": 64,
+      "page": 28,
       "quote": "Podczas szkolenia programu Decompression Diving ppO2 dla fazy dekompresji nie może przekroczyć 1.6 bar."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7372,7 +7372,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
-      "page": 210,
+      "page": 70,
       "quote": "Certyfikowani nurkowie Enriched Air Nitrox 32 muszą przed każdym nurkowaniem zweryfikować przez profesjonalistę procentową zawartość tlenu w gazie oddechowym."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7389,7 +7389,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Equipment Techniques",
-      "page": 214,
+      "page": 65,
       "quote": "Zalecane godziny ukończenia | 3-6."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7406,7 +7406,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Science of Diving",
-      "page": 218,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7423,7 +7423,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
-      "page": 228,
+      "page": 76,
       "quote": "Kursant musi ukończyć co najmniej dwa (2) zajęcia w wodzie zgodnie z podręcznikiem instruktorskim do programu Perfect Buoyancy."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7440,7 +7440,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Scuba Skills Update",
-      "page": 180,
+      "page": 60,
       "quote": "Kursanci w wieku 12-14 lat: Współczynnik kursant-instruktor: 6:1."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7457,7 +7457,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Boat Diving",
-      "page": 237,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7474,7 +7474,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Deep Diving",
-      "page": 243,
+      "page": 56,
       "quote": "Minimalny wiek | 15 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7491,7 +7491,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Deep Diving",
-      "page": 246,
+      "page": 81,
       "quote": "Nurkowanie 2 | 24 do 30 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7508,7 +7508,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Deep Diving",
-      "page": 246,
+      "page": 46,
       "quote": "Nurkowania na głębokość poniżej 30 metrów - Współczynnik kursant-instruktor: 4:1. Nie można korzystać z pomocy certyfikowanych asystentów, żeby zwiększyć współczynniki."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7525,7 +7525,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
-      "page": 249,
+      "page": 83,
       "quote": "Co najmniej 40 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 25 godzin."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7542,7 +7542,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
-      "page": 252,
+      "page": 47,
       "quote": "Wymagania do ukończenia kursu: Co najmniej 50 zalogowanych nurkowań na Wodach Otwartych, trwających łącznie co najmniej 32 godziny."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7559,7 +7559,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
-      "page": 253,
+      "page": 51,
       "quote": "Zaliczyć egzamin końcowy programu Science of Diving."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7576,7 +7576,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
-      "page": 255,
+      "page": 85,
       "quote": "Posiadać dowód aktualnego przeszkolenia O2 Provider, First Aid i CPR w ciągu dwóch (2) lat przed wydaniem karty certyfikacyjnej."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7593,7 +7593,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
-      "page": 258,
+      "page": 85,
       "quote": "Umiejętności: Maksymalny limit głębokości nurkowania na Wodach Otwartych | Ratowanie nieprzytomnego nurka na głębokości 9 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7610,7 +7610,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Navigation",
-      "page": 263,
+      "page": 75,
       "quote": "Zalecane godziny ukończenia | 5-10."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7627,7 +7627,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje związane ze środowiskiem",
-      "page": 100,
+      "page": 39,
       "quote": "Profesjonaliści SSI muszą udostępnić podwodne oświetlenie nurkowe wszystkim kursantom podczas prowadzenia szkolenia w nocy."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7644,7 +7644,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Waves, Tides & Currents",
-      "page": 274,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7661,7 +7661,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Wreck Diving",
-      "page": 280,
+      "page": 93,
       "quote": "Podczas programu SSI Wreck Diving kursanci zyskają wiedzę i umiejętności, które pozwolą im bezpiecznie nurkować w okolicy wraków i sztucznych raf. Program nie daje uprawnień do wpływania do środka wraków."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7678,7 +7678,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Wreck Diving",
-      "page": 286,
+      "page": 94,
       "quote": "Żeby podwyższyć uprawnienia SSI do Advanced Wreck Diving, kursant musi spełnić następujące wymagania: Minimalny wiek: 15 lat, Zalogował co najmniej 12 nurkowań na wodach otwartych."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7695,7 +7695,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Decompression Diving",
-      "page": 287,
+      "page": 95,
       "quote": "z zastosowaniem nitrox'owych gazów oddechowych o maksymalnej zawartości tlenu 40%,"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7712,7 +7712,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Decompression Diving",
-      "page": 288,
+      "page": 95,
       "quote": "Dla maksymalnego łącznego czasu dekompresji wynoszącego 15 minut w oparciu o profil gazu wstecznego,"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7729,7 +7729,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "DPV Diving",
-      "page": 298,
+      "page": 97,
       "quote": "Techniczne skutery nurkowe | Skuter nurkowy, który ma lonżę, pojemność baterii większą niż 500 wh i można go obsługiwać jedną ręką."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7746,7 +7746,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Dry Suit Diving",
-      "page": 306,
+      "page": 98,
       "quote": "Zajęcia szkoleniowe w basenie/wodach ograniczonych są wymagane przed jakimkolwiek nurkowaniem szkoleniowym w Wodach Otwartych."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7763,7 +7763,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Maska do nurkowania Full Face Mask",
-      "page": 310,
+      "page": 62,
       "quote": "Minimalny wiek | 12 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7780,7 +7780,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Independent Diving",
-      "page": 315,
+      "page": 103,
       "quote": "Co najmniej 75 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 50 godzin."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7797,7 +7797,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Search & Recovery",
-      "page": 324,
+      "page": 51,
       "quote": "Ukończyć co najmniej jedną (1) sesję szkoleniową na basenie/ograniczonym akwenie (...) Ukończenie co najmniej dwóch (2) Nurkowań szkoleniowych na wodach otwartych zgodnie z podręcznikiem instruktora."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7814,7 +7814,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje sprzętowe",
       "section": "Nurkowanie Sidemount",
-      "page": 329,
+      "page": 46,
       "quote": "Współczynnik kursant-instruktor: 4:1."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7831,7 +7831,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje w przestrzeniach zamkniętych",
       "section": "Advanced Wreck Diving",
-      "page": 333,
+      "page": 41,
       "quote": "Maksymalna odległość liniowa wynosi 40 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7848,7 +7848,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje w przestrzeniach zamkniętych",
       "section": "Cavern & Cenote Diving",
-      "page": 340,
+      "page": 46,
       "quote": "Przestrzenie zamknięte - Współczynnik kursant-instruktor: 2:1."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7865,7 +7865,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Specjalizacje w przestrzeniach zamkniętych",
       "section": "Ice Diving",
-      "page": 345,
+      "page": 41,
       "quote": "Maksymalna odległość liniowa wynosi 40 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7882,7 +7882,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Unikalne programy Specjalizacji",
-      "page": 349,
+      "page": 115,
       "quote": "15 lat, jeżeli nurkowania szkoleniowe są prowadzone na głębokości poniżej 18 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7899,7 +7899,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Unikalne programy Specjalizacji",
-      "page": 351,
+      "page": 4,
       "quote": "Specjalizacje w przestrzeniach zamkniętych - Współczynnik kursant-instruktor: 3:1"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7916,7 +7916,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Karty uznania SSI",
       "section": "Uznanie za postępy w szkoleniu",
-      "page": 355,
+      "page": 47,
       "quote": "Wymagania do ukończenia kursu: Ukończenie specjalizacji SSI Deep Diving i Diver Stress & Rescue oraz 3 dodatkowych specjalizacji (...) 50 Zaliczone nurkowania."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7933,7 +7933,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Karty uznania SSI",
       "section": "Uznanie za doświadczenie w nurkowaniu",
-      "page": 357,
+      "page": 118,
       "quote": "SSI Platinum Diver | 750 zalogowanych nurkowań na wodach otwartych"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7950,7 +7950,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster Instructor",
-      "page": 395,
+      "page": 65,
       "quote": "Kandydat musi posiadać następujące certyfikaty SSI i aktywny status: Open Water Instructor, Instruktor Deep Diving, Dive Guide Instruktor, Instruktor Diver Stress & Rescue, Instruktor nawigacji, Instruktor Night & Limited Visibility."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7967,7 +7967,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Assistant Instructor Trainer",
-      "page": 398,
+      "page": 133,
       "quote": "Wydali co najmniej 50 Certyfikacji, w tym: 30 Open Water Diver, 3 Diver Stress & Rescue, 2 Dive Guide/Divemaster, 15 Advanced Open Water Diver i/lub programy specjalizacji."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -7984,7 +7984,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Master Instructor",
-      "page": 404,
+      "page": 135,
       "quote": "Wydanie co najmniej 150 certyfikatów nurkowania rekreacyjnego."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8001,7 +8001,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Instructor Trainer",
-      "page": 406,
+      "page": 133,
       "quote": "Instructor Trainer Seminar może prowadzić aktywny SSI International Training Director."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8018,7 +8018,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Instructor Certifier",
-      "page": 416,
+      "page": 134,
       "quote": "Status Aktywny - Wymagania: Spełnienie wszystkich aktywnych wymagań statusu Instructor Trainer. Uczestniczyć we wszystkich obowiązkowych aktualizacjach Instructor Certifier SSI zaplanowanych przez SSI International."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8035,7 +8035,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Karty uznaniowe dla Profesjonalistów",
-      "page": 418,
+      "page": 140,
       "quote": "Platinum Instructor | Za zdobycie 1000 punktów doświadczenia w MySSI."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8052,7 +8052,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Profesjonalne",
       "section": "Karty uznaniowe dla Profesjonalistów",
-      "page": 421,
+      "page": 141,
       "quote": "Platinum Instructor Trainer | Wydać co najmniej 15 podstawowych certyfikatów instruktorskich, co najmniej 90 certyfikatów Specialty Instructor i co najmniej 5 certyfikatów Assistant Instructor Trainer."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8069,7 +8069,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Diving",
-      "page": 427,
+      "page": 143,
       "quote": "Level 2 i 3: współczynnik kursant-instruktor wynosi 1:1:2, z jednym (1) kursantem Classified Diving, jednym (1) instruktorem Classified Diving oraz dwoma (2) certyfikowanymi Classified Dive Buddy"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8086,7 +8086,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Classified Diving",
       "section": "Classified Dive Buddy",
-      "page": 440,
+      "page": 65,
       "quote": "Kandydat musi posiadać następujące certyfikaty SSI lub równoważne z uznanych organizacji nurkowych: Diver Stress & Rescue"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8103,7 +8103,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy specjalizacji z zakresu ekologii",
       "section": "Programy specjalizacji z zakresu ekologii",
-      "page": 455,
+      "page": 151,
       "quote": "Kursanci Snorkelingu - Maksymalny limit głębokości nurkowania na Wodach Otwartych | 5 metrów."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8120,7 +8120,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy specjalizacji z zakresu ekologii",
       "section": "Instruktor Specjalizacje ekologiczne",
-      "page": 460,
+      "page": 152,
       "quote": "Posiadać jedną (1) z następujących certyfikacji SSI o statusie aktywnym: Divemaster, Snorkel Instructor"
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8137,7 +8137,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
-      "page": 467,
+      "page": 154,
       "quote": "Mermaid Explorer | Freediving Explorer - Minimalny wiek | 6 lat."
     },
     "category": "Administracja (Nowe Baza 2026)"
@@ -8154,7 +8154,7 @@ const QUESTIONS_DB = [
     "reference": {
       "chapter": "Programy React Right",
       "section": "React Right",
-      "page": 477,
+      "page": 35,
       "quote": "Liczba kandydatów przypadająca na jednego instruktora: Nie określono maksymalnej liczby kursantów przypadających na instruktora podczas programu React Right. Instruktor powinien dysponować wystarczającymi materiałami pomocniczymi oraz być w stanie kontrolować i nadzorować wszystkich uczestników."
     },
     "category": "Administracja (Nowe Baza 2026)"
