@@ -12,7 +12,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "VI. Współczynnik ilościowy w wodzie",
-      "page": 147,
+      "page": 50,
       "quote": "Kursanci w wieku od 10 do 14 lat: (...) Liczba ta może wzrosnąć do 6:2, jeżeli instruktor korzysta z pomocy jednego (1) certyfikowanego asystenta."
     }
   },
@@ -29,7 +29,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba",
       "subsection": "VI. Limity głębokości",
-      "page": 123,
+      "page": 46,
       "quote": "Maksymalny limit głębokości basenu/ograniczonego akwenu | 5 metrów."
     }
   },
@@ -46,7 +46,7 @@ const QUESTIONS_DB = [
       "chapter": "Ocena Sprawności w Wodzie",
       "section": "Ocena sprawności fizycznej Kursanta w wodzie",
       "subsection": "Uwaga",
-      "page": 118,
+      "page": 44,
       "quote": "Kursanci programów poziomu podstawowego muszą pomyślnie zaliczyć wszystkie części tej oceny przed wzięciem udziału w jakimkolwiek szkoleniu na Wodach Otwartych."
     }
   },
@@ -63,7 +63,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Scuba Skills Update",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 179,
+      "page": 33,
       "quote": "Posiadać przynajmniej jeden (1) z niżej wymienionych certyfikatów SSI lub odpowiednik od uznanej organizacji szkoleniowej: * Open Water Diver Lub * Kursant musi uczestniczyć w programie Open Water Diver i wykonać wszystkie nurkowania szkoleniowe w basenie/ograniczonym akwenie."
     }
   },
@@ -80,7 +80,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "XI. Certyfikacja",
-      "page": 156,
+      "page": 16,
       "quote": "Kursanci w wieku poniżej 15 lat otrzymają certyfikat Junior Open Water Diver i muszą nurkować pod bezpośrednim nadzorem profesjonalisty nurkowego lub z certyfikowaną osobą dorosłą w środowisku odpowiadającym ich szkoleniu..."
     }
   },
@@ -97,7 +97,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Scuba Skills Update",
       "subsection": "V. Limity głębokości",
-      "page": 180,
+      "page": 60,
       "quote": "Maksymalna głębokość basenu/ograniczonego akwenu | 5 metrów."
     }
   },
@@ -114,7 +114,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "I. Cel",
-      "page": 134,
+      "page": 50,
       "quote": "SSI Scuba Diver zapewnia kursantom zdobycie wiedzy i umiejętności niezbędnych do nurkowania pod bezpośrednim nadzorem Profesjonalisty Nurkowego, w warunkach równorzędnych z warunkami szkoleniowymi oraz na głębokości płytszej niż 12 metrów."
     }
   },
@@ -131,7 +131,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Specjalistyczny sprzęt nurkowy",
       "subsection": "II. Suche skafandry",
-      "page": 84,
+      "page": 33,
       "quote": "Podczas wszystkich szkoleń w wodzie instruktor bezpośrednio nadzorujący program musi posiadać aktywny status SSI Dry Suit Diving Specialty Instructor."
     }
   },
@@ -148,7 +148,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "II. Wymagania wstępne dla kandydata",
-      "page": 384,
+      "page": 127,
       "quote": "Tabela wskazuje na możliwość certyfikacji Assistant Instructor (AI) m.in. dla: Computer Diving, Equipment Techniques, Navigation, Perfect Buoyancy, Photo & Video."
     }
   },
@@ -165,7 +165,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Nadzór",
       "subsection": "VI. Umiejętności wynurzenia awaryjnego",
-      "page": 92,
+      "page": 35,
       "quote": "SSI Open Water Instructor lub wyższy musi bezpośrednio prowadzić wszystkie symulowane umiejętności awaryjnego wynurzania podczas szkolenia w wodzie."
     }
   },
@@ -182,7 +182,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 229,
+      "page": 76,
       "quote": "Kursant musi ukończyć co najmniej dwa (2) zajęcia w wodzie zgodnie z podręcznikiem instruktorskim do programu Perfect Buoyancy."
     }
   },
@@ -199,7 +199,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "VII. Minimalny nadzór",
-      "page": 137,
+      "page": 34,
       "quote": "Instruktor Asystujący z aktywnym statusem może bezpośrednio nadzorować (...) umiejętności na powierzchni podczas nurkowań szkoleniowych na Wodach Otwartych pod pośrednim nadzorem Open Water Instructor z aktywnym statusem."
     }
   },
@@ -216,7 +216,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "IV. Certyfikacja",
-      "page": 390,
+      "page": 57,
       "quote": "Po spełnieniu wszystkich wymogów należy sprawdzić, czy dokumentacja szkolenia kandydata i inne dokumenty zostały wypełnione, a następnie rozpocząć proces certyfikacji w MySSI."
     }
   },
@@ -233,7 +233,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "XII. Upgrade (podwyższenie uprawnień)",
-      "page": 142,
+      "page": 10,
       "quote": "Ukończenie pozostałych wymagań i ocen z rozdziałów akademickich 4-6... Zaliczyć Egzamin Końcowy... Ukończenie trzech (3) dodatkowych Sesji szkoleniowych na basenie/ograniczonym akwenie... Należy wykonać co najmniej dwa (2) nurkowania szkoleniowe w wodach otwartych..."
     }
   },
@@ -250,7 +250,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 145,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat."
     }
   },
@@ -267,7 +267,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "VI. Współczynnik ilościowy w wodzie",
-      "page": 146,
+      "page": 46,
       "quote": "Kursanci w wieku co najmniej 15 lat: * Współczynnik kursant-instruktor: 8:1"
     }
   },
@@ -284,7 +284,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji (b. Współnauczanie)",
-      "page": 389,
+      "page": 122,
       "quote": "Uzyskanie podpisu Menedżera QMS Centrum Szkoleniowego Centrum Szkoleniowego SSI, do którego jest się afiliowanym, na Dokumentacji Ukończenia Szkolenia Instruktora Specjalizacji."
     }
   },
@@ -301,7 +301,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Scuba Skills Update",
       "subsection": "I. Cel",
-      "page": 178,
+      "page": 60,
       "quote": "Program Scuba Skills Update umożliwia nurkom posiadającym licencje przypomnienie, odświeżenie i uaktualnienie umiejętności nurkowych w bezpieczny i przyjemny sposób."
     }
   },
@@ -318,7 +318,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "VII. Minimalny nadzór",
-      "page": 148,
+      "page": 8,
       "quote": "Open Water Instructor z aktywnym statusem musi bezpośrednio nadzorować wszystkie nurkowania szkoleniowe na Wodach Otwartych."
     }
   },
@@ -335,7 +335,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Open Water Instructor (Open Water Instructor) (ISO 24802-2) | Ocena instruktora szkolenia instruktorskiego",
       "subsection": "IX. Status Aktywny - Uprawnienia",
-      "page": 379,
+      "page": 125,
       "quote": "Instruktorzy z aktywnym statusem Open Water Instructor mogą uczyć, nadzorować i wydawać certyfikaty dla następujących programów po ukończeniu Instructor Evaluation: Try Scuba, Basic Diver, Referral Diver, Indoor Diver, Scuba Diver, Open Water Diver..."
     }
   },
@@ -352,7 +352,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "I. Cel",
-      "page": 383,
+      "page": 127,
       "quote": "Istnieją trzy metody uzyskania licencji uprawniającej do nauczania programów Specjalizacji SSI: * Seminarium dla Instruktorów Specjalizacji * Współnauczanie (Co-Teaching) * Weryfikacja/Wniosek"
     }
   },
@@ -369,7 +369,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
       "subsection": "II. Minimalny Stopień Instruktora",
-      "page": 467,
+      "page": 154,
       "quote": "Instruktor programu Explorer posiadający aktywny status i uprawnienia do danej kategorii może prowadzić program SSI Explorers."
     }
   },
@@ -386,7 +386,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
       "subsection": "IV. Wymagania wstępne",
-      "page": 469,
+      "page": 13,
       "quote": "Przed rozpoczęciem jakichkolwiek zajęć w wodzie: * Przepłynąć 12m bez jakichkolwiek pomocy pływackich. (...) Scuba Explorer * Minimalny wiek | 8 lat."
     }
   },
@@ -403,7 +403,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Open Water Instructor (Open Water Instructor) (ISO 24802-2) | Ocena instruktora szkolenia instruktorskiego",
       "subsection": "VII. Wymagania do ukończenia kursu",
-      "page": 377,
+      "page": 47,
       "quote": "Ukończyć wszystkie zajęcia teoretyczne, wymagania i oceny określone w podręczniku instruktora dla Instructor Training Course. (...) Po zakończeniu Instructor Training Course kandydaci mogą podejść do Egzaminu Instruktorskiego. (plus standardowe utrzymanie statusu opłacane w SSI)."
     }
   },
@@ -420,7 +420,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "XI. Certyfikacja",
-      "page": 141,
+      "page": 51,
       "quote": "Certyfikowany Scuba Diver może nurkować pod bezpośrednim nadzorem Profesjonalisty nurkowego w środowiskach odpowiadających jego przeszkoleniu oraz na głębokości nie przekraczające 12 metrów."
     }
   },
@@ -437,7 +437,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji (a. Seminarium)",
-      "page": 387,
+      "page": 128,
       "quote": "Uwaga | W przypadku tej metody nie jest wymagany dowód zalogowanych nurkowań."
     }
   },
@@ -454,7 +454,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Ogólne Standardy Specjalizacji",
       "subsection": "IV. Łączenie programów specjalizacji",
-      "page": 173,
+      "page": 58,
       "quote": "Jeżeli program specjalizacji jest prowadzony wraz z programem Open Water Diver, kursant musi uzyskać certyfikat Open Water Diver zanim otrzyma certyfikat specjalizacji."
     }
   },
@@ -471,7 +471,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "Nagłówek",
-      "page": 143,
+      "page": 3,
       "quote": "Open Water Diver (ISO 24801-2)"
     }
   },
@@ -488,7 +488,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 229,
+      "page": 76,
       "quote": "Kursant musi ukończyć co najmniej dwa (2) zajęcia w wodzie zgodnie z podręcznikiem instruktorskim do programu Perfect Buoyancy. (Brak wymogu sztywnego basenu, zajęcia 'w wodzie')."
     }
   },
@@ -505,7 +505,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Instruktor Specjalizacje ekologiczne",
       "subsection": "III. Weryfikacja aplikacji",
-      "page": 466,
+      "page": 153,
       "quote": "Assistant Instructor może aplikować o odpowiedni program specjalizacji. (Współnauczanie i Seminarium są metodami ogólnymi)."
     }
   },
@@ -522,7 +522,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 150,
+      "page": 18,
       "quote": "Ukończenie co najmniej czterech (4) Nurkowań szkoleniowych na wodach otwartych..."
     }
   },
@@ -539,7 +539,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 151,
+      "page": 8,
       "quote": "Uwaga | Szkolenie na wodach otwartych Nurkowanie 1 i 2 w ramach programu Open Water Diver może być przeprowadzone w obiektach typu indoor, zgodnie z definicją zawartą w Ogólnych Standardach Szkoleniowych."
     }
   },
@@ -556,7 +556,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji (a. Seminarium)",
-      "page": 387,
+      "page": 128,
       "quote": "Posiadający aktywny status Assistant Instructor Trainer, posiadający uprawnienia instruktorskie danej specjalizacji może prowadzić seminarium."
     }
   },
@@ -573,7 +573,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
       "subsection": "IV. Wymagania wstępne",
-      "page": 469,
+      "page": 154,
       "quote": "Minimalny wiek | 6 lat. (Scuba Explorer * Minimalny wiek | 8 lat)."
     }
   },
@@ -590,7 +590,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
       "subsection": "X. Specjalizacje Explorer",
-      "page": 472,
+      "page": 155,
       "quote": "Uczestnicy, którzy ukończyli program Scuba Explorer, mogą ukończyć następujące specjalizacje: * Enriched Air Nitrox Explorer * Perfect Buoyancy Explorer * Search & Recovery Explorer"
     }
   },
@@ -607,7 +607,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba",
       "subsection": "I. Cel",
-      "page": 121,
+      "page": 46,
       "quote": "Program SSI Try Scuba zapewnia uczestnikom przeżycie nurkowe, mające na celu zapoznanie z nurkowaniem w obecności Profesjonalisty SSI w środowisku basenu / ograniczonego akwenu."
     }
   },
@@ -624,7 +624,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 229,
+      "page": 47,
       "quote": "Ukończyć wszystkie zajęcia teoretyczne... Zaliczyć egzamin końcowy programu. Kursant musi ukończyć co najmniej dwa (2) zajęcia w wodzie zgodnie z podręcznikiem instruktorskim..."
     }
   },
@@ -641,7 +641,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "VII. Minimalny nadzór",
-      "page": 148,
+      "page": 50,
       "quote": "Certyfikowany asystent może bezpośrednio nadzorować maksymalnie dwóch (2) kursantów podczas wycieczki w ramach dowolnego nurkowania szkoleniowego na Wodach Otwartych po ukończeniu nurkowania szkoleniowego na Wodach Otwartych 2."
     }
   },
@@ -658,7 +658,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Doświadczania",
       "section": "Try Scuba",
       "subsection": "IV. Wymagania wstępne dla kursanta",
-      "page": 123,
+      "page": 46,
       "quote": "Minimalny wiek | 8 lat."
     }
   },
@@ -675,7 +675,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "XII. Upgrade (podwyższenie uprawnień)",
-      "page": 142,
+      "page": 51,
       "quote": "Ukończenie pozostałych wymagań i ocen z rozdziałów akademickich 4-6 opisanych w podręczniku instruktora dla kursu Open Water Diver."
     }
   },
@@ -692,7 +692,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "IV. Czas trwania",
-      "page": 145,
+      "page": 53,
       "quote": "Minimalny łączny czas denny dla Nurkowań szkoleniowych na wodach otwartych | 80 minut."
     }
   },
@@ -709,7 +709,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 139,
+      "page": 51,
       "quote": "Ukończenie rozdziałów akademickich 1-3... Ukończenie co najmniej trzech (3) Sesji szkoleniowych na basenie/ograniczonym akwenie... Ukończenie co najmniej dwóch (2) Nurkowań szkoleniowych na wodach otwartych... Zaliczyć Egzamin końcowy programu Scuba Diver."
     }
   },
@@ -726,7 +726,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "II. Wymagania wstępne dla kandydata",
-      "page": 384,
+      "page": 127,
       "quote": "Computer Diving AI T T T"
     }
   },
@@ -743,7 +743,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji -> b. Współnauczanie (Co-Teaching)",
-      "page": 388,
+      "page": 128,
       "quote": "Instruktor prowadzący co-teaching musi wystawić minimum pięć (5) certyfikatów danej specjalizacji, zanim będzie mógł prowadzić współnauczanie."
     }
   },
@@ -760,7 +760,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Explorers",
       "section": "SSI Explorers",
       "subsection": "II. Minimalny Stopień Instruktora",
-      "page": 468,
+      "page": 154,
       "quote": "Blue Oceans Explorer, Snorkel Explorer, Mermaid Explorer, Freediving Explorer, Scuba Explorer."
     }
   },
@@ -777,7 +777,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "V. Limity głębokości",
-      "page": 145,
+      "page": 53,
       "quote": "Maksymalny limit głębokości dla wszystkich pozostałych Nurkowań szkoleniowych na wodach otwartych | 18 metrów. Maksymalny limit głębokości dla 10- i 11-latków | 12 metrów. (Zatem limit 18m dotyczy kursantów 12-14 lat)."
     }
   },
@@ -794,7 +794,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "Nagłówek",
-      "page": 225,
+      "page": 3,
       "quote": "Specjalizacje basenowe/w wodach ograniczonych - Perfect Buoyancy"
     }
   },
@@ -811,7 +811,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 229,
+      "page": 66,
       "quote": "Przed przystąpieniem do certyfikacji Kursant musi posiadać certyfikat SSI Open Water Diver lub równoważny."
     }
   },
@@ -828,7 +828,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "VI. Współczynnik ilościowy w wodzie",
-      "page": 146,
+      "page": 48,
       "quote": "a. Basen * Współczynnik kursant-instruktor: 8:1. Współczynnik może wzrosnąć do 10:2 z jednym (1) certyfikowanym asystentem."
     }
   },
@@ -845,7 +845,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Nadzór",
       "subsection": "VI. Umiejętności wynurzenia awaryjnego",
-      "page": 92,
+      "page": 35,
       "quote": "SSI Open Water Instructor lub wyższy musi bezpośrednio prowadzić wszystkie symulowane umiejętności awaryjnego wynurzania podczas szkolenia w wodzie."
     }
   },
@@ -862,7 +862,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "V. Limity głębokości",
-      "page": 145,
+      "page": 53,
       "quote": "Maksymalny limit głębokości dla 10- i 11-latków | 12 metrów"
     }
   },
@@ -879,7 +879,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "X. Sekwencja",
-      "page": 153,
+      "page": 51,
       "quote": "Nurkowanie szkoleniowe na wodach otwartych 2 (...) może zostać przeprowadzone wyłącznie po spełnieniu lub przekroczeniu wszystkich wymagań i ocen dotyczących Sesji szkoleniowych 1-3 oraz Sesji szkoleniowych na basenie/ograniczonym akwenie 2-3 z Podręcznika instruktora."
     }
   },
@@ -896,7 +896,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Scuba Diver (ISO 24801-1)",
       "subsection": "XI. Certyfikacja",
-      "page": 141,
+      "page": 51,
       "quote": "Certyfikowany Scuba Diver może nurkować pod bezpośrednim nadzorem Profesjonalisty nurkowego w środowiskach odpowiadających jego przeszkoleniu oraz na głębokości nie przekraczające 12 metrów."
     }
   },
@@ -913,7 +913,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "I. Cel",
-      "page": 144,
+      "page": 53,
       "quote": "Kursant, który ukończy wszystkie zajęcia teoretyczne oraz zajęcia basenowe/w ograniczonym akwenie wymagane w ramach programu Open Water Diver, może otrzymać cyfrową kartę Referral Diver. Oznacza to, że może wykonać szkoleniowe nurkowania w wodach otwartych w późniejszym terminie i/lub z innym ośrodkiem szkoleniowym SSI."
     }
   },
@@ -930,7 +930,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "XII. Upgrade (podwyższenie uprawnień)",
-      "page": 157,
+      "page": 51,
       "quote": "Aby awansować na Open Water Diver, Referral Diver musi: * Ukończenie wszystkich czterech (4) nurkowań szkoleniowych na wodach otwartych opisanych w podręczniku instruktora Open Water Diver."
     }
   },
@@ -947,7 +947,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 151,
+      "page": 54,
       "quote": "Ukończyć co najmniej cztery (4) nurkowania szkoleniowe w środowisku indoor, w sprzęcie SCUBA oraz wszystkie oceny umiejętności wyszczególnione w Podręczniku Instruktora dla kursu Open Water Diver."
     }
   },
@@ -964,7 +964,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
       "subsection": "I. Cel",
-      "page": 205,
+      "page": 69,
       "quote": "Certyfikacja Enriched Air Nitrox 32 kwalifikuje nurka do używania mieszanin gazowych do EAN32 włącznie."
     }
   },
@@ -981,7 +981,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 210,
+      "page": 70,
       "quote": "b. Wzbogacone powietrze Nitrox 40 * Ukończyć wszystkie Zajęcia Teoretyczne... * Zaliczyć egzamin końcowy programu. * Ukończyć zajęcia aplikacji praktycznej określone w podręczniku instruktorskim Enriched Air Nitrox."
     }
   },
@@ -998,7 +998,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
       "subsection": "XI. Zaliczenie",
-      "page": 212,
+      "page": 70,
       "quote": "Kursanci mogą korzystać z nitroksu podczas zajęć w wodzie prowadzonych w ramach programu Open Water Diver, gdy tylko wykonają części teoretyczne i praktyczne, które wymieniono w podręczniku instruktorskim do kursu Enriched Air Nitrox."
     }
   },
@@ -1015,7 +1015,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
       "subsection": "I. Cel",
-      "page": 255,
+      "page": 85,
       "quote": "Podczas programu SSI Diver Stress & Rescue kursanci zyskają wiedzę i umiejętności niezbędne do rozpoznawania stresu, zapobiegania wypadkom oraz radzenia sobie w częstych sytuacjach awaryjnych, do których dochodzi podczas nurkowań rekreacyjnych."
     }
   },
@@ -1032,7 +1032,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
       "subsection": "VI. Limity głębokości",
-      "page": 259,
+      "page": 48,
       "quote": "Maksymalny limit głębokości nurkowania na Wodach Otwartych | Ratowanie nieprzytomnego nurka na głębokości 9 metrów."
     }
   },
@@ -1049,7 +1049,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 260,
+      "page": 10,
       "quote": "Kursant musi odbyć co najmniej trzy (3) zajęcia basenowe/w ograniczonym akwenie... Kursant musi wykonać co najmniej trzy (3) nurkowania szkoleniowe w wodach otwartych..."
     }
   },
@@ -1066,7 +1066,7 @@ const QUESTIONS_DB = [
       "chapter": "Karty uznania SSI",
       "section": "Uznanie za postępy w szkoleniu",
       "subsection": "Tabela",
-      "page": 357,
+      "page": 117,
       "quote": "SSI Master Diver... 2 specjalizacje z innej uznanej agencji szkoleniowej mogą zostać zaliczone."
     }
   },
@@ -1083,7 +1083,7 @@ const QUESTIONS_DB = [
       "chapter": "Karty uznania SSI",
       "section": "Uznanie za postępy w szkoleniu",
       "subsection": "a. Karta uznaniowa | Marine Guide",
-      "page": 358,
+      "page": 117,
       "quote": "Ukończyć programy Marine Ecology, Blue Oceans, i dwie (2) dodatkowe Specjalizacje ekologiczne."
     }
   },
@@ -1100,7 +1100,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
       "subsection": "I. Cel",
-      "page": 249,
+      "page": 83,
       "quote": "Certyfikat SSI Dive Guide zapewnia wiedzę i szkolenie wymagane do prowadzenia certyfikowanych nurków podczas niekomercyjnych nurkowań rekreacyjnych. Uzyskuje się go poprzez ukończenie programu SSI Divemaster."
     }
   },
@@ -1117,7 +1117,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
       "subsection": "VIII. Wymagania do ukończenia kursu",
-      "page": 253,
+      "page": 84,
       "quote": "Co najmniej 50 zalogowanych nurkowań na Wodach Otwartych, trwających łącznie co najmniej 32 godziny."
     }
   },
@@ -1134,7 +1134,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
       "subsection": "X. Upgrade (podwyższenie uprawnień) | Dive Guide do Divemaster",
-      "page": 254,
+      "page": 84,
       "quote": "Minimalny wiek | 18 lat. (...) Spełnić wszystkie wymagania, aby utrzymać aktywny status w SSI (...) Zaliczyć egzamin końcowy programu Science of Diving."
     }
   },
@@ -1151,7 +1151,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster | ISO 24801-3",
       "subsection": "X. Status Aktywny - Uprawnienia",
-      "page": 365,
+      "page": 120,
       "quote": "Divemasterzy o statusie aktywnym mogą: * Pełnić rolę certyfikowanego asystenta we wszystkich programach SSI dotyczących nurkowania rekreacyjnego."
     }
   },
@@ -1168,7 +1168,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster | ISO 24801-3",
       "subsection": "III. Wymagania wstępne dla kandydata",
-      "page": 361,
+      "page": 119,
       "quote": "Co najmniej 60 zalogowanych nurkowań na Wodach Otwartych, trwających co najmniej 40 godzin."
     }
   },
@@ -1185,7 +1185,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Advanced Open Water Diver",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 184,
+      "page": 62,
       "quote": "Minimalny wiek | 12 lat."
     }
   },
@@ -1202,7 +1202,7 @@ const QUESTIONS_DB = [
       "chapter": "Karty uznania SSI",
       "section": "Uznanie za postępy w szkoleniu",
       "subsection": "Tabela",
-      "page": 357,
+      "page": 117,
       "quote": "SSI Advanced Specialty Diver (...) Zaliczone nurkowania 24 (...) Ukończenie 4 specjalizacji rekreacyjnych lub programów Extended Range"
     }
   },
@@ -1219,7 +1219,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Czas trwania programu i ograniczenia czasowe",
       "subsection": "I. Czas trwania kursu",
-      "page": 78,
+      "page": 32,
       "quote": "Nie ma określonych żadnych maksymalnych limitów czasu trwania programów SSI."
     }
   },
@@ -1236,7 +1236,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Science of Diving",
       "subsection": "II. Minimalny Stopień Instruktora",
-      "page": 219,
+      "page": 73,
       "quote": "Instruktor Specjalizacji SSI Science of Diving o statusie aktywnym może przeprowadzać program Specjalizacji Science of Diving."
     }
   },
@@ -1253,7 +1253,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Miejsca szkoleń i limity głębokości",
       "subsection": "II. Ograniczony akwen",
-      "page": 102,
+      "page": 40,
       "quote": "głębokość wody w basenie/ograniczonym akwenie powinna umożliwiać kursantom stanięcie na dnie, ale zarazem powinna być wystarczająca, żeby kursanci mogli odpowiednio wykonać wymagane ćwiczenia."
     }
   },
@@ -1270,7 +1270,7 @@ const QUESTIONS_DB = [
       "chapter": "Wymagania Administracyjne",
       "section": "Dokumentacja szkolenia i Formularze prywatności",
       "subsection": "b. Przed rozpoczęciem zajęć w wodzie",
-      "page": 27,
+      "page": 12,
       "quote": "Zgoda lekarza na nurkowanie * Ważny przez jeden (1) rok od daty podpisania."
     }
   },
@@ -1287,7 +1287,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje basenowe/w wodach ograniczonych",
       "section": "Perfect Buoyancy",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 225,
+      "page": 48,
       "quote": "Minimalny wiek | 10 lat."
     }
   },
@@ -1304,7 +1304,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Altitude Diving",
       "subsection": "II. Minimalny Stopień Instruktora",
-      "page": 193,
+      "page": 65,
       "quote": "Instruktor Specjalizacji Altitude Diving o statusie aktywnym może prowadzić program Specjalizacji Altitude Diving."
     }
   },
@@ -1321,7 +1321,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Definicje związane ze środowiskiem",
       "subsection": "IV. Nurkowanie w górach",
-      "page": 97,
+      "page": 38,
       "quote": "Profesjonalista SSI musi planować wszystkie nurkowania na wysokości powyżej 300 metrów przy użyciu specjalnych, przeznaczonych do tego tabel wysokościowych/oprogramowania"
     }
   },
@@ -1338,7 +1338,7 @@ const QUESTIONS_DB = [
       "chapter": "Definicje sprzętowe",
       "section": "Programy nurkowania rekreacyjnego",
       "subsection": "I. Gaz oddechowy",
-      "page": 65,
+      "page": 28,
       "quote": "Jeżeli gazem oddechowym jest nitroks, ppO 2 w dowolnym momencie nurkowania nie może przekraczać 1.4 bara."
     }
   },
@@ -1355,7 +1355,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "I. Cel",
-      "page": 144,
+      "page": 53,
       "quote": "Kursant, który ukończy wszystkie zajęcia teoretyczne oraz zajęcia basenowe/w ograniczonym akwenie wymagane w ramach programu Open Water Diver, może otrzymać cyfrową kartę Referral Diver."
     }
   },
@@ -1372,7 +1372,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Open Water Diver (ISO 24801-2) | Indoor Diver | Referral Diver",
       "subsection": "XII. Upgrade (podwyższenie uprawnień)",
-      "page": 158,
+      "page": 55,
       "quote": "Aby awansować na Open Water Diver, Indoor Diver musi: * Ukończenie dwóch (2) dodatkowych Nurkowań szkoleniowych na wodach otwartych na płetwonurka oraz ocena umiejętności opisanych w Nurkowaniach szkoleniowych na wodach otwartych 1-4 Podręcznika instruktora dla Open Water Diver w środowisku wód otwartych."
     }
   },
@@ -1389,7 +1389,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 160,
+      "page": 56,
       "quote": "Minimalny wiek | 15 lat. * Kursant musi przedstawić podpisane oświadczenie dotyczące wcześniejszego szkolenia i doświadczenia nurkowego. * Kursant musi dostarczyć dowód swojego doświadczenia i poprzedniego szkolenia."
     }
   },
@@ -1406,7 +1406,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test",
       "subsection": "VII. Minimalny nadzór",
-      "page": 163,
+      "page": 56,
       "quote": "Jeśli Experienced Diver Test jest wykorzystywany do oceny kandydatów do programów Diver Stress and Rescue lub Dive Guide: * Specialty Instructor z aktywnym statusem i właściwym certyfikatem instruktorskim musi bezpośrednio nadzorować wszystkie zajęcia teoretyczne i zajęcia w wodzie."
     }
   },
@@ -1423,7 +1423,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Poziomu Podstawowego",
       "section": "Experienced Diver Test",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 164,
+      "page": 51,
       "quote": "Zaliczyć egzamin końcowy programu. * Ukończyć co najmniej jedne (1) zajęcia w basenie/ograniczonym akwenie... * Ukończyć ocenę sprawności wodnej Kursanta opisaną w Ogólnych Standardach Szkolenia SSI. * Wykonać co najmniej dwa (2) nurkowania szkoleniowe na Wodach Otwartych... * Ukończyć wszystkie wymagane ćwiczenia z Nurkowań szkoleniowych na wodach otwartych 1-4"
     }
   },
@@ -1440,7 +1440,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Ogólne Standardy Specjalizacji",
       "subsection": "IV. Łączenie programów specjalizacji",
-      "page": 174,
+      "page": 8,
       "quote": "Jeżeli dwa (2) programy specjalizacji są prowadzone jednocześnie, należy przeprowadzić co najmniej trzy (3) nurkowania szkoleniowe na Wodach Otwartych."
     }
   },
@@ -1457,7 +1457,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Kontynuacji Edukacji",
       "section": "Ogólne Standardy Specjalizacji",
       "subsection": "V. Zaliczenie nurkowań",
-      "page": 177,
+      "page": 59,
       "quote": "Jeżeli kursant posiada potwierdzone doświadczenie w zakresie odpowiadającym programowi specjalizacji SSI, Profesjonalista SSI może podjąć decyzję o zaliczeniu jednego (1) nurkowania na poczet danego program specjalizacji SSI."
     }
   },
@@ -1474,7 +1474,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje wiedzy o nurkowaniu",
       "section": "Enriched Air Nitrox (EAN) 32 i 40 (ISO 11107)",
       "subsection": "IX. Wymagania do ukończenia kursu",
-      "page": 210,
+      "page": 70,
       "quote": "a. Wzbogacone powietrze Nitrox 32 * Ukończyć Zajęcia Teoretyczne 1-3... * Zaliczyć egzamin końcowy programu. b. Wzbogacone powietrze Nitrox 40 * Ukończyć wszystkie Zajęcia Teoretyczne... * Zaliczyć egzamin końcowy programu. * Ukończyć zajęcia aplikacji praktycznej"
     }
   },
@@ -1491,7 +1491,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
       "subsection": "III. Wymagania wstępne dla kursanta",
-      "page": 256,
+      "page": 85,
       "quote": "Minimalny wiek | 12 lat. * Kursant powinien posiadać sprawność fizyczną, pozwalającą na wykonanie wymaganych ćwiczeń."
     }
   },
@@ -1508,7 +1508,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Diver Stress & Rescue",
       "subsection": "VII. Współczynnik ilościowy w wodzie",
-      "page": 259,
+      "page": 60,
       "quote": "Kursanci w wieku 12-14 lat: * Współczynnik kursant-instruktor: 6:1."
     }
   },
@@ -1525,7 +1525,7 @@ const QUESTIONS_DB = [
       "chapter": "Specjalizacje na Wodach Otwartych",
       "section": "Certyfikacja Dive Guide'a | Divemaster ISO 24801-3",
       "subsection": "III. Wymagania wstępne dla kandydata",
-      "page": 251,
+      "page": 65,
       "quote": "Kandydat musi posiadać następujące certyfikaty SSI lub równoważne z uznanych organizacji nurkowych: * Diver Stress & Rescue"
     }
   },
@@ -1542,7 +1542,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy specjalizacji z zakresu ekologii",
       "section": "Instruktor Specjalizacje ekologiczne",
       "subsection": "V. Status Aktywny - Uprawnienia",
-      "page": 463,
+      "page": 13,
       "quote": "Professionals o aktywnym statusie SSI mogą kwalifikować się do nauczania programów Ecology Specialty."
     }
   },
@@ -1559,7 +1559,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster | ISO 24801-3",
       "subsection": "X. Status Aktywny - Uprawnienia",
-      "page": 365,
+      "page": 120,
       "quote": "Zarejestruj się w programach szkoleniowych dla Instruktorów Specjalizacji Ekologia."
     }
   },
@@ -1576,7 +1576,7 @@ const QUESTIONS_DB = [
       "chapter": "Prowadzenie programów SSI",
       "section": "Korzystanie z pomocy certyfikowanych asystentów",
       "subsection": "I. Szkolenie na poziomie rekreacyjnym",
-      "page": 86,
+      "page": 33,
       "quote": "W przypadku programów specjalizacji certyfikowany asystent musi posiadać certyfikat na poziomie nurka dla danego programu."
     }
   },
@@ -1593,7 +1593,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "I. Cel",
-      "page": 383,
+      "page": 127,
       "quote": "Istnieją trzy metody uzyskania licencji uprawniającej do nauczania programów Specjalizacji SSI: * Seminarium dla Instruktorów Specjalizacji * Współnauczanie (Co-Teaching) * Weryfikacja/Wniosek (niedostępne dla Divemasterów)"
     }
   },
@@ -1610,7 +1610,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "a. Dodatkowe wymagania wstępne",
-      "page": 385,
+      "page": 125,
       "quote": "Dla Kandydatów na Instruktora Decompression Diving: Posiadać następujące aktywne certyfikaty Specialty Instruktor SSI lub równoważne certyfikaty uznanej agencji szkoleniowej: * Deep Diving * Enriched Air Nitrox * Science of Diving"
     }
   },
@@ -1627,7 +1627,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "II. Wymagania wstępne dla kandydata",
-      "page": 385,
+      "page": 127,
       "quote": "Advanced Wreck Diving OWI T (1)"
     }
   },
@@ -1644,7 +1644,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "a. Dodatkowe wymagania wstępne",
-      "page": 385,
+      "page": 33,
       "quote": "1 | Przedstawić dowód posiadania certyfikatu na poziomie nurka SSI lub równoważnego certyfikatu wydanego przez uznaną agencję szkoleniową."
     }
   },
@@ -1661,7 +1661,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji (c. Weryfikacja aplikacji)",
-      "page": 389,
+      "page": 56,
       "quote": "c. Weryfikacja aplikacji Wymagania wstępne Przedstaw co najmniej jedno z poniższych jako dowód doświadczenia: * Posiadać co najmniej 20 zalogowanych nurkowań w odpowiedniej specjalności. * W przypadku specjalizacji innych niż nurkowanie należy przedstawić dowód doświadczenia"
     }
   },
@@ -1678,7 +1678,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Specialty Instruktor",
       "subsection": "III. Metody Certyfikacji (c. Weryfikacja aplikacji)",
-      "page": 390,
+      "page": 128,
       "quote": "Uwaga | Odpowiedzialne za kurs SSI Service Center może przedstawić dodatkowe wymagania do ukończenia kursu na podstawie lokalnego prawa i regulacji."
     }
   },
@@ -1695,7 +1695,7 @@ const QUESTIONS_DB = [
       "chapter": "Programy Profesjonalne",
       "section": "Divemaster | ISO 24801-3",
       "subsection": "XI. Certyfikowanie profesjonalistów z innych organizacji szkoleniowych",
-      "page": 365,
+      "page": 120,
       "quote": "Kandydaci z innych agencji szkoleniowych muszą ukończyć cały program Divemaster SSI, aby uzyskać certyfikację."
     }
   },
