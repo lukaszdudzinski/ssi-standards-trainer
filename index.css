@@ -907,12 +907,34 @@ body {
 .ref-tag {
   font-size: 0.75rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
 }
 
 .ref-tag i {
-  margin-right: 4px;
+  margin-right: 6px;
+}
+
+.ref-tag.chapter {
   color: var(--color-cyan);
+  background: rgba(0, 242, 254, 0.1);
+}
+
+.ref-tag.section {
+  color: var(--color-purple);
+  background: rgba(214, 162, 255, 0.1);
+  margin-left: 12px;
+  border-left: 2px solid var(--color-purple);
+}
+
+.ref-tag.subsection {
+  color: #ff9800;
+  background: rgba(255, 152, 0, 0.1);
+  margin-left: 24px;
+  border-left: 2px solid #ff9800;
 }
 
 .ref-page-badge {

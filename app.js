@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.6.01.10';
+const APP_VERSION = 'v2026.6.06.01';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -96,6 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const flashcardFrontText = document.getElementById('flashcardFrontText');
   const flashcardBackText = document.getElementById('flashcardBackText');
   const flashcardRefChapter = document.getElementById('flashcardRefChapter');
+  const flashcardRefSection = document.getElementById('flashcardRefSection');
+  const flashcardRefSubsection = document.getElementById('flashcardRefSubsection');
   const flashcardRefPage = document.getElementById('flashcardRefPage');
   const flashcardRefQuote = document.getElementById('flashcardRefQuote');
   const flashcardPdfBtn = document.getElementById('flashcardPdfBtn');
@@ -1240,8 +1242,8 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Optionally read the correct citation aloud in Polish
         if (autoplayToggle.checked) {
-          // Robust and detailed voice feedback template for hierarchy and longer quotes!
-          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. Według standardów SSI, rozdział: ${q.reference.chapter}, podrozdział: ${q.reference.section}, na stronie ${q.reference.page}. Oficjalny zapis ze standardów brzmi: ${q.reference.quote}`, () => {
+          const subsecSpeak = q.reference.subsection ? `, sekcja: ${q.reference.subsection}` : '';
+          speakText(`Błędna odpowiedź. Prawidłowa odpowiedź to opcja ${correctIndex + 1}. Według standardów SSI, rozdział: ${q.reference.chapter}, podrozdział: ${q.reference.section}${subsecSpeak}. Zapis brzmi: ${q.reference.quote}`, () => {
             // Restart recognition to listen for "dalej" when lektor finishes
             if (voiceControlToggle.checked) {
               startSpeechRecognition();
@@ -1327,11 +1329,12 @@ document.addEventListener('DOMContentLoaded', () => {
       incorrectQuestions.forEach(item => {
         const reviewEl = document.createElement('div');
         reviewEl.className = 'review-item';
+        const subsecHtml = item.reference.subsection ? ` • ${item.reference.subsection}` : '';
         reviewEl.innerHTML = `
           <div class="review-q">${item.question}</div>
           <div class="review-ref">
             <strong>Poprawna odp:</strong> ${item.correctText}<br>
-            <small>PDF Str. ${item.reference.page} • ${item.reference.chapter} • ${item.reference.section}</small>
+            <small>PDF Str. ${item.reference.page} • ${item.reference.chapter} • ${item.reference.section}${subsecHtml}</small>
           </div>
           <span class="badge-retry"><i class="fa-solid fa-clock-rotate-left"></i> Nieudane próby: ${item.retriesCount}</span>
         `;
@@ -1510,6 +1513,13 @@ document.addEventListener('DOMContentLoaded', () => {
     flashcardFrontText.textContent = q.question;
     flashcardBackText.textContent = q.options[q.answer];
     flashcardRefChapter.innerHTML = `<i class="fa-solid fa-book"></i> ${q.reference.chapter}`;
+    flashcardRefSection.innerHTML = `<i class="fa-solid fa-bookmark"></i> ${q.reference.section}`;
+    if (q.reference.subsection && flashcardRefSubsection) {
+      flashcardRefSubsection.style.display = 'inline-block';
+      flashcardRefSubsection.innerHTML = `<i class="fa-solid fa-layer-group"></i> ${q.reference.subsection}`;
+    } else if (flashcardRefSubsection) {
+      flashcardRefSubsection.style.display = 'none';
+    }
     flashcardRefPage.textContent = q.reference.page;
     flashcardFeedbackPdfPageNum.textContent = q.reference.page;
     flashcardRefQuote.textContent = `"${q.reference.quote}"`;
@@ -1539,7 +1549,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const q = activeQuestions[currentQuestionIndex];
       // Autoplay TTS for correct answer citation if enabled
       if (autoplayToggle.checked) {
-        speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`, () => {
+        const subsecSpeak = q.reference.subsection ? `, sekcja: ${q.reference.subsection}` : '';
+        speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Według standardów: ${q.reference.section}${subsecSpeak}. Zapis brzmi: ${q.reference.quote}`, () => {
           if (voiceControlToggle.checked) {
             startSpeechRecognition();
           }
@@ -1570,7 +1581,8 @@ document.addEventListener('DOMContentLoaded', () => {
     playSynthesizedCorrect();
     
     // Voice explanation of the rule
-    speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Zgodnie ze standardami strona ${q.reference.page}: ${q.reference.quote}`, () => {
+    const subsecSpeak = q.reference.subsection ? `, sekcja: ${q.reference.subsection}` : '';
+    speakText(`Prawidłowa odpowiedź: ${q.options[q.answer]}. Według standardów: ${q.reference.section}${subsecSpeak}. Zapis brzmi: ${q.reference.quote}`, () => {
       if (voiceControlToggle.checked) {
         startSpeechRecognition();
       }
