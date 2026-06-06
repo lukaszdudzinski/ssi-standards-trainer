@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.6.06.01';
+const APP_VERSION = 'v2026.6.06.02';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -42,7 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const pdfCanvasContainer = document.getElementById('pdfCanvasContainer');
   const pdfCanvas = document.getElementById('pdfCanvas');
   const pdfLoadingIndicator = document.getElementById('pdfLoadingIndicator');
-
+  
+  const togglePdfTocBtn = document.getElementById('togglePdfTocBtn');
+  const closePdfTocBtn = document.getElementById('closePdfTocBtn');
+  const pdfSidebar = document.getElementById('pdfSidebar');
+  const tocSearchInput = document.getElementById('tocSearchInput');
+  const pdfTocList = document.getElementById('pdfTocList');
   const quizTimer = document.getElementById('quizTimer');
   const quitQuizBtn = document.getElementById('quitQuizBtn');
   const progressText = document.getElementById('progressText');
@@ -1943,6 +1948,73 @@ document.addEventListener('DOMContentLoaded', () => {
     openPdfFeedbackBtn.addEventListener('click', () => {
       const pageNumVal = feedbackPdfPageNum ? (parseInt(feedbackPdfPageNum.textContent.trim()) || 1) : 1;
       openPdfViewer(pageNumVal);
+    });
+  }
+
+  // --- PDF TOC Sidebar Logic ---
+  let tocData = [];
+
+  function buildTocData() {
+    const map = new Map();
+    QUESTIONS_DB.forEach(q => {
+      if (q.reference && q.reference.chapter && q.reference.page) {
+        let titleParts = [q.reference.chapter];
+        if (q.reference.section) titleParts.push(q.reference.section);
+        const title = titleParts.join(' • ');
+        
+        if (!map.has(title) || map.get(title) > q.reference.page) {
+          map.set(title, q.reference.page);
+        }
+      }
+    });
+    
+    tocData = Array.from(map.entries()).map(([title, page]) => ({ title, page }));
+    tocData.sort((a, b) => a.page - b.page);
+  }
+
+  function renderTocList(filterText = '') {
+    if (!pdfTocList) return;
+    pdfTocList.innerHTML = '';
+    const term = filterText.toLowerCase();
+    
+    tocData.forEach(item => {
+      if (item.title.toLowerCase().includes(term)) {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <span class="toc-item-title">${item.title}</span>
+          <div class="toc-item-meta">
+            <span>Strona ze standardów</span>
+            <span class="toc-item-page">${item.page}</span>
+          </div>
+        `;
+        li.addEventListener('click', () => {
+          queueRenderPage(item.page);
+          if (pdfSidebar) pdfSidebar.classList.remove('active');
+        });
+        pdfTocList.appendChild(li);
+      }
+    });
+  }
+
+  if (togglePdfTocBtn && pdfSidebar) {
+    togglePdfTocBtn.addEventListener('click', () => {
+      if (tocData.length === 0) {
+        buildTocData();
+        renderTocList();
+      }
+      pdfSidebar.classList.toggle('active');
+    });
+  }
+
+  if (closePdfTocBtn && pdfSidebar) {
+    closePdfTocBtn.addEventListener('click', () => {
+      pdfSidebar.classList.remove('active');
+    });
+  }
+
+  if (tocSearchInput) {
+    tocSearchInput.addEventListener('input', (e) => {
+      renderTocList(e.target.value);
     });
   }
 

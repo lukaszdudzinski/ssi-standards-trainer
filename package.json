@@ -23,5 +23,8 @@
   "devDependencies": {
     "browser-sync": "^3.0.4",
     "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "pdf-parse": "^1.1.1"
   }
 }

@@ -115,7 +115,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.6.06.01</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.6.06.02</span></p>
         </div>
       </section>
 
@@ -540,7 +540,7 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.6.06.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.6.06.02</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>
@@ -565,7 +565,10 @@
       <div class="modal-header pdf-header">
         <div class="header-left">
           <button id="closePdfBtn" class="btn btn-close-pdf" title="Zamknij i wróć do aplikacji">
-            <i class="fa-solid fa-arrow-left"></i> Powrót
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="togglePdfTocBtn" class="btn btn-toc" title="Spis Treści" style="background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); color: var(--text-primary); border-radius: 8px; padding: 6px 12px; margin-left: 8px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-list-ul"></i> <span class="toc-label-text">Spis</span>
           </button>
         </div>
         <div class="header-center pdf-controls">
@@ -584,6 +587,22 @@
         <div class="pdf-loading-indicator" id="pdfLoadingIndicator">
           <i class="fa-solid fa-circle-notch fa-spin"></i> Wczytywanie standardów...
         </div>
+        
+        <!-- PDF TOC Sidebar -->
+        <div id="pdfSidebar" class="pdf-sidebar">
+          <div class="toc-header">
+            <h3>Spis Treści</h3>
+            <button id="closePdfTocBtn" class="icon-btn" aria-label="Zamknij"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="toc-search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="tocSearchInput" placeholder="Szukaj rozdziału...">
+          </div>
+          <ul id="pdfTocList" class="pdf-toc-list">
+             <!-- Items injected via JS -->
+          </ul>
+        </div>
+
         <div class="pdf-canvas-wrapper" id="pdfCanvasWrapper">
           <canvas id="pdfCanvas"></canvas>
         </div>
