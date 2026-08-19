@@ -1,6 +1,6 @@
 {
-  "name": "Uki SSI Standards",
-  "short_name": "Uki SSI Standards",
+  "name": "Uki'sSSITrainer",
+  "short_name": "Uki'sSSITrainer",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#070b19",

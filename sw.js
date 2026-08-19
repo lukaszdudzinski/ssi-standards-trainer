@@ -1,11 +1,11 @@
-const CACHE_NAME = 'ssi-standards-trainer-v2026.6.06.03';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.8.19.01';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './index.css',
   './app.js',
   './questions.js',
-  './logo.png',
+  './img/logo.jpeg',
   './logo_pro_192.png',
   './logo_pro_512.png',
   './manifest.json',

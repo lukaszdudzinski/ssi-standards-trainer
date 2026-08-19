@@ -57,7 +57,7 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.6.06.03', 'APP_VERSION must be exactly v2026.6.06.03');
+  assert(appVersion === 'v2026.8.19.01', 'APP_VERSION must be exactly v2026.8.19.01');
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
@@ -75,9 +75,9 @@ try {
   assert(htmlContent.includes('href="logo_pro_192.png"'), 'index.html favicon link must point to logo_pro_192.png');
   assert(htmlContent.includes('href="logo_pro_512.png"'), 'index.html apple touch icon link must point to logo_pro_512.png');
   
-  // Verify inside app logos remain logo.png as requested
-  assert(htmlContent.includes('class="welcome-logo"') && htmlContent.includes('src="logo.png"'), 'Inside welcome logo must remain logo.png B&W');
-  assert(htmlContent.includes('class="app-logo"') && htmlContent.includes('src="logo.png"'), 'Inside app logo must remain logo.png B&W');
+  // Verify inside app logos match the new user request
+  assert(htmlContent.includes('class="welcome-logo"') && htmlContent.includes('src="img/logo.jpeg"'), 'Inside welcome logo must be img/logo.jpeg');
+  assert(htmlContent.includes('class="app-logo"') && htmlContent.includes('src="img/logo.jpeg"'), 'Inside app logo must be img/logo.jpeg');
 
   // 3. Process Validation: UI Updates
   assert(htmlContent.includes('id="appVersion"'), 'index.html must have an appVersion element');
