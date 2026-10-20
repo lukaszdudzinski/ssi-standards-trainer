@@ -57,13 +57,15 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.8.19.01', 'APP_VERSION must be exactly v2026.8.19.01');
+  assert(/^v\d{4}\.(?:[1-9]|1[0-2])\.(?:[1-9]|[12]\d|3[01])\.\d{2}$/.test(appVersion || ''), `APP_VERSION (${appVersion}) must match vYYYY.M.D.NN`);
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
   assert(swCacheMatch !== null, 'sw.js must declare a CACHE_NAME');
   const swVersion = swCacheMatch ? swCacheMatch[1] : null;
   assert(swVersion === appVersion, `sw.js cache version (${swVersion}) must match app.js version (${appVersion})`);
+  assert(htmlContent.includes(`<span id="welcomeVersion">${appVersion}</span>`), 'index.html #welcomeVersion must equal APP_VERSION');
+  assert(htmlContent.includes(`<span id="appVersion">${appVersion}</span>`), 'index.html #appVersion must equal APP_VERSION');
 
   // Check manifest icon files sync
   const manifest = JSON.parse(manifestContent);
