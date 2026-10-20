@@ -166,6 +166,14 @@ try {
   assert(htmlContent.includes('data-tab="commands"'), 'index.html must contain data-tab="commands" settings tab button');
   assert(htmlContent.includes('id="tab-commands"'), 'index.html must contain tab-commands tab content pane');
 
+  // 14. Process Validation: CI gates publication on tests, no unsafe deploy script
+  const workflowPath = path.join(__dirname, '.github', 'workflows', 'deploy.yml');
+  const workflow = fs.existsSync(workflowPath) ? fs.readFileSync(workflowPath, 'utf8') : '';
+  assert(workflow.includes('needs: test'), 'deploy.yml: Pages deploy job must depend on the test job');
+  assert(workflow.includes("github.ref == 'refs/heads/main'"), 'deploy.yml: Pages deploy must run only on main');
+  assert(JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8')).scripts.deploy === undefined,
+    'package.json must not define the unsafe "deploy" script (git add . && push)');
+
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');
   console.log('===================================================');
