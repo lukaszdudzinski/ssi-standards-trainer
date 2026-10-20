@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ssi-standards-trainer-v2026.8.19.01';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.10.20.01';
 // Domena lukaszdudzinski.github.io jest wspólna dla aplikacji UKIS: kasujemy wyłącznie własne cache.
 const CACHE_PREFIX = 'ssi-standards-trainer-';
 const ASSETS_TO_CACHE = [
