@@ -105,6 +105,8 @@ try {
   // 7. Process Validation: Service Worker SkipWaiting Updates
   assert(swContent.includes("event.data.action === 'skipWaiting'"), 'sw.js must listen for the skipWaiting action');
   assert(jsContent.includes('navigator.serviceWorker.addEventListener(\'controllerchange\''), 'app.js must handle controller changes to reload page on update');
+  assert(!jsContent.includes('localStorage.clear('), 'app.js must not call localStorage.clear() (localStorage is shared by all UKIS apps)');
+  assert(!jsContent.includes('getRegistrations('), 'app.js must not enumerate service worker registrations of other UKIS apps');
 
   // 8. Process Validation: Quit Quiz & Exam Timer Updates
   assert(htmlContent.includes('id="quitQuizBtn"'), 'index.html must contain a quitQuizBtn element');
