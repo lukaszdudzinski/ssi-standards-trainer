@@ -30,10 +30,24 @@ function readMatch(file, regex, label) {
 const APP_VERSION = readMatch('app.js', /const APP_VERSION = '([^']+)';/, 'APP_VERSION');
 const CURRENT_CACHE_NAME = readMatch('sw.js', /const CACHE_NAME = '([^']+)';/, 'CACHE_NAME');
 
+// Treść pytania porównujemy też z opcjami, bo questions.js zawiera dwa pytania o identycznej
+// treści i różnych odpowiedziach. QUESTIONS_DB to globalne const z questions.js:1.
+async function correctAnswerIndex(page) {
+  return page.evaluate(() => {
+    const text = document.querySelector('#questionText').textContent;
+    const opts = [...document.querySelectorAll('.answer-btn .ans-text')].map((el) => el.textContent);
+    const q = QUESTIONS_DB.find(
+      (item) => item.question === text && item.options.every((o, i) => o === opts[i])
+    );
+    return q.answer;
+  });
+}
+
 module.exports = {
   EXTERNAL_ASSETS,
   stubExternalAssets,
   collectConsoleErrors,
   APP_VERSION,
   CURRENT_CACHE_NAME,
+  correctAnswerIndex,
 };
