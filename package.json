@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node test_processes.js && node test_db.js",
+    "test": "node test_processes.js && node test_db.js && node tests/unit/test_sw.js",
     "test:e2e": "playwright test",
     "dev": "browser-sync start --server --files '*.css, *.js, *.html'",
     "deploy": "git add . && git commit -m 'deploy' && git push origin main"
