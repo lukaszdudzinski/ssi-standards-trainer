@@ -1,4 +1,6 @@
-const CACHE_NAME = 'ssi-standards-trainer-v2026.8.19.01';
+const CACHE_NAME = 'ssi-standards-trainer-v2026.10.20.01';
+// Domena lukaszdudzinski.github.io jest wspólna dla aplikacji UKIS: kasujemy wyłącznie własne cache.
+const CACHE_PREFIX = 'ssi-standards-trainer-';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -26,13 +28,13 @@ self.addEventListener('install', (e) => {
   );
 });
 
-// Activate Service Worker and clean up old caches
+// Activate: remove only this app's old caches (prefix CACHE_PREFIX)
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys().then((keys) => {
       return Promise.all(
         keys.map((key) => {
-          if (key !== CACHE_NAME) {
+          if (key.startsWith(CACHE_PREFIX) && key !== CACHE_NAME) {
             console.log('Clearing old cache:', key);
             return caches.delete(key);
           }

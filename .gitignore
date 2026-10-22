@@ -2,3 +2,7 @@ node_modules/
 .DS_Store
 *.txt
 temp_*.js
+test-results/
+playwright-report/
+blob-report/
+_site/

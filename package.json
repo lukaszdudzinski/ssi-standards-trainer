@@ -4,9 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node test_processes.js && node test_db.js",
-    "dev": "browser-sync start --server --files '*.css, *.js, *.html'",
-    "deploy": "git add . && git commit -m 'deploy' && git push origin main"
+    "test": "node test_processes.js && node test_db.js && node tests/unit/test_sw.js",
+    "test:e2e": "playwright test",
+    "dev": "browser-sync start --server --files '*.css, *.js, *.html'"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/lukaszdudzinski/ssi-standards-trainer#readme",
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "browser-sync": "^3.0.4",
+    "http-server": "^14.1.1",
     "prettier": "^3.8.3"
   },
   "dependencies": {

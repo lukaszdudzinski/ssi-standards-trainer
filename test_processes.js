@@ -57,13 +57,15 @@ try {
   const appVersion = jsVersionMatch ? jsVersionMatch[1] : null;
   console.log(`Detected APP_VERSION: ${appVersion}`);
   
-  assert(appVersion === 'v2026.8.19.01', 'APP_VERSION must be exactly v2026.8.19.01');
+  assert(/^v\d{4}\.(?:[1-9]|1[0-2])\.(?:[1-9]|[12]\d|3[01])\.\d{2}$/.test(appVersion || ''), `APP_VERSION (${appVersion}) must match vYYYY.M.D.NN`);
 
   // Check SW cache name sync
   const swCacheMatch = swContent.match(/const CACHE_NAME = 'ssi-standards-trainer-([^']+)';/);
   assert(swCacheMatch !== null, 'sw.js must declare a CACHE_NAME');
   const swVersion = swCacheMatch ? swCacheMatch[1] : null;
   assert(swVersion === appVersion, `sw.js cache version (${swVersion}) must match app.js version (${appVersion})`);
+  assert(htmlContent.includes(`<span id="welcomeVersion">${appVersion}</span>`), 'index.html #welcomeVersion must equal APP_VERSION');
+  assert(htmlContent.includes(`<span id="appVersion">${appVersion}</span>`), 'index.html #appVersion must equal APP_VERSION');
 
   // Check manifest icon files sync
   const manifest = JSON.parse(manifestContent);
@@ -105,6 +107,8 @@ try {
   // 7. Process Validation: Service Worker SkipWaiting Updates
   assert(swContent.includes("event.data.action === 'skipWaiting'"), 'sw.js must listen for the skipWaiting action');
   assert(jsContent.includes('navigator.serviceWorker.addEventListener(\'controllerchange\''), 'app.js must handle controller changes to reload page on update');
+  assert(!jsContent.includes('localStorage.clear('), 'app.js must not call localStorage.clear() (localStorage is shared by all UKIS apps)');
+  assert(!jsContent.includes('getRegistrations('), 'app.js must not enumerate service worker registrations of other UKIS apps');
 
   // 8. Process Validation: Quit Quiz & Exam Timer Updates
   assert(htmlContent.includes('id="quitQuizBtn"'), 'index.html must contain a quitQuizBtn element');
@@ -161,6 +165,14 @@ try {
   // 13. Process Validation: Voice commands guide tab
   assert(htmlContent.includes('data-tab="commands"'), 'index.html must contain data-tab="commands" settings tab button');
   assert(htmlContent.includes('id="tab-commands"'), 'index.html must contain tab-commands tab content pane');
+
+  // 14. Process Validation: CI gates publication on tests, no unsafe deploy script
+  const workflowPath = path.join(__dirname, '.github', 'workflows', 'deploy.yml');
+  const workflow = fs.existsSync(workflowPath) ? fs.readFileSync(workflowPath, 'utf8') : '';
+  assert(workflow.includes('needs: test'), 'deploy.yml: Pages deploy job must depend on the test job');
+  assert(workflow.includes("github.ref == 'refs/heads/main'"), 'deploy.yml: Pages deploy must run only on main');
+  assert(JSON.parse(fs.readFileSync(path.join(__dirname, 'package.json'), 'utf8')).scripts.deploy === undefined,
+    'package.json must not define the unsafe "deploy" script (git add . && push)');
 
   console.log('\n===================================================');
   console.log('PROCESSES VALIDATION SUMMARY');
