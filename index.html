@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplikacja edukacyjna do nauki standardów SSI dla kandydatów na instruktorów nurkowania. Obsługa głosowa, tryb offline, baza pytań i referencje PDF.">
+  <meta name="theme-color" content="#070b19">
+  <title>SSI Standards Trainer | Uki</title>
+  
+  <!-- PWA Manifest & Favicon -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="logo_pro_192.png">
+  <link rel="apple-touch-icon" href="logo_pro_512.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons (for UI icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+  <!-- Dynamic Fluid Background Blobs for Liquid Glass Effect -->
+  <div class="fluid-background">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <img src="img/logo.jpeg" alt="Uki Logo" class="app-logo" id="headerLogo">
+        <div class="brand-text">
+          <h1>SSI Standards</h1>
+          <p>Instructor Trainer</p>
+        </div>
+      </div>
+      <div class="header-controls">
+        <button id="themeToggle" class="icon-btn" title="Zmień motyw" aria-label="Zmień motyw">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button id="settingsBtn" class="icon-btn" title="Instrukcja & Ustawienia" aria-label="Ustawienia">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="app-main">
+      <!-- Screen 1: Welcome Screen -->
+      <section id="welcomeScreen" class="glass-panel active">
+        <div class="welcome-hero">
+          <img src="img/logo.jpeg" alt="Logo Uki" class="welcome-logo">
+          <h2>Witaj w trenażerze standardów SSI!</h2>
+          <p class="welcome-desc">Zwiększ swoje szanse na egzaminie instruktorskim (ITC/IE). Naucz się na pamięć głębokości, limitów wiekowych, proporcji ilościowych oraz procedur szkoleniowych.</p>
+        </div>
+
+        <!-- Thematic Category Selection -->
+        <div class="category-selection-container">
+          <label for="categoryFilter"><i class="fa-solid fa-tags"></i> Dział Nauki:</label>
+          <select id="categoryFilter" class="glass-select">
+            <option value="all">Wszystko (wczytywanie...)</option>
+            <option value="metodyka">Metodyka i Psychologia (wczytywanie...)</option>
+            <option value="ogolne">Standardy Ogólne (wczytywanie...)</option>
+            <option value="wspolczynniki">Współczynniki i Wiek (wczytywanie...)</option>
+            <option value="fizyka">Fizyka i Fizjologia (wczytywanie...)</option>
+            <option value="specjalizacje">Specjalizacje (wczytywanie...)</option>
+          </select>
+        </div>
+
+        <div class="welcome-modes">
+          <button id="startTestBtn" class="btn btn-primary">
+            <span class="btn-icon"><i class="fa-solid fa-clipboard-question"></i></span>
+            <span class="btn-text">Egzamin 50 Pytań <small>Losowy zestaw z bazy</small></span>
+          </button>
+          
+          <button id="startPracticeBtn" class="btn btn-secondary">
+            <span class="btn-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+            <span class="btn-text">Pełna Baza Pytań <small>Tryb nauki bez limitów</small></span>
+          </button>
+          
+          <button id="startFlashcardsBtn" class="btn btn-secondary" style="margin-top: 10px; background: rgba(138, 43, 226, 0.05); border: 1px solid rgba(138, 43, 226, 0.2);">
+            <span class="btn-icon" style="color: #a78bfa;"><i class="fa-solid fa-clone"></i></span>
+            <span class="btn-text">Tryb Fiszki <small>Obracaj karty i powtarzaj reguły</small></span>
+          </button>
+          
+          <button id="openPdfMainMenuBtn" class="btn btn-secondary" style="margin-top: 10px; background: rgba(0, 242, 254, 0.05); border: 1px solid rgba(0, 242, 254, 0.2);">
+            <span class="btn-icon" style="color: var(--color-cyan);"><i class="fa-solid fa-file-pdf"></i></span>
+            <span class="btn-text">Standardy SSI (PDF) <small>Otwórz oficjalny podręcznik</small></span>
+          </button>
+        </div>
+
+        <!-- Weakness Analytics Panel -->
+        <div class="stats-panel glass-panel-sub">
+          <h3><i class="fa-solid fa-chart-pie"></i> Twój Poziom Wiedzy</h3>
+          <div class="stats-grid" id="statsGrid">
+            <!-- Dynamically populated -->
+          </div>
+          <div class="stats-actions">
+            <button id="resetStatsBtn" class="btn-reset-stats"><i class="fa-solid fa-trash-can"></i> Resetuj statystyki</button>
+          </div>
+        </div>
+
+        <div class="pwa-install-banner" id="pwaBanner" style="display: none;">
+          <div class="pwa-text">
+            <h4>Zainstaluj na telefonie</h4>
+            <p>Korzystaj z aplikacji bez internetu (w trybie offline) na łodzi lub w bazie.</p>
+          </div>
+          <button id="installAppBtn" class="btn-install">Instaluj</button>
+        </div>
+
+        <div class="welcome-footer">
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.10.20.01</span></p>
+        </div>
+      </section>
+
+      <!-- Screen 1.5: Flashcards Screen -->
+      <section id="flashcardScreen" class="glass-panel">
+        <div class="quiz-top-actions">
+          <button id="quitFlashcardsBtn" class="quit-btn" title="Wróć do menu głównego">
+            <i class="fa-solid fa-arrow-left"></i> Menu Główne
+          </button>
+        </div>
+
+        <div class="quiz-status">
+          <div class="status-item timer">
+            <i class="fa-solid fa-clone"></i>
+            <span>Fiszki</span>
+          </div>
+          <div class="status-item progress">
+            <span id="flashcardProgressText">Karta 1 / 50</span>
+          </div>
+          <div class="status-item score" style="color: var(--color-cyan);">
+            <i class="fa-solid fa-check"></i>
+            <span id="flashcardLearnedText">0</span>
+          </div>
+        </div>
+
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="flashcardProgressBarFill" style="width: 0%;"></div>
+        </div>
+
+        <!-- 3D Card Container -->
+        <div class="flashcard-container" id="flashcardContainer">
+          <div class="flashcard" id="flashcard">
+            <!-- Card Front -->
+            <div class="card-face card-front">
+              <span class="card-hint">PYTANIE</span>
+              <h3 id="flashcardFrontText">Treść pytania pojawi się tutaj...</h3>
+              <span class="card-action-hint"><i class="fa-solid fa-rotate"></i> Stuknij, aby obrócić</span>
+            </div>
+            <!-- Card Back -->
+            <div class="card-face card-back">
+              <span class="card-hint" style="color: var(--color-green);">PRAWIDŁOWA ODPOWIEDŹ</span>
+              <h4 id="flashcardBackText">Odpowiedź pojawi się tutaj...</h4>
+              
+              <div class="ref-container" style="margin-top: 14px; width: 100%;">
+                <div class="ref-meta">
+                  <span class="ref-tag chapter" id="flashcardRefChapter"><i class="fa-solid fa-book"></i> Rozdział</span>
+                  <span class="ref-tag section" id="flashcardRefSection" style="display: none;"><i class="fa-solid fa-bookmark"></i> Podrozdział</span>
+                  <span class="ref-tag subsection" id="flashcardRefSubsection" style="display: none; background: rgba(255, 165, 0, 0.15); border-color: rgba(255, 165, 0, 0.3); color: orange;"><i class="fa-solid fa-layer-group"></i> Sekcja</span>
+                </div>
+                <div class="ref-page-badge">
+                  <span class="page-label">Strona</span>
+                  <span class="page-num page-badge-static" id="flashcardRefPage">54</span>
+                </div>
+              </div>
+
+              <div class="ref-quote" style="margin-top: 10px; width: 100%; max-height: 80px; overflow-y: auto;">
+                <p id="flashcardRefQuote">"Cytat ze standardów..."</p>
+              </div>
+
+              <button id="flashcardPdfBtn" class="pdf-feedback-btn" style="margin-top: 14px; width: 100%;">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Pokaż tę regułę w standardach</span>
+                <span class="btn-page-indicator">str. <span id="flashcardFeedbackPdfPageNum">54</span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcards Controls -->
+        <div class="flashcard-controls">
+          <button id="flashcardFlipBtn" class="btn btn-secondary" style="justify-content: center; padding: 12px;">
+            <i class="fa-solid fa-rotate"></i> Obróć kartę
+          </button>
+          
+          <div class="flashcard-answers-row" id="flashcardAnswersRow">
+            <button id="flashcardIncorrectBtn" class="btn flashcard-action-btn" style="background: rgba(255, 77, 77, 0.1); border-color: rgba(255, 77, 77, 0.2); color: var(--color-red); justify-content: center; font-size: 0.9rem;">
+              ❌ Nie znam
+            </button>
+            <button id="flashcardCorrectBtn" class="btn flashcard-action-btn" style="background: rgba(0, 223, 137, 0.1); border-color: rgba(0, 223, 137, 0.2); color: var(--color-green); justify-content: center; font-size: 0.9rem;">
+              ✅ Znam
+            </button>
+          </div>
+          
+          <button id="flashcardNextBtn" class="btn btn-primary pulse-glow" style="display: none; justify-content: center; padding: 12px; width: 100%; font-size: 0.9rem;">
+            Dalej <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Screen 2: Quiz Screen -->
+      <section id="quizScreen" class="glass-panel">
+        <!-- Top Abort Action -->
+        <div class="quiz-top-actions">
+          <button id="quitQuizBtn" class="quit-btn" title="Przerwij test i wróć do menu głównego">
+            <i class="fa-solid fa-arrow-left"></i> Przerwij test
+          </button>
+        </div>
+
+        <!-- Quiz Status Bar -->
+        <div class="quiz-status">
+          <div class="status-item timer" style="display: flex; align-items: center; justify-content: center;">
+            <i class="fa-regular fa-clock" style="margin-right: 5px;"></i>
+            <span id="quizTimer" style="display: inline-block; width: 45px; font-variant-numeric: tabular-nums; text-align: center;">00:00</span>
+            <button id="pauseTimerBtn" class="icon-btn" style="margin-left: 2px; font-size: 0.85rem; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--color-cyan); display: flex; align-items: center; justify-content: center; width: 28px; height: 28px;" title="Wstrzymaj/Wznów czas"><i class="fa-solid fa-pause"></i></button>
+          </div>
+          <div class="status-item progress">
+            <span id="progressText">Pytanie 1 / 50</span>
+          </div>
+          <div class="status-item retries" id="statusRetries" style="display: none;">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span id="retriesText">Powtórki: 0</span>
+          </div>
+          <div class="status-item score">
+            <i class="fa-solid fa-check"></i>
+            <span id="scoreText">0</span>
+          </div>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="progressBarFill" style="width: 0%;"></div>
+        </div>
+
+        <!-- Lektor & Voice Control Switches -->
+        <div class="voice-switches">
+          <div class="switch-container">
+            <span class="switch-label"><i class="fa-solid fa-volume-high"></i> Autoplay lektora</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="autoplayToggle">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+          <div class="switch-container">
+            <span class="switch-label"><i class="fa-solid fa-microphone"></i> Sterowanie głosowe</span>
+            <label class="toggle-switch">
+              <input type="checkbox" id="voiceControlToggle">
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Question Card -->
+        <div class="question-card" id="questionCard">
+          <h3 id="questionText">Treść pytania pojawi się tutaj...</h3>
+          <div class="question-actions" style="display: flex; gap: 10px; justify-content: center; align-items: stretch; margin-top: 15px;">
+            <button id="repeatSpeechBtn" class="repeat-btn pulse-glow" style="flex: 1; max-width: 200px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; font-size: 0.85rem;" title="Powtórz lektora">
+              <i class="fa-solid fa-volume-high"></i> Powtórz lektora
+            </button>
+            <button id="peekPdfBtn" class="btn btn-secondary" style="flex: 1; max-width: 200px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; font-size: 0.85rem; background: rgba(0,242,254,0.05); border-color: rgba(0,242,254,0.2); color: var(--color-cyan);" title="Podgląd dokumentacji">
+              <i class="fa-solid fa-book-open"></i> Standardy PDF
+            </button>
+          </div>
+        </div>
+
+        <!-- Answers Grid -->
+        <div class="answers-grid" id="answersGrid">
+          <button class="answer-btn" data-index="0">
+            <span class="ans-number">1</span>
+            <span class="ans-text">Odpowiedź pierwsza</span>
+          </button>
+          <button class="answer-btn" data-index="1">
+            <span class="ans-number">2</span>
+            <span class="ans-text">Odpowiedź druga</span>
+          </button>
+          <button class="answer-btn" data-index="2">
+            <span class="ans-number">3</span>
+            <span class="ans-text">Odpowiedź trzecia</span>
+          </button>
+          <button class="answer-btn" data-index="3">
+            <span class="ans-number">4</span>
+            <span class="ans-text">Odpowiedź czwarta</span>
+          </button>
+        </div>
+
+        <!-- Voice Recognition Overlay / Bar -->
+        <div class="voice-recognition-bar" id="voiceStatusContainer" style="display: none;">
+          <div class="mic-wave">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="voiceStatusText">Nasłuchiwanie: powiedz "jeden", "dwa", "trzy" lub "cztery"...</span>
+        </div>
+
+        <!-- Feedback Overlay (Correct / Incorrect details) -->
+        <div class="feedback-panel" id="feedbackPanel">
+          <div class="feedback-content">
+            <div class="feedback-header" id="feedbackHeader">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+              <h4>Błędna odpowiedź!</h4>
+            </div>
+            
+            <div class="feedback-question-replay" style="font-size: 0.85rem; color: rgba(255,255,255,0.7); margin-bottom: 12px; padding: 10px; background: rgba(0,0,0,0.25); border-radius: 8px; border-left: 3px solid var(--color-blue); text-align: left;">
+              <strong style="color: var(--color-cyan); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 4px; display: block;">Treść pytania:</strong>
+              <em id="feedbackQuestionText">"Tutaj pojawi się treść pytania"</em>
+            </div>
+            
+            <div class="ref-container">
+              <div class="ref-meta">
+                <span class="ref-tag chapter" id="refChapter"><i class="fa-solid fa-book"></i> Rozdział</span>
+                <span class="ref-tag section" id="refSection"><i class="fa-solid fa-bookmark"></i> Podrozdział</span>
+                <span class="ref-tag subsection" id="refSubsection" style="display: none; background: rgba(255, 165, 0, 0.15); border-color: rgba(255, 165, 0, 0.3); color: orange;"><i class="fa-solid fa-layer-group"></i> Sekcja</span>
+              </div>
+              <div class="ref-page-badge">
+                <span class="page-label">Strona</span>
+                <span class="page-num page-badge-static" id="refPage">54</span>
+              </div>
+            </div>
+
+            <div class="ref-quote">
+              <p id="refQuote">"Cytat z oficjalnego dokumentu standardów w tym miejscu..."</p>
+            </div>
+
+            <button id="openPdfFeedbackBtn" class="pdf-feedback-btn">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Pokaż tę regułę w standardach</span>
+              <span class="btn-page-indicator">str. <span id="feedbackPdfPageNum">54</span></span>
+            </button>
+
+            <button id="nextQuestionBtn" class="btn btn-primary">Dalej <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: Results Screen -->
+      <section id="resultsScreen" class="glass-panel">
+        <div class="results-hero">
+          <img src="img/logo.jpeg" alt="Logo Uki" class="results-logo">
+          <h2>Wynik Twojego Egzaminu</h2>
+          
+          <!-- Circular Progress Indicator -->
+          <div class="circular-progress">
+            <svg class="progress-ring" width="160" height="160">
+              <circle class="progress-ring-bg" stroke="rgba(255,255,255,0.05)" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+              <circle class="progress-ring-circle" id="progressRingCircle" stroke="#00f2fe" stroke-width="12" fill="transparent" r="70" cx="80" cy="80"/>
+            </svg>
+            <div class="progress-percentage">
+              <span id="resultPercent">0%</span>
+            </div>
+          </div>
+
+          <h3 id="resultVerdict">Niestety, spróbuj jeszcze raz!</h3>
+          <p id="resultDetails">Udzieliłeś 0 poprawnych odpowiedzi na 50 pytań.</p>
+        </div>
+
+        <div class="results-actions">
+          <button id="restartTestBtn" class="btn btn-primary">
+            <i class="fa-solid fa-rotate-left"></i> Nowy Egzamin
+          </button>
+          <button id="backToHomeBtn" class="btn btn-secondary">
+            <i class="fa-solid fa-house"></i> Ekran Główny
+          </button>
+        </div>
+
+        <!-- Reinforcement Session Voice/Manual Prompt -->
+        <div class="reinforcement-prompt" id="reinforcementPrompt" style="display: none; margin-bottom: 20px;">
+          <p class="prompt-text"><i class="fa-solid fa-circle-question"></i> Czy chcesz rozpocząć sesję utrwalającą?</p>
+          <div class="prompt-buttons" style="display: flex; gap: 10px; justify-content: center; margin-top: 10px;">
+            <button id="reinforcementYesBtn" class="btn btn-success pulse-green"><i class="fa-solid fa-check"></i> TAK</button>
+            <button id="reinforcementNoBtn" class="btn btn-danger pulse-red"><i class="fa-solid fa-xmark"></i> NIE</button>
+          </div>
+        </div>
+
+        <!-- Incorrect Answers Review -->
+        <div class="incorrect-review" id="incorrectReview" style="display: none;">
+          <div class="review-header-flex">
+            <h3>Przegląd błędów</h3>
+            <button id="startReinforcementBtn" class="btn btn-review-manual pulse-glow-magenta">
+              <i class="fa-solid fa-fire"></i> 🔥 Rozpocznij Sesję Utrwalającą
+            </button>
+          </div>
+          <p class="review-subtitle">Przećwicz wyłącznie pytania, w których popełniłeś błędy, aby skutecznie utrwalić wiedzę.</p>
+          <div class="review-list" id="reviewList">
+            <!-- Review items dynamically injected here -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Panel: Settings & PWA Guide -->
+    <div class="settings-modal" id="settingsModal">
+      <div class="modal-content glass-panel">
+        <header class="modal-header">
+          <h2><i class="fa-solid fa-gears"></i> Ustawienia & Instrukcja</h2>
+          <button id="closeSettingsBtn" class="icon-btn" aria-label="Zamknij"><i class="fa-solid fa-xmark"></i></button>
+        </header>
+
+        <div class="modal-body">
+          <!-- Section A: Voice Synthesis Settings -->
+          <div class="settings-section">
+            <h3><i class="fa-solid fa-volume-high"></i> Ustawienia Lektora</h3>
+            <div class="control-group">
+              <label for="voiceRate"><i class="fa-solid fa-gauge-high"></i> Szybkość czytania: <span id="voiceRateVal">1.0</span>x</label>
+              <input type="range" id="voiceRate" min="0.5" max="2.0" step="0.1" value="1.0">
+            </div>
+            <div class="control-group">
+              <label for="voiceVolume"><i class="fa-solid fa-volume-low"></i> Głośność: <span id="voiceVolumeVal">100</span>%</label>
+              <input type="range" id="voiceVolume" min="0" max="1" step="0.1" value="1">
+            </div>
+            <div class="switch-container" style="margin-top: 14px;">
+              <span class="switch-label"><i class="fa-solid fa-car"></i> Strumieniowanie CarPlay/Bluetooth</span>
+              <label class="toggle-switch">
+                <input type="checkbox" id="carplayHackToggle" checked>
+                <span class="toggle-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Section B: PWA Installation Guide -->
+          <div class="settings-section">
+            <h3><i class="fa-solid fa-mobile-screen-button"></i> Jak zainstalować jako PWA?</h3>
+            <p class="guide-intro">Dzięki technologii PWA możesz zainstalować aplikację na ekranie głównym swojego telefonu, co umożliwia jej pracę **bez dostępu do Internetu (offline)**.</p>
+            
+            <div class="pwa-tabs">
+              <div class="pwa-tab-buttons">
+                <button class="tab-btn active" data-tab="ios"><i class="fa-brands fa-apple"></i> iOS Safari</button>
+                <button class="tab-btn" data-tab="android"><i class="fa-brands fa-android"></i> Android</button>
+                <button class="tab-btn" data-tab="desktop"><i class="fa-solid fa-laptop"></i> Komputer</button>
+                <button class="tab-btn" data-tab="github"><i class="fa-brands fa-github"></i> Link na Telefon</button>
+                <button class="tab-btn" data-tab="bluetooth"><i class="fa-solid fa-car"></i> Bluetooth & Auto</button>
+                <button class="tab-btn" data-tab="commands"><i class="fa-solid fa-microphone"></i> Komendy Głosowe</button>
+              </div>
+
+              <div class="pwa-tab-content">
+                <div class="tab-pane active" id="tab-ios">
+                  <ol class="guide-steps">
+                    <li>Otwórz link z GitHub Pages w przeglądarce <strong>Safari</strong> na swoim iPhonie.</li>
+                    <li>Stuknij ikonę <strong>Udostępnij</strong> (kwadrat z strzałką w górę) na dolnym pasku Safari.</li>
+                    <li>Przewiń menu w dół i wybierz opcję <strong>"Dodaj do ekranu początkowego"</strong>.</li>
+                    <li>Wpisz nazwę (np. "SSI Trainer") i zatwierdź klikając <strong>Dodaj</strong> w prawym górnym rogu.</li>
+                    <li>Ikona z logo <strong>Uki</strong> pojawi się na pulpicie Twojego telefonu!</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-android">
+                  <ol class="guide-steps">
+                    <li>Upewnij się, że korzystasz z przeglądarki <strong>Chrome</strong> na swoim telefonie.</li>
+                    <li>Otwórz link z GitHub Pages.</li>
+                    <li>Kliknij przycisk <strong>"Zainstaluj"</strong> na bannerze na dole ekranu.</li>
+                    <li>Jeśli go nie ma, stuknij ikonę <strong>trzech pionowych kropek</strong> w prawym górnym rogu Chrome.</li>
+                    <li>Wybierz opcję <strong>"Dodaj do ekranu głównego"</strong> lub <strong>"Zainstaluj aplikację"</strong>.</li>
+                    <li>Zatwierdź instalację. Aplikacja zostanie dodana do pulpitu telefonu i działa offline!</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-desktop">
+                  <ol class="guide-steps">
+                    <li>Otwórz stronę w przeglądarce <strong>Google Chrome</strong> lub <strong>Microsoft Edge</strong>.</li>
+                    <li>Zwróć uwagę na prawą stronę paska adresu - zobaczysz tam ikonę <strong>monitora z małą strzałką</strong> ("Zainstaluj aplikację").</li>
+                    <li>Kliknij tę ikonę i zatwierdź klikając przycisk <strong>Zainstaluj</strong>.</li>
+                    <li>Aplikacja otworzy się w osobnym, eleganckim oknie bez pasków przeglądarki i zostanie dodana jako skrót na pulpicie.</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-github">
+                  <p class="guide-intro">Aby odpalić aplikację na telefonie, włącz darmowe hostowanie <strong>GitHub Pages</strong> w swoim repozytorium:</p>
+                  <ol class="guide-steps">
+                    <li>Wejdź na stronę swojego repozytorium w przeglądarce: <strong style="color: var(--color-cyan);">github.com/lukaszdudzinski/ssi-standards-trainer</strong></li>
+                    <li>Kliknij zakładkę <strong>Settings</strong> (Ustawienia) w górnym menu repozytorium.</li>
+                    <li>W lewym menu kliknij opcję <strong>Pages</strong>.</li>
+                    <li>W sekcji <strong>Build and deployment -> Branch</strong> wybierz gałąź <strong>main</strong> oraz folder <strong>/ (root)</strong>, a następnie kliknij <strong>Save</strong> (Zapisz).</li>
+                    <li>Po około 1 minucie odśwież stronę. Na górze w zakładce Pages pojawi się Twój gotowy, publiczny link do telefonu:<br>
+                      <a href="https://lukaszdudzinski.github.io/ssi-standards-trainer/" target="_blank" style="color: var(--color-cyan); font-weight: bold; text-decoration: underline;">https://lukaszdudzinski.github.io/ssi-standards-trainer/</a>
+                    </li>
+                    <li>Otwórz ten link na telefonie w Safari (iPhone) lub Chrome (Android) i postępuj zgodnie z instrukcją instalacji w pozostałych zakładkach!</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-bluetooth">
+                  <p class="guide-intro">Instrukcje dotyczące Apple CarPlay, Bluetooth oraz ustawień głośności lektora w samochodzie:</p>
+                  <ol class="guide-steps">
+                    <li><strong>Dźwięki (Media) vs Mowa (Siri):</strong> System iOS dzieli audio na kategorie. Dźwięki systemowe (prawidłowa/błędna odpowiedź) to <em>Multimedia</em> i idą do głośników auta. Lektor czytający pytania (TTS) to kanał <em>Mowy (Siri/VoiceOver)</em>, który iOS domyślnie kieruje na głośnik telefonu, by nie przerywać muzyki w samochodzie.</li>
+                    <li><strong>Routing Audio w samochodzie:</strong> Aby skierować lektora na głośniki auta, otwórz <strong>Centrum Sterowania</strong> na iPhonie (przesunięcie palcem z prawego górnego rogu w dół), kliknij ikonę <strong>AirPlay/Audio</strong> w prawym górnym rogu karty odtwarzacza i ręcznie wybierz Bluetooth samochodu lub CarPlay jako docelowe urządzenie wyjściowe.</li>
+                    <li><strong>Głośność Lektora:</strong> Ponieważ głos lektora jest kontrolowany oddzielnie, standardowe przyciski głośności w samochodzie zmieniają tylko głośność efektów. Aby podgłośnić lektora, <strong>zwiększ głośność przyciskami telefonu dokładnie w momencie, gdy lektor odczytuje pytanie</strong>.</li>
+                    <li><strong>Ustawienia Dostępności iOS:</strong> Możesz również dostosować głośność lektora na stałe w telefonie wchodząc w: <em>Ustawienia -> Dostępność -> Czytanie zawartości -> Głosy</em> i dostosowując parametry wybranego głosu języka polskiego.</li>
+                    <li><strong>Brak głosu po kablu CarPlay (USB-C):</strong> Niektóre pokładowe systemy CarPlay blokują przesyłanie lektora przez kabel USB. Jeśli po podłączeniu telefonu kablem w aucie nastała głusza, **wyłącz opcję „Strumieniowanie CarPlay/Bluetooth”** w Ustawieniach Lektora w aplikacji. Dźwięk lektora natychmiast wróci i będzie szedł z głośnika telefonu, a muzyka/radio w samochodzie będzie mogła spokojnie lecieć w tle!</li>
+                  </ol>
+                </div>
+                <div class="tab-pane" id="tab-commands">
+                  <p class="guide-intro">Aplikacja oferuje **kompletne, bezdotykowe sterowanie głosowe (Polish Speech-to-Text)**. Poniżej znajduje się lista komend podzielona na sekcje aplikacji:</p>
+                  
+                  <div class="command-group">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-microphone-lines" style="color: var(--color-cyan);"></i> 1. Ogólne Komendy Sterujące</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Dostępne podczas aktywnego czytania pytań w każdym trybie:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Powtórzenie pytania:</strong> Powiedz <code>„powtórz”</code>, <code>„jeszcze raz”</code> lub <code>„czytaj”</code>, aby lektor odczytał pytanie ponownie.</li>
+                      <li><strong>Przejście dalej:</strong> Powiedz <code>„dalej”</code>, <code>„następne”</code> lub <code>„ok”</code> na panelu podsumowania, aby przejść do kolejnego pytania.</li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-list-check" style="color: var(--color-yellow);"></i> 2. Wybór Odpowiedzi (Egzamin / Ćwiczenia)</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Aby wybrać jedną z czterech opcji odpowiedzi, powiedz:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Opcja A (1):</strong> <code>„jeden”</code> / <code>„jedynka”</code> / <code>„raz”</code> / <code>„pierwsza”</code> / <code>„a”</code></li>
+                      <li><strong>Opcja B (2):</strong> <code>„dwa”</code> / <code>„dwójka”</code> / <code>„druga”</code> / <code>„b”</code></li>
+                      <li><strong>Opcja C (3):</strong> <code>„trzy”</code> / <code>„trójka”</code> / <code>„trzecia”</code> / <code>„c”</code></li>
+                      <li><strong>Opcja D (4):</strong> <code>„cztery”</code> / <code>„czwórka”</code> / <code>„czwarta”</code> / <code>„d”</code></li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-clone" style="color: var(--color-purple);"></i> 3. Tryb Fiszki (Flashcards)</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Steruj kartami w trybie bezdotykowej nauki:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Znasz odpowiedź (Awers):</strong> Powiedz <code>„znam”</code>, <code>„tak”</code>, <code>„wiem”</code> lub <code>„znam to”</code> (zalicza i przechodzi dalej).</li>
+                      <li><strong>Nie znasz odpowiedzi (Awers):</strong> Powiedz <code>„nie znam”</code>, <code>„nie”</code>, <code>„nie wiem”</code> lub <code>„nie znam tego”</code> (oznacza jako błąd, obraca kartę i odtwarza regułę).</li>
+                      <li><strong>Tylko obróć kartę:</strong> Powiedz <code>„obróć”</code>, <code>„odwróć”</code> lub <code>„pokaż”</code> (obraca kartę bez zmiany statusu).</li>
+                      <li><strong>Kolejna karta (Rewers):</strong> Powiedz <code>„dalej”</code>, <code>„następna”</code>, <code>„ok”</code> lub <code>„rozumiem”</code>, aby wczytać następną fiszkę.</li>
+                    </ul>
+                  </div>
+
+                  <div class="command-group" style="margin-top: 14px;">
+                    <h4 style="margin-bottom: 6px;"><i class="fa-solid fa-circle-question" style="color: var(--color-green);"></i> 4. Propozycja Sesji Utrwalającej</h4>
+                    <p class="command-desc" style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 6px;">Gdy lektor pyta <em>„Czy chcesz rozpocząć sesję utrwalającą?”</em>, odpowiedz:</p>
+                    <ul class="guide-steps" style="margin-bottom: 12px;">
+                      <li><strong>Rozpoczęcie sesji:</strong> Powiedz <code>„tak”</code>, <code>„chcę”</code> lub <code>„rozpocznij”</code>, aby przećwiczyć wyłącznie błędne pytania.</li>
+                      <li><strong>Powrót do menu:</strong> Powiedz <code>„nie”</code>, <code>„nie chcę”</code> lub <code>„wróć”</code>, aby powrócić do ekranu głównego.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section C: Technical details / Info -->
+          <div class="settings-section about-info">
+            <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
+            <p>Wersja <span id="appVersion">v2026.10.20.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast for Updates -->
+  <div id="updateToast" class="update-toast">
+    <div class="toast-content">
+      <i class="fa-solid fa-cloud-arrow-down"></i>
+      <span id="updateToastText">Dostępna nowa wersja standardów!</span>
+    </div>
+    <button id="updateToastBtn" class="btn-update">Aktualizuj</button>
+  </div>
+
+  <!-- Sound effects are generated procedurally offline via Web Audio API -->
+
+  <!-- Modal for Standards PDF Viewer -->
+  <div id="pdfModal" class="modal-overlay">
+    <div class="modal-content pdf-modal-content">
+      <div class="modal-header pdf-header">
+        <div class="header-left">
+          <button id="closePdfBtn" class="btn btn-close-pdf" title="Zamknij i wróć do aplikacji">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button id="togglePdfTocBtn" class="btn btn-toc" title="Spis Treści" style="background: rgba(0,0,0,0.4); border: 1px solid var(--glass-border); color: var(--text-primary); border-radius: 8px; padding: 6px 12px; margin-left: 8px; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+            <i class="fa-solid fa-list-ul"></i> <span class="toc-label-text">Spis</span>
+          </button>
+        </div>
+        <div class="header-center pdf-controls">
+          <button id="prevPageBtn" class="pdf-nav-btn" title="Poprzednia strona"><i class="fa-solid fa-chevron-left"></i></button>
+          <span class="pdf-page-indicator">
+            str. <span id="currentPageNumText">1</span> / <span id="totalPagesText">...</span>
+          </span>
+          <button id="nextPageBtn" class="pdf-nav-btn" title="Następna strona"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        <div class="header-right pdf-zoom-controls">
+          <button id="zoomOutBtn" class="pdf-zoom-btn" title="Pomniejsz"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+          <button id="zoomInBtn" class="pdf-zoom-btn" title="Powiększ"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+        </div>
+      </div>
+      <div class="modal-body pdf-body" id="pdfCanvasContainer">
+        <div class="pdf-loading-indicator" id="pdfLoadingIndicator">
+          <i class="fa-solid fa-circle-notch fa-spin"></i> Wczytywanie standardów...
+        </div>
+        
+        <!-- PDF TOC Sidebar -->
+        <div id="pdfSidebar" class="pdf-sidebar">
+          <div class="toc-header">
+            <h3>Spis Treści</h3>
+            <button id="closePdfTocBtn" class="icon-btn" aria-label="Zamknij"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="toc-search-container">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="tocSearchInput" placeholder="Szukaj rozdziału...">
+          </div>
+          <ul id="pdfTocList" class="pdf-toc-list">
+             <!-- Items injected via JS -->
+          </ul>
+        </div>
+
+        <div class="pdf-canvas-wrapper" id="pdfCanvasWrapper">
+          <canvas id="pdfCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Import PDFJS Library -->
+  <script src="pdf.min.js"></script>
+  <!-- Import Question Database -->
+  <script src="questions.js"></script>
+  <!-- Import Core App Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
