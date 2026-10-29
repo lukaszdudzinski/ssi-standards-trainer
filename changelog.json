@@ -1,0 +1,18 @@
+[
+  {
+    "version": "v2026.10.29.01",
+    "date": "2026-10-29",
+    "changes": [
+      "✨ Po aktualizacji aplikacja od razu pokazuje listę zmian, więc wiesz, co nowego.",
+      "✨ Listę zmian znajdziesz też w Ustawieniach, w linku „Zobacz co nowego” obok numeru wersji."
+    ]
+  },
+  {
+    "version": "v2026.10.20.01",
+    "date": "2026-10-20",
+    "changes": [
+      "🔒 Aktualizacja aplikacji nie usuwa już danych offline innych aplikacji Uki zapisanych na tym samym urządzeniu.",
+      "🛠️ Każda nowa wersja przechodzi automatyczne testy przed publikacją, więc rzadziej trafiają do Ciebie błędy."
+    ]
+  }
+]

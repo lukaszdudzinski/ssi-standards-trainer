@@ -115,7 +115,7 @@
         </div>
 
         <div class="welcome-footer">
-          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.10.20.01</span></p>
+          <p class="app-version-label">Wersja <span id="welcomeVersion">v2026.10.29.01</span></p>
         </div>
       </section>
 
@@ -540,7 +540,8 @@
           <!-- Section C: Technical details / Info -->
           <div class="settings-section about-info">
             <p><strong>SSI Standards Instructor Trainer PWA</strong></p>
-            <p>Wersja <span id="appVersion">v2026.10.20.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p>Wersja <span id="appVersion">v2026.10.29.01</span> • Oparta o standardy SSI rekreacyjne 2025.2 w języku polskim. Prawa autorskie do standardów należą do SSI International GmbH.</p>
+            <p><button id="changelogLink" class="changelog-link" type="button">Zobacz co nowego</button></p>
             <p>Projekt i realizacja: <strong>Antigravity AI</strong> dla <strong>Uki</strong></p>
           </div>
         </div>
@@ -554,7 +555,10 @@
       <i class="fa-solid fa-cloud-arrow-down"></i>
       <span id="updateToastText">Dostępna nowa wersja standardów!</span>
     </div>
-    <button id="updateToastBtn" class="btn-update">Aktualizuj</button>
+    <div class="toast-actions">
+      <button id="updateToastChangelogBtn" class="btn-update-secondary" type="button">Co nowego?</button>
+      <button id="updateToastBtn" class="btn-update">Aktualizuj</button>
+    </div>
   </div>
 
   <!-- Sound effects are generated procedurally offline via Web Audio API -->
@@ -614,6 +618,8 @@
   <script src="pdf.min.js"></script>
   <!-- Import Question Database -->
   <script src="questions.js"></script>
+  <!-- "Co nowego" (lista zmian po aktualizacji) -->
+  <script src="changelog.js"></script>
   <!-- Import Core App Logic -->
   <script src="app.js"></script>
 </body>

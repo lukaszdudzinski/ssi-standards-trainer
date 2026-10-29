@@ -2,7 +2,7 @@
    SSI Standards Trainer - Core Application Logic
    ========================================================================== */
 
-const APP_VERSION = 'v2026.10.20.01';
+const APP_VERSION = 'v2026.10.29.01';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Render version in UI
@@ -462,6 +462,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   resetStatsBtn.addEventListener('click', resetStatsHistory);
+
+  // --- "Co nowego" (changelog.js): link w Ustawieniach i okno po aktualizacji ---
+  const changelogLink = document.getElementById('changelogLink');
+  if (changelogLink) {
+    changelogLink.addEventListener('click', () => window.showChangelogModal('all'));
+  }
+  if (window.UkisChangelog) UkisChangelog.maybeShowAfterUpdate({
+    storage: localStorage,
+    current: APP_VERSION,
+    webdriver: navigator.webdriver === true,
+    schedule: (fn, ms) => setTimeout(fn, ms),
+    show: (since) => window.showChangelogModal(since),
+  });
   
   // Init categories and stats view on start
   updateCategoryOptionsAndStats();
@@ -2021,15 +2034,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function showUpdateToast(reg) {
     const toast = document.getElementById('updateToast');
     const updateBtn = document.getElementById('updateToastBtn');
-    
+    const changelogBtn = document.getElementById('updateToastChangelogBtn');
+
     if (toast && updateBtn) {
-      toast.classList.add('show');
-      updateBtn.addEventListener('click', () => {
+      // Zapamiętujemy wersję sprzed aktualizacji, żeby po przeładowaniu pokazać „Co nowego?”.
+      const doUpdate = () => {
         toast.classList.remove('show');
+        if (window.UkisChangelog) UkisChangelog.rememberUpdatedFrom(localStorage, APP_VERSION);
         if (reg.waiting) {
           reg.waiting.postMessage({ action: 'skipWaiting' });
         }
-      });
+      };
+      toast.classList.add('show');
+      updateBtn.onclick = doUpdate;
+      if (changelogBtn && window.showChangelogModal) {
+        changelogBtn.onclick = () => window.showChangelogModal(APP_VERSION, { onUpdate: doUpdate });
+      }
     }
   }
 });
